@@ -1,69 +1,53 @@
-# Jekyll Cayman theme
+# 前端开发 ｜ 钟剑均
 
-This is a [Jekyll][1] theme for [@jasonlong][2]'s [Cayman theme][4] on [GitHub Pages][3].
+* 工作年限：7年开发经验
+* 学历：专科
+* 手机号：13018988249
+* 岗位：前端工程师
 
-Cayman is a clean, responsive theme for [GitHub Pages](https://pages.github.com). This theme is available as an option if you use the [Automatic Page Generator](https://help.github.com/articles/creating-pages-with-the-automatic-generator/) or you can copy the template and styles to use on your own.
+## 我的能力
 
-You can preview the theme at https://jasonlong.github.io/cayman-theme or with real content at https://jasonlong.github.io/geo_pattern.
+六年前端开发经验, 现负责扫码点餐业务, 有丰富的优化重构经验, 具有多端开发经验（微信支付宝小程序/公众号H5/小游戏/PC后台/数据可视化大屏） 管理10多人前端团队, 推动前端工程化建设. 通过开发规范、组件库、自动化检测工具、eslint、单元测试等工具, 不断提高团队开发效率 有一定技术广度, 熟悉服务器相关知识. 能搭建服务器提供接口服务. 曾经从0到1的带队开发移动微商城, 熟悉小程序公众号授权与支付流程
 
-![](https://cl.ly/image/1T3r3d18311V/content)
+## 技术能力
+* 熟练掌握html/css/js/dom/bom/git/nginx/shell基础知识, 编写可复用、可维护的代码
+* 熟练使用React, Vue, ES6, webpack, typescript等技术进行开发
+* 熟练使用charles/postman/arms监控等各类工具解决线上等问题
+* 熟练使用webpack,postcss,sass,npm等工具, 推进前端工程化建设, 在前端性能优化方面有[一定心得](https://www.processon.com/view/link/5c2d8296e4b0641c83cb89c7)
+* 熟练掌握linux知识, 使用nginx + eggjs + nodejs + PM2 搭建过Web服务器应用
+* 关注代码质量, 写过一套自动化检测工具[check-list](https://github.com/yhtml5/yhtml5-cli/tree/master/packages/check-list), 将check-list, eslint, 单元测试. 融入团队的日常开发. 每次代码发布前都会检测
+* 会梳理技术文档, 为团队写过一套前端文档, 包括前端规范、开发教程、各工具使用, 鼓励团队分享
+* 自学能力强, 随时关注相关技术趋势, 不断完善自身技术水平. 可以访问[YHTML5-Tutorial][YHTML5-Tutorial], 关注我最新学习状况
 
-# How to use it?
+## 工作经历
 
-Download the theme @ https://github.com/pietromenna/jekyll-cayman-theme/archive/master.zip
+### 2014.3-至今丨杭州筑家易网络科技有限公司丨前端工程师
+1. 负责公司前端的基础工程建设以及开发符合公司业务的前端组件, 用于快速开发公司各产品
+2. 开发定制化的前端脚手架, 解决前端开发中自动化工具、性能优化、模块化框架、开发规范、代码部署、开发流程等问题,
+3. 统一技术栈，减少代码冲突,并配套对应检测工具及开发文档, 让团队成员只需要简单培训学习使用这套框架，将精力主要放在业务需求开发上，而不需要额外学习研究webpack，jsx，babel，node，shell,express等等一堆概念与知识
+4. 开发邻易联官网后台, 邻易联物业系统, 升级空间家装后台, 智慧社区运营系统, 等一系列react + ant design产品
+5. 开发房贷通微信公众号, 智慧社区客户端, 筑家生活号(支付宝), 奖金系统(app内嵌)等移动端应用
 
-Unzip it and use it as a regular jekyll folder.
+## 培训教育
+-
 
-```
-$ unzip jekyll-cayman-theme-master.zip
-```
+## 作品
 
-Get inside the newly extracted folder
-```
-$ cd jekyll-cayman-theme-master
-```
-
-Get the required gems
-```
-$ bundle install
-```
-
-Use it!
-
-```
-$ jekyll serve
-```
-
-For more details read about [Jekyll][1] on its web page.
-
-# Setup
-
-Some important configuration can be done in the file `_config.yml`. Please, check the Setup section in that file.
-
-
-## baseurl
-
-`baseurl` parameter is required in the case the site doesn't sit on the root of the domain. For example: https://pietromenna.github.io/jekyll-cayman-theme
-
-In the case above the baseurl should be set to "/jekyll-cayman-theme".
-
-In the case the site sits in the root, you can leave `baseurl` as empty "".
-
-# Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/pietromenna/jekyll-cayman-theme.
-
-# Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-# License
-
-This work is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
-
-[1]: https://jekyllrb.com/
-[2]: https://github.com/jasonlong
-[3]: https://pages.github.com/
-[4]: https://github.com/jasonlong/cayman-theme
+//例子一
+|123|234|345|
+|:-|:-:|-:|
+|abc|bcd|cde|
+|abc|bcd|cde|
+|abc|bcd|cde|
+//例子二
+|123|234|345|
+|:---|:---:|---:|
+|abc|bcd|cde|
+|abc|bcd|cde|
+|abc|bcd|cde|
+//例子三
+123|234|345
+:-|:-:|-:
+abc|bcd|cde
+abc|bcd|cde
+abc|bcd|cde
