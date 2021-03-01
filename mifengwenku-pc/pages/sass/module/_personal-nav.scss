@@ -1,0 +1,17 @@
+.personal-nav{}
+.personal-nav .nav-list{}
+.personal-nav .nav-link{color:#727272;font-size:16px;display: block;height:44px;line-height:44px;border-bottom:1px solid #f4f4f4;padding-left:60px;}
+.personal-nav .site-icon{padding-right:16px;font-size:16px;}
+
+.personal-nav .active{position:relative;}
+.personal-nav .active .nav-link{color:#f7372c;}
+.personal-nav .active .nav-line{width:4px;height:18px;background-color:#ff0000;position:absolute;left:0;top:50%;margin-top:-9px;}
+
+.personal-nav .nav-link:hover,.personal-nav .select .nav-link{background-color:#f7372c;color:#fff;}
+/*二级菜单*/
+.personal-nav .second-list{display:none;}
+.personal-nav .second-list .second-link{display:block;color:#a3a3a3;font-size:16px;border-bottom:1px solid #f4f4f4;height:44px;line-height:44px;padding-left:70px;}
+.personal-nav .second-list .second-link:hover,.personal-nav .second-list .on{color:#f7372c}
+.personal-nav .second-list .dots{padding-right:6px;}
+.personal-nav .select .second-list{display:block}
+/*二级菜单 end*/

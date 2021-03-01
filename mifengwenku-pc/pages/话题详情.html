@@ -1,0 +1,635 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>话题详情-帮帮创意</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<link rel="stylesheet" type="text/css" href="css/topicdetails.css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+</head>
+<body>
+<!--header-->
+<div class="site-topbar">
+	<div class="container clearfix">
+		<div class="top-info fl">专业文档和设计素材分享社区</div>
+		<div class="link-box fr">
+			<a class="link-list" href=""><i class="site-icon iconfont">&#xe78e;</i>登录</a>
+			<a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe672;</i>注册</a>
+			<a class="link-list help" href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<div class="site-header">
+	<div class="container header-center clearfix">
+		<div class="header-logo">
+			<a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意"></a>			
+		</div>
+		<a class="release-btn" href=""><i class="site-icon iconfont">&#xe636;</i>发布资源</a>		
+		<div class="header-search">
+			<input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+			<input class="search-btn iconfont" type="submit" value="&#xe601;" />			
+		</div>
+	</div>
+	<div class="header-nav">
+		<div class="container clearfix">
+			<div class="sort-box" id="sort-box" data-type="false">
+				<h2 class="sort-title"><i class="site-icon iconfont">&#xe761;</i>全部分类</h2>
+				<div class="menu-list-box">
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">市场营销</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">营销策划</a>
+							<a class="link" href="">产品规划</a>
+							<a class="link" href="">渠道管理</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">分析报告</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">管理咨询工具</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">战略咨询工具</a>
+							<a class="link" href="">营销咨询工具</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">设计素材</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">标志</a>
+							<a class="link" href="">VI模板</a>
+							<a class="link" href="">海报</a>
+							<a class="link" href="">海报</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">高清图片</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">人物图片</a>
+							<a class="link" href="">风景图片</a>
+							<a class="link" href="">世界风光</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">管理文档</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">企业管理</a>
+							<a class="link" href="">财务管理</a>
+							<a class="link" href="">人力资源</a>
+						</dd>
+					</dl>
+					<dl class="menu-list list-last">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">更多资源</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">行业资料</a>
+							<a class="link" href="">PPT模板</a>
+							<a class="link" href="">办公文档</a>
+						</dd>
+					</dl>
+				</div>
+				<ul class="menu-cont">
+					<li class="cont-list">
+						<h3 class="tit-name"><a class="link" href="">市场营销全部</a></h3>
+						<div class="cont-link clearfix">
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+						</div>
+					</li>
+					<li class="cont-list">
+						<h3 class="tit-name"><a class="link" href="">分析报告全部</a></h3>
+						<div class="cont-link clearfix">
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+						</div>
+					</li>
+					<li class="cont-list">3</li>
+					<li class="cont-list">4</li>
+					<li class="cont-list">5</li>
+					<li class="cont-list">6</li>
+					<li class="cont-list">7</li>
+				</ul>
+			</div>
+			<ul class="nav-list clearfix" id="nav-list">
+				<li class="nav-item"><a class="link" href="">首页</a></li>
+				<li class="nav-item"><a class="link" href="">专题</a></li>
+				<li class="nav-item"><a class="link" href="">话题</a></li>
+				<li class="nav-item"><a class="link" href="">教程</a></li>
+				<li class="nav-item"><a class="link" href="">排行榜</a></li>
+				<li class="nav-item"><a class="link" href="">任务求助</a></li>
+				<li class="nav-item">
+					<a class="link" href="">活动<i class="site-icon iconfont">&#xe634;</i></a>
+					<div class="more-cont">
+						<ul class="nav-more-box">
+							<li class="more-list"><a class="more-link" href="">上传比赛</a></li>
+							<li class="more-list"><a class="more-link" href="">赞助帮帮创意</a></li>
+							<li class="more-list"><a class="more-link" href="">通知</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--/header-->
+
+<div class="container">
+	<!--面包屑-->
+	<div class="crumbs-box">
+		<i class="site-icon iconfont">&#xe659;</i>
+		<a class="crumbs-link" href="">帮帮创意</a>
+		<span class="crumbs-arrow">></span>
+		<a class="crumbs-link" href="">话题</a>
+		<span class="crumbs-arrow">></span>
+		<span class="crumbs-name">营销策划</span>
+	</div>
+	<!--/面包屑-->
+	<div class="bbcy-list clearfix">
+		<div class="warp-l">
+			<div class="layout">
+				<div class="details-cont">
+					<h1>YC 眼里的硅谷创投趋势，和经纬眼里“不靠谱的创业者”</h1>
+					<div class="info-main">
+<img src="http://www.bbcyw.com/ueditor_s/net/upload/20161231/scppsegyiar161.jpg" alt="凭什么要我脱离舒适区">
+<p>本文为虎嗅作者伯通为虎嗅<span class="text-remarks">“我在 2016 学会的最重要的事”</span><span class="text-remarks">策划的撰文，在今日头条文章中节选了部分发布，以下是文章全文。</span></p><p><br></p><p>过去4年中，我换了6次工作。这当然不是什么值得分享的佳话，但历经这堆跳槽、面试、磨合、分手的密集流程之后，我发现职场伙伴们最常对我说的一句话是——“伯通，你应该挑战你的舒适区了”或“试着从你的舒适区里走出来吧”。</p><p><br></p><p>于是，我常常怀疑自己是个懦弱而缺乏行动力的短视者：既不愿挑战自己不擅长而明显有更高价值回报的工作，又无法对陌生行业干一行爱一行，还常常以无感为理由推掉别人的职业建议。时间长了，别人也发现我身上少了一点“探索精神”，于是逐渐就不常联系了。</p><p><br></p><p>比如下面这些话，过去4年中我至少说了几百回——“我不会搞媒体关系”、“现场会务执行是什么？”、“运营？不懂，另请高明吧”、“短视频内容并非我的强项”、“我不想带团队，我带好自己就不错了”、“酒会你们去吧，我懒得见陌生人”。</p><p><br></p><p>这种种表现，一言以蔽之就是“不愿脱离舒适区”。几乎是所有职场规划人生指南成功大师社会精英都极力批驳的人生污点，基本可以和Loser互为充要条件。</p><p><br></p><p>也不是没尝试过，去创业公司把自己归零尝试做合伙人、和朋友承包第三方业务学习资源调配、西装革履陪高端客户开媒体发布会……但一条路都没走通，于是我陷入痛苦的几率越来越高。</p><p><br></p><p>直到最近半年，我突然反过味来，到底是谁规定，人一定要“脱离舒适区”呢？到底什么是“舒适区”，这个定义是什么？</p><p><br></p><p>首先，“舒适”肯定不是醉生梦死不思进取的意思，那种属于“堕落区”。职场上的舒适指的不是肉体上的安逸，而是一种工作前就对方式和结果有明确预期，工作中无须付出额外痛苦纠结即可按时保质完成，工作完毕不会空虚失落的状态。所谓“舒适”指的是掌控感、成就感和压力适应的结合。</p><p><br></p><p>反之，“脱离舒适区”至少打破了以上其中一项：要么是在一个陌生行业或陌生环境下，面对未知毫无掌控感；要么是工作强度非常高或容错度非常低，导致压力陡增无法适应；或者是把张飞送去吃斋念佛，让他当少林寺CEO也不会有丝毫成就感。</p><p><br></p><p>每个人的掌控感、成就感和压力适应诉求都不同，创业者必须试着接受无法掌控的生活，因为每天都很无序；福原爱一边对着镜头哭“奥运会让人痛苦”，一边疯狂热爱自己的运动，在她眼中职业运动员这样的高压力工作是完全可以接受的；而对于我这样的码字爱好者，出席觥筹交错精英峰会之类的场合，只会觉得自己又虚度了一天，成就感为零。</p><p><br></p><p>充分的职场经历，足以让人们了解自己在以上三项中的真实诉求，在潜意识中逐渐趋近属于自己舒适区坐标系的职业。</p><p><br></p><p>但是，这个舒适区不能保证你月入十万，也不能保证你的职业生涯一帆风顺。于是人们恐慌了，“我是不是太懒了？”“是不是应该再对自己狠一点？”最终的结果就是“该跳出舒适区了！”</p><p>&nbsp;</p><p>当然有鲤鱼跃龙门的故事，但那往往不是脱离舒适区，而是在自己的舒适区中调整了系数。行政干部董明珠刚刚南下当业务员的时候怎么能想到自己是个广告代言爱好者？但那正是她真实的舒适区，她面对镜头面对非议面对媒体，惟有愈来愈过瘾，从未有不适感。她不是脱离了，而是找到了自己更精准的坐标系。</p><p><br></p><p>再比如，我曾经接触过“恋爱培训”这个行业。看多了你就会发现，那些桃花运不断的男人，并不是因为他学过恋爱学或者多么有钱多么帅，而是他从小就明白如何与女性沟通，如何吸引女性，姑娘和他约会时双方都很舒服。那些看到姑娘就脸红的死宅，上再多培训课程，也难以在相亲对象面前自然自信。恋爱结婚人之大事，按说人们有足够的动力“脱离舒适区”了吧？可是再多努力甚至花十几万学习也只是改善表面功夫，内里的真实人格难以撼动。</p><p><br></p><p>说穿了，不是我不愿脱离舒适区，而是我不明白脱离舒适区到底能带给我什么。付出额外的艰辛痛苦与失落，能换来什么。又不是去搞黄赌毒高利贷宗教传销的暴富生意，以我过去几年的经历来看，这脱离舒适区的性价比，可一点也不高。</p><p><br></p><p>当然，不脱离舒适区不代表不奋斗，不脱离舒适区不代表不思考，不脱离舒适区不代表不能成长为更优秀的人。在我的舒适区内，可以折腾的余地还大着呢，百度刚把一个写字的招安当了副总裁，我看他也没怎么脱离舒适区嘛。</p><p><br></p><p>估计不少朋友看完这篇会不服气，不过我相信一句话——“眼泪教你做人，后悔帮你成长，疼痛才是最好的老师。”希望大家多脱离几次舒适区，或许会有不同的感悟。</p>
+					</div>
+					<div class="praise-box">
+						<a class="praise" href="javascript:;">
+							<p class="praise-num">19</p>
+							<i class="site-icon iconfont">&#xe642;</i>
+						</a>						
+					</div>
+				</div>
+			</div>
+		<!--相关标签-->
+		<div class="cat-box clearfix">
+			<a class="cat-link" href="">营销方案</a>
+			<a class="cat-link" href="">促销</a>
+			<a class="cat-link" href="">圣诞促销</a>
+			<a class="cat-link" href="">三只松鼠</a>
+			<a class="cat-link" href="">生鲜电商促销</a>
+		</div>
+		<!--/相关标签-->
+		<!--发表评论-->
+		<div class="layout">
+			<div class="title-box clearfix">
+				<h3 class="tit-name">发表评论</h3>
+			</div>
+			<div class="comment-box" id="published">
+				<div class="comment-user clearfix">
+					<a href=""><img class="user-img" src="images/avatar.png"></a>
+					<h2 class="user-name"><a class="link" href="">666666</a></h2>
+				</div>
+				<textarea class="comment-text"></textarea>
+				<div class="comment-btn-box clearfix">
+					<input class="comment-btn" type="button" value="发表评论">
+					<p class="comment-error"></p>
+				</div>
+			</div>
+		</div>
+		<!--/发表评论-->
+		<!--发表评论-->
+		<div class="layout comment-list" id="commentList">
+			<div class="title-box clearfix">
+				<h3 class="tit-name">
+					<a class="comment-tit select" href="javascript:;">默认评论</a>
+					<span class="comment-line">|</span>
+					<a class="comment-tit" href="javascript:;">最新评论</a>
+				</h3>
+			</div>
+
+			<div class="comment-box">
+				<div class="comment-user clearfix">
+					<a href=""><img class="user-img" src="images/avatar.png"></a>
+					<h2 class="user-name"><a class="link" href="">666666</a><span class="comment-time">21分钟前</span></h2>
+				</div>
+				<p class="comment-cont">现在的格力 前有狼 后有虎</p>
+				<div class="comments-box cmt-box clearfix">
+					<a class="comments-btn cmt-btn" href="javascript:;"><i class="site-icon iconfont">&#xe660;</i>我要点评</a>
+					<div class="like-box">
+						<a class="like-list list-01" href=""><i class="site-icon iconfont">&#xe61c;</i>5</a>
+						<a class="like-list list-02" href=""><i class="site-icon iconfont">&#xe61e;</i>5</a>
+					</div>
+				</div>
+				<div class="comment-input cmt-input">
+					<textarea class="comment-text"></textarea>
+					<div class="comment-btn-box clearfix">
+						<input class="comment-btn" type="button" value="发表">
+						<p class="comment-error"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="comment-box">
+				<div class="comment-user clearfix">
+					<a href=""><img class="user-img" src="images/avatar.png"></a>
+					<h2 class="user-name"><a class="link" href="">666666</a><span class="comment-time">21分钟前</span></h2>
+				</div>
+				<p class="comment-cont">现在的格力 前有狼 后有虎</p>
+				<div class="comments-box cmt-box clearfix">
+					<a class="comments-btn cmt-btn" href="javascript:;"><i class="site-icon iconfont">&#xe660;</i>我要点评</a>
+					<div class="like-box">
+						<a class="like-list list-01" href=""><i class="site-icon iconfont">&#xe61c;</i>5</a>
+						<a class="like-list list-02" href=""><i class="site-icon iconfont">&#xe61e;</i>5</a>
+					</div>
+				</div>
+				<div class="comment-input cmt-input">
+					<textarea class="comment-text"></textarea>
+					<div class="comment-btn-box clearfix">
+						<input class="comment-btn" type="button" value="发表">
+						<p class="comment-error"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="comment-box">
+				<div class="comment-user clearfix">
+					<a href=""><img class="user-img" src="images/avatar.png"></a>
+					<h2 class="user-name"><a class="link" href="">666666</a><span class="comment-time">21分钟前</span></h2>
+				</div>
+				<p class="comment-cont">现在的格力 前有狼 后有虎</p>
+				<div class="comments-box cmt-box clearfix">
+					<a class="comments-btn cmt-btn" href="javascript:;"><i class="site-icon iconfont">&#xe660;</i>我要点评</a>
+					<div class="like-box">
+						<a class="like-list list-01" href=""><i class="site-icon iconfont">&#xe61c;</i>5</a>
+						<a class="like-list list-02" href=""><i class="site-icon iconfont">&#xe61e;</i>5</a>
+					</div>
+				</div>
+				<div class="comment-input cmt-input">
+					<textarea class="comment-text"></textarea>
+					<div class="comment-btn-box clearfix">
+						<input class="comment-btn" type="button" value="发表">
+						<p class="comment-error"></p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<!--/发表评论-->
+		<!--相关话题-->
+		<div class="layout">
+			<div class="title-box clearfix">
+				<h3 class="tit-name">相关话题</h3>
+				<a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+			</div>
+			<div class="related-box clearfix">
+				<dl class="related-list clearfix">
+					<dt class="related-l"><a href=""><img class="related-img" src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a></dt>
+					<dd class="related-r">
+						<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点云南宗教的历史现状及特点</a></h4>
+						<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+					</dd>
+				</dl>
+				<dl class="related-list clearfix">
+					<dt class="related-l"><a href=""><img class="related-img" src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a></dt>
+					<dd class="related-r">
+						<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+						<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+					</dd>
+				</dl>
+				<dl class="related-list clearfix">
+					<dt class="related-l"><a href=""><img class="related-img" src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a></dt>
+					<dd class="related-r">
+						<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+						<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+					</dd>
+				</dl>
+				<dl class="related-list clearfix">
+					<dt class="related-l"><a href=""><img class="related-img" src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a></dt>
+					<dd class="related-r">
+						<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+						<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+					</dd>
+				</dl>
+				<dl class="related-list clearfix">
+					<dt class="related-l"><a href=""><img class="related-img" src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a></dt>
+					<dd class="related-r">
+						<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点云南宗教的历史现状及特点</a></h4>
+						<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+					</dd>
+				</dl>
+				<dl class="related-list clearfix">
+					<dt class="related-l"><a href=""><img class="related-img" src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a></dt>
+					<dd class="related-r">
+						<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+						<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+					</dd>
+				</dl>
+				<dl class="related-list b-none clearfix">
+					<dt class="related-l"><a href=""><img class="related-img" src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a></dt>
+					<dd class="related-r">
+						<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+						<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+					</dd>
+				</dl>
+				<dl class="related-list b-none clearfix">
+					<dt class="related-l"><a href=""><img class="related-img" src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a></dt>
+					<dd class="related-r">
+						<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+						<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+					</dd>
+				</dl>
+			</div>
+			
+		</div>
+		</div>
+
+		<div class="warp-r">
+			<!--用户信息-->
+			<div class="layout">
+				<div class="user-box">
+					<a href=""><img class="user-img" src="images/avatar.png"></a>
+					<h2 class="user-name"><a class="link" href="">666666</a></h2>
+					<div class="user-info clearfix">
+						<p class="line">280篇文章</p>
+						<p class="line">106个评论</p>
+					</div>
+				</div>
+
+			</div>
+
+			<!--话题分类-->
+			<div class="layout">
+				<div class="title-box clearfix">
+					<h3 class="tit-name">话题分类</h3>
+					<a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+				</div>
+				<div class="related-search topic-class clearfix">
+					<a class="link select" href="#">营销策划</a>
+					<a class="link" href="#">管理综合</a>
+					<a class="link" href="#">互联网营销</a>
+					<a class="link" href="#">互联网创业</a>
+					<a class="link" href="#">平面设计</a>
+					<a class="link" href="#">设计欣赏</a>
+					<a class="link" href="#">互联网创业</a>
+					<a class="link" href="#">平面设计</a>
+					<a class="link" href="#">设计欣赏</a>
+				</div>
+			</div>
+			<!--热点推荐-->
+			<div class="layout">
+				<div class="title-box clearfix">
+					<h3 class="tit-name">热点推荐</h3>
+					<a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+				</div>
+				<ul class="news-box">
+					<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">Good evening3</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故</a></li>
+					<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">金阳街道中学学生春游活动方</a></li>
+					<li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">人教版小学三年级语文下册《</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">新理念英语上机测试(华工版)</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">尔雅课堂 逻辑和批判性思逻辑</a></li>
+					<li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link" href="">DISC性格测试及分析(Ex</a></li>
+					<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">14.发生在肺内的气体交换的</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">课前简短演讲稿71短演短演讲</a></li>
+					<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">信用社助学贷款调查报告</a></li>
+				</ul>
+			</div>
+			<div class="adv-box">
+				<a href=""><img src="images/adv/adv_01.jpg"></a>
+			</div>
+			<div class="adv-box">
+				<a href=""><img src="images/adv/adv_02.jpg"></a>
+			</div>
+			<!--热门搜索-->
+			<div class="layout">
+				<div class="title-box clearfix">
+					<h3 class="tit-name">热门搜索</h3>
+					<a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+				</div>
+				<div class="related-search clearfix">
+					<a class="link" href="#">北京大学
+					<a class="link" href="#">简介中</a>
+					<a class="link select" href="#">伍恒利</a>
+					<a class="link" href="#">商业</a>
+					<a class="link" href="#">纵横</a>
+					<a class="link" href="#">北大</a>
+					<a class="link" href="#">商业</a>
+					<a class="link" href="#">商业计划书</a>
+					<a class="link" href="#">北京大学</a>
+					<a class="link" href="#">简介中</a>
+					<a class="link" href="#">伍恒利</a>
+					<a class="link" href="#">商业</a>
+					<a class="link" href="#">纵横</a>
+					<a class="link" href="#">北大</a>
+					<a class="link" href="#">商业</a>
+					<a class="link" href="#">商业计划书</a>
+				</div>
+			</div>
+			<!--/热门搜索-->
+		</div>
+	</div>
+</div>
+<!--右侧导航-->
+	<div class="toolbar" id="toolbar">
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe616;</i>
+				<span class="toolbar-text">咨询</span>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe62e;</i>
+				<span class="toolbar-text">关注</span>
+			</span>
+			<span class="toolbar-layer toolbar-layer-wx">
+				<img class="we-chat-img" src="images/cody.png">
+				<p class="we-chat-info">官方微信</p>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item feedback">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe672;</i>
+				<span class="toolbar-text">反馈</span>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe61b;</i>
+				<span class="toolbar-text">顶部</span>
+			</span>
+		</a>
+	</div>
+<!--/右侧导航-->
+
+<script type="text/javascript">
+	/*发表评论*/
+	$.fn.publisheds = function(options){
+		var options = $.extend({
+			eventType: "click",
+			commentBtn: ".comment-btn",
+			cmtInput: ".cmt-input",
+			commentText: ".comment-text",
+			commentError: ".comment-error",
+			published: "#published"
+		},options||{});
+		return this.each(function(){
+			var _this = $(this);
+			_this.find(options.commentBtn).bind(options.eventType, function(){
+				var commentText = $(this).parents(options.published).find(options.commentText).val();
+				if(commentText == ''){
+					$(this).siblings(options.commentError).text("请输入点评内容！");
+					return false;
+				}else{
+					$(this).siblings(options.commentError).text("");
+				}
+			});
+		});
+	};
+
+	$("#published").publisheds();
+	/*点评*/
+	$.fn.commentList = function(options){
+		var options = $.extend({
+			eventType: "click",
+			cmtBtn: ".cmt-btn",
+			cmtBox: ".cmt-box",
+			cmtInput: ".cmt-input",
+			commentBtn: ".comment-btn",
+			commentText: ".comment-text",
+			commentError: ".comment-error",
+			commentBox: ".comment-box"
+		},options||{});
+		return this.each(function(){
+			var _this = $(this);
+			_this.find(options.cmtBtn).bind(options.eventType, function(){
+				var cmtInputBox = $(this).parent(options.cmtBox).siblings(options.cmtInput);
+				if(cmtInputBox.is(":hidden")){
+					cmtInputBox.show();
+					$(this).parents(options.commentBox).siblings(options.commentBox).find(options.cmtInput).hide();
+				}else{
+					cmtInputBox.hide();
+				}
+			});
+			_this.find(options.commentBtn).bind(options.eventType, function(){
+				var commentText = $(this).parents(options.cmtInput).find(options.commentText).val();
+				if(commentText == ''){
+					$(this).siblings(options.commentError).text("请输入点评内容！");
+					return false;
+				}else{
+					$(this).siblings(options.commentError).text("");
+				}
+			});
+		});
+	};
+
+	$("#commentList").commentList();
+</script>
+
+<!--footer-->
+<div class="site-footer">
+	<div class="container">
+		<div class="footer-links clearfix">
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+				<dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+				<dd class="link-list"><a class="link" href="#">话题</a></dd>
+				<dd class="link-list"><a class="link" href="#">教程</a></dd>
+				<dd class="link-list"><a class="link" href="#">排行榜</a></dd>
+				<dd class="link-list"><a class="link" href="#">任务求助</a></dd>
+				<dd class="link-list"><a class="link" href="#">活动</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+				<dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+				<dd class="link-list"><a class="link" href="#">共享分与帮币</a></dd>
+				<dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+				<dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+				<dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+				<dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">关于帮帮创意</a></dt>
+				<dd class="link-list"><a class="link" href="#">帮帮创意简介</a></dd>
+				<dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+				<dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+				<dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+				<dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+			</dl>
+			<dl class="col-links links-last">
+				<dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+				<dd class="link-list">工作时间</dd>
+				<dd class="link-list">周一至周五</dd>
+				<dd class="link-list">9：00-17：30</dd>
+			</dl>
+			<div class="foots-logo">
+				<img class="logo-img" src="images/logo.png">
+				<p class="logo-info">专业文档和设计素材分享社区</p>
+			</div>			
+			<div class="we-chat">
+				<img class="we-chat-img" src="images/cody.png">
+				<p class="we-chat-info">关注微信公众平台</p>
+			</div>
+		</div>
+		<div class="copyright-box">
+			<p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有<a class="site-map-link" href="">网站地图</a></p>
+			<p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+		</div>
+	</div>
+</div>
+<!--/footer-->

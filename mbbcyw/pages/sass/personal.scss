@@ -1,0 +1,177 @@
+@import 'module/swiper';//swiper
+@import 'module/topic';//列表内容
+$bbcywColor: #f7372c;
+img{width: auto;}
+
+/*个人中心-主页*/
+.personal-box{width:100%;margin:0 auto;padding:1rem 0;border-bottom:1px solid #e3e3e3;}
+.personal-box .info-l{width:60%;}
+.personal-box .info-l .info-img{width:32.4%;float:left;margin-left:3%;margin-right: 5%}
+.personal-box .info-l .info-img img{max-height:6rem;}
+.personal-box .info-l .info-name{width:50%;float:left;padding:1rem 0;line-height:2rem;}
+.personal-box .info-l .info-name h3{font-size:1.6rem;color:#3b3b3b;}
+.personal-box .info-l .info-name p{font-size:1.4rem;color:#727272;}
+.personal-box .info-r{float:right;width:40%;margin-right:3%;overflow:hidden;height:2rem;line-height:2rem;padding-top:2rem;}
+.personal-box .info-r p{font-size:1.4rem;color:#ffcc00;text-align:right;}
+.personal-box .info-r p span{margin-right:.3rem;}
+.personal-box .info-r .site-icon{margin-left:.1rem;}
+
+.personal-info{width:100%;margin:0 auto;padding:1rem 0;}
+.personal-info ul{width:100%;}
+.personal-info ul li{border-right:1px solid #d0d0d0;float:left;}
+.personal-info ul li:last-child{border-right:0;}
+.personal-info ul li p{text-align:center;font-size:1.4rem;}
+.personal-info ul li p span{color:$bbcywColor;}
+
+.personal-nav{margin-bottom:3rem;}
+.personal-nav li{width:94%;padding:0 3%;float:left;height:3.8rem;line-height:3.8rem;border-bottom:1px solid #d0d0d0;}
+.personal-nav li .nav-link{display:block;font-size:1.4rem;color:#727272;}
+.personal-nav li .site-icon{margin-right:1rem;font-size:1.6rem;}
+.personal-nav li .site-icon2{float:right;color:#b8b8b8;font-size:1.4rem;}
+
+/*个人中心-主页 end*/
+
+
+/*个人中心-充值*/
+.content-box{}
+.content-box .cont-list{display: none;}
+.content-box .cont-list.active{display: block;}
+/*充值tab*/
+.content-box .module-nav{border:1px solid $bbcywColor;width:94%;margin:1rem auto;background:#fff;border-radius: 3px;}
+.content-box .link-list{float:left;position:relative;border-right:1px solid $bbcywColor;}
+.content-box .link-list:last-child{border-right:0;}
+.content-box .link-list .link{display:block;color: #727272;font-size:1.6rem;height:3rem;line-height:3rem;text-align:center;}
+.content-box .link-list.active{background:$bbcywColor;border-left:0;}
+.content-box .link-list.active .link{color: #fff;}
+/*充值模块*/
+.recharge-name{width:94%;margin:0 auto;background:#fff;height:3.4rem;line-height:3.4rem;padding:0 3%;font-size:1.4rem;color:#727272;}
+.recharge-yue{height:3rem;line-height:3rem;font-size:1rem;margin-left:3%;color:#afafaf;}
+.money-box{width:100%;}
+.money-box .money-list{font-size:1.4rem;color:#727272;display:block;border:1px solid #dcdcdc;width:22%;height:3rem;line-height:3rem;text-align:center;float:left;margin-left:2%;background:#fff;margin-bottom:1rem;}
+.money-box .selected{border-color:$bbcywColor;}
+.money-box .c-red{color:$bbcywColor;font-size:1.4rem;padding:0px 4px;}
+.money-box .other-money{font-size:1.4rem;color:#727272;margin-left:3%;margin-bottom:1rem;display:none;}
+.money-box .input{display:inline-block;border:1px solid #dcdcdc;width:40%;height:3rem;padding:0 3%;font-size:1.4rem;margin:0 2%;}
+.btn-payment{width:94%;display:block;height:3.5rem;line-height:3.5rem;padding:0 3%;background:#fff;}
+.btn-payment img{max-height:2rem;vertical-align:middle;}
+.btn-payment .iconfont{float:right;}
+.bg-payment{width:100%;height:100%;background:rgba(0,0,0,.5);position:fixed;left:0;bottom:0;display:none;z-index:9;}
+.payment-box{position:absolute;left:0;bottom:0;background:#fff;width:100%;padding-bottom:5rem;}
+.payment-box h2{text-align:center;height:4rem;line-height:4rem;color:#000;font-size:1.6rem;border-bottom:1px solid #e3e3e3;}
+.payment-box h2 .close-payment{position:absolute;left:.6rem;}
+.payment-box h2 .close-payment i{font-size:1.8rem;}
+.payment-box .payment-list{width:100%;height:4rem;line-height:4rem;border-bottom:1px solid #e3e3e3;display:block;}
+.payment-box input{float:right;margin-right:3%;margin-top:1.5rem;}
+.payment-box .payment-img{max-height:2rem;margin-left:3%;vertical-align:middle;}
+.payment-box .checked{outline:none;}
+.btn-submit{color:#fff;font-size:1.6rem;display:block;width:94%;height:3.5rem;line-height:3.5rem;text-align:center;background-color:$bbcywColor;border:none;cursor:pointer;margin:1rem auto 3rem;outline:none;border-radius: 3px;}
+/*vip模块*/
+.vip-banner{width:100%;}
+.vip-banner img{width:100%;}
+.swiper-container{width:94%;margin:0 auto;padding:1rem 0;}
+.vip-box{width:100%;}
+.vip-box .vip-list{border:1px solid #e5e5e5;width:32%;height:13rem;text-align:center;float:left;position:relative;margin-right:1%;background:#fff;}
+.vip-box .vip-money{font-size:1.6rem;line-height:3rem;}
+.vip-box .c-red{color:$bbcywColor;}
+.vip-box .info-line{color:#727272;font-size:1rem;padding: .2rem 0;}
+.vip-box .hook{border-left:1px solid $bbcywColor;border-top:1px solid $bbcywColor;width:20px;height:20px;line-height:20px;;position:absolute;right:0;bottom: 0;display:none;}
+.vip-box .site-icon{color:$bbcywColor;font-size:18px;}
+.vip-box .selected{border:1px solid $bbcywColor;}
+.vip-box .selected .hook{display:block;}
+/*提现模块*/
+.withdrawals{width:80%;padding:1rem 10%;background:#fff;margin: 1rem auto;}
+.withdrawals h2{font-size:1.5rem;color:#000;}
+.withdrawals-money{border-bottom:1px solid #dedede;padding:0rem 0;}
+.withdrawals-money .iconfont{font-size:3rem;color:#000;vertical-align:middle;}
+.withdrawals-money input{border:none;outline:none;background:none;height:3rem;line-height:3rem;width:80%;font-size:1.4rem;}
+.withdrawals p{color:#949494;font-size:1rem;line-height:3rem;}
+.withdrawals p a{color:#67a1ef;}
+.withdrawals-ts{color:#b9b9b9;line-height:3rem;text-align:center;margin-bottom:3rem;}
+.withdrawals-cont .btn-submit{margin-bottom:0;}
+
+/*个人中心-充值 end*/
+
+
+/*个人中心-关于帮帮创意*/
+.about-us{width:100%;margin:0 auto;background:#fff;}
+.about-info{width:94%;margin:0 auto;padding:1rem 0 2rem;}
+.about-info p{font-size:1.4rem;color:#595959;line-height:2rem;text-indent:2em;}
+.contact-info{width:94%;margin:0 auto;padding:1rem 0 2rem;}
+.contact-info h3{font-size:1.6rem;color:$bbcywColor;line-height:3rem;}
+.contact-info p{font-size:1.4rem;color:#595959;line-height:2rem;text-indent:2em;}
+
+/*个人中心-关于帮帮创意 end*/
+
+
+/*个人中心-账户设置*/
+.personal-set{width:100%;margin:0 auto 3rem;}
+.personal-set .form-group{width:94%;height:3rem;line-height:3rem;padding:0 3%;overflow:hidden;border-bottom:1px solid #d0d0d0;}
+.personal-set .control-label{float:left;width:15%;font-size:1.4rem;}
+.personal-set .control-input{float:right;width:85%;font-size:1.4rem;color:#b3b3b3;}
+.personal-set .control-input .form-control-static{text-align:right;width:94%;float:left;}
+.personal-set .form-photo{height:6rem;line-height:6rem;padding:1rem 3%;border-bottom:0;}
+.personal-set .form-photo .control-input{float:right;text-align:right;}
+.form-photo .avatar{max-height:6rem;margin-right:.5rem;}
+.personal-set .control-input .site-icon{float:right;}
+
+/*个人中心-账户设置 end*/
+
+
+/*个人中心-密码设置*/
+.personal-password{width:100%;margin:0 auto;}
+.p-info{background:#fff;width:100%;padding:2rem 0;}
+.p-info p{text-align:center;font-size:1.6rem;color:#000;line-height:2rem;}
+.p-info p span{color:#727272;font-size:1.4rem;}
+.p-input{background:#fff;width:100%;height:3rem;margin:1rem auto;}
+.p-input input{width:94%;padding:0 3%;height:3rem;line-height:3rem;border:none;font-size:1.4rem;}
+
+/*个人中心-密码设置 end*/
+
+
+/*个人中心-收支记录明细*/
+.sz-records{width:100%;}
+.sz-records ul li{float:left;width:94%;padding:1rem 3%;border-bottom:1px solid #e3e3e3;}
+.sz-records ul li .list-l{float:left;}
+.sz-records ul li .list-r{float:right;}
+.sz-records ul li .list-l .list-tit{font-size:1.6rem;color:#000;line-height:2rem;}
+.sz-records ul li .list-l .list-time{font-size:1.2rem;color:#727272;line-height:1.5rem;}
+.sz-records ul li .list-r .list-price{color:$bbcywColor;font-size:2rem;line-height:3.5rem;}
+
+/*个人中心-收支记录明细 end*/
+
+
+/*个人中心-收支记录共享分*/
+.share-numbox{width:100%;margin:5rem auto 0rem;}
+.share-icon{width:8rem;height:8rem;background:#2c9af7;border-radius:50%;margin:1rem auto;}
+.share-icon .iconfont{color:#fff;font-size:6rem;line-height:8rem;text-align:center;display:block;}
+.share-tit{font-size:1.6rem;color:#2e2e2e;text-align:center;}
+.share-num{font-size:4rem;color:#000;text-align:center;line-height:3.5rem;}
+.share-numbox .btn-submit{color:#fff;font-size:1.6rem;display:block;width:94%;height:3.5rem;line-height:3.5rem;text-align:center;background-color:$bbcywColor;border:none;cursor:pointer;margin:3rem auto 0rem;outline:none;}
+.share-numbox .btn-close{background:#d2d2d2;color:#000;margin:1rem auto 3rem;}
+
+/*个人中心-收支记录共享分 end*/
+
+
+/*个人中心-我的资源*/
+/*搜索*/
+.search-box{background:#e1e1e1;padding:0 3%;}
+.weui-search-bar {position: relative;display: -webkit-box;display: -webkit-flex;display: flex;box-sizing: border-box;background-color: #fff;border:1px solid #cccccc;border-radius:3px;}
+.weui-search-bar_form {position: relative;-webkit-box-flex: 1;-webkit-flex: auto;flex: auto;}
+.weui-search-bar_box {position: relative;padding:0 2.5rem;height: 100%;width: 100%;box-sizing: border-box;z-index: 1;}
+.weui-search-bar.weui-search-bar_focusing .weui-search-bar_cancel-btn {display: block;}
+.weui-search-bar.weui-search-bar_focusing .weui-search-bar_label {display: none;}
+.weui-search-bar_box .weui-icon-search {position: absolute;left: 10px;top: 0;line-height: 3rem;}
+.weui-icon-search {color: $bbcywColor;font-size: 1.4rem;}
+.weui-search-bar_label .weui-icon-search {margin-right: 5px;}
+.weui-search-bar_box .weui-search-bar_input{padding: 0 0;width: 100%;height: 3rem;border: 0;font-size: 1.4rem;line-height: 3rem;box-sizing: content-box;}
+.weui-search-bar_box .weui-icon-clear{position: absolute;
+top: 0;right: 0;padding: 0 10px;line-height: 3rem;}
+.weui-icon-clear{color: $bbcywColor;font-size: 1.4rem;}
+.weui-search-bar_label{position: absolute;top: 0px;right: 0px;bottom: 0px;left: 0px;z-index: 2;text-align: center;color: #727272;line-height:3rem;height:3rem;font-size: 1.4rem;background:#fff;}
+.weui-search-bar_cancel-btn{display: none;margin-right: 1rem;line-height: 3rem;color: $bbcywColor;white-space: nowrap;}
+
+/*更多*/
+.pic-more-box {padding: 0 1rem;}
+.pic-more-box .pic-more {color: #fff;background-color: $bbcywColor;display: block;width: 100%;text-align: center;font-size: 1.4rem;height: 3rem;line-height: 3rem;border-radius: 3px;}
+
+/*个人中心-我的资源 end*/

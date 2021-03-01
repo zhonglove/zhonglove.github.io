@@ -1,0 +1,32 @@
+@import 'module/page';//分页
+$bbcywColor: #f7372c;
+
+/*任务求助分类*/
+.subnav{}
+.title-box{width:100%;height:4rem;line-height:4rem;}
+.title-box .tit-name{color: $bbcywColor;font-size: 1.8rem;height: 4rem;line-height: 4rem;padding-left: 3%;}
+.title-box .small-text{font-size: 1.2rem;font-weight: normal;margin-left: 5px;}
+.main-link-box{padding:1rem 0;width:96%;margin:0 auto;}
+.main-link-box .link-list{width: 25%;float: left;}
+.main-link-box .links{color: #7c7c7c;font-size: 1.4rem;display: block;text-align: center;height: 3rem;line-height: 3rem;overflow: hidden;}
+.main-link-box .c-red .links{color: #fff;background-color: $bbcywColor;border-radius:4px;}
+
+/*任务求助列表*/
+.task-main{}
+.task-list{border-bottom:1px solid #e5e5e5;}
+.task-list .task-box{padding:1rem;}
+.task-list .user-link{}
+.task-line{}
+.task-list .user-img{display: block;width:3rem;height:3rem;float:left;}
+.task-list .user-name{color:#727272;font-size:1.4rem;text-align:center;float:left;line-height:3rem;margin-left:1rem;}
+.task-list .task-time{color:#727272;font-size:1.4rem;float:right;line-height:3rem;}
+.task-list .task-name{color:#000;font-size:1.6rem;line-height:2rem;padding:.6rem 0;}
+.task-list .task-name a{color:#000;}
+.task-list .task-points{color:$bbcywColor;font-size:1.6rem;}
+.task-list .task-top{background:$bbcywColor;font-size:1rem;color:#fff;padding:.1rem .3rem;border-radius:3px;margin:0 .5rem;border:1px solid $bbcywColor;}
+.task-list .task-sjtg{border:1px solid $bbcywColor;font-size:1rem;color:$bbcywColor;padding:.1rem .3rem;border-radius:3px;}
+.task-list .task-num{color:#727272;line-height:3rem;font-size:1rem;float:left;}
+.task-list .c-blue{color:#50a9e8;padding-right:1rem;}
+.task-list .task-date{color:#727272;line-height:3rem;font-size:1rem;float:right;}
+
+/*end*/

@@ -1,0 +1,27 @@
+@import 'module/page';//分页
+
+.article{background: #fff;padding: 30px;margin: 10px 0 20px;}
+.article .itemTitle{padding-bottom:5px;height: 18px;border-bottom: 1px solid #e5e5e5;position: relative;}
+.article .itemTitle p{display: inline-block;position: absolute;bottom: -1px;color: #f7372c;font-size: 18px;border-bottom: 1px solid #f7372c;}
+.article .itemBody{padding: 0px 0 0px 0px;}
+
+.show-pic{margin-left:-20px;overflow:hidden;}
+.show-pic .list{float:left;margin-left:20px;width:145px;margin-top:20px;padding-bottom:10px;}
+.show-pic .img-box{background-color:#fff;height:180px;}
+
+.show-pic .img-box .link{width:152px; display:table-cell; text-align:center; height:180px;  line-height:180px;vertical-align:middle;position: relative;}
+.show-pic .img{vertical-align:middle; margin:auto 0px; max-width:152px;max-height:180px; z-index:1;overflow:hidden;} 
+.show-pic .img-box .link .site-icon{position: absolute;right: 3px;bottom: 0;height: auto;line-height: normal;font-size: 20px;}
+
+.show-pic .pic-info{padding-top:16px;text-align:center;}
+.show-pic .pic-name{color:#4c4f53;font-size:14px;height:42px;overflow: hidden;}
+.show-pic .pic-name .link{color:#4c4f53;}
+.show-pic .pic-name .link:hover{color:#ff0000;text-decoration:underline}
+.show-pic .pic-browse{color:#9c9c9c;}
+.show-pic .avatar{width: 100px;height: 100px;border-radius: 50%;display: block;margin: 0 auto;}
+.show-pic .user-name{font-size: 14px;color: #727272;height: 20px;line-height: 20px;margin-top: 16px;overflow: hidden;}
+.show-pic .user-name:hover{color: #2c9ff7;text-decoration: underline;}
+.show-pic .published{font-size: 12px;color: #727272;height: 20px;line-height: 20px;overflow: hidden;}
+.show-pic .published .num{color:#3390d0;}
+
+.page-main{padding-top: 40px;}

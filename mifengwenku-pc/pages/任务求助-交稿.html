@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>模板-帮帮创意</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/delivery.css" />
+
+</head>
+<body>
+<!--header-->
+<div class="site-topbar">
+	<div class="container clearfix">
+		<div class="top-info fl">专业文档和设计素材分享社区</div>
+		<div class="link-box fr">
+			<a class="link-list" href=""><i class="site-icon iconfont">&#xe78e;</i>登录</a>
+			<a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe672;</i>注册</a>
+			<a class="link-list help" href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<div class="site-header">
+	<div class="container header-center clearfix">
+		<div class="header-logo">
+			<a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意"></a>			
+		</div>
+		<a class="release-btn" href=""><i class="site-icon iconfont">&#xe636;</i>发布资源</a>		
+		<div class="header-search">
+			<input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+			<input class="search-btn iconfont" type="submit" value="&#xe601;" />			
+		</div>
+	</div>
+	<div class="header-nav">
+		<div class="container clearfix">
+			<div class="sort-box" id="sort-box" data-type="false">
+				<h2 class="sort-title"><i class="site-icon iconfont">&#xe761;</i>全部分类</h2>
+				<div class="menu-list-box">
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">市场营销</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">营销策划</a>
+							<a class="link" href="">产品规划</a>
+							<a class="link" href="">渠道管理</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">分析报告</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">管理咨询工具</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">战略咨询工具</a>
+							<a class="link" href="">营销咨询工具</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">设计素材</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">标志</a>
+							<a class="link" href="">VI模板</a>
+							<a class="link" href="">海报</a>
+							<a class="link" href="">海报</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">高清图片</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">人物图片</a>
+							<a class="link" href="">风景图片</a>
+							<a class="link" href="">世界风光</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">管理文档</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">企业管理</a>
+							<a class="link" href="">财务管理</a>
+							<a class="link" href="">人力资源</a>
+						</dd>
+					</dl>
+					<dl class="menu-list list-last">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">更多资源</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">行业资料</a>
+							<a class="link" href="">PPT模板</a>
+							<a class="link" href="">办公文档</a>
+						</dd>
+					</dl>
+				</div>
+				<ul class="menu-cont">
+					<li class="cont-list">
+						<h3 class="tit-name"><a class="link" href="">市场营销全部</a></h3>
+						<div class="cont-link clearfix">
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+						</div>
+					</li>
+					<li class="cont-list">
+						<h3 class="tit-name"><a class="link" href="">分析报告全部</a></h3>
+						<div class="cont-link clearfix">
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+						</div>
+					</li>
+					<li class="cont-list">3</li>
+					<li class="cont-list">4</li>
+					<li class="cont-list">5</li>
+					<li class="cont-list">6</li>
+					<li class="cont-list">7</li>
+				</ul>
+			</div>
+			<ul class="nav-list clearfix" id="nav-list">
+				<li class="nav-item"><a class="link" href="">首页</a></li>
+				<li class="nav-item"><a class="link" href="">专题</a></li>
+				<li class="nav-item"><a class="link" href="">话题</a></li>
+				<li class="nav-item"><a class="link" href="">教程</a></li>
+				<li class="nav-item"><a class="link" href="">排行榜</a></li>
+				<li class="nav-item"><a class="link" href="">任务求助</a></li>
+				<li class="nav-item">
+					<a class="link" href="">活动<i class="site-icon iconfont">&#xe634;</i></a>
+					<div class="more-cont">
+						<ul class="nav-more-box">
+							<li class="more-list"><a class="more-link" href="">上传比赛</a></li>
+							<li class="more-list"><a class="more-link" href="">赞助帮帮创意</a></li>
+							<li class="more-list"><a class="more-link" href="">通知</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--/header-->
+
+<div class="container">
+	<!--面包屑-->
+	<div class="crumbs-box">
+		<i class="site-icon iconfont">&#xe659;</i>
+		<a class="crumbs-link" href="">帮帮创意</a>
+		<span class="crumbs-arrow">></span>
+		<a class="crumbs-link" href="">首页</a>
+		<span class="crumbs-arrow">></span>
+		<a class="crumbs-link" href="">任务求助</a>
+		<span class="crumbs-arrow">></span>
+		<span class="crumbs-name">交稿</span>
+	</div>
+	<!--/面包屑-->
+	<div class="bbcy-list clearfix">
+		<div class="warp-l">
+			<div class="layout">
+				<div class="title-box clearfix">
+					<h3 class="tit-name">棉被的管理规定</h3>
+					<div class="tit-rxpand">
+						<a href="javascript:;"><i class="site-icon iconfont select">&#xe640;</i></a>
+						<span class="site-line">|</span>
+						<a href="javascript:;"><i class="site-icon iconfont">&#xe638;</i></a>
+					</div>
+				</div>
+				<div class="regulations">
+					<div class="privilege">
+						<span class="link-list"><i class="site-icon iconfont">&#xe64b;</i>1人独享赏金</span>
+						<span class="link-list"><i class="site-icon iconfont">&#xe64b;</i>已托管赏金</span>
+					</div>
+					<h3 class="regu-tit">描述 : </h3>
+					<p class="regu-info">部门购买棉被，发放给经常出差的员工，需要员工自己清洗和保管，有效期为3年，怎么下发管理规定。</p>
+				</div>
+				<div class="timeline-box">
+					<ul class="last-time clearfix">
+						<li class="time-list"></li>
+						<li class="time-list"><i class="site-icon iconfont">&#xe647;</i>剩余时间：<span>7 天 8 时 24 分</span></li>
+						<li class="time-list"></li>
+						<li class="time-list"></li>
+					</ul>
+					<div class="timeline clearfix">
+						<i class="site-icon c-red iconfont">&#xe64c;</i>
+						<div class="line c-red"></div>
+						<i class="site-icon c-red iconfont">&#xe64c;</i>
+						<div class="line"></div>
+						<i class="site-icon iconfont">&#xe64c;</i>
+						<div class="line"></div>
+						<i class="site-icon iconfont">&#xe64c;</i>
+					</div>
+					<ul class="timeline-b clearfix">
+						<li class="line-list">
+							<h4 class="line-tit">开始</h4>
+							<p class="line-time">2016-12-21</p>
+						</li>
+						<li class="line-list">
+							<h4 class="line-tit">交稿</h4>
+							<p class="line-time">2016-12-28</p>
+						</li>
+						<li class="line-list">
+							<h4 class="line-tit">选稿</h4>
+						</li>
+						<li class="line-list">
+							<h4 class="line-tit">结束</h4>
+						</li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+		<div class="warp-r">
+			<!--用户信息-->
+			<div class="layout">
+				<div class="user-box">
+					<a href=""><img class="user-img" src="images/avatar.png"></a>
+					<h2 class="user-name"><a class="link" href="">666666</a></h2>
+					<div class="user-info clearfix user-topic">
+						<p class="info-list">托管：<span class="c-red">1000共享分</span></p>
+						<p class="info-list">发表于：2016.02.30 11：20</p>
+					</div>
+				</div>
+			</div>
+			<div class="user-btn clearfix">
+				<a class="btn-line" href="">我要交稿</a>
+				<a class="btn-line c-blue" href="">发布其他求助</a>				
+			</div>
+			<!--/用户信息-->
+		</div>
+	</div>
+	<div class="bbcy-list" id="delivery-main">
+		<div class="layout">
+			<div class="title-box clearfix">
+				<h3 class="tit-name">我要交稿</h3>
+				<div class="tit-rxpand">
+					<a href="javascript:;" class="delivery-close"><i class="site-icon iconfont">&#xe79a;</i></a>
+				</div>
+			</div>
+			<div class="delivery-box">
+				<textarea class="delivery-cont" placeholder="剩余500字符…"></textarea>
+				<div class="delivery-info clearfix">
+					<div class="delivery-l">
+						<input type="file">
+						<div class="control-input">
+							<label class="terms"><input class="checkbox" type="checkbox" checked="checked">我已阅读并接受</label>
+							<a class="terms-link" href="#">《交稿协议》</a>
+						</div>
+					</div>
+					<input class="delivery-r" type="submit" value="提交">
+				</div>				
+			</div>
+		</div>		
+	</div>
+	<!--bottom-->
+	<div class="bbcy-list clearfix" style="margin-bottom: 40px">
+		<div class="warp-l">
+			<div class="layout">
+					<div class="content-box tabSwitch">
+						<div class="filter-nav">
+							<a class="link-list select" href="">全部（8）</a>
+							<a class="link-list" href="">未处理（8）</a>
+							<a class="link-list" href="">中标（8）</a>
+							<a class="link-list" href="">淘汰（8）</a>
+						</div>
+						<ul class="module-nav clearfix">
+							<li class="link-list switchNav active">
+								<a class="link" href="javascript:;">已交稿</a>
+							</li>
+							<li class="link-list switchNav">
+								<a class="link" href="javascript:;">交易说明</a>
+							</li>
+						</ul>
+						<div class="module-cont">
+							<div class="cont-list switchCont active">
+
+								<dl class="cross-list clearfix">
+									<dt class="cross-l">
+										<a href="" class="user-link">
+											<img class="user-img" src="images/avatar.png">
+											<h2 class="user-name ellipsis">一山设计一山设计一山设计</h2>
+										</a>
+									</dt>
+									<dd class="cross-r">
+										<div class="triangle"></div>
+										<img class="cross-img zb" src="images/zb.png">
+										<div class="cross-info clearfix">
+											<div class="cross-file">
+												<i class="site-icon doc iconfont">&#xe613;</i>
+												<p class="cross-name">道客巴巴：2016年收···</p>
+											</div>
+											<div class="cross-file">
+												<i class="site-icon pdf iconfont">&#xe60f;</i>
+												<p class="cross-name">道客巴巴：2016年收···</p>
+											</div>
+											<p class="cross-time">2016.03.30   12:30</p>
+										</div>
+										<p class="cross-details">详情：您好，，根据你的四点要求，精心为你编辑此文章，，，望采纳，谢谢详情：您好，，根据你的四点要求，精心为你编辑此文章，，，望采纳，谢谢详情：您好，，根据你的四点要求，精心为你编辑此文章，，，望采纳，谢谢</p>
+									</dd>
+								</dl>
+								<dl class="cross-list clearfix">
+									<dt class="cross-l">
+										<a href="" class="user-link">
+											<img class="user-img" src="images/avatar_02.png">
+											<h2 class="user-name ellipsis">一山设计一山设计一山设计</h2>
+										</a>
+									</dt>
+									<dd class="cross-r">
+										<div class="triangle"></div>
+										<img class="cross-img tt" src="images/tt.png">
+										<div class="cross-info clearfix">
+											<div class="cross-file">
+												<i class="site-icon doc iconfont">&#xe613;</i>
+												<p class="cross-name">道客巴巴：2016年收···</p>
+											</div>
+											<p class="cross-time">2016.03.30   12:30</p>
+										</div>
+										<p class="cross-details">详情：您好，，根据你的四点要求，精心为你编辑此文章，，，望采纳，谢谢</p>
+									</dd>
+								</dl>
+								<dl class="cross-list clearfix">
+									<dt class="cross-l">
+										<a href="" class="user-link">
+											<img class="user-img" src="images/avatar_02.png">
+											<h2 class="user-name ellipsis">一山设计一山设计一山设计</h2>
+										</a>
+									</dt>
+									<dd class="cross-r">
+										<div class="triangle"></div>
+										<img class="cross-img tt" src="images/tt.png">
+										<div class="cross-info clearfix">
+											<div class="cross-file">
+												<i class="site-icon doc iconfont">&#xe613;</i>
+												<p class="cross-name">道客巴巴：2016年收···</p>
+											</div>
+											<p class="cross-time">2016.03.30   12:30</p>
+										</div>
+										<p class="cross-details">详情：您好，，根据你的四点要求，精心为你编辑此文章，，，望采纳，谢谢</p>
+									</dd>
+								</dl>
+								<dl class="cross-list clearfix">
+									<dt class="cross-l">
+										<a href="" class="user-link">
+											<img class="user-img" src="images/avatar_02.png">
+											<h2 class="user-name ellipsis">一山设计一山设计一山设计</h2>
+										</a>
+									</dt>
+									<dd class="cross-r">
+										<div class="triangle"></div>
+										<img class="cross-img tt" src="images/tt.png">
+										<div class="cross-info clearfix">
+											<div class="cross-file">
+												<i class="site-icon doc iconfont">&#xe613;</i>
+												<p class="cross-name">道客巴巴：2016年收···</p>
+											</div>
+											<p class="cross-time">2016.03.30   12:30</p>
+										</div>
+										<p class="cross-details">详情：您好，，根据你的四点要求，精心为你编辑此文章，，，望采纳，谢谢</p>
+									</dd>
+								</dl>
+								<dl class="cross-list clearfix">
+									<dt class="cross-l">
+										<a href="" class="user-link">
+											<img class="user-img" src="images/avatar_02.png">
+											<h2 class="user-name ellipsis">一山设计一山设计一山设计</h2>
+										</a>
+									</dt>
+									<dd class="cross-r">
+										<div class="triangle"></div>
+										<img class="cross-img tt" src="images/tt.png">
+										<div class="cross-info clearfix">
+											<div class="cross-file">
+												<i class="site-icon doc iconfont">&#xe613;</i>
+												<p class="cross-name">道客巴巴：2016年收···</p>
+											</div>
+											<p class="cross-time">2016.03.30   12:30</p>
+										</div>
+										<p class="cross-details">详情：您好，，根据你的四点要求，精心为你编辑此文章，，，望采纳，谢谢</p>
+									</dd>
+								</dl>
+								<dl class="cross-list clearfix">
+									<dt class="cross-l">
+										<a href="" class="user-link">
+											<img class="user-img" src="images/avatar_02.png">
+											<h2 class="user-name ellipsis">一山设计一山设计一山设计</h2>
+										</a>
+									</dt>
+									<dd class="cross-r">
+										<div class="triangle"></div>
+										<img class="cross-img tt" src="images/tt.png">
+										<div class="cross-info clearfix">
+											<div class="cross-file">
+												<i class="site-icon doc iconfont">&#xe613;</i>
+												<p class="cross-name">道客巴巴：2016年收···</p>
+											</div>
+											<p class="cross-time">2016.03.30   12:30</p>
+										</div>
+										<p class="cross-details">详情：您好，，根据你的四点要求，精心为你编辑此文章，，，望采纳，谢谢</p>
+									</dd>
+								</dl>
+
+
+								
+
+							</div>
+							<div class="cont-list switchCont" style="padding-left: 30px;">aaa</div>
+						</div>
+					</div>
+        
+
+
+			</div>
+		</div>
+		<div class="warp-r">
+			<!--中标动态-->
+			<div class="layout">
+				<div class="title-box clearfix">
+					<h3 class="tit-name">中标动态</h3>
+				</div>
+				<div class="ranking-box">
+					<div class="ranking-list">
+						<div class="user-t clearfix">
+							<div class="user-img-box"><a href="" target="_blank"><img class="user-img" src="images/avatar_02.png"></a></div>
+							<div class="ranking-info">
+								<a href="" target="_blank">
+									<p class="info-line f-size">沉默的太阳花</p>
+									<p class="info-line"><i class="site-icon iconfont">&#xe647;</i>6天前</p>
+								</a>
+							</div>
+						</div>
+						<div class="user-b">
+							<a href="" target="_blank">
+							<p class="info-line c-blue">关注微信赠送积分</p>
+							<p class="info-line"><i class="site-icon iconfont">&#xe648;</i><span class="c-red">1000共享分</span></p>
+							<div class="triangle"></div>
+							</a>
+						</div>
+					</div>
+					<div class="ranking-list">
+						<div class="user-t clearfix">
+							<div class="user-img-box"><a href="" target="_blank"><img class="user-img" src="images/avatar.png"></a></div>
+							<div class="ranking-info">
+								<a href="" target="_blank">
+									<p class="info-line f-size">沉默的太阳花</p>
+									<p class="info-line"><i class="site-icon iconfont">&#xe647;</i>6天前</p>
+								</a>
+							</div>
+						</div>
+						<div class="user-b">
+							<a href="" target="_blank">
+							<p class="info-line c-blue">关注微信赠送积分</p>
+							<p class="info-line"><i class="site-icon iconfont">&#xe648;</i><span class="c-red">1000共享分</span></p>
+							<div class="triangle"></div>
+							</a>
+						</div>
+					</div>
+					<div class="ranking-list">
+						<div class="user-t clearfix">
+							<div class="user-img-box"><a href="" target="_blank"><img class="user-img" src="images/avatar_02.png"></a></div>
+							<div class="ranking-info">
+								<a href="" target="_blank">
+									<p class="info-line f-size">沉默的太阳花</p>
+									<p class="info-line"><i class="site-icon iconfont">&#xe647;</i>6天前</p>
+								</a>
+							</div>
+						</div>
+						<div class="user-b">
+							<a href="" target="_blank">
+							<p class="info-line c-blue">关注微信赠送积分</p>
+							<p class="info-line"><i class="site-icon iconfont">&#xe648;</i><span class="c-red">1000共享分</span></p>
+							<div class="triangle"></div>
+							</a>
+						</div>
+					</div>
+					<div class="ranking-list">
+						<div class="user-t clearfix">
+							<div class="user-img-box"><a href="" target="_blank"><img class="user-img" src="images/avatar_02.png"></a></div>
+							<div class="ranking-info">
+								<a href="" target="_blank">
+									<p class="info-line f-size">沉默的太阳花</p>
+									<p class="info-line"><i class="site-icon iconfont">&#xe647;</i>6天前</p>
+								</a>
+							</div>
+						</div>
+						<div class="user-b">
+							<a href="" target="_blank">
+							<p class="info-line c-blue">关注微信赠送积分</p>
+							<p class="info-line"><i class="site-icon iconfont">&#xe648;</i><span class="c-red">1000共享分</span></p>
+							<div class="triangle"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/中标动态-->
+			<div class="adv-box">
+				<a href=""><img src="images/adv/adv_01.jpg"></a>
+			</div>
+			<div class="adv-box">
+				<a href=""><img src="images/adv/adv_02.jpg"></a>
+			</div>
+		</div>		
+	</div>
+	<!--/bottom-->
+
+</div>
+
+<script type="text/javascript">
+	
+$(".tabSwitch").tabSwitch({eventType: "click"});
+
+$.fn.closeCont = function(options){
+	var options = $.extend({
+		eventType: "click",
+		closeBtn: ".delivery-close"
+	},options||{});
+	return this.each(function(){
+		var _this = $(this);
+		_this.find(options.closeBtn).bind(options.eventType,function(){
+			_this.hide();
+		});
+	});
+}
+$("#delivery-main").closeCont();
+
+</script>
+
+<!--footer-->
+<div class="site-footer">
+	<div class="container">
+		<div class="footer-links clearfix">
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+				<dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+				<dd class="link-list"><a class="link" href="#">话题</a></dd>
+				<dd class="link-list"><a class="link" href="#">教程</a></dd>
+				<dd class="link-list"><a class="link" href="#">排行榜</a></dd>
+				<dd class="link-list"><a class="link" href="#">任务求助</a></dd>
+				<dd class="link-list"><a class="link" href="#">活动</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+				<dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+				<dd class="link-list"><a class="link" href="#">共享分与帮币</a></dd>
+				<dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+				<dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+				<dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+				<dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">关于帮帮创意</a></dt>
+				<dd class="link-list"><a class="link" href="#">帮帮创意简介</a></dd>
+				<dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+				<dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+				<dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+				<dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+			</dl>
+			<dl class="col-links links-last">
+				<dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+				<dd class="link-list">工作时间</dd>
+				<dd class="link-list">周一至周五</dd>
+				<dd class="link-list">9：00-17：30</dd>
+			</dl>
+			<div class="foots-logo">
+				<img class="logo-img" src="images/logo.png">
+				<p class="logo-info">专业文档和设计素材分享社区</p>
+			</div>			
+			<div class="we-chat">
+				<img class="we-chat-img" src="images/cody.png">
+				<p class="we-chat-info">关注微信公众平台</p>
+			</div>
+		</div>
+		<div class="copyright-box">
+			<p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有<a class="site-map-link" href="">网站地图</a></p>
+			<p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+		</div>
+	</div>
+</div>
+<!--/footer-->
+
+</body>
+</html>

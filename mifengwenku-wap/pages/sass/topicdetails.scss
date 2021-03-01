@@ -1,0 +1,40 @@
+$bbcywColor: #f7372c;
+/*头部固定*/
+.wrapper{padding-top: 4.3rem;}
+.header-02{position: fixed;left: 0;top: 0;width: 100%;z-index: 3;background-color: #fff}
+/*头部固定 end*/
+/*话题详情内容*/
+.details-cont{padding-top:1rem;}
+.details-cont .details-tit{color:#000;font-size:2rem;padding:1rem;}
+.details-cont .d_tit{color:#727272;font-size:1rem;line-height:2rem;padding:0 1rem 1rem 1rem;}
+.details-cont .d_tit span{margin-right:1rem;}
+.details-cont .info-main{padding:0 1rem;}
+.details-cont img, .details-cont input{max-width:100%;}
+.details-cont, .details-cont p, .details-cont span, .details-cont div, .details-cont li, .details-cont td, .details-cont ul{font-size:1.4rem;color:#727272;}
+/*点赞*/
+.praise-box{padding:2rem 0;;}
+.praise{border:2px solid #d1d1d1;width:50px;height:50px;display:block;margin:0 auto;border-radius:50%;text-align:center;color:#c4c4c4;}
+.praise .praise-num{font-size:1.4rem;color:#c4c4c4;padding:3px 0 0px;}
+.praise .site-icon{font-size:20px;line-height:20px;}
+
+/*最近留言*/
+.comment-list{background:#f5f5f5;width:100%;}
+.title-box{padding:1rem 0;}
+.title-box .tit-name{color:#727272;font-size:1.5rem;line-height:2rem;vertical-align:middle;text-align:center;} 
+.title-box .tit-name span{width:30%;display:block;height:1px;background:#b7b7b7;margin-top:1rem;}
+.title-box .comment-write{color:$bbcywColor;font-size:1.5rem;margin-right:1rem;}
+.title-box .comment-write .comment-icon{color:$bbcywColor;font-size:1.8rem;margin-left:2px;}
+
+.comment-box{border-bottom:1px dashed #c9c9c9;padding:1rem;}
+.comment-user{width:20%;}
+.comment-user .user-img{display:block;width:50px;height:50px;}
+.comments-info{width:80%;}
+.comments-info .user-name{color:#727272;font-size:1.4rem;line-height:2rem;}
+.comments-info .link{color:#727272;}
+.comment-list .comment-cont{color:#727272;font-size:1.4rem;line-height:2.2rem;}
+.comments-info .like-box .comment-time{color:#00a0e9;font-size:1.2rem;}
+.comments-info .like-box .like-list{color:#00a0e9;vertical-align:middle;}
+.comments-info .like-box .site-icon{margin-right:5px;font-size:1.4rem;color:$bbcywColor;}
+.comment-box:last-child{border-bottom:0px;}
+
+/*end*/

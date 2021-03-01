@@ -1,0 +1,35 @@
+@import 'module/crumbs';//面包屑
+@import 'module/page';//分页
+@import 'module/toolbar';//右侧导航
+@import 'module/title';//title
+@import 'module/news';//右侧新闻
+@import 'module/subnav';//列表页子导航
+@import 'module/topic';//列表内容
+
+.bbcy-list{padding-bottom:40px;}
+.bbcy-list .layout{background-color:#fff;margin-bottom:5px;}
+/*左侧*/
+.bbcy-list .warp-l{width:895px;float:left;}
+.topic-list-box{padding:30px 25px;}
+.topic-list .topic-l{width:195px;height:147px;border:0 none;background-color: #fff;}
+.topic-list .topic-l a{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 195px;
+    height: 147px;
+    line-height: 147px;
+}
+.topic-list .topic-img{
+  vertical-align: middle;
+  margin: auto 0px;
+  max-width: 195px;
+  max-height: 147px;
+  overflow: hidden;
+  display:inline;
+  height: auto;
+}
+
+/*左侧 end*/
+.bbcy-list .warp-r{width: 300px;float:right;}
+

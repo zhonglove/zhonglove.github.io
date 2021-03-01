@@ -1,0 +1,54 @@
+@import 'module/crumbs';//面包屑
+@import 'module/news';//右侧新闻
+@import 'module/toolbar';//右侧导航
+@import 'module/title';//title
+@import 'module/search';//相关搜索
+@import 'module/keywords';//相关标签
+@import 'module/related';//相关话题
+@import 'module/userinfo';//用户信息
+
+.bbcy-list{padding-bottom:40px;}
+.bbcy-list .layout{background-color:#fff;margin-bottom:5px;}
+/*左侧*/
+.bbcy-list .warp-l{width:895px;float:left;}
+
+.details-cont{padding-top:20px;}
+.details-cont h1{color:#000;font-size:24px;text-align:center;padding:30px;}
+.details-cont .info-main{padding:0 47px 40px;}
+.details-cont img, .details-cont input{max-width:800px;}
+.details-cont, .details-cont p, .details-cont span, .details-cont div, .details-cont li, .details-cont td, .details-cont ul{font-size:16px;color:#727272;}
+
+.praise-box{padding-bottom:60px;}
+.praise{border:2px solid #d1d1d1;width:88px;height:88px;display:block;margin:0 auto;border-radius:50%;text-align:center;color:#c4c4c4;}
+.praise .praise-num{font-size:18px;color:#c4c4c4;padding:8px 0 4px;}
+.praise .site-icon{font-size:40px;line-height:40px;}
+
+/*发表评论*/
+.comment-user{}
+.comment-user .user-img{display:block;width:50px;height:50px;float:left;}
+.comment-user .user-name{color:#727272;font-size:18px;float:left;line-height:50px;padding-left:12px;}
+.comment-user .link{color:#727272;}
+.comment-user .comment-time{color:#00a0e9;font-size:14px;padding-left:40px;}
+.comment-box{margin:16px 24px 20px;border-top:1px dashed #c9c9c9;padding-top:20px;padding-bottom:30px;}
+.comment-box .comment-text{border:1px solid #c4c4c4;width:97%;padding-left:2%;height:150px;margin:16px 0 20px;font-size:16px;padding-top:4px;}
+.comment-box .comment-btn{background-color:#00a0e9;color:#fff;font-size:18px;display:block;width:130px;height:40px;border:0 none;border-radius:6px;cursor:pointer;float:left;}
+.comment-box .comment-error{color:red;font-size:14px;float:left;height:40px;line-height:40px;padding-left:20px;}
+.comment-list{}
+.comment-list .comment-tit{color:#626262;font-weight:normal;}
+.comment-list .comment-line{color:#626262;font-weight:normal;padding:0 8px;}
+.comment-list .comment-tit.select{font-weight:bold;}
+.comment-list .comment-input{display:none;}
+.comment-list .comment-cont{color:#727272;font-size:16px;padding:16px 0 20px}
+
+.comments-box{}
+.comments-box:last-child{border-bottom:none;}
+.comments-box .comments-btn{float:left;color:#b6b6b6;font-size:14px;}
+.comments-box .comments-btn .site-icon{font-size:16px;margin-right:10px;}
+.comments-box .like-box{float:right;font-size:14px;}
+.comments-box .like-box .like-list{color:#b6b6b6;}
+.comments-box .like-box .site-icon{font-size:16px;margin-left:10px;vertical-align:middle;margin-right:6px;}
+.comments-box .list-01 .site-icon{vertical-align:2px;}
+/*发表评论 end*/
+/*左侧 end*/
+.bbcy-list .warp-r{width: 300px;float:right;}
+

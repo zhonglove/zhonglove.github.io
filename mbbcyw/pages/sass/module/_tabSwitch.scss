@@ -1,0 +1,10 @@
+/*tabs*/
+.content-box{}
+.content-box .cont-list{display: none;}
+.content-box .cont-list.active{display: block;}
+/*tabs end*/
+.content-box .module-nav{border-bottom: 1px solid #ddd;text-align: center;}
+.content-box .switchNav{display: inline-block;font-size: 1.5rem;padding: 4px 6px 8px;margin: 0 .6rem -1px;}
+.content-box .link{color: #727272;}
+.content-box .switchNav.active{border-bottom:2px solid #ff0000;}
+.content-box .switchNav.active .link{color: #ff0000;}

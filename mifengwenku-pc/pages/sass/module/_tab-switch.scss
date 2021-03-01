@@ -1,0 +1,11 @@
+.content-box{background-color: #fff;}
+.content-box .module-nav{border-bottom:1px solid #ddd;}
+.content-box .link-list{float:left;margin:0 16px -1px 0;position:relative}
+.content-box .link-list .link{display:block;color: #727272;font-size:18px;padding:6px 4px;}
+.content-box .link-list.active{border-bottom:3px solid #ff0000;}
+.content-box .link-list.active .link{color: #f7372c;}
+
+
+.content-box .module-cont{padding-top:30px}
+.content-box .cont-list{display:none;}
+.content-box .cont-list.active{display:block}

@@ -1,0 +1,27 @@
+@import 'module/swiper';//swiper
+html, body {
+    position: relative;
+    height: 100%;
+}
+.wrapper,.sort-box{height: 100%;}
+/*tabs*/
+#tabSwitch .switchCont{display: none;}
+#tabSwitch .switchCont.active{display: block;}
+/*tabs end*/
+.header-03{position: fixed;top: 0;left: 0;height: 4.3rem;width: 100%;z-index: 999;}
+
+.heder-home .iconfont{color: #fff;font-size: 1.6rem;}
+.header-title{color: #fff;display: inline-block;font-size: 1.8rem;}
+// .sort-box{padding-top: 5rem;}
+.sort-box{width: 100%;height: calc(100% - 4.3rem);position: fixed;top:4.3rem;left: 0;overflow: auto;}
+.sort-box .sort-left{width: 33%;float: left;background: rgb(247, 247, 247);height: 100%;}
+.sort-box .sort-right{width: 67%;float: right;height: 100%;overflow-y: scroll;}
+.sort-box .sort-left li{font-size: 1.4rem;height: 4rem;line-height: 4rem;padding-left: 1.3rem;color: rgb(74,74,74);white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.sort-box .sort-left li.active{background: #fff;border-left:.4rem solid red;padding-left:.9rem;}
+.sort-rightT{border-bottom: 1px solid rgb(229, 229, 229);padding-bottom: 1rem;}
+.sort-rightT span{display: inline-block;color:#000;font-size:1.5rem;padding: .8rem 0 0rem 1.5rem;}
+.sort-rightT .rightT-right{float: right;margin-top: .8rem;margin-right: 1rem;}
+.sort-rightT .rightT-right .iconfont{font-size: 1.5rem;color: rgb(124, 124, 124)}
+.sort-right-article{padding: .5rem 1rem;}
+.sort-right-article .article-item{font-size: 1.4rem;color: rgb(124, 124, 124);margin: .5rem .4rem .2rem 0;display: inline-block;padding: .6rem 1.2rem;border: 1px solid rgb(229, 229, 229);border-radius: .3rem;}
+.sort-right-article .article-item.select{background-color: #ebebeb;}

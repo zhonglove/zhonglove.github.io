@@ -1,0 +1,24 @@
+@charset "utf-8";
+*{word-wrap:break-word}
+body{background:#FFF}
+body,button,input,select,textarea{font:1.2rem/1.5 Tahoma,'Microsoft Yahei','SimSun',sans-serif;color:#333}
+textarea{resize:none}
+body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,li,ol,p,ul,input,textarea{margin:0;padding:0}
+table{empty-cells:show;border-collapse:collapse}
+caption,th{text-align:left;font-weight:400}
+ul li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:1em;font-weight:normal;}
+cite,em,i{font-style:normal}
+a{color:#333;text-decoration:none}
+a img{border:none}
+label{cursor:pointer}
+input{outline:none}
+.fl{float:left}
+.fr{float:right}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom:1}
+.ellipsis{ display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.flexbox{display:box;display:-ms-box;display:-webkit-box;display:flex;display:-ms-flex;display:-webkit-flex}
+.flexbox > *{display:block;flex:1;-ms-flex:1;-webkit-flex:1;box-flex:1;-ms-box-flex:1;-webkit-box-flex:1}
+
+$bbcywColor: #f7372c;

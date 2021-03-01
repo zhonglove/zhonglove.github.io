@@ -1,0 +1,14 @@
+@import 'module/tabSwitch';//tabSwitch
+@import 'module/page';//分页
+@import 'module/topic';
+
+.my-document{padding: 1rem;}
+
+.topic-list-home{padding: .6rem 0 0;}
+.topic-list-home .topic-list{padding-bottom: .4rem;}
+.topic-list-home .topic-list .topic-l{width: 20%;}
+.topic-list-home .topic-list .topic-r{width: 77%;}
+.topic-list-home .topic-list .list-name{-webkit-line-clamp: 1;}
+.topic-list-home .topic-list .post-oper{padding-top: .2rem;}
+.topic-list-home .topic-l{border: none;height: auto;}
+.topic-list-home .file-format-icon{width: 100%}

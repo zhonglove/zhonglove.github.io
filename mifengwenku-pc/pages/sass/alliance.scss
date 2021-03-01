@@ -1,0 +1,56 @@
+@import 'module/page';//分页
+
+.alliance-banner{height:393px;background:url(../images/alliance/alliance_banner.jpg) no-repeat center top;}
+
+.tabSwitch .switchCont{display: none;padding-bottom: 26px;}
+.tabSwitch .switchCont.active{display: block;}
+
+.module-nav-wapper{background-color: #efefef;height: 68px;}
+.module-nav-wapper .container{position: relative;}
+.module-nav-wapper .join-alliance-btn{position: absolute;right: 0;top: -11px;background-color: #ffe512;display: block;height: 79px;line-height: 79px;min-width: 290px;color: #f7372c;font-size: 24px;text-align: center;}
+.module-nav-wapper .join-alliance-btn .triangle{position: absolute;left: -8px;top: 0;display: block;width: 0;height: 0;border-color:#d1a00e transparent;border-width: 0 0 11px 8px;border-style: solid;}
+
+.module-nav-wapper .switchNav{float: left;}
+.module-nav-wapper .switchNav .link{color: #727272;font-size: 24px;display: block;height: 68px;line-height: 68px;padding: 0 30px;}
+.module-nav-wapper .switchNav.active .link{background-color: #fff;}
+// .module-nav-wapper .switchNav .link{color: #727272;font-size: 24px;display: block;padding: 15px 4px 14px;}
+// .module-nav-wapper .switchNav.active .link{border-bottom: 3px solid #f7372c;position: relative;}
+// .module-nav-wapper .switchNav.active .triangle{width: 0;height: 0;border-width: 5px;border-style: solid;border-color: red transparent transparent transparent;position: absolute;left: 50%;margin-left: -2px;bottom: -13px;display: block;}
+
+.group-main{background-color: #fff;padding: 1px 20px 46px;}
+.title-box{margin: 46px 0 20px}
+.title-box .tit-name{color: #f7372c;font-size: 24px;border-left: 3px solid #f7372c;height: 22px;line-height: 22px;padding-left: 10px;}
+
+.group-box{margin-left: -14px;}
+.group-box .group-list{width: 217px;border:1px solid #e8e8e8;padding:20px 30px;border-radius: 1px;cursor: pointer;float: left;margin-left: 14px;margin-top: 14px;}
+.group-box .group-list:hover,.group-box .group-list.active{background-color: #efefef;border-color: #1581f4;}
+.group-box .group-top{}
+.group-box .broup-left{float: left;}
+.group-box .group-logo{width: 58px;height: 58px;border:1px solid #1581f4;border-radius: 50%;overflow: hidden;}
+.group-box .group-logo img{width: 58px;height: 58px;}
+.group-box .broup-right{float: left;padding-left: 20px;width: 137px;}
+.group-box .group-name{color: #727272;font-size: 18px;padding: 2px 0 4px;}
+.group-box .group-number{color: #727272;font-size: 14px;}
+.group-box .group-people{color: #727272;font-size: 14px;padding: 6px 0 8px;}
+.group-box .group-join{text-align: center;}
+
+.group-full{position: relative;}
+.group-full .full-img{position: absolute;left: -1px;top: -1px;}
+.group-full .group-full-btn{background-color: #b5b5b5;width: 126px;height: 32px;line-height: 32px;text-align: center;color: #fff;font-size: 16px;border-radius: 2px;margin: 0 auto;}
+.group-full .group-more{color: #1581f4;font-size: 18px;height: 127px;line-height: 127px;display: block;text-align: center;}
+.group-full:hover{background-color: #fff;}
+
+.page-main{margin-top: 40px;}
+
+.group-apply{color: #fff;font-size: 26px;display: block;height: 64px;line-height: 64px;text-align: center;background-color: #1581f4;margin-top: 35px;}
+.group-apply:hover{background-color: #007cff;}
+.group-info{padding-left: 10px;}
+.group-info .info-list{color: #727272;font-size: 18px;line-height: 32px;}
+
+.group-input-box{padding: 30px 0 55px;text-align: center;}
+.group-input-box .input-notice{color: #727272;font-size: 16px;padding-bottom: 26px;;}
+.group-input-box .input-list{margin-bottom: 30px;}
+.group-input-box .input-left{color: #f63439;font-size: 24px;display: inline-block;line-height: 56px;height: 56px;}
+.group-input-box .input-right{display: inline-block;padding-left: 10px;}
+.group-input-box .input{width: 700px;height: 54px;background-color: #fff;border:none;color: #a0a0a0;font-size: 16px;text-indent: 12px;outline: none;border-radius: 6px;}
+.group-input-box .group-submit{display: block;width: 260px;height: 60px;background-color: #f51d1d;margin: 0 auto;border:none;color: #fff;font-size: 24px;cursor: pointer;}

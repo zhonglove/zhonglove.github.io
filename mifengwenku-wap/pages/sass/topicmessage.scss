@@ -1,0 +1,11 @@
+$bbcywColor: #f7372c;
+
+/*留言*/
+.comment-box{margin-bottom:10rem;}
+.comment-box .details-tit{color:#000;font-size:2rem;padding:1rem;}
+.comment-box .comment-text {border: 1px solid $bbcywColor;height: 10rem;font-size: 1.4rem;padding:2%;width:90%;margin-left:3%;outline:none;line-height:2rem;}
+.comment-box .comment-btn {background-color:$bbcywColor;color: #fff;font-size: 1.6rem;display: block;width: 94%;height: 3.5rem;
+    border: 0 none;margin:.5rem auto;}
+.comment-box .comment-error {color: red;font-size: 1.4rem;height: 3rem;line-height: 3rem;width:100%;text-align:center;}
+
+/*end*/

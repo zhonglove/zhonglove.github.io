@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>列表详情</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+</head>
+<link rel="stylesheet" href="css/list_details.css" />
+
+<body>
+    <!--header-->
+    <div class="site-topbar">
+        <div class="container clearfix">
+            <div class="top-info fl">专业文档和设计素材分享社区</div>
+            <div class="link-box fr">
+                <a class="link-list" href="">
+                    <i class="site-icon iconfont">&#xe78e;</i>登录</a>
+                <a class="link-list regist-list" href="">
+                    <i class="site-icon iconfont">&#xe672;</i>注册</a>
+                <a class="link-list help" href="">帮助中心</a>
+            </div>
+        </div>
+    </div>
+    <div class="site-header">
+        <div class="container header-center clearfix">
+            <div class="header-logo">
+                <a href="/">
+                    <img class="logo" src="images/logo.png" alt="帮帮创意">
+                </a>
+            </div>
+            <a class="release-btn" href="">
+                <i class="site-icon iconfont">&#xe636;</i>发布资源</a>
+            <div class="header-search">
+                <input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+                <input class="search-btn iconfont" type="submit" value="&#xe601;" />
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container clearfix">
+                <div class="sort-box" id="sort-box" data-type="false">
+                    <h2 class="sort-title">
+                        <i class="site-icon iconfont">&#xe761;</i>全部分类</h2>
+                    <div class="menu-list-box">
+                        <dl class="menu-list">
+                            <dt class="tit-name-box clearfix">
+                                <h3 class="title-name">
+                                    <a class="link" href="">市场营销</a>
+                                </h3>
+                                <i class="right-arrow">></i>
+                            </dt>
+                            <dd class="link-line clearfix">
+                                <a class="link" href="">营销策划</a>
+                                <a class="link" href="">产品规划</a>
+                                <a class="link" href="">渠道管理</a>
+                            </dd>
+                        </dl>
+                        <dl class="menu-list">
+                            <dt class="tit-name-box clearfix">
+                                <h3 class="title-name">
+                                    <a class="link" href="">分析报告</a>
+                                </h3>
+                                <i class="right-arrow">></i>
+                            </dt>
+                            <dd class="link-line clearfix">
+                                <a class="link" href="">研究报告</a>
+                                <a class="link" href="">行业报告</a>
+                                <a class="link" href="">可行性报告</a>
+                            </dd>
+                        </dl>
+                        <dl class="menu-list">
+                            <dt class="tit-name-box clearfix">
+                                <h3 class="title-name">
+                                    <a class="link" href="">管理咨询工具</a>
+                                </h3>
+                                <i class="right-arrow">></i>
+                            </dt>
+                            <dd class="link-line clearfix">
+                                <a class="link" href="">战略咨询工具</a>
+                                <a class="link" href="">营销咨询工具</a>
+                            </dd>
+                        </dl>
+                        <dl class="menu-list">
+                            <dt class="tit-name-box clearfix">
+                                <h3 class="title-name">
+                                    <a class="link" href="">设计素材</a>
+                                </h3>
+                                <i class="right-arrow">></i>
+                            </dt>
+                            <dd class="link-line clearfix">
+                                <a class="link" href="">标志</a>
+                                <a class="link" href="">VI模板</a>
+                                <a class="link" href="">海报</a>
+                                <a class="link" href="">海报</a>
+                            </dd>
+                        </dl>
+                        <dl class="menu-list">
+                            <dt class="tit-name-box clearfix">
+                                <h3 class="title-name">
+                                    <a class="link" href="">高清图片</a>
+                                </h3>
+                                <i class="right-arrow">></i>
+                            </dt>
+                            <dd class="link-line clearfix">
+                                <a class="link" href="">人物图片</a>
+                                <a class="link" href="">风景图片</a>
+                                <a class="link" href="">世界风光</a>
+                            </dd>
+                        </dl>
+                        <dl class="menu-list">
+                            <dt class="tit-name-box clearfix">
+                                <h3 class="title-name">
+                                    <a class="link" href="">管理文档</a>
+                                </h3>
+                                <i class="right-arrow">></i>
+                            </dt>
+                            <dd class="link-line clearfix">
+                                <a class="link" href="">企业管理</a>
+                                <a class="link" href="">财务管理</a>
+                                <a class="link" href="">人力资源</a>
+                            </dd>
+                        </dl>
+                        <dl class="menu-list list-last">
+                            <dt class="tit-name-box clearfix">
+                                <h3 class="title-name">
+                                    <a class="link" href="">更多资源</a>
+                                </h3>
+                                <i class="right-arrow">></i>
+                            </dt>
+                            <dd class="link-line clearfix">
+                                <a class="link" href="">行业资料</a>
+                                <a class="link" href="">PPT模板</a>
+                                <a class="link" href="">办公文档</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <ul class="menu-cont">
+                        <li class="cont-list">
+                            <h3 class="tit-name">
+                                <a class="link" href="">市场营销全部</a>
+                            </h3>
+                            <div class="cont-link clearfix">
+                                <a class="link" href="">研究报告</a>
+                                <a class="link" href="">行业报告</a>
+                                <a class="link" href="">可行性报告</a>
+                                <a class="link" href="">市场分析报告</a>
+                                <a class="link" href="">财务分析报告</a>
+                                <a class="link" href="">统计分析报告</a>
+                                <a class="link" href="">行业分析报告</a>
+                                <a class="link" href="">调查问卷分析报告</a>
+                                <a class="link" href="">数据分析报告</a>
+                                <a class="link" href="">项目分析报告</a>
+                                <a class="link" href="">经营分析报告</a>
+                                <a class="link" href="">产业分析报告</a>
+                                <a class="link" href="">医药行业分析报告</a>
+                            </div>
+                        </li>
+                        <li class="cont-list">
+                            <h3 class="tit-name">
+                                <a class="link" href="">分析报告全部</a>
+                            </h3>
+                            <div class="cont-link clearfix">
+                                <a class="link" href="">行业分析报告</a>
+                                <a class="link" href="">调查问卷分析报告</a>
+                                <a class="link" href="">数据分析报告</a>
+                                <a class="link" href="">项目分析报告</a>
+                                <a class="link" href="">经营分析报告</a>
+                                <a class="link" href="">产业分析报告</a>
+                                <a class="link" href="">医药行业分析报告</a>
+                                <a class="link" href="">研究报告</a>
+                                <a class="link" href="">行业报告</a>
+                                <a class="link" href="">可行性报告</a>
+                                <a class="link" href="">市场分析报告</a>
+                                <a class="link" href="">财务分析报告</a>
+                                <a class="link" href="">统计分析报告</a>
+                                <a class="link" href="">行业分析报告</a>
+                                <a class="link" href="">调查问卷分析报告</a>
+                                <a class="link" href="">数据分析报告</a>
+                                <a class="link" href="">项目分析报告</a>
+                                <a class="link" href="">经营分析报告</a>
+                                <a class="link" href="">产业分析报告</a>
+                                <a class="link" href="">医药行业分析报告</a>
+                                <a class="link" href="">研究报告</a>
+                                <a class="link" href="">行业报告</a>
+                                <a class="link" href="">可行性报告</a>
+                                <a class="link" href="">市场分析报告</a>
+                                <a class="link" href="">财务分析报告</a>
+                                <a class="link" href="">统计分析报告</a>
+                            </div>
+                        </li>
+                        <li class="cont-list">3</li>
+                        <li class="cont-list">4</li>
+                        <li class="cont-list">5</li>
+                        <li class="cont-list">6</li>
+                        <li class="cont-list">7</li>
+                    </ul>
+                </div>
+                <ul class="nav-list clearfix" id="nav-list">
+                    <li class="nav-item">
+                        <a class="link" href="">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="">专题</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="">话题</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="">教程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="">排行榜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="">任务求助</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="">活动
+                            <i class="site-icon iconfont">&#xe634;</i>
+                        </a>
+                        <div class="more-cont">
+                            <ul class="nav-more-box">
+                                <li class="more-list">
+                                    <a class="more-link" href="">上传比赛</a>
+                                </li>
+                                <li class="more-list">
+                                    <a class="more-link" href="">赞助帮帮创意</a>
+                                </li>
+                                <li class="more-list">
+                                    <a class="more-link" href="">通知</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--/header-->
+
+
+    <!--main-->
+    <link rel="stylesheet" href="css/details_main.css">
+    <script type="text/javascript" src="js/view-mini.js"></script>
+    <script type="text/javascript" src="js/encoder.js"></script>
+    <!--[if lt IE 9]><script src="js/respond.min.js "></script><script src="js/html5shiv.min.js "></script><![endif]-->
+    <script type="text/javascript"> Encoder.EncodeType = "entity"; var nodecode = '00035'; var adhtml = ""; var adarray = Encoder.htmlDecode(adhtml); initWidth(); var product_id = "23072868"; var product_code = "23072868"; var mtp = 11; var fCount = 17; var stp = 1; var lmt = 10; var ForceFreepage = parseInt('10'); if (lmt > ForceFreepage) lmt = ForceFreepage; var mhs = 0 * 0; var mhi = new Array("342774"); var mhls = new Array("0"); var mfvs = new Array("0"); var sw = 0; var sh = 0; var IsDealSwfSize = sw > 0; var minwidth = 850; var BookMarkPage = parseInt('1'); var adpagecount = parseInt("1"); var defaultShowPage = parseInt("1"); var defaultShowPage2 = defaultShowPage; if (mtp > 0 && defaultShowPage >= mtp) defaultShowPage = 0; if (BookMarkPage > 1) defaultShowPage = 0; var leftfilecount = fCount - defaultShowPage; var scorename = "元（CNY）"; var LimitText = '0'; var LimitButtonText = '现在购买'; var DocScoreDownLoad = parseFloat('10'); var ReadLimitDays = "365"; var bookrelArray = ""; var url_root = "http://www.bbcyw.com/"; var goumaiico = 'images/xiazai_1.gif'; var lmtext = ''; lmtext = '<div class="inner_page_more" id="page_more" style="width:930px; height:260px; line-height:30px;">' + '<div id="html-reader-go-more" class="banner-wrap more-btn-banner" style="padding-top:40px; width:930px;">' + '<p style="text-align:center;font-size:18px;">亲，很抱歉，此页已超出免费预览范围啦！<br/>如果喜欢就下载吧，价低环保！</p><p style="text-align:center;font-size:14px;">' + '<b></b><span><b style="color:#ff0000">10</b> 元（CNY）</span></p><p style="text-align:center; padding-top:30px;">' + '<a href="javascript:;" onclick="DownLoad()" class="ui-bz-btn-senior banner-download" style="padding:5px 35px; font-size:15px; text-decoration:none">' + '<b class="ui-bz-btn-p-30 ui-bz-btc" style="color:#fff">立即下载</b></a>&nbsp;&nbsp;&nbsp;' + '<a href="UserManage/Recharge.aspx" class="ui-bz-btn-senior2 banner-download" style="padding:5px 35px; font-size:15px; text-decoration:none">' + '<b class="ui-bz-btn-p-30 ui-bz-btc" style="color:#fff">加入VIP，免费下载共享资源</b></a>' + '</p></div></div> ';
+        function showmorepage() {
+
+            for (var i = (Viewer._dfsp + 1); i <= Viewer._pageCount; i++) {
+                Viewer._Addpage(i);
+            }
+
+            Viewer.InitAD_left();
+            Viewer._dfsp = 0;
+            if (17 < 31) {
+                $("#outer_page_more11").hide();
+            } else {
+                $("#outer_page_more").hide();
+            }
+            var st = ($(this).scrollTop());
+            $(this).scrollTop(st + 1); leftfilecount = 0;
+        } 
+    </script>
+    <script type="text/javascript"> 
+        var operateType = 1;
+        var uid = "0";
+        var DocID = "23072868";
+        var zw = 0;
+        var zh = 0;
+        var zrate = (zw == 0 || zh == 0) ? 1 : (zh / zw);
+        var isplay = 0;
+        var width = "760";
+        var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        if (height < 560) height = 560;
+        height = ('True' == 'True' ? 570 : height);
+        var scorename = "元（CNY）"; var params = {}; 
+    </script>
+
+    <form name="aspnetForm" method="post" action="View_list.aspx?id=23072868" id="aspnetForm" enctype="multipart/form-data">
+        <div>
+            <input type="hidden" name="ctl00_Content_tvMenus_ExpandState" id="ctl00_Content_tvMenus_ExpandState" value="" />
+            <input type="hidden" name="ctl00_Content_tvMenus_SelectedNode" id="ctl00_Content_tvMenus_SelectedNode" value="" />
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="ctl00_Content_tvMenus_PopulateLog" id="ctl00_Content_tvMenus_PopulateLog" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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"
+            />
+        </div>
+        <script type="text/javascript">var theForm = document.forms['aspnetForm']; if (!theForm) { theForm = document.aspnetForm; } function __doPostBack(eventTarget, eventArgument) { if (!theForm.onsubmit || (theForm.onsubmit() != false)) { theForm.__EVENTTARGET.value = eventTarget; theForm.__EVENTARGUMENT.value = eventArgument; theForm.submit(); } }</script>
+        <input type="hidden" id="dp" value="http://img1.bbcyw.com/2017-10/8/4bb48524-48ca-4247-9f6e-479826a6b2c2/4bb48524-48ca-4247-9f6e-479826a6b2c2"
+        />
+        <div class="content">
+            <div class="readshop" id="readshop" style="position: relative; width: 100%; z-index: 1;">
+                <div class="mainpart" style="min-width: 720px; width: 1200px;">
+                    <ul class="shop1" style="min-width: 300px; padding-right: 10px;">
+                        <li class="mark" id="bookmark">
+                            <a href="javascript:Mark();" rel="external nofollow">添加书签</a>
+                        </li>
+                        <input type="button" class="btn_sc fl" onclick="popFolder(); return false;" value="收藏" />&nbsp;
+                        <div class="bdsharebuttonbox" style="margin-left: 20px;">
+                            <a href="#" style="margin-top: 8px;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博" rel="external nofollow"></a>
+                            <a href="#" style="margin-top: 8px;" class="bds_weixin" data-cmd="weixin" title="分享到微信" rel="external nofollow"></a>
+                            <a href="#" style="margin-top: 8px;" class="bds_more" data-cmd="more" rel="external nofollow"></a>
+                        </div>
+                        <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script> </ul>
+                    <ul class="shop3">
+                        <li class="paging">
+                            <input type="button" title="上一页" class="no-prev" id="prePageButton" disabled=""> </li>
+                        <li class="text">
+                            <input type="text" id="pageNumInput">
+                        </li>
+                        <li class="text" style="padding-top: 2px; font-size: 15px;">/&nbsp;17</li>
+                        <li class="paging" style="margin-left: 10px">
+                            <input type="button" title="下一页" class="nextsmall" id="nextPageButton"> </li>
+                    </ul>
+                    <ul class="shop2" style="padding: 0px 10px;">
+                        <li title="放大" class="zoomb" id="zoomInButton" disabled="false"></li>
+                        <li title="缩小" class="no-zooms" id="zoomOutButton" disabled="true"></li>
+                        <li title="全屏显示" class="fullscreen" id="frscreen"></li>
+                    </ul>
+                    <ul class="shop4">
+                        <li class="btns">
+                            <span style="color: #666">下载费用：</span>
+                            <span style="color: #ff1100;">
+                                <b style="font-size: 14px;">10.00</b> 元</span> &nbsp;
+                            <input type="button" class="btndown1" onclick="window.location.href = 'd-23072868.html';return false;" value="下载资源" />
+                            <input type="button" class="btndownvip" onclick="window.location.href = 'UserManage/Recharge.aspx'; return false;" value="开通VIP，付费文档6折起"
+                            /> </li>
+                    </ul>
+                </div>
+                <!--end mainpart-->
+                <!--end mainpart-->
+            </div>
+            <div class="container">
+                <div class="crumbs-box">
+                    <a href="index.html">
+                        <i class="site-icon iconfont">&#xe659;</i> 帮帮创意</a>
+                    <span>&nbsp;&gt;&nbsp;</span>
+                    <a href="list.html">资源分类</a>
+                    <span>&nbsp;&gt;&nbsp;</span>
+                    <a href="/qitawendang/1.html">其他文档</a>
+                    <span>&nbsp;&gt;&nbsp;</span>
+                    <span class="crumbs-name">开辟新的发展道路(1)</span>
+                </div>
+                <ul class="total-num clearfix">
+                    <li class="info-list">阅读：
+                        <span class="info-num">101</span>次</li>
+                    <li class="info-list">收藏：0次</li>
+                    <li class="info-list">
+                        <a class="link" target="_blank" href="post.aspx?fnumber=201806042142001611&errurl=http://www.bbcyw.com/p-23072868.html" title="举报"
+                            rel="external nofollow">举报文档</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mainpart" id="mainpart" style="width: 1200px;">
+                <div class="layout02" id="layout02">
+                    <div class="warp-r" id="boxright">
+                        <!--用户信息-->
+                        <div class="layout">
+                            <div class="user-box">
+                                <a href="">
+                                    <img class="user-img" src="images/avatar.png">
+                                </a>
+                                <h2 class="user-name">
+                                    <a class="link" href="">666666</a>
+                                </h2>
+                                <div class="user-info clearfix">
+                                    <p class="info-list">
+                                        <span class="info-tit">格式：DOC</span>
+                                    </p>
+                                    <p class="info-list">
+                                        <span class="info-tit">大小：2.25MB</span>
+                                    </p>
+                                    <p class="time">时间：2015-05-29</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/用户信息-->
+                        <!--相关文档-->
+                        <div class="layout">
+                            <div class="title-box clearfix">
+                                <h3 class="tit-name">相关文档</h3>
+                                <a href="" class="tit-more">MORE
+                                    <span class="tit-arrow">></span>
+                                </a>
+                            </div>
+                            <ul class="news-box lists-news">
+                                <li class="link-list">
+                                    <i class="site-icon doc iconfont">&#xe613;</i>
+                                    <a class="link" href="">Good evening3</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon xls iconfont">&#xe611;</i>
+                                    <a class="link" href="">17中班语言教案:鸡毛鸭(故17中班语言教案:鸡毛鸭(故</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon pdf iconfont">&#xe60f;</i>
+                                    <a class="link" href="">金阳街道中学学生春游活动方金阳街道中学学生春游活动方</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon ppt iconfont">&#xe610;</i>
+                                    <a class="link" href="">人教版小学三年级语文下册《</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon xls iconfont">&#xe611;</i>
+                                    <a class="link" href="">新理念英语上机测试(华工版)</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon xls iconfont">&#xe611;</i>
+                                    <a class="link" href="">尔雅课堂 逻辑和批判性思逻辑</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon rtf iconfont">&#xe614;</i>
+                                    <a class="link" href="">DISC性格测试及分析(Ex</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon doc iconfont">&#xe613;</i>
+                                    <a class="link" href="">14.发生在肺内的气体交换的</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon xls iconfont">&#xe611;</i>
+                                    <a class="link" href="">课前简短演讲稿71短演短演讲</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon pdf iconfont">&#xe60f;</i>
+                                    <a class="link" href="">信用社助学贷款调查报告信用社助学贷款调查报告信用社助学贷款调查报告</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon xls iconfont">&#xe611;</i>
+                                    <a class="link" href="">尔雅课堂 逻辑和批判性思逻辑</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon rtf iconfont">&#xe614;</i>
+                                    <a class="link" href="">DISC性格测试及分析(Ex</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon doc iconfont">&#xe613;</i>
+                                    <a class="link" href="">14.发生在肺内的气体交换的</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon xls iconfont">&#xe611;</i>
+                                    <a class="link" href="">课前简短演讲稿71短演短演讲</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon pdf iconfont">&#xe60f;</i>
+                                    <a class="link" href="">信用社助学贷款调查报告信用社助学贷款调查报告信用社助学贷款调查报告</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon xls iconfont">&#xe611;</i>
+                                    <a class="link" href="">尔雅课堂 逻辑和批判性思逻辑</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon rtf iconfont">&#xe614;</i>
+                                    <a class="link" href="">DISC性格测试及分析(Ex</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon doc iconfont">&#xe613;</i>
+                                    <a class="link" href="">14.发生在肺内的气体交换的</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon xls iconfont">&#xe611;</i>
+                                    <a class="link" href="">课前简短演讲稿71短演短演讲</a>
+                                </li>
+                                <li class="link-list">
+                                    <i class="site-icon pdf iconfont">&#xe60f;</i>
+                                    <a class="link" href="">信用社助学贷款调查报告信用社助学贷款调查报告信用社助学贷款调查报告</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/相关文档-->
+                    </div>
+                    <!--end boxright-->
+                    <div class="boxleft" id="boxleft">
+                        <div class="commonbox2" id="box1">
+                            <div class="doctopic">
+                                <h1 title="开辟新的发展道路(1)"> 开辟新的发展道路(1)</h1>
+                            </div>
+                            <!--end documenttopic-->
+                        </div>
+                        <!--end commonbox2-->
+                        <div class="page_view" id="pageContainer" oncontextmenu="return false">
+                            <script language="javascript"> initPage();</script>
+                            <!--end documenttopic-->
+                        </div>
+                        <div class="outer_page_more" id="outer_page_more">
+                            <div class="inner_page_more" id="page_more" style="width: 860px; height: 260px; line-height: 30px;">
+                                <div id="html-reader-go-more" class="banner-wrap more-btn-banner" style="padding-top: 40px; width: 860px;">
+                                    <div id="outer_page_more11">
+                                        <div class="banner-more-btn" onclick="showmorepage()">
+                                            <span class="moreBtn goBtn" style="text-align: center">
+                                                <span>还剩
+                                                    <span id="spanpage"></span>页未读，</span>
+                                                <span class="fc2e">继续阅读</span>
+                                            </span>
+                                            <p class="down-arrow goBtn"> </p>
+                                        </div>
+                                    </div>
+                                    <p style="text-align: center; font-size: 18px;"> 下载文档到电脑，查找使用更方便 </p>
+                                    <p style="text-align: center; font-size: 14px;">
+                                        <b></b>
+                                        <span> 下载需:
+                                            <b style="color: #ff0000">10.00</b> 元 </span>
+                                    </p>
+                                    <p style="text-align: center; padding-top: 10px;">
+                                        <a href="javascript:;" onclick="DownLoad()" class="ui-bz-btn-senior banner-download" style="padding: 5px 35px; font-size: 15px; text-decoration: none"
+                                            rel="external nofollow">
+                                            <b class="ui-bz-btn-p-30 ui-bz-btc" style="color: #fff">下载</b>
+                                        </a>
+                                        <a href="UserManage/Recharge.aspx" class="ui-bz-btn-senior2 banner-download" style="padding: 5px 35px; font-size: 15px; text-decoration: none"
+                                            rel="external nofollow">
+                                            <b class="ui-bz-btn-p-30 ui-bz-btc" style="color: #fff">开通VIP，付费文档6折起</b>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="b_tl"> </div>
+                            <div class="b_tr"> </div>
+                            <div class="b_br"> </div>
+                            <div class="b_bl"> </div>
+                            <div class="b_t"> </div>
+                            <div class="b_r"> </div>
+                            <div class="b_b"> </div>
+                            <div class="b_l"> </div>
+                        </div>
+                        <!--相关标签-->
+                        <div>
+                            <span style="color: #ff0000; font-size: 14px;">内容要点：</span>
+                        </div>
+                        <div class="cat-box clearfix">
+                            <a class="cat-link" href="/36suiertongxuexiyufazhanzhinan.html" title="3-6岁儿童学习与发展指南" target="_blank">3-6岁儿童学习与发展指南</a>
+                            <a class="cat-link" href="/qichexingyefazhanqianjing.html" title="汽车行业发展前景" target="_blank">汽车行业发展前景</a>
+                            <a class="cat-link" href="/jisuanjiyanjiuyufazhan.html" title="计算机研究与发展" target="_blank">计算机研究与发展</a>
+                            <a class="cat-link" href="/zhongguojisuanjifazhanshi.html" title="中国计算机发展史" target="_blank">中国计算机发展史</a>
+                            <a class="cat-link" href="/jisuanjifazhanshi.html" title="计算机发展史" target="_blank">计算机发展史</a>
+                            <a class="cat-link" href="/guanlixinxixitongdefazhan.html" title="管理信息系统的发展" target="_blank">管理信息系统的发展</a>
+                            <a class="cat-link" href="/fangdechanfazhanqushi.html" title="房地产发展趋势" target="_blank">房地产发展趋势</a>
+                            <a class="cat-link" href="/fangdechanfazhan.html" title="房地产发展" target="_blank">房地产发展</a>
+                            <a class="cat-link" href="/zhiyejiaoyufazhan.html" title="职业教育发展" target="_blank">职业教育发展</a>
+                            <a class="cat-link" href="/quyujingjifazhan.html" title="区域经济发展" target="_blank">区域经济发展</a>
+                        </div>
+                        <!--/相关标签-->
+                        <!--资源描述-->
+                        <div class="reso-desc" style="-webkit-line-clamp: 12;">
+                            <span class="desc-tit"></span>近年来随着我国经济的快速发展，人民生活水平的提高，人们的消费水平正在逐步提高。所以我国很多行业都面临着消费升级。生鲜食品便是其中之一。人们对生鲜食品的品质、安全性、新鲜度等越来越关注。标签：营销方案
+                            促销 圣诞促销 三只松鼠 生鲜电商促销。近年来随着我国经济的快速发展，人民生活水平的提高，人们的消费水平正在逐步提高。所以我国很多行业都面临着消费升级。生鲜食品便是其中之一。人们对生鲜食品的品质、安全性、新鲜度等越来越关注。标签：营销方案
+                            促销 圣诞促销 三只松鼠 生鲜电商促销。
+                        </div>
+                        <!--/资源描述-->
+                        <div class="adv-box"> </div>
+                        <!--/最新搜索-->
+                        <div id="ctl00_Content_UpdatePanel1">
+                            <!--发表评论-->
+                            <div class="layout">
+                                <div class="title-box clearfix">
+                                    <h3 class="tit-name">发表评论</h3>
+                                </div>
+                                <div class="comment-box" id="published">
+                                    <textarea name="content" placeholder="请输入评论内容" class="comment-text" onclick="alert('请先登录！');window.location.href='login.aspx'"></textarea>
+                                    <div class="comment-btn-box clearfix">
+                                        <input type="button" class="comment-btn" value="发表评论" onclick="alert('请先登录！'); window.location.href = 'login.aspx'"> </div>
+                                </div>
+                            </div>
+                            <!--/发表评论-->
+                            <!--发表评论-->
+                            <div class="layout comment-list" id="commentList">
+                                <div class="title-box clearfix">
+                                    <h3 class="tit-name">
+                                        <a class="comment-tit select" href="javascript:;">最新评论</a>
+                                    </h3>
+                                </div>
+                                <p class="pinglun_wu"> 暂无评论，赶快抢占沙发吧。 </p>
+                            </div>
+                        </div>
+                        <!--/发表评论-->
+                    </div>
+                    <!--end layout01-->
+                </div>
+                <!--end mainpart-->
+            </div>
+            <script type="text/javascript"> 
+                $(document).ready(function () {
+                    $("#spanpage").text(leftfilecount);
+                    window.setTimeout(function () {
+                        try {
+                            if (BookMarkPage == 1) {
+                                $(this).scrollTop(0);
+                            } else { Viewer._GotoPage(BookMarkPage); }
+                        } catch (e) { }
+                    }, 200); if (defaultShowPage > 0) { $("#outer_page_more").show(); } else { $("#outer_page_more").hide(); }
+                }); </script> </div>
+
+    </form>
+    <!--main end-->
+
+
+
+
+
+
+    <!--右侧导航-->
+    <div class="toolbar" id="toolbar">
+        <a href="javascript:;" class="toolbar-item">
+            <span class="toolbar-btn">
+                <i class="site-icon iconfont">&#xe616;</i>
+                <span class="toolbar-text">咨询</span>
+            </span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <span class="toolbar-btn">
+                <i class="site-icon iconfont">&#xe62e;</i>
+                <span class="toolbar-text">关注</span>
+            </span>
+            <span class="toolbar-layer toolbar-layer-wx">
+                <img class="we-chat-img" src="images/cody.png">
+                <p class="we-chat-info">官方微信</p>
+            </span>
+        </a>
+        <a href="javascript:;" class="toolbar-item feedback">
+            <span class="toolbar-btn">
+                <i class="site-icon iconfont">&#xe672;</i>
+                <span class="toolbar-text">反馈</span>
+            </span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <span class="toolbar-btn">
+                <i class="site-icon iconfont">&#xe61b;</i>
+                <span class="toolbar-text">顶部</span>
+            </span>
+        </a>
+    </div>
+    <!--/右侧导航-->
+    <script>
+        /*发表评论*/
+        $.fn.publisheds = function (options) {
+            var options = $.extend({
+                eventType: "click",
+                commentBtn: ".comment-btn",
+                cmtInput: ".cmt-input",
+                commentText: ".comment-text",
+                commentError: ".comment-error",
+                published: "#published"
+            }, options || {});
+            return this.each(function () {
+                var _this = $(this);
+                _this.find(options.commentBtn).bind(options.eventType, function () {
+                    var commentText = $(this).parents(options.published).find(options.commentText).val();
+                    if (commentText == '') {
+                        $(this).siblings(options.commentError).text("请输入点评内容！");
+                        return false;
+                    } else {
+                        $(this).siblings(options.commentError).text("");
+                    }
+                });
+            });
+        };
+
+        $("#published").publisheds();
+        /*点评*/
+        $.fn.commentList = function (options) {
+            var options = $.extend({
+                eventType: "click",
+                cmtBtn: ".cmt-btn",
+                cmtBox: ".cmt-box",
+                cmtInput: ".cmt-input",
+                commentBtn: ".comment-btn",
+                commentText: ".comment-text",
+                commentError: ".comment-error",
+                commentBox: ".comment-box"
+            }, options || {});
+            return this.each(function () {
+                var _this = $(this);
+                _this.find(options.cmtBtn).bind(options.eventType, function () {
+                    var cmtInputBox = $(this).parent(options.cmtBox).siblings(options.cmtInput);
+                    if (cmtInputBox.is(":hidden")) {
+                        cmtInputBox.show();
+                        $(this).parents(options.commentBox).siblings(options.commentBox).find(options.cmtInput).hide();
+                    } else {
+                        cmtInputBox.hide();
+                    }
+                });
+                _this.find(options.commentBtn).bind(options.eventType, function () {
+                    var commentText = $(this).parents(options.cmtInput).find(options.commentText).val();
+                    if (commentText == '') {
+                        $(this).siblings(options.commentError).text("请输入点评内容！");
+                        return false;
+                    } else {
+                        $(this).siblings(options.commentError).text("");
+                    }
+                });
+            });
+        };
+
+        $("#commentList").commentList();
+    </script>
+
+
+    <!--footer-->
+    <div class="site-footer">
+        <div class="container">
+            <div class="footer-links clearfix">
+                <dl class="col-links">
+                    <dt class="link-list link-frist">
+                        <a class="link" href="#">网站导航</a>
+                    </dt>
+                    <dd class="link-list">
+                        <a class="link" href="#">全部分类</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">话题</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">教程</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">排行榜</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">任务求助</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">活动</a>
+                    </dd>
+                </dl>
+                <dl class="col-links">
+                    <dt class="link-list link-frist">
+                        <a class="link" href="#">帮助中心</a>
+                    </dt>
+                    <dd class="link-list">
+                        <a class="link" href="#">使用入门</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">共享分与帮币</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">关于会员星级</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">VIP特权</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">收益细则</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">网站协议</a>
+                    </dd>
+                </dl>
+                <dl class="col-links">
+                    <dt class="link-list link-frist">
+                        <a class="link" href="#">关于帮帮创意</a>
+                    </dt>
+                    <dd class="link-list">
+                        <a class="link" href="#">帮帮创意简介</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">站内通知</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">联系我们</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">人才招聘</a>
+                    </dd>
+                    <dd class="link-list">
+                        <a class="link" href="#">提交建议</a>
+                    </dd>
+                </dl>
+                <dl class="col-links links-last">
+                    <dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+                    <dd class="link-list">工作时间</dd>
+                    <dd class="link-list">周一至周五</dd>
+                    <dd class="link-list">9：00-17：30</dd>
+                </dl>
+                <div class="foots-logo">
+                    <img class="logo-img" src="images/logo.png">
+                    <p class="logo-info">专业文档和设计素材分享社区</p>
+                </div>
+                <div class="we-chat">
+                    <img class="we-chat-img" src="images/cody.png">
+                    <p class="we-chat-info">关注微信公众平台</p>
+                </div>
+            </div>
+            <div class="copyright-box">
+                <p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有
+                    <a class="site-map-link" href="">网站地图</a>
+                </p>
+                <p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+            </div>
+        </div>
+    </div>
+    <!--/footer-->
+</body>
+
+</html>

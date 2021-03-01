@@ -1,0 +1,10 @@
+/*分页*/
+.page-main{text-align: center;}
+.page-main .page-num,.page-main .select-page,.page-main .home-page,.page-main .prev-page,.page-main .next-page,.page-main .last-page{display: inline-block;height: 36px;line-height: 36px;padding:0 20px;border:1px solid #e1e1e1;font-size: 14px;margin:0 2px;border-radius: 4px;}
+.page-main .select-page{background-color: #f7372c;color:#fff;border-color: #f7372c}
+.page-main .omitted{display: none;}
+
+.page-main .page-num:hover,.page-main .home-page:hover,.page-main .prev-page:hover,.page-main .next-page:hover,.page-main .last-page:hover{color:#f7372c;border-color:#f7372c;}
+.page-main .page-total{font-size: 14px;color: #666;padding-right: 8px;}
+.page-main .page-total .num{color: #f7372c;}
+/*分页 end*/

@@ -1,0 +1,479 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>个人中心（主页）-帮帮创意</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <!--私有文件-->
+    <link rel="stylesheet" type="text/css" href="css/textdetails.css" />
+</head>
+
+<body>
+    <!--header-->
+    <div class="site-header two-header">
+        <div class="header-nav">
+            <div class="container clearfix">
+                <div class="header-logo fl">
+                    <a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意" width="120"></a>
+                </div>
+                <ul class="nav-list clearfix" id="nav-list">
+                    <li class="nav-item active"><a class="link" href="">首页</a></li>
+                    <li class="nav-item">
+                        <a class="link" href="">分类<i class="site-icon iconfont">&#xe634;</i></a>
+                        <div class="more-cont nav-sort">
+                            <ul class="nav-more-box clearfix">
+                                <li class="more-list"><a class="more-link" href="">市场营销</a></li>
+                                <li class="more-list"><a class="more-link" href="">分析报告分析报告</a></li>
+                                <li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+                                <li class="more-list"><a class="more-link" href="">设计素材</a></li>
+                                <li class="more-list"><a class="more-link" href="">市场营销</a></li>
+                                <li class="more-list"><a class="more-link" href="">分析报告</a></li>
+                                <li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+                                <li class="more-list"><a class="more-link" href="">设计素材</a></li>
+                                <li class="more-list"><a class="more-link" href="">市场营销</a></li>
+                                <li class="more-list"><a class="more-link" href="">分析报告</a></li>
+                                <li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+                                <li class="more-list"><a class="more-link" href="">设计素材</a></li>
+                                <li class="more-list"><a class="more-link" href="">市场营销</a></li>
+                                <li class="more-list"><a class="more-link" href="">分析报告</a></li>
+                                <li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+                                <li class="more-list"><a class="more-link" href="">设计素材</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="link" href="">专题</a></li>
+                    <li class="nav-item"><a class="link" href="">资讯</a></li>
+                    <li class="nav-item"><a class="link" href="">免费区</a></li>
+                    <li class="nav-item">
+                        <a class="link" href="">活动<i class="site-icon iconfont">&#xe634;</i></a>
+                        <div class="more-cont ">
+                            <ul class="nav-more-box">
+                                <li class="more-list"><a class="more-link" href="">上传比赛<img class="new-icon"
+                                            src="./images/new.png" style="margin-left: 4px;width: 27px;" alt=""></a>
+                                </li>
+                                <li class="more-list"><a class="more-link" href="">QQ群联盟</a></li>
+                                <li class="more-list"><a class="more-link" href="">赞助帮帮创意</a></li>
+                                <li class="more-list"><a class="more-link" href="">通知</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="header-right fr">
+                    <div class="search-box fl">
+                        <input class="s-input" type="text" placeholder="站内搜索">
+                        <a class="s-search" href="javascript:;"><i class="site-icon iconfont">&#xe601;</i></a>
+                    </div>
+                    <a class="upload fl" href="javascript:;"><i class="site-icon iconfont">&#xe61f;</i></a>
+                    <a class="open-vip fl" href=""><img class="vip-icon" src="./images/vip_icon.png" alt="">开通VIP</a>
+                    <!-- 登录前 -->
+                    <div class="link-box fl">
+                        <a class="link-list" href=""><i class="site-icon iconfont">&#xe78e;</i>登录</a>
+                        <a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe672;</i>注册</a>
+                    </div>
+                    <!-- 登录前 end -->
+                    <!-- 登录后 -->
+                    <!-- <a class="infor-box fl" href="">
+                    <i class="site-icon iconfont">&#xe626;</i>
+                    <span class="num">3</span>
+                </a>
+                <div id="userInfo" class="fl">
+                    <div class="user-info-box nav-item">
+                        <div class="avatar-box">
+                            <img class="avatar-img" src="./images/avatar_02.png" alt="">
+                            <span class="arrow"></span>
+                            <img class="vip-icon" src="./images/vip_icon.png" alt="">
+                        </div>
+                        <ul class="user-info">
+                            <li class="info-list"><a class="link" href="">个人中心</a></li>
+                            <li class="info-list"><a class="link" href="">账户设置</a></li>
+                            <li class="info-list"><a class="link" href="">收支记录</a></li>
+                            <li class="info-list"><a class="link" href="">充值提现</a></li>
+                            <li class="info-list"><a class="link" href="">上传文档</a></li>
+                            <li class="info-list"><a class="link" href="">我的文档</a></li>
+                            <li class="info-list"><a class="link" href="">我的收藏</a></li>
+                            <li class="info-list"><a class="link" href="">我的下载</a></li>
+                            <li class="info-list"><a class="link" href="">退出</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                    <!-- 登录后 end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/header-->
+
+    <div class="container">
+        <!--面包屑-->
+        <div class="crumbs-box">
+            <i class="site-icon iconfont">&#xe659;</i>
+            <a class="crumbs-link" href="">蜜蜂文库</a>
+            <span class="crumbs-arrow">></span>
+            <a class="crumbs-link" href="">文档分类</a>
+            <span class="crumbs-arrow">></span>
+            <span class="crumbs-name">市场营销</span>
+        </div>
+        <!--/面包屑-->
+        <div class="bbcy-list clearfix">
+            <div class="warp-l">
+                <div class="layout">
+                    <div class="text-cont-box" id="news-cont">
+                        <h1 class="main-title">新型冠状病毒防控期间食堂防疫手册</h1>
+                        <div class="features-box"><span class="pad">[ 字体：<a class="fontsize" href="javascript:;">小</a><a class="fontsize active" href="javascript:;">中</a><a class="fontsize" href="javascript:;">大</a> ]</span><span
+                                class="pad">[ <a href="">手机版</a> ]</span><span class="pad">[ <a class="coll-btn" href=""><i class="site-icon iconfont">&#xe640;</i>收藏</a> ]</span><span
+                                class="pad">[ <a class="add-bookmarks" id="modal-show" href="javascript:;"><i class="site-icon iconfont">&#xe653;</i>举报文档</a> ]</span></div>
+                        <div class="text-contain" id="text-contain">
+                            <p style="margin-bottom:0;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">【</span></span><strong><span style="font-family: 宋体;font-size: 16px"><span style="font-family:宋体">导语</span></span></strong><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">】<a class="link" target="_blank" href="http://www.mifengwenku.com/">工作总结</a>，就是把某一时期已经做过的工作，进行一次全面系统的总检查、总评价，进行一次具体的总分析、总研究；也就是看看取得了哪些成绩，存在哪些缺点和不足，有什么经验、提高。本篇文章是无忧考网为您整理的《机关精准<a class="link" target="_blank" href="/so/fupingongzuozongjie.html">扶贫工作总结</a>精选范文》，供大家阅读。</span></span><span style=";font-family:宋体;font-size:16px"><br/><img src="http://img.mifengwenku.com/Pic/2020/5/25/ded8fb34fdd24a1ba945ed469025d54d.jpg" title="1819413.jpg" alt="1819413.jpg"/></span></p><h4><strong><span style="font-family: 宋体;color: rgb(255, 0, 0);font-size: 19px"><span style="font-family:宋体">【篇一】</span></span></strong></h4><p style="margin-bottom:0;text-indent:32px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px">20xx年我办在县委、县政府的正确领导下</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">在省、市扶贫办的大力支持下</span>,认真落实科学发展观</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">开展党的群众路线教育实践活动</span>,坚持扶贫开发与社会主义新农村建设相结合</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">紧紧瞄准贫困群体与贫困人口</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">大力实施开发式扶贫战略</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">不断完善扶贫开发机制</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">积极实施整村推进、</span>“雨露计划”等重点项目建设</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">全县扶贫开发工作富有成效</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">贫困人口继续减少</span>,农民收入持续增长</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">群众生产生活条件得到改善</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">农村经济保持稳步增长势头</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">社会事业有了新的进步</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">。</span></span></p><p style="margin-bottom:0;text-indent:32px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">一、加强学习</span>,提高理论水平和业务素质</span></p><p style="margin-bottom:0;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">　　认真学习贯彻党的和十九大精神，高举中国特色社会主义伟大旗帜，认真开展党的群众路线教育实践活动</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">按照县委</span>“一创双优”集中教育活动办公室的安排部署，扎实开展“一创双优”教育活动，认真学习省、市扶贫办的各类文件，掌握其中的精神实质，通过学习提高了我办整体素质</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">，</span></span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">为开展扶贫开发工作打下坚实基础。</span></span></p><p style="margin-bottom:0;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">　　二、</span>20xx年主要业务工作情况</span></p><p style="margin-bottom:0;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px">　　(一)整村推进项目</span></p><p style="margin-bottom:0;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px">　　1、20xx年整村推进项目，按照《关于下达20xx年度扶贫开发办公室责任目标的通知》(xx组【20xx】1号)要求，我县今年完成了9个贫困村(韩村乡苏二庄村、固城乡姚屯村、柳格镇城北村、双庙乡单寨村、六塔乡谢庄村、瓦屋头镇里固村、马村乡岳麦村、大流乡店上村、阳邵乡西阳邵三村)的扶贫开发整村推进任务，使用中、省财政资金630万元，修建c25标准水泥路道路长18。65公里。</span></p><p style="margin-bottom:0;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px">　　2、20xx年度第二批整村推进项目，使用中省财政扶贫资金132万元，完成了马村乡齐吕楼村、巩营乡刘庄村的整村推进道路工程，修建c25标准水泥路道路长4。6公里。</span></p><p style="margin-bottom:0;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px">　　3、20xx年度整村推进示范村奖励项目，省扶贫办奖励我县整村推进示范村(古城乡后囤上村、大屯乡南召市村)资金100万元，修建c25标准水泥路道路长2。76公里。</span></p><p style="margin-bottom:0;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px">　　4、利用整村推进结余资金86万元，修建c25标准水泥路道路长2。4公里，解决了古城乡叶村、范村、前囤上、大高村、马庄村等5个村的群众出行难问题。</span></p><p style="margin-bottom:0;text-indent:32px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px">(二)“雨露计划”培训情况</span><span style=";font-family:宋体;font-size:16px"><span style="font-family:宋体">：</span></span></p><p style="margin-bottom:0;text-indent:32px;text-autospace:ideograph-numeric;text-align:justify;text-justify:inter-ideograph;line-height:150%"><span style=";font-family:宋体;font-size:16px">20xx年xx县“雨露计划”计划培训1000人，按照国家精准扶贫</p></span></p>
+                            </div>
+                        <!-- <div class="unfold-box" id="unfold-box">
+                            <a class="unfold-btn" id="unfold-btn" href="javascript:;">点击展开全文</a>
+                            <div class="site-icon iconfont">&#xe634;</div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="layout">
+                    <div class="text-download-box" style="width: auto;">
+                        <div class="tit-name"><i class="site-icon doc iconfont">&#xe613;</i>新型冠状病毒防控期间食堂防疫手册.doc</div>
+                        <div class="info-list" id="show-text">亲，全文共3737字您已预览50%，超出免费预览范围啦！</div>
+                        <div class="info-list">下载完整Word文档到电脑，方便收藏和打印</div>
+                        <div class="price">原价：<del>￥10.00</del><span class="discount-price c-red">折扣价：￥<span
+                                    class="price-num">9.00</span></span></div>
+                        <div>
+                            <a class="download-btn" href=""><i class="site-icon iconfont">&#xe630;</i>下载文档</a>
+                            <a class="download-btn vip-btn" href="">开通VIP，共享文档免费下载</a>
+                        </div>
+                    </div>
+                </div>
+                <!--推荐内容-->
+                <div class="layout">
+                    <div class="title-box clearfix">
+                        <h3 class="tit-name">推荐内容</h3>
+                    </div>
+                    <ul class="news-box">
+                        <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link"
+                                href="">计算机应用技术专业调研报告计算机应用技术专业调研报告计算机应用技术专业调研报告计算机应用技术专业调研报告计算机应用技术专业调研报告计算机应用技术专业调研报告</a>
+                        </li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">17中班语言教案:鸡毛鸭(故</a></li>
+                        <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link"
+                                href="">金阳街道中学学生春游活动方</a></li>
+                        <li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link"
+                                href="">人教版小学三年级语文下册《</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">新理念英语上机测试(华工版)</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">尔雅课堂
+                                逻辑和批判性思逻辑</a></li>
+                        <li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link"
+                                href="">DISC性格测试及分析(Ex</a></li>
+                        <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link"
+                                href="">14.发生在肺内的气体交换的</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">课前简短演讲稿71短演短演讲</a></li>
+                        <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link"
+                                href="">信用社助学贷款调查报告</a></li>
+                    </ul>
+                </div>
+                <!--/推荐内容-->
+            </div>
+            <div class="warp-r">
+                <div class="layout">
+                    <div class="user-box">
+                        <div class="user-info clearfix">
+                            <p class="info-list"><span class="info-tit">格式：DOC</span></p>
+                            <p class="info-list" style="padding-top: 8px;"><span class="info-tit">类型：共享文档</span></p>
+                            <p class="time">时间：2015-05-29</p>
+                        </div>
+                    </div>
+                </div>
+                <!--相关文档-->
+                <div class="layout">
+                    <div class="title-box clearfix">
+                        <h3 class="tit-name">相关文档</h3>
+                        <a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+                    </div>
+                    <ul class="news-box">
+                        <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link"
+                                href="">计算机应用技术专业调研报告计算机应用技术专业调研报告</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">17中班语言教案:鸡毛鸭(故</a></li>
+                        <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link"
+                                href="">金阳街道中学学生春游活动方</a></li>
+                        <li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link"
+                                href="">人教版小学三年级语文下册《</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">新理念英语上机测试(华工版)</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">尔雅课堂
+                                逻辑和批判性思逻辑</a></li>
+                        <li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link"
+                                href="">DISC性格测试及分析(Ex</a></li>
+                        <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link"
+                                href="">14.发生在肺内的气体交换的</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">课前简短演讲稿71短演短演讲</a></li>
+                        <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link"
+                                href="">信用社助学贷款调查报告</a></li>
+                    </ul>
+                </div>
+                <!--/相关文档-->
+                <!--最新下载-->
+                <div class="layout">
+                    <div class="title-box clearfix">
+                        <h3 class="tit-name">最新下载</h3>
+                    </div>
+                    <ul class="news-box">
+                        <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link"
+                                href="">计算机应用技术专业调研报告计算机应用技术专业调研报告</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">17中班语言教案:鸡毛鸭(故</a></li>
+                        <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link"
+                                href="">金阳街道中学学生春游活动方</a></li>
+                        <li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link"
+                                href="">人教版小学三年级语文下册《</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">新理念英语上机测试(华工版)</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">尔雅课堂
+                                逻辑和批判性思逻辑</a></li>
+                        <li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link"
+                                href="">DISC性格测试及分析(Ex</a></li>
+                        <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link"
+                                href="">14.发生在肺内的气体交换的</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">课前简短演讲稿71短演短演讲</a></li>
+                        <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link"
+                                href="">信用社助学贷款调查报告</a></li>
+                    </ul>
+                </div>
+                <!--/最新下载-->
+                <!--最新上传-->
+                <div class="layout">
+                    <div class="title-box clearfix">
+                        <h3 class="tit-name">最新上传</h3>
+                    </div>
+                    <ul class="news-box">
+                        <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link"
+                                href="">计算机应用技术专业调研报告计算机应用技术专业调研报告</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">17中班语言教案:鸡毛鸭(故</a></li>
+                        <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link"
+                                href="">金阳街道中学学生春游活动方</a></li>
+                        <li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link"
+                                href="">人教版小学三年级语文下册《</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">新理念英语上机测试(华工版)</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">尔雅课堂
+                                逻辑和批判性思逻辑</a></li>
+                        <li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link"
+                                href="">DISC性格测试及分析(Ex</a></li>
+                        <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link"
+                                href="">14.发生在肺内的气体交换的</a></li>
+                        <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+                                href="">课前简短演讲稿71短演短演讲</a></li>
+                        <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link"
+                                href="">信用社助学贷款调查报告</a></li>
+                    </ul>
+                </div>
+                <!--/最新上传-->
+            </div>
+        </div>
+    </div>
+
+	<!-- modal -->
+	<div class="modal" id="modal">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<i class="modal-close-icon iconfont" id="modal-close">&#xe79a;</i>
+				<!-- <img class="modal-close" id="modal-close" src="images/payment/Close.png" alt=""> -->
+				<p class="modal-headerP">举报文档</p>
+			</div>
+			<div class="modal-body">
+				<p class="modal-bodyT"><span class="c-red">侵权：</span>若此文档侵犯了您的权益，请参照《<a class="link"
+						href="">网站版权声明</a>》，然后登录网站在线提交您的举报信息。</p>
+				<div class="checks-box">
+					<div class="checks-list"><label class="i-checks"><input type="radio" name="a">举报该文档为侵权文档</label>
+					</div>
+					<div class="checks-list"><label class="i-checks"><input type="radio"
+								name="a">举报该文档含有反动，色情，危害社会或不良信息</label></div>
+					<div class="checks-list"><label class="i-checks"><input type="radio" name="a">反馈该文档无法正常浏览</label>
+					</div>
+					<div class="checks-list"><label class="i-checks"><input type="radio" name="a">举报该文档为重复文档</label>
+					</div>
+					<div class="checks-list"><label class="i-checks"><input type="radio" name="a">广告内容或内容过于简单</label>
+					</div>
+				</div>
+				<!-- <p class="modal-error">填写错误</p> -->
+				<div><textarea class="modal-bodyInput" placeholder="请输入您的反馈和联系方式"></textarea></div>
+				<div><input class="input" type="text" placeholder="请留下联系方式（手机号、QQ、邮箱）"></div>
+			</div>
+			<div class="modal-footer">
+				<button class="modal-footerBtn">提交</button>
+			</div>
+		</div>
+	</div>
+	<!-- /modal -->
+    <script>
+        //弹框
+		$('#modal-show').on('click', function () {
+			$('#modal').show();
+		})
+		$('#modal-close').on('click', function () {
+			$('#modal').hide();
+        })
+        //
+        $("#text-contain *").css({"font-size": "16px", "line-height": "32px", "font-family": "Microsoft YaHei" });
+        var textSize = 16;
+        $.fn.newsCont = function(options){
+            var options = $.extend({
+                eventType: "click",
+                switchNav: ".fontsize",
+                active: "active",
+                textContain: ".text-contain"
+            },options||{});
+            return this.each(function(){
+                var _this = $(this);
+                _this.find(options.switchNav).bind(options.eventType, function(){
+					var _index = $(this).index();
+                    $(this).addClass(options.active).siblings(options.switchNav).removeClass(options.active);
+                    if(_index == 0){
+                        textSize = 14;
+                        $("#text-contain *").css({"font-size":'14px'});
+                        // _this.find(options.textContain).css({"font-size":"14px"});
+                    }else if(_index == 1){
+                        textSize = 16;
+                        $("#text-contain *").css({"font-size":'16px'});
+                        // _this.find(options.textContain).css({"font-size":"16px"});
+                    }else if(_index == 2){
+                        textSize = 18;
+                        $("#text-contain *").css({"font-size":'18px'});
+                        // _this.find(options.textContain).css({"font-size":"18px"});
+                    }
+				});
+            });
+        }
+        $("#news-cont").newsCont();
+        /*展开*/
+        var contHtml = `<div class="info">学校食堂是学校人员密集场所，更是<a class="link" href="">食品卫生安全</a>的重要部位，做好学校食堂防控是重中之重。针对学校食堂防疫，在采购管理、烹饪与销售、后厨管理、餐厅管理、清洗消毒等关键环节提出应对疫情防控指导方案，为学校制定本校应对方案提供参考。</div>
+                            <img class="img" src="./images/news.png" />
+                            <div class="info">学校食堂是学校人员密集场所，更是食品卫生安全的重要部位，做好学校食堂防控是重中之重。针对学校食堂防疫，在采购管理、烹饪与销售、后厨管理、餐厅管理、清洗消毒等关键环节提出应对疫情防控指导方案，为学校制定本校应对方案提供参考。</div>
+                            <div class="info">学校食堂是学校人员密集场所，更是食品卫生安全的重要部位，做好学校食堂防控是重中之重。针对学校食堂防疫，在采购管理、烹饪与销售、后厨管理、餐厅管理、清洗消毒等关键环节提出应对疫情防控指导方案，为学校制定本校应对方案提供参考。</div>
+                            <div class="info">学校食堂是学校人员密集场所，更是食品卫生安全的重要部位，做好学校食堂防控是重中之重。针对学校食堂防疫，在采购管理、烹饪与销售、后厨管理、餐厅管理、清洗消毒等关键环节提出应对疫情防控指导方案，为学校制定本校应对方案提供参考。</div>
+                            <div class="info">学校食堂是学校人员密集场所，更是<a class="link" href="">食品卫生安全</a>的重要部位，做好学校食堂防控是重中之重。针对学校食堂防疫，在采购管理、烹饪与销售、后厨管理、餐厅管理、清洗消毒等关键环节提出应对疫情防控指导方案，为学校制定本校应对方案提供参考。</div>
+                            <img class="img" src="./images/news.png" />
+                            <div class="info">学校食堂是学校人员密集场所，更是食品卫生安全的重要部位，做好学校食堂防控是重中之重。针对学校食堂防疫，在采购管理、烹饪与销售、后厨管理、餐厅管理、清洗消毒等关键环节提出应对疫情防控指导方案，为学校制定本校应对方案提供参考。</div>
+                            <div class="info">学校食堂是学校人员密集场所，更是食品卫生安全的重要部位，做好学校食堂防控是重中之重。针对学校食堂防疫，在采购管理、烹饪与销售、后厨管理、餐厅管理、清洗消毒等关键环节提出应对疫情防控指导方案，为学校制定本校应对方案提供参考。</div>
+                            <div class="info">学校食堂是学校人员密集场所，更是食品卫生安全的重要部位，做好学校食堂防控是重中之重。针对学校食堂防疫，在采购管理、烹饪与销售、后厨管理、餐厅管理、清洗消毒等关键环节提出应对疫情防控指导方案，为学校制定本校应对方案提供参考。</div>
+                        `;
+                        
+        $("#unfold-btn").on('click', function () {
+            $("#show-text").show();
+            $("#text-contain").html(contHtml);
+            $("#unfold-box").hide();
+            $("#text-contain *").css({"font-size": textSize, "line-height": "32px", "font-family": "Microsoft YaHei"});
+        })
+        /*禁止复制*/
+        // document.oncontextmenu=new Function("event.returnValue=false");  
+        // document.onselectstart=new Function("event.returnValue=false");
+        /*复制功能*/
+        function addLink(){	
+                var body_element = document.getElementsByTagName('body')[0];
+                var selection;
+                selection = window.getSelection();
+                var pagelink = " 来源蜜蜂文库：https://www.mifengwenku.com/ 原文网址："+location.href;
+
+                var copytext = document.title + pagelink;
+                //弹框显示
+                console.log("弹框显示");
+
+                var newdiv = document.createElement('div');
+                newdiv.style.position='absolute';
+                newdiv.style.left='-99999px';
+                body_element.appendChild(newdiv);
+                newdiv.innerHTML = copytext;
+                selection.selectAllChildren(newdiv);
+                window.setTimeout(function(){body_element.removeChild(newdiv);},0);
+        }
+        document.body.oncopy = addLink;
+        // if(!window.ActiveXObject){
+        //     function addLink(){	
+        //             var body_element = document.getElementsByTagName('body')[0];
+        //             var selection;
+        //             selection = window.getSelection();
+        //             var pagelink = " 来源蜜蜂文库：https://www.mifengwenku.com/ 原文网址："+location.href;
+
+        //             var copytext = document.title + pagelink;
+        //             //弹框显示
+        //             console.log("弹框显示");
+
+        //             var newdiv = document.createElement('div');
+        //             newdiv.style.position='absolute';
+        //             newdiv.style.left='-99999px';
+        //             body_element.appendChild(newdiv);
+        //             newdiv.innerHTML = copytext;
+        //             selection.selectAllChildren(newdiv);
+        //             window.setTimeout(function(){body_element.removeChild(newdiv);},0);
+        //     }
+        //     document.oncopy = addLink;
+        // }
+    </script>
+    <!--footer-->
+    <div class="site-footer">
+        <div class="container">
+            <div class="footer-links clearfix">
+                <dl class="col-links">
+                    <dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+                    <dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+                    <dd class="link-list"><a class="link" href="#">最新文档</a></dd>
+                    <dd class="link-list"><a class="link" href="#">资讯</a></dd>
+                    <dd class="link-list"><a class="link" href="#">教程</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+                    <dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+                    <dd class="link-list"><a class="link" href="#">共享分</a></dd>
+                    <dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+                    <dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+                    <dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+                    <dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt class="link-list link-frist"><a class="link" href="#">关于蜜蜂文库</a></dt>
+                    <dd class="link-list"><a class="link" href="#">蜜蜂文库简介</a></dd>
+                    <dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+                    <dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+                    <dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+                    <dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+                </dl>
+                <dl class="col-links links-last">
+                    <dt class="link-list link-frist">反馈建议：service@mifengwenku.com</dt>
+                    <dd class="link-list">工作时间</dd>
+                    <dd class="link-list">周一至周五</dd>
+                    <dd class="link-list">9：00-18：00</dd>
+                </dl>
+                <div class="foots-logo">
+                    <img class="logo-img" src="images/logo_gray.png">
+                    <p class="logo-info">公文文档分享平台</p>
+                </div>
+                <div class="we-chat">
+                    <img class="we-chat-img" src="./images/cody.png">
+                    <p class="we-chat-info">扫描手机访问</p>
+                </div>
+            </div>
+            <div class="copyright-box">
+                <p class="copyright-info">COPYRIGHT@ 2020 重庆热链网络技术有限公司版权所有<a class="site-map-link" href="">热门标签</a><a
+                        class="site-map-link" href="">网站地图</a></p>
+                <p class="copyright-info">工信部备案号:渝ICP备19017437号-4</p>
+            </div>
+        </div>
+    </div>
+    <!--/footer-->
+
+
+
+</body>
+
+</html>

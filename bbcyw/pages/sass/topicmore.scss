@@ -1,0 +1,46 @@
+@import 'module/crumbs';//面包屑
+@import 'module/userinfo';//用户信息
+@import 'module/title';//title
+@import 'module/news';//右侧新闻
+@import 'module/search';//相关搜索
+@import 'module/page';//分页
+
+@import 'module/resobox';//资源平铺
+
+.bbcy-list{padding-bottom:40px;}
+.bbcy-list .layout{background-color:#fff;margin-bottom:5px;}
+/*左侧*/
+.bbcy-list .warp-l{width:895px;float:left;}
+.reso-list-box{padding:30px;}
+
+.frist-box{padding:30px 30px 40px;}
+.frist-box .frist-l{float:left;}
+.frist-box .link{border:1px solid #c9c9c9;width:298px; display:table-cell; text-align:center;height:223px;  line-height:223px;vertical-align:middle;}
+.frist-box .img{vertical-align:middle; margin:auto 0px; max-width:298px;max-height:223px; z-index:1;overflow:hidden;}
+.frist-box .frist-r{float:left;width:500px;padding-left:30px;}
+.frist-box .frist-tit{color:#4e4e4e;font-size:22px;margin-bottom:20px;}
+.frist-box .frist-info{color: #4e4e4e;font-size:14px;line-height:26px;}
+
+/*目录*/
+.contents-box{border-bottom:1px solid #dcdcdc;margin:0 30px;padding-bottom:20px;}
+.contents-box .cont-list{line-height:28px;float:left;width:33%;}
+.contents-box .link{color:#656565;font-size:16px;text-decoration:underline;}
+.contents-box .hover,.contents-box .link:hover{color:#ff0000;}
+/*目录 end*/
+.article-tit-box{padding-bottom:20px;}
+.article-tit-box .article-tit{color:#f7372c;font-size:16px;font-weight:bold;float:left;}
+.article-tit-box .article-more{color:#30a4ee;font-size:14px;float:right;}
+.article-tit-box.b-t{border-top:1px solid #dcdcdc;padding-top:30px;}
+
+.article-cont{padding:0 30px 40px;}
+.article-cont .article-tit{}
+.article-cont .article-box{padding-bottom:30px;}
+.article-cont .article-box .news-list{font-size:14px;line-height:34px;float:left;width:50%;}
+.article-cont .article-box .link{color:#6d6d6d;}
+.article-cont .article-box .link:hover{color:red;text-decoration:underline;}
+.article-cont .article-box .link-page{color:#aeaeae;padding-left:10px;}
+
+
+/*左侧 end*/
+.bbcy-list .warp-r{width: 300px;float:right;}
+

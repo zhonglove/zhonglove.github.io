@@ -1,0 +1,25 @@
+
+.wrapper{width: 100%;overflow: hidden;}
+// 搜索
+.search-header{height: 5.4rem;line-height: 5.4rem;width: 100%;position: relative;padding-left: 1rem;}
+.search-header .header-text{outline: none;border: none;color: #aaaaaa;font-size: 1.5rem;padding-left: 2rem;height: 3rem;;background:#f6f6f6;width: 71%;border-radius: 3rem;}
+.search-header .search-btn{margin-left: -3rem;margin-right: 2rem;}
+.search-header .search-btn>.iconfont{font-size: 1.6rem;color: #7c7c7c;}
+.search-header .cancel{color: red;font-size: 1.5rem;}
+// 搜索end
+.search-hot,.search-history{width: 100%;padding:0 1.4rem;box-sizing: border-box;}
+.search-hot .hot-title,.search-history .history-title{width: 100%;color:#7d7d7d;font-size: 1.4rem;}
+.search-hot .hot-content{height: 12rem;overflow: hidden;margin-bottom: 2rem;}
+.search-hot .hot-content .hot-item{padding: .5rem .8rem;display: inline-block;background: #f5f5f5;border-radius: 2rem;margin-top: 1rem;font-size: 1.4rem;}
+
+.border{border-top: 1px solid #dcdcdc;width: 90%;display: inline-block;margin-left: 5%;}
+.search-history{padding-top: 2rem;}
+.history-content .history-item{font-size: 1.4rem;height: 4.5rem;line-height: 4.5rem;border-bottom: 1px solid #f2f2f2;}
+.history-item .icon-history{width: 1.6rem;margin-right: .5rem;margin-bottom: .3rem;vertical-align: middle;}
+.history-item .btn-close{float: right;}
+.history-item .btn-close .iconfont{font-size: 1.8rem;color: #adadac;}
+
+.search-history2{padding-top: 0;}
+.search-history2 span{font-size: 1.5rem;}
+.link-history{float: right;}
+.link-history .icon-history{width: 1.3rem;}

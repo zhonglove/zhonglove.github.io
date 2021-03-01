@@ -1,0 +1,22 @@
+.news-box{padding:0 25px 16px;}
+.news-box .link-list{line-height:32px;height:32px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.news-box .link{color:#4a4a4a;font-size:16px;}
+.news-box .link:hover{text-decoration:underline;color:#f7372c;}
+.news-box .link .c-red{color:#f7372c;}
+.news-box .site-icon{margin-right:8px;font-size:16px;}
+.news-box .doc{color:#2951b3;}
+.news-box .xls{color:#327051;}
+.news-box .pdf{color:#bc4040;}
+.news-box .ppt{color:#973a33;}
+.news-box .rtf{color:#6289bc;}
+
+/*最新搜索*/
+.new-search .link-list{float:left;width:50%;}
+.new-search .link:hover{color:#f7372c}
+/*最新搜索 end*/
+/*最新专题*/
+.new-topic{}
+.new-topic .site-icon,.new-topic .link{color:#727272;font-size:14px;}
+.new-topic .site-icon{font-size:12px;}
+.new-topic .link-list{line-height:28px;height:28px;}
+/*最新专题 end*/

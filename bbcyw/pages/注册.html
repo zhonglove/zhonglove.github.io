@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>注册-帮帮创意</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+</head>
+<body>
+
+<!--header-->
+<div class="site-topbar">
+	<div class="container clearfix">
+		<div class="top-info fl">专业文档和设计素材分享社区</div>
+		<div class="link-box fr">
+			<a class="link-list" href=""><i class="site-icon iconfont">&#xe78e;</i>登录</a>
+			<a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe672;</i>注册</a>
+			<a class="link-list help" href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<div class="site-header">
+	<div class="container header-center clearfix">
+		<div class="header-logo">
+			<a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意"></a>			
+		</div>
+		<a class="release-btn" href=""><i class="site-icon iconfont">&#xe636;</i>发布资源</a>		
+		<div class="header-search">
+			<input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+			<input class="search-btn iconfont" type="submit" value="&#xe601;" />			
+		</div>
+	</div>
+</div>
+<!--/header-->
+<!--注册新用户-->
+<div class="container login-box user-login" id="user-login">
+	<h2 class="input-tit">注册新用户</h2>
+	<div class="input-main clearfix">
+		<div class="input-main-l">
+			<ul class="input-line form-correct clearfix">
+				<li class="input-l"><span class="c-red">*</span>邮箱：</li>
+				<li class="input-r">
+					<input class="input" id="mailbox" type="text"/>
+				</li>
+				<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+			</ul>
+			<ul class="input-line clearfix">
+				<li class="input-l"><span class="c-red">*</span>密码：</li>
+				<li class="input-r">
+					<input class="input" id="password" type="password" />
+				</li>
+				<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+			</ul>
+			<ul class="input-line clearfix">
+				<li class="input-l"><span class="c-red">*</span>确认密码：</li>
+				<li class="input-r">
+					<input class="input" id="confirm-pwd" type="password" />
+				</li>
+				<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+			</ul>
+			<ul class="input-line clearfix">
+				<li class="input-l"><span class="c-red">*</span>QQ 号码：</li>
+				<li class="input-r">
+					<input class="input" id="qicq" type="text" />
+				</li>
+				<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+			</ul>
+			<ul class="input-line clearfix">
+				<li class="input-l"><span class="c-red">*</span>验证码：</li>
+				<li class="input-r clearfix">
+					<input class="input yzm-input" id="v-code" type="text" />
+					<img class="yzm-img" src="images/yzm.png">
+					<a href="#" class="yzm-change">换一个</a>
+				</li>
+				<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+			</ul>
+			<div class="prot-box">
+				<label class="prot-ckb"><input class="ckb-input" type="checkbox" checked="checked" />我已阅读并同意</label>
+				<a class="prot-link" href="">《创意牛注册协议》</a>		
+			</div>
+
+			<ul class="input-line clearfix">
+				<li class="input-l"></li>
+				<li class="input-r">
+					<input class="input-btn" id="registered-btn" type="submit" />
+				</li>
+			</ul>
+		</div>
+		<div class="input-main-r">
+			<p class="link-box">已注册账号？<a class="link-login" href="#">立即登录</a></p>
+			<h3 class="cooper-tit">使用合作网站账号一键登录</h3>
+			<div class="cooper-box clearfix">
+				<a class="link-list link-01" href="#"><i class="site-icon iconfont">&#xe63c;</i></a>
+				<a class="link-list link-02" href="#"><i class="site-icon iconfont">&#xe637;</i></a>
+				<a class="link-list link-03" href="#"><i class="site-icon iconfont">&#xe61a;</i></a>
+				<a class="link-list link-04" href="#"><i class="site-icon iconfont">&#xe6ac;</i></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/注册新用户-->
+<script type="text/javascript">
+
+$.fn.loginMain = function(options){
+	var options = $.extend({
+		eventType: "click",
+		inputLine: ".input-line",
+		formError: "form-error",
+		errorText: ".error-text",
+		registeredBtn: "#registered-btn",
+		mailbox: "#mailbox",
+		password: "#password",
+		confirmPwd: "#confirm-pwd",
+		qicq: "#qicq",
+		vCode: "#v-code"
+	},options||{});
+	return this.each(function(){
+		var _this = $(this);
+
+		_this.find(options.registeredBtn).bind(options.eventType, function(){
+			function errorFun(errorSite,errorname){
+				$(errorSite).parents(options.inputLine).find(options.errorText).text(errorname);
+				$(errorSite).parents(options.inputLine).addClass(options.formError);
+			}
+			function removeError(errorSite){
+				$(errorSite).parents(options.inputLine).find(options.errorText).text("");
+				$(errorSite).parents(options.inputLine).removeClass(options.formError);
+			}
+			//邮箱
+			var mailbox = $.trim($(options.mailbox).val());
+			var emailReg = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/.test(mailbox);
+			if(mailbox == ''){
+				errorFun(options.mailbox,"请输入邮箱！");
+				return false;
+			}else if(!emailReg){
+				errorFun(options.mailbox,"邮箱输入有误！");
+				return false;
+			}else{
+				removeError(options.mailbox);
+			}
+			//密码
+			var password = $.trim($(options.password).val());
+			if(password == ''){
+				errorFun(options.password,"请输入密码！");
+				return false;
+			}else if(password.length < 6){
+				errorFun(options.password,"密码长度不能小于6位！");
+				return false;
+			}else{
+				removeError(options.password);
+			}
+			//确认密码
+			var confirmPwd = $.trim($(options.confirmPwd).val());
+			if(confirmPwd == ''){
+				errorFun(options.confirmPwd,"请输入确认密码！");
+				return false;
+			}else if(confirmPwd != password){
+				errorFun(options.confirmPwd,"两次密码输入不一致！");
+				return false;
+			}else{
+				removeError(options.confirmPwd);
+			}
+			//qq
+			var qicq = $.trim($(options.qicq).val());
+			var numReg = /^\d+$/.test(qicq);
+			if(qicq == ''){
+				errorFun(options.qicq,"请输入QQ号码！");
+				return false;
+			}else if(!numReg){
+				errorFun(options.qicq,"QQ号码输入有误！");
+				return false;
+			}else{
+				removeError(options.qicq);
+			}
+			//验证码
+			var vCode = $.trim($(options.vCode).val());
+			if(vCode == ''){
+				errorFun(options.vCode,"请输入验证码！");
+				return false;
+			}else{
+				removeError(options.vCode);
+			}
+
+			console.log("验证通过");
+		});
+	});
+}
+
+$("#user-login").loginMain();
+</script>
+
+
+<!--footer-->
+<div class="site-footer">
+	<div class="container">
+		<div class="footer-links clearfix">
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+				<dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+				<dd class="link-list"><a class="link" href="#">话题</a></dd>
+				<dd class="link-list"><a class="link" href="#">教程</a></dd>
+				<dd class="link-list"><a class="link" href="#">排行榜</a></dd>
+				<dd class="link-list"><a class="link" href="#">任务求助</a></dd>
+				<dd class="link-list"><a class="link" href="#">活动</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+				<dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+				<dd class="link-list"><a class="link" href="#">共享分与帮币</a></dd>
+				<dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+				<dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+				<dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+				<dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">关于帮帮创意</a></dt>
+				<dd class="link-list"><a class="link" href="#">帮帮创意简介</a></dd>
+				<dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+				<dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+				<dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+				<dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+			</dl>
+			<dl class="col-links links-last">
+				<dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+				<dd class="link-list">工作时间</dd>
+				<dd class="link-list">周一至周五</dd>
+				<dd class="link-list">9：00-17：30</dd>
+			</dl>
+			<div class="foots-logo">
+				<img class="logo-img" src="images/logo.png">
+				<p class="logo-info">专业文档和设计素材分享社区</p>
+			</div>			
+			<div class="we-chat">
+				<img class="we-chat-img" src="images/cody.png">
+				<p class="we-chat-info">关注微信公众平台</p>
+			</div>
+		</div>
+		<div class="copyright-box">
+			<p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有<a class="site-map-link" href="">网站地图</a></p>
+			<p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+		</div>
+	</div>
+</div>
+<!--/footer-->
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+@import 'module/swiper';//swiper
+@import 'module/page';//分页
+@import 'module/topic';
+$bbcywColor: #f7372c;
+
+/*首焦*/
+.index_swiper{}
+.index_swiper .slide-img{display:block;width:100%}
+.index_swiper .swiper-pagination{bottom:.5rem;text-align: right;}
+.index_swiper .swiper-pagination-bullet{background-color: #80a9bb;opacity: 1;}
+.index_swiper .swiper-pagination-bullet-active{background-color:$bbcywColor}
+.index_swiper .swiper-name-main{position: absolute;left: 0;bottom: 0;width: 100%;background-color: rgba(0,0,0,.5);color: #fff;padding: .4rem 1rem;overflow: hidden;}
+.index_swiper .swiper-name{width: 76%;font-size: 1.4rem;}
+.topic-main .topic-list .topic-l{width: 34%;}
+.topic-main .topic-list .topic-r{width: 63%;}
+.topic-main .topic-list .post-oper{font-size: 1.2rem;}
+.topic-main .img-cont{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    overflow: hidden;
+}
+
+//详情页
+.topic-detail{padding: 1rem;}
+.topic-detail .frist-tit{color: #333;font-size: 1.6rem;padding-bottom: 1rem;font-weight: bold;}
+.topic-detail .frist-box{}
+.topic-detail .frist-r{}
+.topic-detail .img{display: block;width: 100%;}
+.topic-detail p{color: #727272;font-size: 1.4rem;text-indent: 2em;padding-top: .8rem;}
+.topic-detail .c-blue{color: #38a9e8;font-weight: bold;}
+
+.title-box{width:100%;height:4rem;line-height:4rem;}
+.title-box .tit-name{color: $bbcywColor;font-size: 1.8rem;height: 4rem;line-height: 4rem;text-align:center;}
+.title-box .tit-name-small{font-size: 1.2rem;}
+.title-box2{width:100%;height:4rem;line-height:3rem;padding:1rem 0 0;}
+.title-box2 .tit-name{color: $bbcywColor;font-size: 1.8rem;height: 3rem;line-height: 3rem;text-align:center;}
+.title-box span{width:20%;margin:0 auto;display:block;height:4px;background:$bbcywColor;}
+
+.topic-list-home{padding: .6rem 0 0;}
+.topic-list-home .topic-list{padding-bottom: .8rem;width: 93%}
+.topic-list-home .topic-list .topic-l{width: 20%;}
+.topic-list-home .topic-list .topic-r{width: 98%;}
+.topic-list-home .topic-list .list-name{-webkit-line-clamp: 1;}
+.topic-list-home .topic-list .post-oper{padding-top: .2rem;}
+.topic-list-home .topic-l{border: none;height: auto;}
+.topic-list-home .file-format-icon{width: 100%}
+.topic-list-home .site-icon{font-size: 1.6rem;vertical-align: -.1rem;}
+// .topic-list-home .topic-list:last-child{border-bottom: 1px solid #eee;}

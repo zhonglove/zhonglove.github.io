@@ -1,0 +1,543 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>模板-帮帮创意</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/upload_document.css" />
+</head>
+
+<body>
+    <!--header-->
+    <div class="site-header two-header">
+        <div class="header-nav">
+            <div class="container clearfix">
+                <div class="header-logo fl">
+                    <a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意" width="120"></a>
+                </div>
+                <ul class="nav-list clearfix" id="nav-list">
+                    <li class="nav-item active"><a class="link" href="">首页</a></li>
+                    <li class="nav-item">
+                        <a class="link" href="">分类<i class="site-icon iconfont">&#xe634;</i></a>
+                        <div class="more-cont nav-sort">
+                            <ul class="nav-more-box clearfix">
+                                <li class="more-list"><a class="more-link" href="">市场营销</a></li>
+                                <li class="more-list"><a class="more-link" href="">分析报告分析报告</a></li>
+                                <li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+                                <li class="more-list"><a class="more-link" href="">设计素材</a></li>
+                                <li class="more-list"><a class="more-link" href="">市场营销</a></li>
+                                <li class="more-list"><a class="more-link" href="">分析报告</a></li>
+                                <li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+                                <li class="more-list"><a class="more-link" href="">设计素材</a></li>
+                                <li class="more-list"><a class="more-link" href="">市场营销</a></li>
+                                <li class="more-list"><a class="more-link" href="">分析报告</a></li>
+                                <li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+                                <li class="more-list"><a class="more-link" href="">设计素材</a></li>
+                                <li class="more-list"><a class="more-link" href="">市场营销</a></li>
+                                <li class="more-list"><a class="more-link" href="">分析报告</a></li>
+                                <li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+                                <li class="more-list"><a class="more-link" href="">设计素材</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="link" href="">专题</a></li>
+                    <li class="nav-item"><a class="link" href="">资讯</a></li>
+                    <li class="nav-item"><a class="link" href="">教程</a></li>
+                    <li class="nav-item">
+                        <a class="link" href="">活动<i class="site-icon iconfont">&#xe634;</i></a>
+                        <div class="more-cont ">
+                            <ul class="nav-more-box">
+                                <li class="more-list"><a class="more-link" href="">上传比赛<img class="new-icon"
+                                            src="./images/new.png" style="margin-left: 4px;width: 27px;" alt=""></a>
+                                </li>
+                                <li class="more-list"><a class="more-link" href="">QQ群联盟</a></li>
+                                <li class="more-list"><a class="more-link" href="">赞助帮帮创意</a></li>
+                                <li class="more-list"><a class="more-link" href="">通知</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="header-right fr">
+                    <div class="search-box fl">
+                        <input class="s-input" type="text" placeholder="站内搜索">
+                        <a class="s-search" href="javascript:;"><i class="site-icon iconfont">&#xe601;</i></a>
+                    </div>
+                    <a class="upload fl" href="javascript:;"><i class="site-icon iconfont">&#xe61f;</i></a>
+                    <a class="open-vip fl" href=""><img class="vip-icon" src="./images/vip_icon.png" alt="">开通VIP</a>
+                    <!-- 登录前 -->
+                    <div class="link-box fl">
+                        <a class="link-list" href=""><i class="site-icon iconfont">&#xe78e;</i>登录</a>
+                        <a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe672;</i>注册</a>
+                    </div>
+                    <!-- 登录前 end -->
+                    <!-- 登录后 -->
+                    <!-- <a class="infor-box fl" href="">
+                    <i class="site-icon iconfont">&#xe626;</i>
+                    <span class="num">3</span>
+                </a>
+                <div id="userInfo" class="fl">
+                    <div class="user-info-box nav-item">
+                        <div class="avatar-box">
+                            <img class="avatar-img" src="./images/avatar_02.png" alt="">
+                            <span class="arrow"></span>
+                            <img class="vip-icon" src="./images/vip_icon.png" alt="">
+                        </div>
+                        <ul class="user-info">
+                            <li class="info-list"><a class="link" href="">个人中心</a></li>
+                            <li class="info-list"><a class="link" href="">账户设置</a></li>
+                            <li class="info-list"><a class="link" href="">收支记录</a></li>
+                            <li class="info-list"><a class="link" href="">充值提现</a></li>
+                            <li class="info-list"><a class="link" href="">上传文档</a></li>
+                            <li class="info-list"><a class="link" href="">我的文档</a></li>
+                            <li class="info-list"><a class="link" href="">我的收藏</a></li>
+                            <li class="info-list"><a class="link" href="">我的下载</a></li>
+                            <li class="info-list"><a class="link" href="">退出</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                    <!-- 登录后 end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/header-->
+    <div class="container">
+        <!--面包屑-->
+        <div class="crumbs-box">
+            <i class="site-icon iconfont">&#xe659;</i>
+            <a class="crumbs-link" href="">帮帮创意</a>
+            <span class="crumbs-arrow">></span>
+            <span class="crumbs-name">上传文档</span>
+        </div>
+        <!--/面包屑-->
+        <div class="upload_document">
+            <!--上传文档-->
+            <div class="data-upload-con">
+                <a class="btn-upload" href="JavaScript:;"><i class="icon-iShare iconfont">&#xe61f;</i>上传文档<input type="file" class="upload-file" name="file" title="上传文档" multiple /></a>
+                <p class="upload-text">按住Ctrl可选中多个同时上传，支持拖拽上传；一次最多能添加20篇</p>
+                <p class="upload-text">支持格式：<i class="site-icon iconfont doc">&#xe613;</i><i class="site-icon iconfont ppt">&#xe610;</i><i class="site-icon iconfont pdf">&#xe60f;</i>（单个大小 ≤ 200.00MB）</p>
+            </div>
+            <!--/上传文档-->
+            <!--文件列表-->
+            <div class="upload-wrap" id="global-uploader">
+                <div class="uploader-list">
+                    <div class="file-panel">
+                        <div class="more-file-editor">
+                            <div class="more-file-cont clearfix">
+                                <span class="more-file-title">文档标题</span>
+                                <span class="more-file-opt">操作</span>
+                                <span class="more-file-type">收益类型</span>
+                            </div>
+                        </div>
+                        <ul class="file-list">
+                            <li>
+                                <div data-v-fc5f3d9e="" status="success"
+                                    class="upload-item mb20 upload-item-index file_2">
+                                    <div data-v-fc5f3d9e="" class="uploader-file-info">
+                                        <div data-v-fc5f3d9e="" class="title-wrap clearfix">
+                                            <input data-v-fc5f3d9e="" type="checkbox" name="checkDocList"
+                                                class="batchSelectBtn">
+                                            <div data-v-24432dda="" data-v-fc5f3d9e="" class="doc-title">
+                                                <i data-v-24432dda="" class="doc-type-icon iconfont doc">&#xe613;</i>
+                                                <div data-v-24432dda="" class="doc-name fl">
+                                                    <div data-v-24432dda="" class="name-txt">
+                                                        <input type="text" data-v-24432dda="" class="name-val" value="test"/>
+                                                    </div>
+                                                </div>
+                                                <p data-v-24432dda="" class="warning fl">建议您给文档标题加上中文释义</p>
+                                            </div>
+                                            <span data-v-fc5f3d9e="" class="del-doc-btn fr"><i data-v-fc5f3d9e=""
+                                                    class="delect-icon"></i></span>
+                                            <span data-v-fc5f3d9e="" class="batchShowBtn fr"><i data-v-fc5f3d9e=""
+                                                    class="editor-icon iconfont">&#xe672;</i></span>
+                                            <span data-v-fc5f3d9e="" class="batchPayMentType fr">共享文档</span>
+                                        </div>
+                                        <div data-v-fc5f3d9e="" class="batchDetails">
+                                            <div class="form-group clearfix">
+                                                <div class="control-label">关健词：</div>
+                                                <div class="control-input">
+                                                    <input class="form-control form-big" type="text"
+                                                        placeholder="多个关健字以英文逗号，或者空格分割；如不填写，则自动按标题获取关健字。"
+                                                        style="width: 520px">
+                                                </div>
+                                            </div>
+                                            <div class="form-group clearfix">
+                                                <div class="control-label"><span class="c-red">*&nbsp;</span>分类：</div>
+                                                <div class="control-input">
+                                                    <select class="select">
+                                                        <option value="" selected="">市场营销</option>
+                                                        <option value="1">中国建设银行</option>
+                                                        <option value="2">中国农业银行</option>
+                                                        <option value="3">支付宝</option>
+                                                        <option value="4">微信支付</option>
+                                                        <option value="5">易宝支付</option>
+                                                    </select>
+                                                    <select class="select">
+                                                        <option value="" selected="">营销策划</option>
+                                                        <option value="1">中国建设银行</option>
+                                                        <option value="2">中国农业银行</option>
+                                                        <option value="3">支付宝</option>
+                                                        <option value="4">微信支付</option>
+                                                        <option value="5">易宝支付</option>
+                                                    </select>
+                                                    <select class="select">
+                                                        <option value="" selected="">中国工商银行</option>
+                                                        <option value="1">中国建设银行</option>
+                                                        <option value="2">中国农业银行</option>
+                                                        <option value="3">支付宝</option>
+                                                        <option value="4">微信支付</option>
+                                                        <option value="5">易宝支付</option>
+                                                    </select>
+                                                    <select class="select">
+                                                        <option value="" selected="">中国工商银行</option>
+                                                        <option value="1">中国建设银行</option>
+                                                        <option value="2">中国农业银行</option>
+                                                        <option value="3">支付宝</option>
+                                                        <option value="4">微信支付</option>
+                                                        <option value="5">易宝支付</option>
+                                                    </select>
+                                                    <span class="c-red">*</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group clearfix">
+                                                <div class="control-label">简介：</div>
+                                                <div class="control-input">
+                                                    <textarea class="form-control"
+                                                        placeholder="文档简介如不填写，将自动截取部份文档内容作为简介"
+                                                        style="width: 730px;height:140px"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group clearfix">
+                                                <div class="control-label"><span class="c-red">*&nbsp;</span>类型：</div>
+                                                <div class="control-input">
+                                                    <label class="i-checks"><input type="radio" name="types"
+                                                            checked>共享文档</label>
+                                                    <label class="i-checks"><input type="radio"
+                                                            name="types">普通文档</label>
+                                                    <label class="i-checks"><input type="radio"
+                                                            name="types">原创文档</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group clearfix switchCont3">
+                                                <div class="control-label">预览页数：</div>
+                                                <div class="control-input">
+                                                    <input class="form-control" type="text" value="10"
+                                                        style="width: 80px">
+                                                    <span class="c-red">默认最大预览页30页</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group clearfix">
+                                                <div class="control-label">售价：</div>
+                                                <div class="control-input">
+                                                    <input class="form-control" type="text" value="5"
+                                                        style="width: 80px">
+                                                    <span class="form-control-static">元</span>
+                                                    <span class="pricingBox">
+                                                        <span class="pricing-box">
+                                                            <span class="pricing-hover">看看大家怎么定价<i class="icon iconfont">&#xe634;</i></span>
+                                                            <div class="pricing-main">
+                                                                <div>高售价：500以内整数，0为注册会员免费下载</div>
+                                                                <div class="c-red">5-10元 占比38.98%</div>
+                                                                <div>10-20元 占比15.20%</div>
+                                                                <div>3-5元 占比13.80%</div>
+                                                                <div>2元以下 占比10.32%</div>
+                                                                <div>4-5元 占比10.15%</div>
+                                                                <div>20元以上 占比3.455%</div>
+                                                            </div>
+                                                        </span>
+                                                    </span>
+                                                    <!-- <span class="c-red">最高售价：500以内整数，0为注册会员免费下载</span> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div data-v-fc5f3d9e="" status="success"
+                                    class="upload-item mb20 upload-item-index file_2">
+                                    <div data-v-fc5f3d9e="" class="uploader-file-info">
+                                        <div data-v-fc5f3d9e="" class="title-wrap clearfix">
+                                            <input data-v-fc5f3d9e="" type="checkbox" name="checkDocList"
+                                                class="batchSelectBtn">
+                                            <div data-v-24432dda="" data-v-fc5f3d9e="" class="doc-title">
+                                                <i data-v-24432dda="" class="doc-type-icon iconfont doc">&#xe613;</i>
+                                                <div data-v-24432dda="" class="doc-name fl">
+                                                    <div data-v-24432dda="" class="name-txt">
+                                                        <input type="text" data-v-24432dda="" class="name-val" value="test"/>
+                                                    </div>
+                                                </div>
+                                                <p data-v-24432dda="" class="warning fl">建议您给文档标题加上中文释义</p>
+                                            </div>
+                                            <span data-v-fc5f3d9e="" class="del-doc-btn fr"><i data-v-fc5f3d9e=""
+                                                    class="delect-icon"></i></span>
+                                            <span data-v-fc5f3d9e="" class="batchShowBtn fr"><i data-v-fc5f3d9e=""
+                                                class="editor-icon iconfont">&#xe672;</i></span>
+                                            <span data-v-fc5f3d9e="" class="batchPayMentType fr">共享文档 5积分</span>
+                                        </div>
+                                        <div data-v-fc5f3d9e="" class="batchDetails">1</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="upload-fail">
+                                <div data-v-fc5f3d9e="" status="success"
+                                    class="upload-item mb20 upload-item-index file_2">
+                                    <div data-v-fc5f3d9e="" class="uploader-file-info">
+                                        <div data-v-fc5f3d9e="" class="title-wrap clearfix">
+                                            <input data-v-fc5f3d9e="" type="checkbox" name="checkDocList" class="batchSelectBtn" disabled>
+                                            <div data-v-24432dda="" data-v-fc5f3d9e="" class="doc-title">
+                                                <i data-v-24432dda="" class="doc-type-icon iconfont doc">&#xe613;</i>
+                                                <div data-v-24432dda="" class="doc-name fl">
+                                                    <div data-v-24432dda="" class="name-txt">
+                                                        <p data-v-24432dda="" class="name-val" style="border:none;">水泥稳定碎石基层施工监理实施细则</p>
+                                                    </div>
+                                                </div>
+                                                <p data-v-24432dda="" class="warning fl" style="color: red">上传失败该文档已存在</p>
+                                            </div>
+                                        </div>
+                                        <div data-v-fc5f3d9e="" class="batchDetails">1</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-wrap clearfix">
+                            <label class="btn-wrap-l fl"><input class="checkbox-all" type="checkbox" />全选</label>
+                            <div class="btn-wrap-r clearfix fr">
+                                <div class="upload-status fl">成功<i class="c-red">14</i>篇，失败<i class="c-red">0</i>篇，<i
+                                        class="c-red">0</i>篇上传中</div>
+                                <a class="btn btn-update-all fl modal-show1" href="javascript:;">批量修改</a>
+                                <a class="btn btn-submit fl" href="javascript:;">提交审核</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/文件列表-->
+            <!--文档上传须知-->
+            <div class="reminder-con mt20">
+                <h2 class="reminder-h2">文档上传须知</h2>
+                <p class="cont-list">符合要求的内容更易通过审核</p>
+                <p class="cont-list">1. 请勿上传法律禁止的内容</p>
+                <p class="cont-list">2. 不得上传涉及侵权的内容</p>
+                <p class="cont-list">3. 不得上传涉嫌泄露隐私的内容</p>
+                <p class="cont-list">4. 不得发布商业广告</p>
+                <p class="cont-list">5. 内容请尽量完整或排版不影响阅读</p>
+                <p class="cont-list">更多可查看 <a href="javascript:;" class="link modal-show2">常见问题</a> 或 <a href="" class="link">反馈客服</a></p>
+            </div>
+            <!--/文档上传须知-->
+        </div>
+    </div>
+    <!-- modal -->
+<div class="modal" id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <img class="modal-close modal-close1" src="./images/payment/Close.png" alt="">
+                <p class="modal-headerP">批量修改<span style="font-size:14px;padding-left:10px;">将应用于<i style="color: red;">7</i>篇已选文档</span></p>
+            </div>
+            <div class="modal-body">
+                <div class="form-group clearfix">
+                    <div class="control-label">关健词：</div>
+                    <div class="control-input">
+                        <input class="form-control form-big" type="text"
+                            placeholder="多个关健字以英文逗号，或者空格分割；如不填写，则自动按标题获取关健字。"
+                            style="width: 520px">
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="control-label"><span class="c-red">*&nbsp;</span>分类：</div>
+                    <div class="control-input">
+                        <select class="select">
+                            <option value="" selected="">市场营销</option>
+                            <option value="1">中国建设银行</option>
+                            <option value="2">中国农业银行</option>
+                            <option value="3">支付宝</option>
+                            <option value="4">微信支付</option>
+                            <option value="5">易宝支付</option>
+                        </select>
+                        <select class="select">
+                            <option value="" selected="">营销策划</option>
+                            <option value="1">中国建设银行</option>
+                            <option value="2">中国农业银行</option>
+                            <option value="3">支付宝</option>
+                            <option value="4">微信支付</option>
+                            <option value="5">易宝支付</option>
+                        </select>
+                        <select class="select">
+                            <option value="" selected="">中国工商银行</option>
+                            <option value="1">中国建设银行</option>
+                            <option value="2">中国农业银行</option>
+                            <option value="3">支付宝</option>
+                            <option value="4">微信支付</option>
+                            <option value="5">易宝支付</option>
+                        </select>
+                        <select class="select">
+                            <option value="" selected="">中国工商银行</option>
+                            <option value="1">中国建设银行</option>
+                            <option value="2">中国农业银行</option>
+                            <option value="3">支付宝</option>
+                            <option value="4">微信支付</option>
+                            <option value="5">易宝支付</option>
+                        </select>
+                        <span class="c-red">*</span>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="control-label">简介：</div>
+                    <div class="control-input">
+                        <textarea class="form-control"
+                            placeholder="文档简介如不填写，将自动截取部份文档内容作为简介"
+                            style="width: 520px;height:100px"></textarea>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="control-label"><span class="c-red">*&nbsp;</span>类型：</div>
+                    <div class="control-input">
+                        <label class="i-checks"><input type="radio" name="types"
+                                checked>共享文档</label>
+                        <label class="i-checks"><input type="radio"
+                                name="types">普通文档</label>
+                        <label class="i-checks"><input type="radio"
+                                name="types">原创文档</label>
+                    </div>
+                </div>
+                <div class="form-group clearfix switchCont3">
+                    <div class="control-label">预览页数：</div>
+                    <div class="control-input">
+                        <input class="form-control" type="text" value="10"
+                            style="width: 80px">
+                        <span class="c-red">默认最大预览页30页</span>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="control-label">售价：</div>
+                    <div class="control-input">
+                        <input class="form-control" type="text" value="5"
+                            style="width: 80px">
+                        <span class="form-control-static">元</span>
+                        <span class="pricingBox">
+                            <span class="pricing-box">
+                                <span class="pricing-hover">看看大家怎么定价<i class="icon iconfont">&#xe634;</i></span>
+                                <div class="pricing-main">
+                                    <div>高售价：500以内整数，0为注册会员免费下载</div>
+                                    <div class="c-red">5-10元 占比38.98%</div>
+                                    <div>10-20元 占比15.20%</div>
+                                    <div>3-5元 占比13.80%</div>
+                                    <div>2元以下 占比10.32%</div>
+                                    <div>4-5元 占比10.15%</div>
+                                    <div>20元以上 占比3.455%</div>
+                                </div>
+                            </span>
+                        </span>
+                        <!-- <span class="c-red">最高售价：500以内整数，0为注册会员免费下载</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                    <button class="modal-footerBtn marginRight">保存修改</button><button class="modal-canelBtn modal-canelBtn1" style="margin-left: 10px">取消</button>
+            </div>
+        </div>
+    </div>
+    <!-- /modal --> 
+    	<!-- modal -->
+		<div class="modal" id="modal2">
+                <div class="modal-dialog" style="width: 540px">
+                    <div class="modal-header">
+                        <img class="modal-close modal-close2" src="./images/payment/Close.png" alt="">
+                        <p class="modal-headerP">温馨小贴示</p>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-bodyT">1.原创或者独家资料（你上传该文档的网站，本网站是第一家，上传6个月后可传到其他网站。即使你是原创，但是网上已经有则不能算作独家资料。）
+                                </p>
+                        <p class="modal-bodyT">2.如果文档不是独家，但是你却冒充为独家资料的不诚信行为,将做封号处理，分成比例将降低至30%。</p>
+                        <p class="modal-bodyT">单独板块列表,强化SEO功能，百度收录更好</p>
+                        <p class="modal-bodyT">减少后续版权纠纷</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="modal-footerBtn" style="width: 300px">点击这里进行实名身份认证</button>
+                    </div>
+                </div>
+            </div>
+        <!-- /modal -->
+    
+    <script>
+        $("#global-uploader").globalUploader();
+        $('.modal-show1').on('click',function(){
+            $('#modal1').fadeIn();
+        })
+        $('.modal-close1').on('click',function(){
+            $('#modal1').fadeOut();
+        })
+        $('.modal-canelBtn1').on('click',function(){
+            $('#modal1').fadeOut();
+        })
+        $('.modal-show2').on('click',function(){
+            $('#modal2').fadeIn();
+        })
+        $('.modal-close2').on('click',function(){
+            $('#modal2').fadeOut();
+        })
+        $(".pricingBox").navShow({ navItem: '.pricing-box' });
+    </script>
+    <!--footer-->
+    <div class="site-footer">
+        <div class="container">
+            <div class="footer-links clearfix">
+                <dl class="col-links">
+                    <dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+                    <dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+                    <dd class="link-list"><a class="link" href="#">话题</a></dd>
+                    <dd class="link-list"><a class="link" href="#">教程</a></dd>
+                    <dd class="link-list"><a class="link" href="#">排行榜</a></dd>
+                    <dd class="link-list"><a class="link" href="#">任务求助</a></dd>
+                    <dd class="link-list"><a class="link" href="#">活动</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+                    <dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+                    <dd class="link-list"><a class="link" href="#">共享分与帮币</a></dd>
+                    <dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+                    <dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+                    <dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+                    <dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+                </dl>
+                <dl class="col-links">
+                    <dt class="link-list link-frist"><a class="link" href="#">关于帮帮创意</a></dt>
+                    <dd class="link-list"><a class="link" href="#">帮帮创意简介</a></dd>
+                    <dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+                    <dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+                    <dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+                    <dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+                </dl>
+                <dl class="col-links links-last">
+                    <dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+                    <dd class="link-list">工作时间</dd>
+                    <dd class="link-list">周一至周五</dd>
+                    <dd class="link-list">9：00-17：30</dd>
+                </dl>
+                <div class="foots-logo">
+                    <img class="logo-img" src="images/logo.png">
+                    <p class="logo-info">专业文档和设计素材分享社区</p>
+                </div>
+                <div class="we-chat">
+                    <img class="we-chat-img" src="images/cody.png">
+                    <p class="we-chat-info">关注微信公众平台</p>
+                </div>
+            </div>
+            <div class="copyright-box">
+                <p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有<a class="site-map-link" href="">网站地图</a></p>
+                <p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+            </div>
+        </div>
+    </div>
+    <!--/footer-->
+
+</body>
+
+</html>

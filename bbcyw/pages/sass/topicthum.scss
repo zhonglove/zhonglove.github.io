@@ -1,0 +1,49 @@
+@import 'module/crumbs';//面包屑
+@import 'module/title';//title
+@import 'module/subnav';//列表页子导航
+@import 'module/resobox';//资源平铺
+@import 'module/page';//分页
+@import 'module/news';//右侧新闻
+
+@import 'module/topic';//列表内容
+
+.bbcy-list{padding-bottom:40px;}
+.bbcy-list .layout{background-color:#fff;margin-bottom:5px;}
+/*左侧*/
+.bbcy-list .warp-l{width:895px;float:left;}
+.reso-list-box{padding:30px 25px;}
+/*左侧 end*/
+.bbcy-list .warp-r{width: 300px;float:right;}
+
+
+.what-topic{padding:0px 20px 20px;}
+.what-topic .topic-info{color: #727272;font-size:14px;line-height:26px;}
+.what-topic .more-box{text-align:right;padding-top:20px;}
+.what-topic .more-help{color:#3ca5f6;font-size:14px;}
+
+.create-topic{color:#fff;font-size:20px;display: block;height:56px;line-height:56px;text-align:center;background-color:#f7372c;}
+.create-topic:hover{opacity: .85;}
+
+.ranking-box{padding:0 20px 6px;}
+.ranking-box .ranking-list{margin-bottom:16px;}
+.ranking-box .ranking-num{width:18px;height:18px;line-height:18px;text-align:center;background-color:#a9a9a9;color:#fff;float:left;margin-top:18px;}
+.ranking-box .user-img{width:53px;height:53px;float:left;margin:0 14px;}
+.ranking-box .ranking-info{float:left;width:160px;}
+.ranking-box .info-line{line-height:18px;}
+.ranking-box .c-blue{color:#3ca5f6;}
+.ranking-box .num-color{background-color:#f7372c;}
+
+.dynamic-main{padding:0 20px 20px}
+.dynamic-box{background:url(../images/point.png) no-repeat left center;}
+.dynamic-box .dynamic-list{color:#c3c3c3;line-height:34px;padding-left:24px;}
+.dynamic-box .link{color:#5f5f5f;padding:0 4px;}
+
+/*资源列表*/
+.topic-warp .topic-list{border-bottom:1px solid #dcdcdc;padding-bottom:26px;margin-bottom:26px;}
+.topic-warp .reso-time{padding-top:16px;}
+.topic-warp .user-info{}
+.topic-warp .user-info .user-name{color:#8b8b8b;float:left;padding-top:16px;}
+.topic-warp .user-info .user-img-box{width:44px;height:44px;float:left;}
+.topic-warp .user-info .user-img{width:44px;height:44px;display:block;}
+.topic-warp .topic-summary{height:72px;overflow: hidden;}
+/*资源列表 end*/

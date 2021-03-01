@@ -1,0 +1,24 @@
+
+.topic-list{margin-bottom:36px;}
+.topic-list .topic-l{float:left;width:193px;height:145px;border:1px solid #eee;overflow:hidden;}
+.topic-list .topic-l:hover{border-color:#f7372c;}
+.topic-list .topic-img{display:block;height:100%;margin:0 auto;}
+.topic-list .topic-r{float:left;width:610px;padding-left:36px;}
+.topic-list .list-name{font-size:18px;line-height:34px;}
+.topic-list .list-name .link{color:#4a4a4a;}
+.topic-list .list-name .link:hover{color:red;text-decoration:underline;}
+.topic-list .list-name .link .c-red{color:red;}
+.topic-list .post-oper{color:#bababa;padding:1px 0 2px}
+.topic-list .user-img{display:inline-block;width:26px;height:26px;vertical-align:middle;}
+.topic-list .avatar-img{display:inline-block;width:26px;height:26px;border-radius:50%;overflow:hidden;}
+.topic-list .user-name{padding-left:4px;padding-right:16px;}
+.topic-list a .user-name{color:#bababa;}
+.topic-list .topic-time{color:#38a2ec;}
+.topic-list .topic-icon{padding-left:20px;font-size:13px;}
+.topic-list .site-icon{margin-right:4px;vertical-align:0px;font-size:12px;}
+.topic-list .topic-summary{color:#727272;font-size:14px;line-height:24px;}
+
+/*资源*/
+.topic-list .reso-time{color:#bababa;padding-top:4px;}
+.topic-list .font-c{color:#3ca5f6;}
+/*资源 end*/

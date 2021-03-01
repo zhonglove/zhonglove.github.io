@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>资源列表-帮帮创意</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<link rel="stylesheet" type="text/css" href="css/resolist.css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+</head>
+<body>
+<!--header-->
+<div class="site-topbar">
+	<div class="container clearfix">
+		<div class="top-info fl">专业文档和设计素材分享社区</div>
+		<div class="link-box fr">
+			<a class="link-list" href=""><i class="site-icon iconfont">&#xe78e;</i>登录</a>
+			<a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe672;</i>注册</a>
+			<a class="link-list help" href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<div class="site-header">
+	<div class="container header-center clearfix">
+		<div class="header-logo">
+			<a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意"></a>			
+		</div>
+		<a class="release-btn" href=""><i class="site-icon iconfont">&#xe636;</i>发布资源</a>		
+		<div class="header-search">
+			<input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+			<input class="search-btn iconfont" type="submit" value="&#xe601;" />			
+		</div>
+	</div>
+	<div class="header-nav">
+		<div class="container clearfix">
+			<div class="sort-box" id="sort-box" data-type="false">
+				<h2 class="sort-title"><i class="site-icon iconfont">&#xe761;</i>全部分类</h2>
+				<div class="menu-list-box">
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">市场营销</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">营销策划</a>
+							<a class="link" href="">产品规划</a>
+							<a class="link" href="">渠道管理</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">分析报告</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">管理咨询工具</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">战略咨询工具</a>
+							<a class="link" href="">营销咨询工具</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">设计素材</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">标志</a>
+							<a class="link" href="">VI模板</a>
+							<a class="link" href="">海报</a>
+							<a class="link" href="">海报</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">高清图片</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">人物图片</a>
+							<a class="link" href="">风景图片</a>
+							<a class="link" href="">世界风光</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">管理文档</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">企业管理</a>
+							<a class="link" href="">财务管理</a>
+							<a class="link" href="">人力资源</a>
+						</dd>
+					</dl>
+					<dl class="menu-list list-last">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">更多资源</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">行业资料</a>
+							<a class="link" href="">PPT模板</a>
+							<a class="link" href="">办公文档</a>
+						</dd>
+					</dl>
+				</div>
+				<ul class="menu-cont">
+					<li class="cont-list">
+						<h3 class="tit-name"><a class="link" href="">市场营销全部</a></h3>
+						<div class="cont-link clearfix">
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+						</div>
+					</li>
+					<li class="cont-list">
+						<h3 class="tit-name"><a class="link" href="">分析报告全部</a></h3>
+						<div class="cont-link clearfix">
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+						</div>
+					</li>
+					<li class="cont-list">3</li>
+					<li class="cont-list">4</li>
+					<li class="cont-list">5</li>
+					<li class="cont-list">6</li>
+					<li class="cont-list">7</li>
+				</ul>
+			</div>
+			<ul class="nav-list clearfix" id="nav-list">
+				<li class="nav-item"><a class="link" href="">首页</a></li>
+				<li class="nav-item"><a class="link" href="">专题</a></li>
+				<li class="nav-item"><a class="link" href="">话题</a></li>
+				<li class="nav-item"><a class="link" href="">教程</a></li>
+				<li class="nav-item"><a class="link" href="">排行榜</a></li>
+				<li class="nav-item"><a class="link" href="">任务求助</a></li>
+				<li class="nav-item">
+					<a class="link" href="">活动<i class="site-icon iconfont">&#xe634;</i></a>
+					<div class="more-cont">
+						<ul class="nav-more-box">
+							<li class="more-list"><a class="more-link" href="">上传比赛</a></li>
+							<li class="more-list"><a class="more-link" href="">赞助帮帮创意</a></li>
+							<li class="more-list"><a class="more-link" href="">通知</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--/header-->
+
+<div class="container">
+	<!--面包屑-->
+		<div class="crumbs-box">
+			<i class="site-icon iconfont">&#xe659;</i>
+			<a class="crumbs-link" href="">帮帮创意</a>
+			<span class="crumbs-arrow">></span>
+			<a class="crumbs-link" href="">资源分类</a>
+			<span class="crumbs-arrow">></span>
+			<span class="crumbs-name">市场营销</span>
+		</div>
+	<!--/面包屑-->
+	<div class="bbcy-list clearfix">
+		<div class="warp-l">
+			<div class="layout" id="subNav">
+				<div class="title-box clearfix">
+					<h3 class="tit-name">市场营销<span class="small-text">(共126530 份)</span></h3>
+					<div class="tit-rxpand">
+						<a href="资源平铺.html"><i class="site-icon iconfont">&#xe600;</i></a>
+						<a href="资源列表.html"><i class="site-icon iconfont  select">&#xe6f0;</i></a>
+					</div>
+				</div>
+				<div class="subnav-box">
+					<dl class="subnav-list clearfix">
+						<dt class="subnav-name">分类：</dt>
+						<dd class="link-list clearfix">
+							<a class="link select" href="">全部</a>
+							<a class="link" href="">市场营销</a>
+							<a class="link" href="">分析报告</a>
+							<a class="link" href="">管理咨询工具</a>
+							<a class="link" href="">设计素材</a>
+							<a class="link" href="">高清图片</a>
+							<a class="link" href="">行业资料</a>
+							<a class="link" href="">管理文档</a>
+							<a class="link" href="">办公文档</a>
+							<a class="link" href="">PPT模板</a>
+							<a class="link" href="">计算机</a>
+							<a class="link" href="">教学课件</a>
+							<a class="link" href="">经济金融</a>
+							<a class="link" href="">毕业论文</a>
+							<a class="link" href="">医学医疗</a>
+							<a class="link" href="">建筑施工</a>
+							<a class="link" href="">法律法学</a>
+							<a class="link" href="">考试资料</a>
+							<a class="link" href="">其他文档</a>
+						</dd>
+					</dl>
+					<dl class="subnav-list clearfix">
+						<dt class="subnav-name">二级：</dt>
+						<dd class="link-list clearfix">
+							<a class="link select" href="">全部</a>
+							<a class="link" href="">营销策划</a>
+							<a class="link" href="">产品规划</a>
+							<a class="link" href="">渠道管理</a>
+							<a class="link" href="">品牌策划</a>
+							<a class="link" href="">促销导购</a>
+							<a class="link" href="">终端店铺</a>
+							<a class="link" href="">连锁加盟</a>
+							<a class="link" href="">销售管理</a>
+							<a class="link" href="">推广策略</a>
+							<a class="link" href="">公关活动</a>
+							<a class="link" href="">微博微信营销</a>
+							<a class="link" href="">营销学习</a>
+							<a class="link" href="">互联网策划</a>
+							<a class="link" href="">销售制度</a>
+							<a class="link" href="">客户服务</a>
+							<a class="link" href="">广告管理</a>
+							<a class="link" href="">其他文档</a>
+						</dd>
+					</dl>
+					<dl class="subnav-list clearfix">
+						<dt class="subnav-name">排序：</dt>
+						<dd class="link-list clearfix">
+							<a class="link select" href="">最新上传</a>
+							<a class="link" href="">人气最高</a>
+							<a class="link" href="">推荐最多</a>
+							<a class="link" href="">收藏最多</a>
+							<a class="link" href="">评论最多</a>
+						</dd>
+					</dl>
+					<dl class="subnav-list clearfix">
+						<dt class="subnav-name">时间：</dt>
+						<dd class="link-list clearfix">
+							<a class="link select" href="">不限</a>
+							<a class="link" href="">三天内</a>
+							<a class="link" href="">一周内</a>
+							<a class="link" href="">一个月内</a>
+							<a class="link" href="">一年内</a>
+						</dd>
+					</dl>
+				</div>
+
+			</div>
+			<div class="layout">
+				<div class="reso-list-box">
+					<!--资源列表-->
+					<dl class="topic-list clearfix">
+						<dt class="topic-l"><a href=""><img class="topic-img" src="http://www.bbcyw.com/fileroot1/2016-12\30\a9f7dd36-3089-4c99-a2bf-1d36145a51b6/pic1.jpg" /></a></dt>
+						<dd class="topic-r">
+							<h3 class="list-name"><a class="link" href="">云南宗教的历史现状及特点</a></h3>
+							<p class="topic-summary">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+							<div class="reso-time">发布时间：<span class="font-c">2016-12-01 10:22</span> / <span class="font-c">1</span>人气 / <span class="font-c">0</span> 下载 / <span class="font-c">8</span> 非商售价</div>
+						</dd>
+					</dl>
+					<dl class="topic-list clearfix">
+						<dt class="topic-l"><a href=""><img class="topic-img" src="http://www.bbcyw.com/fileroot1/2016-12\30\a9f7dd36-3089-4c99-a2bf-1d36145a51b6/pic1.jpg" /></a></dt>
+						<dd class="topic-r">
+							<h3 class="list-name"><a class="link" href="">云南宗教的历史现状及特点</a></h3>
+							<p class="topic-summary">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+							<div class="reso-time">发布时间：<span class="font-c">2016-12-01 10:22</span> / <span class="font-c">1</span>人气 / <span class="font-c">0</span> 下载 / <span class="font-c">8</span> 非商售价</div>
+						</dd>
+					</dl>
+					<dl class="topic-list clearfix">
+						<dt class="topic-l"><a href=""><img class="topic-img" src="http://www.bbcyw.com/fileroot1/2016-12\30\a9f7dd36-3089-4c99-a2bf-1d36145a51b6/pic1.jpg" /></a></dt>
+						<dd class="topic-r">
+							<h3 class="list-name"><a class="link" href="">云南宗教的历史现状及特点</a></h3>
+							<p class="topic-summary">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+							<div class="reso-time">发布时间：<span class="font-c">2016-12-01 10:22</span> / <span class="font-c">1</span>人气 / <span class="font-c">0</span> 下载 / <span class="font-c">8</span> 非商售价</div>
+						</dd>
+					</dl>
+					<dl class="topic-list clearfix">
+						<dt class="topic-l"><a href=""><img class="topic-img" src="http://www.bbcyw.com/fileroot1/2016-12\30\a9f7dd36-3089-4c99-a2bf-1d36145a51b6/pic1.jpg" /></a></dt>
+						<dd class="topic-r">
+							<h3 class="list-name"><a class="link" href="">云南宗教的历史现状及特点</a></h3>
+							<p class="topic-summary">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+							<div class="reso-time">发布时间：<span class="font-c">2016-12-01 10:22</span> / <span class="font-c">1</span>人气 / <span class="font-c">0</span> 下载 / <span class="font-c">8</span> 非商售价</div>
+						</dd>
+					</dl>
+					<dl class="topic-list clearfix">
+						<dt class="topic-l"><a href=""><img class="topic-img" src="http://www.bbcyw.com/fileroot1/2016-12\30\a9f7dd36-3089-4c99-a2bf-1d36145a51b6/pic1.jpg" /></a></dt>
+						<dd class="topic-r">
+							<h3 class="list-name"><a class="link" href="">云南宗教的历史现状及特点</a></h3>
+							<p class="topic-summary">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+							<div class="reso-time">发布时间：<span class="font-c">2016-12-01 10:22</span> / <span class="font-c">1</span>人气 / <span class="font-c">0</span> 下载 / <span class="font-c">8</span> 非商售价</div>
+						</dd>
+					</dl>
+					<dl class="topic-list clearfix">
+						<dt class="topic-l"><a href=""><img class="topic-img" src="http://www.bbcyw.com/fileroot1/2016-12\30\a9f7dd36-3089-4c99-a2bf-1d36145a51b6/pic1.jpg" /></a></dt>
+						<dd class="topic-r">
+							<h3 class="list-name"><a class="link" href="">云南宗教的历史现状及特点</a></h3>
+							<p class="topic-summary">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+							<div class="reso-time">发布时间：<span class="font-c">2016-12-01 10:22</span> / <span class="font-c">1</span>人气 / <span class="font-c">0</span> 下载 / <span class="font-c">8</span> 非商售价</div>
+						</dd>
+					</dl>
+					<dl class="topic-list clearfix">
+						<dt class="topic-l"><a href=""><img class="topic-img" src="http://www.bbcyw.com/fileroot1/2016-12\30\a9f7dd36-3089-4c99-a2bf-1d36145a51b6/pic1.jpg" /></a></dt>
+						<dd class="topic-r">
+							<h3 class="list-name"><a class="link" href="">云南宗教的历史现状及特点</a></h3>
+							<p class="topic-summary">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+							<div class="reso-time">发布时间：<span class="font-c">2016-12-01 10:22</span> / <span class="font-c">1</span>人气 / <span class="font-c">0</span> 下载 / <span class="font-c">8</span> 非商售价</div>
+						</dd>
+					</dl>
+					<dl class="topic-list clearfix">
+						<dt class="topic-l"><a href=""><img class="topic-img" src="http://www.bbcyw.com/fileroot1/2016-12\30\a9f7dd36-3089-4c99-a2bf-1d36145a51b6/pic1.jpg" /></a></dt>
+						<dd class="topic-r">
+							<h3 class="list-name"><a class="link" href="">云南宗教的历史现状及特点</a></h3>
+							<p class="topic-summary">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+							<div class="reso-time">发布时间：<span class="font-c">2016-12-01 10:22</span> / <span class="font-c">1</span>人气 / <span class="font-c">0</span> 下载 / <span class="font-c">8</span> 非商售价</div>
+						</dd>
+					</dl>
+					<!--/资源列表-->
+					<!--分页-->
+					<div class="page-main">
+						<a class="home-page">首页</a>
+						<a class="prev-page">上一页</a>
+						<span class="select-page">1</span>
+						<a class="page-num" href="">2</a>
+						<a class="page-num" href="">3</a>
+						<a class="page-num" href="">4</a>
+						<span class="omitted">...</span>
+						<a class="next-page" href="">下一页</a>
+						<a class="last-page" href="">尾页</a>
+					</div>
+					<!--/分页-->					
+				</div>
+
+			</div>
+		</div>
+		<div class="warp-r">
+			<!--最新搜索-->
+			<div class="layout">
+				<div class="title-box clearfix">
+					<h3 class="tit-name">最新搜索</h3>
+					<a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+				</div>
+				<ul class="news-box">
+					<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">Good evening3</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故</a></li>
+					<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">金阳街道中学学生春游活动方</a></li>
+					<li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">人教版小学三年级语文下册《</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">新理念英语上机测试(华工版)</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">尔雅课堂 逻辑和批判性思逻辑</a></li>
+					<li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link" href="">DISC性格测试及分析(Ex</a></li>
+					<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">14.发生在肺内的气体交换的</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">课前简短演讲稿71短演短演讲</a></li>
+					<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">信用社助学贷款调查报告</a></li>
+				</ul>
+			</div>
+			<!--热点推荐-->
+			<div class="layout">
+				<div class="title-box clearfix">
+					<h3 class="tit-name">热点推荐</h3>
+					<a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+				</div>
+				<ul class="news-box">
+					<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">Good evening3</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故</a></li>
+					<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">金阳街道中学学生春游活动方</a></li>
+					<li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">人教版小学三年级语文下册《</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">新理念英语上机测试(华工版)</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">尔雅课堂 逻辑和批判性思逻辑</a></li>
+					<li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link" href="">DISC性格测试及分析(Ex</a></li>
+					<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">14.发生在肺内的气体交换的</a></li>
+					<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">课前简短演讲稿71短演短演讲</a></li>
+					<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">信用社助学贷款调查报告</a></li>
+				</ul>
+			</div>
+			<div class="adv-box">
+				<a href=""><img src="images/adv/adv_01.jpg"></a>
+			</div>
+			<div class="adv-box">
+				<a href=""><img src="images/adv/adv_02.jpg"></a>
+			</div>
+		</div>		
+	</div>
+
+</div>
+
+<!--右侧导航-->
+	<div class="toolbar" id="toolbar">
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe616;</i>
+				<span class="toolbar-text">咨询</span>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe62e;</i>
+				<span class="toolbar-text">关注</span>
+			</span>
+			<span class="toolbar-layer toolbar-layer-wx">
+				<img class="we-chat-img" src="images/cody.png">
+				<p class="we-chat-info">官方微信</p>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item feedback">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe672;</i>
+				<span class="toolbar-text">反馈</span>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe61b;</i>
+				<span class="toolbar-text">顶部</span>
+			</span>
+		</a>
+	</div>
+<!--/右侧导航-->
+<!--footer-->
+<div class="site-footer">
+	<div class="container">
+		<div class="footer-links clearfix">
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+				<dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+				<dd class="link-list"><a class="link" href="#">话题</a></dd>
+				<dd class="link-list"><a class="link" href="#">教程</a></dd>
+				<dd class="link-list"><a class="link" href="#">排行榜</a></dd>
+				<dd class="link-list"><a class="link" href="#">任务求助</a></dd>
+				<dd class="link-list"><a class="link" href="#">活动</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+				<dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+				<dd class="link-list"><a class="link" href="#">共享分与帮币</a></dd>
+				<dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+				<dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+				<dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+				<dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">关于帮帮创意</a></dt>
+				<dd class="link-list"><a class="link" href="#">帮帮创意简介</a></dd>
+				<dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+				<dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+				<dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+				<dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+			</dl>
+			<dl class="col-links links-last">
+				<dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+				<dd class="link-list">工作时间</dd>
+				<dd class="link-list">周一至周五</dd>
+				<dd class="link-list">9：00-17：30</dd>
+			</dl>
+			<div class="foots-logo">
+				<img class="logo-img" src="images/logo.png">
+				<p class="logo-info">专业文档和设计素材分享社区</p>
+			</div>			
+			<div class="we-chat">
+				<img class="we-chat-img" src="images/cody.png">
+				<p class="we-chat-info">关注微信公众平台</p>
+			</div>
+		</div>
+		<div class="copyright-box">
+			<p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有<a class="site-map-link" href="">网站地图</a></p>
+			<p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+		</div>
+	</div>
+</div>
+<!--/footer-->
+
+
+</body>
+</html>

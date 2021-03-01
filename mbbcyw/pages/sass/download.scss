@@ -1,0 +1,83 @@
+img{width: auto;}
+/*tabs*/
+.content-box{}
+.content-box .cont-list{display: none;}
+.content-box .cont-list.active{display: block;}
+/*tabs end*/
+.content-box .module-nav{border-bottom: 1px solid #ddd;text-align: center;}
+.content-box .switchNav{display: inline-block;font-size: 1.5rem;padding: 4px 6px 8px;margin: 0 .6rem -1px;}
+.content-box .link{color: #727272;}
+.content-box .switchNav.active{border-bottom:2px solid #ff0000;}
+.content-box .switchNav.active .link{color: #ff0000;}
+
+.download-box{padding:10px 16px;}
+.download-main{padding: 10px .6rem 0;}
+.download-main .infor-list{font-size: 1.3rem;color: #727272;line-height: 2.6rem;}
+.download-main .module-tit{color: #727272;font-size: 1.3rem;margin-top: .6rem;}
+.payment-box{padding-top: .6rem;}
+.payment-box .payment-list{float: left;}
+.payment-box .payment-img{display: block;border:2px solid #dcdcdc;margin-right: 4px;padding: 0px 6px;border-radius: 4px;height: 3.6rem;}
+.payment-box .zfb{background-color: #fff7e6;}
+.payment-box .checked .payment-img{border-color: #f7372c}
+.download-main .needs{color: #727272;font-size: 1.3rem;}
+.download-main .pay_type_icon{vertical-align: middle;margin-right: 6px;}
+
+.down-input{padding-top: 1rem;}
+.down-input .input-tit{color: #727272;font-size: 1.3rem;}
+.down-input .input-list{padding-top: 8px;}
+.down-input .input-l{float: left;width: 20%;}
+.down-input .input-name{color: #727272;font-size: 1.3rem;line-height: 36px;}
+.down-input .input-r{float: left;width: 80%;}
+.down-input .input{color: #727272;font-size: 1.3rem;border:1px solid #c5c5c5;display: block;height: 34px;text-indent: .6rem;border-radius: .2rem;width: 90%;}
+.down-input .input-error{color:red;font-size: 1.3rem;}
+.down-input .input-info-l{float: left;}
+.down-input .auto-ckb{color: #727272;font-size: 1.3rem;}
+.down-input .auto-input{vertical-align: middle;margin-right: .4rem;}
+.down-input .input-info-r{float: left;padding-left: 2rem;}
+.down-input .link{color: #727272;font-size: 1.3rem;}
+
+
+
+.down-btn-box{padding:20px 0 20px;text-align: center;}
+.down-btn-box .down-btn{display: inline-block;
+    min-width: 30%;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-right: .4rem;
+    background-color: #1581f4;
+    padding: 0 1rem;
+    border-radius: 3px;
+    margin-bottom: .6rem;
+
+}
+.down-btn-box .btn-l{background-color:#f7372c}
+.down-btn-box .btn-r{background-color:#199bd6}
+.download-box .down-btn-box .bc-g {
+    background-color: #20c428;
+}
+.down-btn-box .bc-r{background-color: #ff0000;}
+.down-btn-box .b-s{min-width: 20%;}
+
+
+.cooper-tit{text-align: center;color: #727272;font-size: 1.3rem;}
+.other-login{padding:1rem 0 2rem;text-align: center;}
+.other-login .login-list{display:inline-block;}
+.other-login .link-list{background-color:#039ae3;color:#fff;display:inline-block;width:4.5rem;height:4.5rem;border-radius:.6rem;line-height:4.5rem;text-align:center;margin:0 .2rem;overflow:hidden;}
+.other-login .link-icon{font-size:3.6rem;}
+.other-login .link-list.zfb{background-color:#039ae3;}
+.other-login .link-list.zfb .link-icon{font-size:4.4rem;}
+.other-login .link-list.wx{background-color:#20c428;}
+.other-login .link-list.qq{background-color:#5cbbdb;}
+.other-login .link-list.wb{background-color:#e93030;}
+
+
+.download-main .grade{
+    color: #fff;
+    font-size: 13px;
+    background: #adadad;
+    padding: 2px 10px;
+    border-radius: 2px;
+}

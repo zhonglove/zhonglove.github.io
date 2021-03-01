@@ -1,0 +1,679 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>个人中心（主页）-帮帮创意</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<!--私有文件-->
+	<link rel="stylesheet" type="text/css" href="css/personal.css" />
+</head>
+
+<body>
+	<!--header-->
+	<div class="site-topbar">
+		<div class="container clearfix">
+			<div class="top-info fl">专业文档和设计素材分享社区</div>
+			<div class="link-box fr">
+				<a class="link-list" href=""><i class="site-icon iconfont">&#xe78e;</i>登录</a>
+				<a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe672;</i>注册</a>
+				<a class="link-list help" href="">帮助中心</a>
+			</div>
+		</div>
+	</div>
+	<div class="site-header">
+		<div class="container header-center clearfix">
+			<div class="header-logo">
+				<a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意"></a>
+			</div>
+			<a class="release-btn" href=""><i class="site-icon iconfont">&#xe636;</i>发布资源</a>
+			<div class="header-search">
+				<input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+				<input class="search-btn iconfont" type="submit" value="&#xe601;" />
+			</div>
+		</div>
+		<div class="header-nav">
+			<div class="container clearfix">
+				<div class="sort-box" id="sort-box" data-type="false">
+					<h2 class="sort-title"><i class="site-icon iconfont">&#xe761;</i>全部分类</h2>
+					<div class="menu-list-box">
+						<dl class="menu-list">
+							<dt class="tit-name-box clearfix">
+								<h3 class="title-name"><a class="link" href="">市场营销</a></h3>
+								<i class="right-arrow">></i>
+							</dt>
+							<dd class="link-line clearfix">
+								<a class="link" href="">营销策划</a>
+								<a class="link" href="">产品规划</a>
+								<a class="link" href="">渠道管理</a>
+							</dd>
+						</dl>
+						<dl class="menu-list">
+							<dt class="tit-name-box clearfix">
+								<h3 class="title-name"><a class="link" href="">分析报告</a></h3>
+								<i class="right-arrow">></i>
+							</dt>
+							<dd class="link-line clearfix">
+								<a class="link" href="">研究报告</a>
+								<a class="link" href="">行业报告</a>
+								<a class="link" href="">可行性报告</a>
+							</dd>
+						</dl>
+						<dl class="menu-list">
+							<dt class="tit-name-box clearfix">
+								<h3 class="title-name"><a class="link" href="">管理咨询工具</a></h3>
+								<i class="right-arrow">></i>
+							</dt>
+							<dd class="link-line clearfix">
+								<a class="link" href="">战略咨询工具</a>
+								<a class="link" href="">营销咨询工具</a>
+							</dd>
+						</dl>
+						<dl class="menu-list">
+							<dt class="tit-name-box clearfix">
+								<h3 class="title-name"><a class="link" href="">设计素材</a></h3>
+								<i class="right-arrow">></i>
+							</dt>
+							<dd class="link-line clearfix">
+								<a class="link" href="">标志</a>
+								<a class="link" href="">VI模板</a>
+								<a class="link" href="">海报</a>
+								<a class="link" href="">海报</a>
+							</dd>
+						</dl>
+						<dl class="menu-list">
+							<dt class="tit-name-box clearfix">
+								<h3 class="title-name"><a class="link" href="">高清图片</a></h3>
+								<i class="right-arrow">></i>
+							</dt>
+							<dd class="link-line clearfix">
+								<a class="link" href="">人物图片</a>
+								<a class="link" href="">风景图片</a>
+								<a class="link" href="">世界风光</a>
+							</dd>
+						</dl>
+						<dl class="menu-list">
+							<dt class="tit-name-box clearfix">
+								<h3 class="title-name"><a class="link" href="">管理文档</a></h3>
+								<i class="right-arrow">></i>
+							</dt>
+							<dd class="link-line clearfix">
+								<a class="link" href="">企业管理</a>
+								<a class="link" href="">财务管理</a>
+								<a class="link" href="">人力资源</a>
+							</dd>
+						</dl>
+						<dl class="menu-list list-last">
+							<dt class="tit-name-box clearfix">
+								<h3 class="title-name"><a class="link" href="">更多资源</a></h3>
+								<i class="right-arrow">></i>
+							</dt>
+							<dd class="link-line clearfix">
+								<a class="link" href="">行业资料</a>
+								<a class="link" href="">PPT模板</a>
+								<a class="link" href="">办公文档</a>
+							</dd>
+						</dl>
+					</div>
+					<ul class="menu-cont">
+						<li class="cont-list">
+							<h3 class="tit-name"><a class="link" href="">市场营销全部</a></h3>
+							<div class="cont-link clearfix">
+								<a class="link" href="">研究报告</a>
+								<a class="link" href="">行业报告</a>
+								<a class="link" href="">可行性报告</a>
+								<a class="link" href="">市场分析报告</a>
+								<a class="link" href="">财务分析报告</a>
+								<a class="link" href="">统计分析报告</a>
+								<a class="link" href="">行业分析报告</a>
+								<a class="link" href="">调查问卷分析报告</a>
+								<a class="link" href="">数据分析报告</a>
+								<a class="link" href="">项目分析报告</a>
+								<a class="link" href="">经营分析报告</a>
+								<a class="link" href="">产业分析报告</a>
+								<a class="link" href="">医药行业分析报告</a>
+							</div>
+						</li>
+						<li class="cont-list">
+							<h3 class="tit-name"><a class="link" href="">分析报告全部</a></h3>
+							<div class="cont-link clearfix">
+								<a class="link" href="">行业分析报告</a>
+								<a class="link" href="">调查问卷分析报告</a>
+								<a class="link" href="">数据分析报告</a>
+								<a class="link" href="">项目分析报告</a>
+								<a class="link" href="">经营分析报告</a>
+								<a class="link" href="">产业分析报告</a>
+								<a class="link" href="">医药行业分析报告</a>
+								<a class="link" href="">研究报告</a>
+								<a class="link" href="">行业报告</a>
+								<a class="link" href="">可行性报告</a>
+								<a class="link" href="">市场分析报告</a>
+								<a class="link" href="">财务分析报告</a>
+								<a class="link" href="">统计分析报告</a>
+								<a class="link" href="">行业分析报告</a>
+								<a class="link" href="">调查问卷分析报告</a>
+								<a class="link" href="">数据分析报告</a>
+								<a class="link" href="">项目分析报告</a>
+								<a class="link" href="">经营分析报告</a>
+								<a class="link" href="">产业分析报告</a>
+								<a class="link" href="">医药行业分析报告</a>
+								<a class="link" href="">研究报告</a>
+								<a class="link" href="">行业报告</a>
+								<a class="link" href="">可行性报告</a>
+								<a class="link" href="">市场分析报告</a>
+								<a class="link" href="">财务分析报告</a>
+								<a class="link" href="">统计分析报告</a>
+							</div>
+						</li>
+						<li class="cont-list">3</li>
+						<li class="cont-list">4</li>
+						<li class="cont-list">5</li>
+						<li class="cont-list">6</li>
+						<li class="cont-list">7</li>
+					</ul>
+				</div>
+				<ul class="nav-list clearfix" id="nav-list">
+					<li class="nav-item"><a class="link" href="">首页</a></li>
+					<li class="nav-item"><a class="link" href="">专题</a></li>
+					<li class="nav-item"><a class="link" href="">话题</a></li>
+					<li class="nav-item"><a class="link" href="">教程</a></li>
+					<li class="nav-item"><a class="link" href="">排行榜</a></li>
+					<li class="nav-item"><a class="link" href="">任务求助</a></li>
+					<li class="nav-item">
+						<a class="link" href="">活动<i class="site-icon iconfont">&#xe634;</i></a>
+						<div class="more-cont">
+							<ul class="nav-more-box">
+								<li class="more-list"><a class="more-link" href="">上传比赛</a></li>
+								<li class="more-list"><a class="more-link" href="">赞助帮帮创意</a></li>
+								<li class="more-list"><a class="more-link" href="">通知</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--/header-->
+
+	<div class="container">
+		<div class="personal-box clearfix">
+			<!--personal-left-->
+			<div class="personal-l fl">
+				<ul class="personal-nav">
+					<li class="nav-list active">
+						<div class="nav-line"></div>
+						<a href="个人中心-主页.html" class="nav-link"><i class="site-icon iconfont">&#xe627;</i>个人中心</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-账户设置.html" class="nav-link"><i class="site-icon iconfont">&#xe631;</i>账户设置</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-收支记录.html" class="nav-link"><i class="site-icon iconfont">&#xe63d;</i>收支记录</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-充值.html" class="nav-link"><i class="site-icon iconfont">&#xe625;</i>充值</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-上传资源.html" class="nav-link"><i class="site-icon iconfont">&#xe62b;</i>上传资源</a>
+					</li>
+					<li class="nav-list select">
+						<div class="nav-line"></div>
+						<a href="个人中心-资源管理.html" class="nav-link"><i class="site-icon iconfont">&#xe644;</i>资源管理</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-专题管理.html" class="nav-link"><i class="site-icon iconfont">&#xe6c9;</i>专题管理</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-我的话题.html" class="nav-link"><i class="site-icon iconfont">&#xe628;</i>我的话题</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-我的教程.html" class="nav-link"><i class="site-icon iconfont">&#xe629;</i>我的教程</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-我的任务求助.html" class="nav-link"><i class="site-icon iconfont">&#xe62a;</i>我的任务求助</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-私信.html" class="nav-link"><i class="site-icon iconfont">&#xe626;</i>私信</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-我的收藏.html" class="nav-link"><i class="site-icon iconfont">&#xe633;</i>我的收藏</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-我的书签.html" class="nav-link"><i class="site-icon iconfont">&#xe63e;</i>我的书签</a>
+					</li>
+					<li class="nav-list">
+						<div class="nav-line"></div>
+						<a href="个人中心-我的下载.html" class="nav-link"><i class="site-icon iconfont">&#xe630;</i>我的下载</a>
+					</li>
+				</ul>
+				<div class="qq-num-box">
+					<a class="qq-num" href=""><i class="site-icon iconfont">&#xe62f;</i>383006219</a>
+					<p class="online-time">在线：08:00-23:30</p>
+				</div>
+
+
+			</div>
+			<!--/personal-left-->
+			<!--personal-right-->
+			<div class="personal-r fr">
+				<div class="module">
+					<div class="content-box tabSwitch">
+						<ul class="module-nav clearfix">
+							<li class="link-list switchNav active">
+								<a class="link" href="javascript:;">共享文档</a>
+							</li>
+							<li class="link-list switchNav">
+								<a class="link" href="javascript:;">普通文档</a>
+							</li>
+							<li class="link-list switchNav">
+								<a class="link" href="javascript:;">原创文档</a>
+							</li>
+							<li class="fr"><a class="scwd-btn" href="">上传文档</a></li>
+						</ul>
+						<div class="module-cont">
+							<div class="cont-list switchCont active">
+								<div class="reso-tabs">
+									<div class="filter-box form-group clearfix">
+										<div class="filter-left fl">
+											<span class="filter-nav select">
+												<a class="filter-name select" href="javascript:;">审核通过 14442</a>
+											</span>
+											<span class="filter-nav">
+												<span class="slash">|</span>
+												<a class="filter-name" href="javascript:;">审核中 148058</a>
+											</span>
+											<span class="filter-nav">
+												<span class="slash">|</span>
+												<a class="filter-name" href="javascript:;">转换失败 56</a>
+											</span>
+										</div>
+										<span class="station-box fr">
+											<input class="s-input form-control" type="text" placeholder="站内搜索">
+											<a class="s-search" href="javascript:;"><i
+													class="site-icon iconfont">&#xe601;</i></a>
+										</span>
+									</div>
+									<div class="filter-cont">
+										<div class="reso-list-box select">
+											<!--资源列表-->
+											<table class="reso-cont">
+												<tr class="cont-tit">
+													<th width="4%"></th>
+													<th width="46%">标题</th>
+													<th width="8%">分类</th>
+													<th width="7%">浏览/下载</th>
+													<th width="7%">大小</th>
+													<th width="4%">售价</th>
+													<th width="10%">日期</th>
+													<th width="15%">操作</th>
+												</tr>
+												<tr class="cont-info">
+													<td widtd="4%"><input type="checkbox" /></th>
+													<td class="news-box clearfix"><i
+															class="site-icon doc iconfont">&#xe613;</i>
+														<div class="news-info">城管执法局党支部2017年度党员领导干部民主生活会实施方案</div>
+													</td>
+													<td>工作总结</td>
+													<td>19/0</td>
+													<td>17.57KB</td>
+													<td class="c-blue">15</td>
+													<td>2016-12-25</td>
+													<td><a class="c-blue link modal-show"
+															href="JavaScript:;"  data-num="1">编辑123</a><span
+															class="c-blue line">|</span><a class="c-blue link"
+															href="">删除</a><span class="c-blue line">|</span><a
+															class="c-blue link" href="">下载</a></td>
+												</tr>
+												<tr class="cont-info">
+													<td width="4%"><input type="checkbox" /></td>
+													<td class="news-box clearfix"><i
+															class="site-icon doc iconfont">&#xe613;</i>
+														<div class="news-info">办公室干部2017年度民主生活会发言提纲与党建办主任2018年
+															六个方面民主生活会个人对照</div>
+													</td>
+													<td>工作总结</td>
+													<td>19/0</td>
+													<td>17.57KB</td>
+													<td class="c-blue">15</td>
+													<td>2016-12-25</td>
+													<td><a class="c-blue link" href="">编辑</a><span
+															class="c-blue line">|</span><a class="c-blue link"
+															href="">删除</a><span class="c-blue line">|</span><a
+															class="c-blue link" href="">下载</a></td>
+												</tr>
+												<tr class="cont-info">
+													<td width="4%"><input type="checkbox" /></td>
+													<td class="news-box clearfix"><i
+															class="site-icon doc iconfont">&#xe613;</i>
+														<div class="news-info">办公室干部2017年度民主生活会发言提纲与党建办主任2018年
+															六个方面民主生活会个人对照</div>
+													</td>
+													<td>工作总结</td>
+													<td>19/0</td>
+													<td>17.57KB</td>
+													<td class="c-blue">15</td>
+													<td>2016-12-25</td>
+													<td><a class="c-blue link" href="">编辑</a><span
+															class="c-blue line">|</span><a class="c-blue link"
+															href="">删除</a><span class="c-blue line">|</span><a
+															class="c-blue link" href="">下载</a></td>
+												</tr>
+												<tr class="cont-info">
+													<td width="4%"><input type="checkbox" /></td>
+													<td class="news-box clearfix"><i
+															class="site-icon doc iconfont">&#xe613;</i>
+														<div class="news-info">城管执法局党支部2017年度党员领导干部民主生活会实施方案</div>
+													</td>
+													<td>工作总结</td>
+													<td>19/0</td>
+													<td>17.57KB</td>
+													<td class="c-blue">15</td>
+													<td>2016-12-25</td>
+													<td><a class="c-blue link" href="">编辑</a><span
+															class="c-blue line">|</span><a class="c-blue link"
+															href="">删除</a><span class="c-blue line">|</span><a
+															class="c-blue link" href="">下载</a></td>
+												</tr>
+												<tr class="cont-info">
+													<td width="4%"><input type="checkbox" /></td>
+													<td class="news-box clearfix"><i
+															class="site-icon doc iconfont">&#xe613;</i>
+														<div class="news-info">办公室干部2017年度民主生活会发言提纲与党建办主任2018年
+															六个方面民主生活会个人对照
+														</div>
+													</td>
+													<td>工作总结</td>
+													<td>19/0</td>
+													<td>17.57KB</td>
+													<td class="c-blue">15</td>
+													<td>2016-12-25</td>
+													<td><a class="c-blue link" href="">编辑</a><span
+															class="c-blue line">|</span><a class="c-blue link"
+															href="">删除</a><span class="c-blue line">|</span><a
+															class="c-blue link" href="">下载</a></td>
+												</tr>
+												<tr class="cont-info">
+													<td width="4%"><input type="checkbox" /></td>
+													<td class="news-box clearfix"><i
+															class="site-icon doc iconfont">&#xe613;</i>
+														<div class="news-info">城管执法局党支部2017年度党员领导干部民主生活会实施方案</div>
+													</td>
+													<td>工作总结</td>
+													<td>19/0</td>
+													<td>17.57KB</td>
+													<td class="c-blue">15</td>
+													<td>2016-12-25</td>
+													<td><a class="c-blue link" href="">编辑</a><span
+															class="c-blue line">|</span><a class="c-blue link"
+															href="">删除</a><span class="c-blue line">|</span><a
+															class="c-blue link" href="">下载</a></td>
+												</tr>
+												<tr class="cont-info">
+													<td width="4%"><input type="checkbox" /></td>
+													<td class="news-box clearfix"><i
+															class="site-icon doc iconfont">&#xe613;</i>
+														<div class="news-info">办公室干部2017年度民主生活会发言提纲与党建办主任2018年
+															六个方面民主生活会个人对照
+														</div>
+													</td>
+													<td>工作总结</td>
+													<td>19/0</td>
+													<td>17.57KB</td>
+													<td class="c-blue">15</td>
+													<td>2016-12-25</td>
+													<td><a class="c-blue link" href="">编辑</a><span
+															class="c-blue line">|</span><a class="c-blue link"
+															href="">删除</a><span class="c-blue line">|</span><a
+															class="c-blue link" href="">下载</a></td>
+												</tr>
+											</table>
+											<!--/资源列表-->
+											<div class="clearfix">
+												<div class="fl clearfix">
+													<label class="btn-wrap-l fl"><input class="checkbox-all" type="checkbox" />全选</label>
+													<a class="btn btn-update-all modal-show" href="javascript:;" data-num="2">批量修改</a>
+												</div>
+												<!--分页-->
+											<div class="page_box fr">
+													<div class="page-main">
+														<span class="page-total">共<i class="num">24266</i>条 / 前<i
+																class="num">100</i>页</span>
+														<a tabindex="0" class="home-page" id="datatable1_first">首页</a>
+														<a href="javascript: void(0)" class="prev-page">上一页</a>
+														<a href="javascript: void(0)" id="Active" class="select-page">1</a>
+														<a href="javascript:to_page(2);" class="page-num">2</a>
+														<a href="javascript:to_page(3);" class="page-num">3</a>
+														<a href="javascript:to_page(4);" class="page-num">4</a>
+														<a href="javascript:to_page(5);" class="page-num">5</a>
+														<a href="javascript:to_page(2);" class="next-page">下一页</a>
+														<a href="javascript:to_page(100);" class="last-page">尾页</a>
+													</div>
+												</div>
+												<!--/分页-->
+											</div>
+											
+										</div>
+										<div class="reso-list-box">2</div>
+										<div class="reso-list-box">3</div>
+									</div>
+								</div>
+							</div>
+							<div class="cont-list switchCont">b</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/personal-right-->
+		</div>
+
+	</div>
+	<!--footer-->
+	<div class="site-footer">
+		<div class="container">
+			<div class="footer-links clearfix">
+				<dl class="col-links">
+					<dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+					<dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+					<dd class="link-list"><a class="link" href="#">话题</a></dd>
+					<dd class="link-list"><a class="link" href="#">教程</a></dd>
+					<dd class="link-list"><a class="link" href="#">排行榜</a></dd>
+					<dd class="link-list"><a class="link" href="#">任务求助</a></dd>
+					<dd class="link-list"><a class="link" href="#">活动</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+					<dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+					<dd class="link-list"><a class="link" href="#">共享分与帮币</a></dd>
+					<dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+					<dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+					<dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+					<dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt class="link-list link-frist"><a class="link" href="#">关于帮帮创意</a></dt>
+					<dd class="link-list"><a class="link" href="#">帮帮创意简介</a></dd>
+					<dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+					<dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+					<dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+					<dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+				</dl>
+				<dl class="col-links links-last">
+					<dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+					<dd class="link-list">工作时间</dd>
+					<dd class="link-list">周一至周五</dd>
+					<dd class="link-list">9：00-17：30</dd>
+				</dl>
+				<div class="foots-logo">
+					<img class="logo-img" src="images/logo.png">
+					<p class="logo-info">专业文档和设计素材分享社区</p>
+				</div>
+				<div class="we-chat">
+					<img class="we-chat-img" src="images/cody.png">
+					<p class="we-chat-info">关注微信公众平台</p>
+				</div>
+			</div>
+			<div class="copyright-box">
+				<p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有<a class="site-map-link" href="">网站地图</a></p>
+				<p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+			</div>
+		</div>
+	</div>
+	<!--/footer-->
+	<!-- modal -->
+	<div class="modal">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<img class="modal-close" src="./images/payment/Close.png" alt="">
+				<p class="modal-headerP">修改文档</p>
+			</div>
+			<div class="modal-body">
+				<div class="form-group clearfix contShowHide">
+					<div class="control-label">文档标题：</div>
+					<div class="control-input">
+						<input class="form-control form-big" type="text" placeholder="城管执法局党支部2017年度领导干部民主生活会"
+							style="width: 520px">
+					</div>
+					<a href="" class="control-mark">百度一下</a>
+				</div>
+				<div class="form-group clearfix">
+					<div class="control-label">关健词：</div>
+					<div class="control-input">
+						<input class="form-control form-big" type="text"
+							placeholder="多个关健字以英文逗号，或者空格分割；如不填写，则自动按标题获取关健字。" style="width: 520px">
+					</div>
+				</div>
+				<div class="form-group clearfix">
+					<div class="control-label"><span class="c-red">*&nbsp;</span>分类：</div>
+					<div class="control-input">
+						<select class="select">
+							<option value="" selected="">市场营销</option>
+							<option value="1">中国建设银行</option>
+							<option value="2">中国农业银行</option>
+							<option value="3">支付宝</option>
+							<option value="4">微信支付</option>
+							<option value="5">易宝支付</option>
+						</select>
+						<select class="select">
+							<option value="" selected="">营销策划</option>
+							<option value="1">中国建设银行</option>
+							<option value="2">中国农业银行</option>
+							<option value="3">支付宝</option>
+							<option value="4">微信支付</option>
+							<option value="5">易宝支付</option>
+						</select>
+						<select class="select">
+							<option value="" selected="">中国工商银行</option>
+							<option value="1">中国建设银行</option>
+							<option value="2">中国农业银行</option>
+							<option value="3">支付宝</option>
+							<option value="4">微信支付</option>
+							<option value="5">易宝支付</option>
+						</select>
+						<select class="select">
+							<option value="" selected="">中国工商银行</option>
+							<option value="1">中国建设银行</option>
+							<option value="2">中国农业银行</option>
+							<option value="3">支付宝</option>
+							<option value="4">微信支付</option>
+							<option value="5">易宝支付</option>
+						</select>
+						<span class="c-red">*</span>
+					</div>
+				</div>
+				<div class="form-group clearfix">
+					<div class="control-label">简介：</div>
+					<div class="control-input">
+						<textarea class="form-control" placeholder="文档简介如不填写，将自动截取部份文档内容作为简介"
+							style="width: 520px;height:100px"></textarea>
+					</div>
+				</div>
+				<div class="form-group clearfix">
+					<div class="control-label"><span class="c-red">*&nbsp;</span>类型：</div>
+					<div class="control-input">
+						<label class="i-checks"><input type="radio" name="types" checked>共享文档</label>
+						<label class="i-checks"><input type="radio" name="types">普通文档</label>
+						<label class="i-checks"><input type="radio" name="types">原创文档</label>
+					</div>
+				</div>
+				<div class="form-group clearfix switchCont3">
+					<div class="control-label">预览页数：</div>
+					<div class="control-input">
+						<input class="form-control" type="text" value="10" style="width: 80px">
+						<span class="c-red">默认最大预览页30页</span>
+					</div>
+				</div>
+				<div class="form-group clearfix">
+					<div class="control-label">售价：</div>
+					<div class="control-input">
+						<input class="form-control" type="text" value="5" style="width: 80px">
+						<span class="form-control-static">元</span>
+						<span class="pricingBox">
+							<span class="pricing-box">
+								<span class="pricing-hover">看看大家怎么定价<i class="icon iconfont">&#xe634;</i></span>
+								<div class="pricing-main">
+									<div>高售价：500以内整数，0为注册会员免费下载</div>
+									<div class="c-red">5-10元 占比38.98%</div>
+									<div>10-20元 占比15.20%</div>
+									<div>3-5元 占比13.80%</div>
+									<div>2元以下 占比10.32%</div>
+									<div>4-5元 占比10.15%</div>
+									<div>20元以上 占比3.455%</div>
+								</div>
+							</span>
+						</span>
+						<!-- <span class="c-red">最高售价：500以内整数，0为注册会员免费下载</span> -->
+					</div>
+				</div>
+				<div class="form-group clearfix contShowHide">
+					<div class="control-label"></div>
+					<div class="control-input">
+						<a href="" class="btn">更新附件</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="modal-footerBtn marginRight">保存修改</button><button class="modal-canelBtn">取消</button>
+			</div>
+		</div>
+	</div>
+	<!-- /modal -->
+</body>
+<script type="text/javascript">
+	$(".tabSwitch").tabSwitch({ eventType: "click" });
+	$(".reso-tabs").tabSwitch({ eventType: "click", switchNav: ".filter-nav", switchCont: ".reso-list-box", active: "select" });
+	$('.modal-show').on('click', function () {
+		var dataNum = $(this).attr("data-num");
+		if(dataNum == 1){
+			$(".contShowHide").show();
+		}else{
+			$(".contShowHide").hide();
+		}
+		$('.modal').fadeIn();
+	})
+	$('.modal-close').on('click', function () {
+		$('.modal').fadeOut();
+	})
+	$('.modal-canelBtn').on('click', function () {
+		$('.modal').fadeOut();
+	})
+	$(".reso-tabs").globalUploader({fileList: ".reso-cont"});
+	$(".pricingBox").navShow({ navItem: '.pricing-box' });
+</script>
+
+</html>

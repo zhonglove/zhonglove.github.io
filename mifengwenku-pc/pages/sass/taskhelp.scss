@@ -1,0 +1,42 @@
+@import 'module/crumbs';//面包屑
+@import 'module/title';//title
+@import 'module/subnav';//列表页子导航
+@import 'module/page';//分页
+@import 'module/toolbar';//右侧导航
+@import 'module/recommend';//推荐任务
+
+.bbcy-list{padding-bottom:40px;}
+.bbcy-list .layout{background-color:#fff;margin-bottom:5px;}
+/*左侧*/
+.bbcy-list .warp-l{width:895px;float:left;}
+
+.subnav-list .subnav-name{width:80px;}
+.subnav-list .link-list{width:780px}
+
+.sorting-box{padding-top:10px;}
+.sorting-box .select,.sorting-box .link:hover{background-color:#fff;color:#359be3;}
+
+.task-box{padding:30px 0 40px}
+.task-list{padding-bottom:30px;}
+.task-list .task-l{float:left;width:145px}
+.task-list .user-link{}
+.task-list .user-img{display: block;width:58px;height:58px;margin:8px auto 0;}
+.task-list .user-name{color:#727272;font-size:14px;height:22px;text-align:center;margin:10px 30px 0;}
+.task-list .task-r{float:left;border-bottom:1px solid #e5e5e5;width:750px;padding-bottom:30px;}
+.task-list .task-tit{padding-bottom:10px;}
+.task-list .task-points{color:#f7372c;font-size:16px;}
+.task-list .task-name{color:#727272;font-size:16px;padding-left:10px;}
+.task-list .task-name a{color:#727272;}
+.task-list .task-name a:hover{color:#f7372c;}
+.task-list .task-time{color:#727272;font-size:14px;padding-left:10px;}
+.task-list .task-line{color:#727272;line-height:24px;font-size:14px;}
+.task-list .c-blue{color:#50a9e8;padding-right:16px;}
+.task-list:last-child .task-r{border-bottom:0 none;}
+.task-list .b-none{border:none}
+
+/*左侧 end*/
+.bbcy-list .warp-r{width: 300px;float:right;}
+
+.create-topic{color:#fff;font-size:20px;display: block;height:56px;line-height:56px;text-align:center;background-color:#f7372c;}
+.create-topic:hover{opacity: .85;}
+

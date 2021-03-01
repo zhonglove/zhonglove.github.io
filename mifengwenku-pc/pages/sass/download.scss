@@ -1,0 +1,96 @@
+@import 'module/crumbs';//面包屑
+@import 'module/tab-switch';//tab-switch
+
+
+.download-box{background:#fff;margin:0px auto 20px;padding:20px 40px 80px; }
+
+.download-main{}
+.content-box .module-cont{padding-top: 50px;}
+.download-box .download-l{width:380px;float:left;}
+.download-box .download-img{width: 180px;margin: 20px auto 0;display: block;}
+.download-box .download-r{width:740px;float:left;}
+.download-box .reso-intor{color:#727272;font-size:18px;padding-bottom:10px;}
+.download-box .infor-list{color:#727272;font-size:16px;line-height:36px;}
+.download-box .infor-list-2{color:#727272;font-size:14px;line-height:28px;}
+.download-box .font-c{color:#f7372c;}
+.download-box .infor-list-box{padding: 10px 0 5px;}
+.download-box .price-num{font-size: 18px;}
+.download-box .grade{color: #fff;font-size: 13px;background: #adadad;padding: 2px 10px;border-radius: 2px;}
+
+.module-tit{color: #727272;font-size: 14px;padding-top: 10px;}
+.payment-box{padding-top:10px;}
+.payment-box .payment-list{margin-right:6px;}
+.payment-box .payment-img{border:3px solid #dcdcdc;border-radius:4px;width:164px;height:53px}
+.payment-box .checked{outline:none;}
+.payment-box .checked .payment-img{border:3px solid #f7372c;}
+
+
+.download-box .down-btn-box{padding-top: 34px;}
+.download-box .down-btn-box .down-btn{display:block;min-width:130px;height:48px;line-height:48px;text-align:center;color:#fff;font-size:20px;float:left;margin-right:8px;background-color: #1581f4;padding: 0 15px;border-radius: 3px;}
+.download-box .down-btn-box .down-btn:hover{opacity: .85;}
+.download-box .down-btn-box .bc-g{background-color: #20c428;}
+.download-box .down-btn-box .bc-r{background-color: #ff0000;}
+.download-box .down-btn-box .w-b{width: 335px;}
+
+.download-box .two-down{color: #727272;font-size: 14px;margin-top: 30px;}
+.download-box .two-down .link{color: #1581f4;}
+.download-box .two-down .link:hover{text-decoration: underline;}
+
+
+.precautions-box{background:#ededed;margin-bottom:20px;}
+.precautions-box .note-cont{padding:10px 30px;}
+.precautions-box .note-tit{color:#b7b7b7;font-size:36px;float:left;width:240px;padding-top:24px;font-weight: bold;margin-left: 20px;}
+.precautions-box .site-icon{font-size:40px;margin:0 6px 0 0px;vertical-align: -4px;}
+.precautions-box .note-info{float:left;width:860px;}
+.precautions-box .note-list{color:#818181;font-size:14px;line-height:28px;}
+
+/*登录下载*/
+.download-box .login-btn{position: relative;padding-bottom: 110px;}
+.pay-type{font-size: 14px;color:#727272;padding-top: 10px;}
+.pay_type_icon{vertical-align: middle;margin-right: 6px;}
+
+.down-input{padding-top: 20px;}
+.down-input .input-tit{color: #727272;font-size: 14px;}
+.down-input .input-list{margin-top: 20px;}
+.down-input .input-l{color: #727272;font-size: 14px;float: left;width: 70px;}
+.down-input .input-name{line-height: 44px;}
+.down-input .input-r{float: left;width: 316px;}
+.down-input .input{width: 100%;height: 42px;display: block;border:1px solid #cccccc;color: #727272;font-size: 14px;text-indent: 10px;}
+.down-input .input-info-l{float: left;color: #727272;}
+.down-input .auto-input {
+    margin-right: 4px;
+    vertical-align: -2px;
+}
+.down-input .input-info-r{float: right;}
+.down-input .input-info-r .link{color: #727272;}
+.down-input .input-error{color: red;float: left;font-size: 14px;line-height: 44px;padding-left: 10px;}
+/*登录下载 end*/
+
+/*合作账单登录*/
+.input-main-r{position: absolute;left: 0;bottom: 0;}
+.input-main-r .link-box{color:#727272;font-size: 18px;}
+.input-main-r .cooper-tit{color:#727272;padding: 0px 0 2px;font-size: 14px;}
+.input-main-r .link-list{display: block;float: left;margin-right: 12px;}
+.input-main-r .site-icon{font-size: 32px;}
+.input-main-r .link-01{margin-top: -6px;position: relative;}
+.input-main-r .link-02{margin-top: 1px;position: relative;}
+.input-main-r .link-04{margin-top: 1px;position: relative;}
+.input-main-r .link-01 .site-icon{color: #00aaee;font-size: 36px;}
+.input-main-r .link-02 .site-icon{color: #00cf00}
+.input-main-r .link-03 .site-icon{color: #59bbde;font-size: 34px;}
+.input-main-r .link-04 .site-icon{color: #d55e60;}
+/*合作账单登录 end*/
+
+// modal
+body{width: 100%;height: 100%;position: relative;}
+.modal{width: 100%;height: 100%;background: rgba(0, 0, 0, .7);position: fixed;top: 0;left: 0%;display: none;}
+.modal-dialog{width:540px;background: #fff;position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);padding:20px 0; }
+.modal-header{text-align: center;}
+.modal-header > img{width: 20px;float: right;margin-right: 20px;cursor: pointer;}
+.modal-header > p{display: inline-block;text-align: center;font-size: 18px;margin-left: 20px;}
+.modal-body{margin:30px 38px 20px 30px;}
+.modal-bodyT{color: rgb(114,114,114);margin-bottom: 30px;line-height: 24px;font-size: 14px;}
+.modal-error{margin-bottom: 10px;color: red;font-size: 14px;}
+.modal-bodyInput{height: 43px;margin-top:5px;width: 100%;font-size: 14px;color:#727272;text-indent: 10px; }
+.modal-footer{width: 100%;text-align: center;margin: 40px 0 20px 0;}
+.modal-footerBtn{border: none;outline: none;border-radius: 5px;color: #fff;font-size: 20px;display: inline-block;width: 300px;height: 50px;line-height: 50px;;background: #1581f4;cursor: pointer;}

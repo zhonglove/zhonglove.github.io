@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<title>帮帮创意网</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="css/public.css" rel="stylesheet" type="text/css" />
+	<script src="js/public.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="wrapper">
+<!--header-->
+<div class="header-02">
+	<a class="head-back" href="javascript:;" onclick="history.go(-1);"><i class="iconfont">&#xe618;</i></a>
+	<a class="head-menu" href="javascript:;" style="color:#f7372c">立即登录</a>
+</div>
+<!--/header-->
+
+<!--container-->
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+<div class="login-logo">
+	<div class="login-tit">欢迎注册</div>
+</div>
+<div class="login-input-box">
+	<div class="weui-cells">
+		<div class="weui-cell">
+            <div class="weui-cell-hd">
+                <label class="weui-label">账号</label>
+            </div>
+            <div class="weui-cell-bd">
+                <input class="weui-input" data-val="true" data-val-required="用户名必填" id="username" name="username" placeholder="昵称、手机号、邮箱" type="text" value="">
+            </div>
+        </div>
+		<!-- <div class="iptchange ipterror">
+			<div class="weui-cell">
+				<div class="weui-cell-bd">
+					<input class="weui-input" id="username" type="text" placeholder="请输入手机号或邮箱" />
+				</div>
+			</div>
+			<div class="input-error"><img class="error-icon" src="./images/error_icon.png" />邮箱输入不正确</div>
+		</div> -->
+		<div class="iptchange">
+			<div class="weui-cell">
+				<div class="weui-cell-bd">
+					<input class="weui-input" id="password" type="password" placeholder="填写密码" />
+				</div>
+				<div class="weui-cell-ft" id="showpwd">
+					<i class="iconfont weui-icon">&#xe637;</i>
+				</div>
+			</div>
+			<div class="input-error"><img class="error-icon" src="./images/error_icon.png" />填写密码</div>
+		</div>
+		<div class="iptchange">
+			<div class="weui-cell weui-cell-vcode">
+				<div class="weui-cell-bd">
+					<input class="weui-input" id="vcode" type="text" placeholder="填写验证码" />
+				</div>
+				<div class="weui-cell-ft">
+					<img class="weui-vcode-img" src="./images/vcode.jpg" />
+				</div>
+			</div>
+			<div class="input-error"><img class="error-icon" src="./images/error_icon.png" />填写验证码</div>
+		</div>
+	</div>	
+</div>
+<div class="input-info-box">
+	<div class="xieyi" style="text-align: left;padding-top:1rem;padding-bottom: .6rem;">我已阅读并同意<a href="" class="info-link">《帮帮创意网注册协议》</a></div>
+</div>
+
+<div class="weui-btn-box">
+	<a href="javascript:;" class="weui-btn weui-btn_primary" id="toast">注册</a>
+</div>
+
+<div class="input-info-box">
+	<div class="xieyi"><a href="">返回社交账号登录</a></div>
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/toast.js"></script>
+<script>
+
+var mapNum = 1;
+$("#showpwd").click(function(){
+	var _this = $(this);
+    mapNum ++;
+    if(mapNum==2){
+      _this.find(".weui-icon").html("&#xe65a;");
+      $("#password").attr("type","text");
+    }else{
+      _this.find(".weui-icon").html("&#xe637;");
+      $("#password").attr("type","password");
+      mapNum = 1;
+    }
+});
+
+$('#toast').on('click',function(){
+	var username = $.trim($("#username").val());
+	var password = $.trim($("#password").val());
+	var mailbox = $.trim($("#mailbox").val());
+	var vcode = $.trim($("#vcode").val());
+	if(!username){
+		$.toast({'text':'请输入用户名'});
+		return false;
+	}
+	var passwordtest = /^(\w){6,20}$/.test(password);
+	if(!passwordtest){
+		$.toast({'text':'请输入6-20位密码'});
+		return false;
+	}
+	var mailboxtest = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/.test(mailbox);
+	if(!mailboxtest){
+		$.toast({'text':'请输入正确的电子邮箱'});
+		return false;
+	}
+	if(!vcode){
+		$.toast({'text':'请输入验证码'});
+		return false;
+	}
+
+});
+
+	//输入框选中变蓝色
+	$.fn.iptchange = function (options) {
+		var options = $.extend({
+			weuiInput: ".weui-input",
+			iptfocus: "iptfocus"
+		}, options || {});
+		return this.each(function () {
+			var _this = $(this);
+			_this.find(options.weuiInput).focus(function () {
+				_this.addClass(options.iptfocus);
+			})
+			_this.find(options.weuiInput).blur(function () {
+				_this.removeClass(options.iptfocus);
+			})
+		});
+	}
+	$(".iptchange").iptchange();
+
+</script>
+<!--/container-->
+
+<!--footer-->
+<div class="footer">
+	<div class="foot-link">
+		<a class="link" href="">触屏版</a>
+		<span class="foot-line">|</span>
+		<a class="link c-red" href="">电脑版</a>
+	</div>
+	<p class="foot-list">Copyright@ 2011-2017 帮帮创意网站版权所有 <a class="sitemap-link" href="">网站地图</a></p>
+	<p class="foot-list">经营许可证编号:京ICP备14007087号-3</p>
+</div>
+<!--/footer-->
+</div>
+
+</body>
+</html>

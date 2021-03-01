@@ -1,0 +1,57 @@
+@import 'module/personal-nav';//左侧列表
+
+/*主页*/
+@import 'module/page';//分页
+
+.personal-box{padding-top:20px;padding-bottom:30px}
+/*主页左*/
+.personal-l{width:236px;background-color:#fff;}
+
+
+/*主页右*/
+.personal-r{width: 960px}
+
+.personal-r .module{background-color:#fff;margin-bottom:4px;padding:20px 40px;}
+.module-tit{color: #f7372c;font-size:18px;}
+
+/*帮帮创意*/
+.info-list{color:#727272;font-size:14px;line-height:24px;}
+/*帮帮创意 end*/
+
+/*站内通知*/
+.notice-news{padding:0px 0 50px;}
+.notice-news .news-list{line-height:36px;}
+.notice-news .news-time{color:#727272;font-size:16px;}
+.notice-news .dots{color:#f7372c;padding-right:6px;}
+.notice-news .news-link{color:#727272;font-size:16px;}
+.notice-news .news-link:hover{color:#f7372c;text-decoration:underline;}
+/*站内通知 end*/
+
+/*站内通知详情*/
+.notice-scrap{color:#727272;font-size:14px;border-bottom:1px solid #f4f4f4;padding-bottom:10px;margin-bottom:26px;}
+.notice-scrap .current-location{border-left:2px solid #dd2726;padding-left:10px;}
+.notice-scrap .scrap-link{color:#727272;}
+.notice-scrap .right-arrow{padding:0 3px;}
+.notice-scrap .scrap-name{}
+.notice-name{color:#f7372c;font-size:24px;text-align:center;}
+
+table,table td{border:1px solid #CCCCCC;}
+
+/*站内通知详情 end*/
+
+/*提交建议*/
+.btn-submit{color:#fff;font-size:20px;display:block;width:180px;height:58px;line-height:58px;text-align:center;background-color:#f7372c;border:none;cursor:pointer;border-radius: 3px;}
+.btn-submit:hover{opacity: .85;}
+
+.form-group{margin-top:14px;}
+.form-group .control-label{color:#727272;font-size:16px;width:90px;float:left;line-height:30px;height:30px;text-align:right;}
+.form-group .control-input{float:left;}
+.form-group .form-control{border:1px solid #fdc3bf;width:200px;height:28px;text-indent:10px;font-size:16px;color:#727272;outline: none;}
+.p-t{padding-top:10px}
+.form-group .form-control-static{color:#727272;font-size:16px;line-height:30px}
+.form-group .form-big{width:470px;}
+.form-group .i-checks{color:#727272;font-size:16px;padding-right:16px;line-height:30px}
+.form-group .i-checks input{margin-right:4px;vertical-align:-1px}
+.form-group select{border:1px solid #fdc3bf;padding:5px 10px;font-size:14px;color:#727272;outline: none;}
+/*提交建议 end*/
+

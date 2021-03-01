@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="yes" name="apple-touch-fullscreen" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <title>帮帮创意网</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link href="css/public.css" rel="stylesheet" type="text/css" />
+  <script src="js/public.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+  <link href="css/search.css" rel="stylesheet" type="text/css" />
+  <div class="wrapper">
+    <div class="search-header">
+      <input class="header-text" id="searchInput" type="text" value="" placeholder="请输入">
+      <a class="header-icon search-btn" href="javascript:;"><i class="iconfont">&#xe603;</i></a>
+      <a class="cancel" id="searchCancel" href="javascript:;">取消</a>
+    </div>
+    <div id="searchText">
+      <div class="search-hot">
+        <p class="hot-title">大家最近热搜</p>
+        <div class="hot-content">
+          <p class="hot-item"><a href="">一元一次方程练习题</a></p>
+          <p class="hot-item"><a href="">高中物理总复习资料</a></p>
+          <p class="hot-item"><a href="">商业计划书</a></p>
+          <p class="hot-item"><a href="">红楼梦</a></p>
+          <p class="hot-item"><a href="">模拟调子技术习题</a></p>
+          <p class="hot-item"><a href="">一元一次方程练习题</a></p>
+          <p class="hot-item"><a href="">高中物理总复习资料</a></p>
+          <p class="hot-item"><a href="">商业计划书</a></p>
+          <p class="hot-item"><a href="">红楼梦</a></p>
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="search-history">
+        <p class="history-title">历史搜索</p>
+        <ul class="history-content" id="historySearch">
+          <li class="history-item clearfix">
+            <img class="icon-history" src="images/icon-history.png" alt="帮帮创意网" />
+            <span>营销策划书</span>
+            <a class="btn-close" href="javascript:;"><i class="iconfont">&#xe6b4;</i></a>
+          </li>
+          <li class="history-item clearfix">
+            <img class="icon-history" src="images/icon-history.png" alt="帮帮创意网" />
+            <span>营销方案</span>
+            <a class="btn-close" href="javascript:;"><i class="iconfont">&#xe6b4;</i></a>
+          </li>
+          <li class="history-item clearfix">
+            <img class="icon-history" src="images/icon-history.png" alt="帮帮创意网" />
+            <span>营销方案</span>
+            <a class="btn-close" href="javascript:;"><i class="iconfont">&#xe6b4;</i></a>
+          </li>
+          <li class="history-item clearfix">
+            <img class="icon-history" src="images/icon-history.png" alt="帮帮创意网" />
+            <span>营销方案</span>
+            <a class="btn-close" href="javascript:;"><i class="iconfont">&#xe6b4;</i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="search-history search-history2" id="searchResult" style="display:none;">
+      <ul class="history-content">
+        <li class="history-item clearfix">
+          <span><a href="">营销策划书</a></span>
+          <a class="link-history" href="/"><img class="icon-history" src="images/icon-go.png" alt="帮帮创意网" /></a>
+        </li>
+        <li class="history-item clearfix">
+          <span><a href="">营销策划书</a></span>
+          <a class="link-history" href="/"><img class="icon-history" src="images/icon-go.png" alt="帮帮创意网" /></a>
+        </li>
+        <li class="history-item clearfix">
+          <span><a href="">营销策划书</a></span>
+          <a class="link-history" href="/"><img class="icon-history" src="images/icon-go.png" alt="帮帮创意网" /></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/zepto.min.js"></script>
+  <script>
+
+    /*搜索*/
+    var $searchResult = $('#searchResult'),
+      $searchText = $('#searchText'),
+      $searchInput = $('#searchInput'),
+      $searchCancel = $('#searchCancel');
+
+    function hideSearchResult() {
+      $searchResult.hide();
+      $searchInput.val('');
+    }
+    function cancelSearch() {
+      hideSearchResult();
+      $searchText.show();
+    }
+
+    $searchText.on('click', function () {
+      $searchInput.focus();
+    });
+    $searchInput
+      .on('blur', function () {
+        if (!this.value.length) cancelSearch();
+      })
+      .on('input', function () {
+        if (this.value.length) {
+          $searchResult.show();
+          $searchText.hide();
+        } else {
+          $searchResult.hide();
+          $searchText.show();
+        }
+      });
+    $searchCancel.on('click', function () {
+      cancelSearch();
+      $searchInput.blur();
+    });
+
+    /*搜索 end*/
+
+    $("#historySearch .btn-close").click(function () {
+      $(this).parent(".history-item").remove();
+    });
+  </script>
+</body>
+
+</html>

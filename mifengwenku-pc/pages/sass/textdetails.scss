@@ -1,0 +1,200 @@
+@import 'module/crumbs';//面包屑
+@import 'module/userinfo';//用户信息
+@import 'module/news';//右侧新闻
+@import 'module/title';//title
+
+/*头部固定*/
+.site-header{position: fixed;left: 0;top: 0;width: 100%;}
+body{padding-top: 57px;}
+/*头部固定 end*/
+
+.bbcy-list{padding-bottom:40px;}
+.bbcy-list .layout{background-color:#fff;margin-bottom:5px;}
+/*左侧*/
+.bbcy-list .warp-l{width:866px;float:left;}
+
+.text-download-box{
+    text-align: center;
+    padding: 30px;
+    .info-list{
+        color: #333333;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .price{
+        color: #666666;
+        font-size: 12px;
+        padding: 8px 0 10px;
+        .price-num{
+            color: #fe1100;
+            font-size: 18px;
+        }
+        .discount-price{
+            padding-left: 10px;
+        }
+    }
+    .download-btn{
+        display: inline-block;
+        height: 46px;
+        line-height: 46px;
+        padding: 0 30px;
+        background-color: #1681f5;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 3px;
+        margin: 0 6px;
+        .site-icon{
+            font-size: 18px;
+            padding-right: 6px;
+        }
+    }
+    .vip-btn{
+        background-color: #f7372c;
+    }
+    .download-btn:hover{
+        opacity: .85;
+    }
+    .tit-name{
+        color: #00a0e9;
+        padding-bottom: 10px;
+        font-size: 18px;
+        .site-icon{
+            font-size: 18px;
+            margin-right: 6px;
+        }
+    }
+}
+.text-cont-box{
+    padding: 30px 30px 20px;
+    .main-title{
+        color: #333333;
+        font-size: 32px;
+        text-align: center;
+    }
+    .text-contain{
+        color: #333333;
+        font-size: 16px;
+        // text-indent: 2em;
+        padding: 30px 0 ;
+		line-height: 32px;
+        .info{
+            padding: 4px 0;
+        }
+        .link{
+            color: #00a0e9;
+        }
+        .link:hover{
+            text-decoration: underline;
+        }
+        .img{
+            margin: 6px auto;
+            display: block;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    .unfold-box{
+        text-align: center;
+        .unfold-btn{
+            display: block;
+            width: 450px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            background-color: #38a2ec;
+            margin: 0 auto;
+            border-radius: 3px;
+        }
+        .unfold-btn:hover{
+            opacity: .85;
+        }
+        .site-icon{
+            color: #b6b6b6;
+            cursor: pointer;
+        }
+    }
+}
+.features-box{
+    color: #888888;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+    a{
+        color: #888;
+    }
+    .pad{
+        padding: 0 10px;
+    }
+    .site-icon{
+        color: #00a0e9;
+        font-size: 16px;
+        padding-right: 4px;
+        vertical-align: -2px;
+    }
+    .fontsize{
+        padding: 0 4px;
+    }
+    .fontsize.active{
+        color: #f7372c;
+        text-decoration: underline;
+    }
+}
+/*左侧 end*/
+
+/*右侧*/
+.bbcy-list .warp-r{width: 322px;float:right;}
+/*右侧end*/
+
+/* 弹框 */
+.modal{width: 100%;height: 100%;background: rgba(0, 0, 0, .7);position: fixed;top: 0;left: 0%;display: none;}
+.modal-dialog{width:540px;background: #fff;position: fixed;top: 50%;left: 50%;padding:20px 0;margin-left: -270px;margin-top: -250px;}
+.modal-header{}
+.modal-header > img{width: 20px;float: right;margin-right: 20px;cursor: pointer;}
+.modal-header > p{display: inline-block;font-size: 18px;margin-left: 20px;}
+.modal-body{margin:10px 38px 10px 30px;}
+.modal-bodyT{color: rgb(114,114,114);margin-bottom: 10px;line-height: 24px;font-size: 14px;}
+.modal-bodyT .c-red{color: #f7372c;}
+.modal-bodyT .link{color: #1581f4;}
+.modal-error{margin-bottom: 10px;color: red;font-size: 14px;}
+.modal-bodyInput{height: 100px;width: 100%;font-size: 14px;color:#727272;text-indent: 10px;display: block;border:1px solid #dcdcdc; }
+.modal .input{height: 40px;width: 100%;font-size: 14px;color:#727272;text-indent: 10px;display: block;border:1px solid #dcdcdc; margin-top: 12px;}
+.modal-footer{width: 100%;text-align: center;margin: 20px 0 20px 0;}
+.modal-footerBtn{border: none;outline: none;border-radius: 5px;color: #fff;font-size: 20px;display: inline-block;width: 300px;height: 50px;line-height: 50px;;background: #1581f4;cursor: pointer;}
+
+.checks-box{margin-bottom: 10px;}
+.checks-box .checks-list{line-height: 32px;}
+.checks-box .i-checks{color: #727272;font-size: 14px;}
+.checks-box .i-checks input {
+    margin-right: 4px;
+    vertical-align: -1px;
+}
+.modal-close-icon{float: right;margin-right: 20px;cursor: pointer;color: #666;font-size: 16px;}
+.modal-close-icon:hover{color: #1581f4;}
+/* 弹框 end*/
+
+.download-box {
+    margin: 0;
+    padding: 15px 30px 20px!important;
+    text-align: left;
+}
+.download-box .down-btn-box {
+    padding-top: 10px;
+    text-align: center;
+}
+.download-box .down-btn-box .down-btn {
+    display: inline-block;
+    float: none;
+}
+.download-box .download-l {
+    width: auto;
+    padding: 10px 20px;
+}
+.download-box .download-r {
+    width: auto;
+}
+.content-box .module-cont{
+    padding-top: 25px;
+}

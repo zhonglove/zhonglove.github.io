@@ -1,0 +1,758 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>列表详情-帮帮创意</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<!--全局-->
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<!--私有-->
+	<link rel="stylesheet" type="text/css" href="css/resodetails.css" />
+
+</head>
+
+<body>
+	<!--header-->
+	<div class="site-header two-header">
+		<div class="header-nav">
+			<div class="container clearfix">
+				<div class="header-logo fl">
+					<a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意"></a>
+				</div>
+				<ul class="nav-list clearfix" id="nav-list">
+					<li class="nav-item active"><a class="link" href="">首页</a></li>
+					<li class="nav-item">
+						<a class="link" href="">分类<i class="site-icon iconfont">&#xe634;</i></a>
+						<div class="more-cont nav-sort">
+							<ul class="nav-more-box clearfix">
+								<li class="more-list"><a class="more-link" href="">市场营销</a></li>
+								<li class="more-list"><a class="more-link" href="">分析报告分析报告</a></li>
+								<li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+								<li class="more-list"><a class="more-link" href="">设计素材</a></li>
+								<li class="more-list"><a class="more-link" href="">市场营销</a></li>
+								<li class="more-list"><a class="more-link" href="">分析报告</a></li>
+								<li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+								<li class="more-list"><a class="more-link" href="">设计素材</a></li>
+								<li class="more-list"><a class="more-link" href="">市场营销</a></li>
+								<li class="more-list"><a class="more-link" href="">分析报告</a></li>
+								<li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+								<li class="more-list"><a class="more-link" href="">设计素材</a></li>
+								<li class="more-list"><a class="more-link" href="">市场营销</a></li>
+								<li class="more-list"><a class="more-link" href="">分析报告</a></li>
+								<li class="more-list"><a class="more-link" href="">管理咨询</a></li>
+								<li class="more-list"><a class="more-link" href="">设计素材</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item"><a class="link" href="">专题</a></li>
+					<li class="nav-item"><a class="link" href="">资讯</a></li>
+					<li class="nav-item"><a class="link" href="">教程</a></li>
+					<li class="nav-item">
+						<a class="link" href="">活动<i class="site-icon iconfont">&#xe634;</i></a>
+						<div class="more-cont ">
+							<ul class="nav-more-box">
+								<li class="more-list"><a class="more-link" href="">上传比赛<img class="new-icon"
+											src="./images/new.png" style="margin-left: 4px;width: 27px;" alt=""></a>
+								</li>
+								<li class="more-list"><a class="more-link" href="">QQ群联盟</a></li>
+								<li class="more-list"><a class="more-link" href="">赞助帮帮创意</a></li>
+								<li class="more-list"><a class="more-link" href="">通知</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="header-right fr">
+					<div class="search-box fl">
+						<input class="s-input" type="text" placeholder="站内搜索">
+						<a class="s-search" href="javascript:;"><i class="site-icon iconfont">&#xe601;</i></a>
+					</div>
+					<a class="upload fl" href="javascript:;"><i class="site-icon iconfont">&#xe61f;</i></a>
+					<a class="open-vip fl" href=""><img class="vip-icon" src="./images/vip_icon.png" alt="">开通VIP</a>
+					<!-- 登录前 -->
+					<div class="link-box fl">
+						<a class="link-list" href=""><i class="site-icon iconfont">&#xe631;</i>登录</a>
+						<a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe64f;</i>注册</a>
+					</div>
+					<!-- 登录前 end -->
+					<!-- 登录后 -->
+					<!-- <a class="infor-box fl" href="">
+                    <i class="site-icon iconfont">&#xe626;</i>
+                    <span class="num">3</span>
+                </a>
+                <div id="userInfo" class="fl">
+                    <div class="user-info-box nav-item">
+                        <div class="avatar-box">
+                            <img class="avatar-img" src="./images/avatar_02.png" alt="">
+                            <span class="arrow"></span>
+                            <img class="vip-icon" src="./images/vip_icon.png" alt="">
+                        </div>
+                        <ul class="user-info">
+                            <li class="info-list"><a class="link" href="">个人中心</a></li>
+                            <li class="info-list"><a class="link" href="">账户设置</a></li>
+                            <li class="info-list"><a class="link" href="">收支记录</a></li>
+                            <li class="info-list"><a class="link" href="">充值提现</a></li>
+                            <li class="info-list"><a class="link" href="">上传文档</a></li>
+                            <li class="info-list"><a class="link" href="">我的文档</a></li>
+                            <li class="info-list"><a class="link" href="">我的收藏</a></li>
+                            <li class="info-list"><a class="link" href="">我的下载</a></li>
+                            <li class="info-list"><a class="link" href="">退出</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+					<!-- 登录后 end -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/header-->
+	<!--固定-->
+	<div class="fixed-box" id="fixed-cont">
+		<div class="container fixed-cont clearfix">
+			<a class="add-bookmarks" id="modal-show" href="javascript:;"><i
+					class="site-icon iconfont">&#xe653;</i>举报文档</a>
+			<a class="coll-btn" href=""><i class="site-icon iconfont">&#xe640;</i>收藏</a>
+
+			<div class="bdsharebuttonbox">
+				<a href="#" style="margin-top: 16px;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+				<a href="#" style="margin-top: 16px;" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+				<a href="#" style="margin-top: 16px;" class="bds_more" data-cmd="more"></a>
+			</div>
+			<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+
+			<div class="page-cont clearfix">
+				<input class="page-btn page-prev" type="button" value="<" disabled />
+				<input class="select-page" type="text" value="1" name="">
+				<span class="total-page">/6</span>
+				<input class="page-btn page-next" onclick="showmorepage()" type="button" value=">" />
+			</div>
+			<div class="zoom-out">
+				<i class="site-icon iconfont" id="zoomInButton" disabled="false">&#xe765;</i>
+				<i class="site-icon iconfont" id="zoomOutButton" disabled="true">&#xe617;</i>
+				<i class="site-icon iconfont" id="frscreen">&#xe826;</i>
+				<!-- <i class="site-icon iconfont">&#xe60e;</i> -->
+			</div>
+			<div class="fixed-r">
+				<p class="price-box"><img class="gold-img" src="images/gold.png">下载需：<span class="price-num">8元</span>
+				</p>
+				<a class="fixed-btn download" href=""><i class="site-icon iconfont">&#xe630;</i>下载资源</a>
+				<a class="fixed-btn join-btn" href="">加入VIP 免费下载共享资源</a>
+			</div>
+		</div>
+	</div>
+	<!--/固定-->
+	<div class="container">
+		<!--面包屑-->
+		<div class="crumbs-box">
+			<i class="site-icon iconfont">&#xe659;</i>
+			<a class="crumbs-link" href="">帮帮创意</a>
+			<span class="crumbs-arrow">></span>
+			<a class="crumbs-link" href="">话题</a>
+			<span class="crumbs-arrow">></span>
+			<span class="crumbs-name">营销策划</span>
+		</div>
+		<!--/面包屑-->
+		<ul class="total-num clearfix">
+			<li class="info-list">阅读：<span class="info-num">35234</span>次</li>
+			<li class="info-list">收藏：664次</li>
+			<li class="info-list">下载：<span class="info-num">1747</span>次</li>
+			<li class="info-list"><a class="link" href="">举报文档</a></li>
+		</ul>
+
+		<div class="bbcy-list clearfix">
+			<div class="warp-l" id="boxleft">
+				<div class="commonbox2" id="box1">
+					<div class="doctopic">
+						<h1 title="第二章 时光管理.ppt">第二章 时光管理.ppt</h1>
+					</div>
+				</div>
+				<div class="page_view" id="pageContainer" oncontextmenu="return false">
+					<div class="outer_page " id="outer_page_1">
+						<div class="inner_page ">
+							<img src="https://img3.bbcyw.com/2018-4\29\eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f01.gif"
+								alt="第二章 时光管理.ppt" />
+						</div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+					<div class='outer_page  none_box ' style='display:none'>
+						<div class='inner_page '></div>
+					</div>
+
+				</div>
+				<div class="outer_page_more" id="outer_page_more">
+					<div class="inner_page_more" id="page_more" style="width: 860px; height: 260px; line-height: 30px;">
+						<div id="html-reader-go-more" class="banner-wrap more-btn-banner"
+							style="padding-top: 40px; width: 860px;">
+							<div id="outer_page_more11">
+								<div class="banner-more-btn" onclick="showmorepage()">
+									<span class="moreBtn goBtn" style="text-align: center">
+										<span>
+											还剩
+											<span id="spanpage">33 </span>页未读，
+										</span>
+										<span class="fc2e">继续阅读</span>
+									</span>
+									<p class="down-arrow goBtn"> </p>
+								</div>
+								<p style="text-align: center; font-size: 18px; margin-top:50px;"> 下载文档到电脑，查找使用更方便 </p>
+								<span id="divhtml2" style="text-align:center;margin:0 auto">
+
+								</span>
+							</div>
+							<div id="else_page_more" class="banner-wrap more-btn-banner"
+								style="padding-top:40px; width:860px;display:none">
+								<p style="text-align:center;font-size:18px;">
+									<em>亲，很抱歉，此页已超出免费预览范围啦！</em><br />
+									<em>如果喜欢就下载吧，价低环保！</em>
+								</p>
+								<span id="divhtml3" style="text-align:center;margin:0 auto">
+
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<span style="color: #ff0000; font-size: 16px;">内容要点：</span>
+				</div>
+
+				<!-- <div class="page-view">
+				<div class="layout outer_page" id="outer_page_1">
+					<div class="details-cont">
+						<div class="info-main">
+							<img src="./images/person.jpg" alt="凭什么要我脱离舒适区">
+						</div>
+					</div>
+				</div>
+				<div class="layout outer_page" id="outer_page_2">
+					<div class="details-cont">
+						<div class="info-main">
+							<img src="./images/person.jpg" alt="凭什么要我脱离舒适区">
+						</div>
+					</div>
+				</div>
+				<div class="layout outer_page" id="outer_page_3">
+					<div class="details-cont">
+						<div class="info-main">
+							<img src="./images/person.jpg" alt="凭什么要我脱离舒适区">
+						</div>
+					</div>
+				</div>
+				<div class="layout outer_page" id="outer_page_4">
+					<div class="details-cont">
+						<div class="info-main">
+							<img src="./images/person.jpg" alt="凭什么要我脱离舒适区">
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+
+				<!--相关标签-->
+				<div class="cat-box clearfix">
+					<a class="cat-link" href="">营销方案</a>
+					<a class="cat-link" href="">促销</a>
+					<a class="cat-link" href="">圣诞促销</a>
+					<a class="cat-link" href="">三只松鼠</a>
+					<a class="cat-link" href="">生鲜电商促销</a>
+					<a class="cat-link" href="">营销方案</a>
+					<a class="cat-link" href="">促销</a>
+					<a class="cat-link" href="">圣诞促销</a>
+					<a class="cat-link" href="">三只松鼠</a>
+					<a class="cat-link" href="">生鲜电商促销</a>
+					<a class="cat-link" href="">营销方案</a>
+					<a class="cat-link" href="">促销</a>
+					<a class="cat-link" href="">圣诞促销</a>
+					<a class="cat-link" href="">三只松鼠</a>
+					<a class="cat-link" href="">生鲜电商促销</a>
+				</div>
+				<!--/相关标签-->
+				<!--资源描述-->
+				<div class="reso-desc"><span
+						class="desc-tit">资源描述：</span>近年来随着我国经济的快速发展，人民生活水平的提高，人们的消费水平正在逐步提高。所以我国很多行业都面临着消费升级。生鲜食品便是其中之一。人们对生鲜食品的品质、安全性、新鲜度等越来越关注。标签：营销方案<a class="c-blue" target="_blank" href="https://www.bbcyw.com/">本科毕业论文</a>
+					促销 圣诞促销 三只松鼠
+					生鲜电商促销。近年来随着我国经济的快速发展，人民生活水平的提高，人们的消费水平正在逐步提高。所以我国很多行业都面临着消费升级。生鲜食品便是其中之一。人们对生鲜食品的品质、安全性、新鲜度等越来越关注。标签：营销方案
+					促销 圣诞促销 三只松鼠 生鲜电商促销。
+				</div>
+				<!--/资源描述-->
+				<!--相关资源-->
+				<div class="layout">
+					<div class="title-box clearfix">
+						<h3 class="tit-name">相关资源</h3>
+						<a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+					</div>
+					<div class="related-box clearfix">
+						<dl class="related-list clearfix">
+							<dt class="related-l"><a href=""><img class="related-img"
+										src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a>
+							</dt>
+							<dd class="related-r">
+								<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点云南宗教的历史现状及特点</a></h4>
+								<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+							</dd>
+						</dl>
+						<dl class="related-list clearfix">
+							<dt class="related-l"><a href=""><img class="related-img"
+										src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a>
+							</dt>
+							<dd class="related-r">
+								<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+								<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+							</dd>
+						</dl>
+						<dl class="related-list clearfix">
+							<dt class="related-l"><a href=""><img class="related-img"
+										src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a>
+							</dt>
+							<dd class="related-r">
+								<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+								<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+							</dd>
+						</dl>
+						<dl class="related-list clearfix">
+							<dt class="related-l"><a href=""><img class="related-img"
+										src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a>
+							</dt>
+							<dd class="related-r">
+								<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+								<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+							</dd>
+						</dl>
+						<dl class="related-list clearfix">
+							<dt class="related-l"><a href=""><img class="related-img"
+										src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a>
+							</dt>
+							<dd class="related-r">
+								<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点云南宗教的历史现状及特点</a></h4>
+								<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+							</dd>
+						</dl>
+						<dl class="related-list clearfix">
+							<dt class="related-l"><a href=""><img class="related-img"
+										src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a>
+							</dt>
+							<dd class="related-r">
+								<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+								<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+							</dd>
+						</dl>
+						<dl class="related-list b-none clearfix">
+							<dt class="related-l"><a href=""><img class="related-img"
+										src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a>
+							</dt>
+							<dd class="related-r">
+								<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+								<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+							</dd>
+						</dl>
+						<dl class="related-list b-none clearfix">
+							<dt class="related-l"><a href=""><img class="related-img"
+										src="http://www.bbcyw.com/fileroot1/2016-12/30/6c02759e-a38a-460c-bbec-221991741239/pic1.jpg"></a>
+							</dt>
+							<dd class="related-r">
+								<h4 class="related-name"><a class="link" href="">云南宗教的历史现状及特点</a></h4>
+								<p class="related-info">本详细文字，仅供参学干部学习参考，请勿以任何形式外传。11对我们建设社会主义生态文明有借鉴作用。原始宗教</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<!--/相关资源-->
+				<!--广告位-->
+				<div class="adv-box"><a href=""><img src="images/adv/adv_03.jpg"></a></div>
+				<div class="adv-box"><a href=""><img src="images/adv/adv_04.jpg"></a></div>
+				<div class="adv-box"><a href=""><img src="images/adv/adv_03.jpg"></a></div>
+				<!--/广告位-->
+				<!--最新搜索-->
+				<div class="layout">
+					<div class="title-box clearfix">
+						<h3 class="tit-name">最新搜索</h3>
+						<a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+					</div>
+					<ul class="news-box new-search clearfix">
+						<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">1
+								8分钟掌握快速记忆单词的方法</a></li>
+						<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">1
+								8分钟掌握快速记忆单词的方法</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">2
+								如何调整到最佳考试状态迎高考考试状态迎高</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">2
+								如何调整到最佳考试状态迎高考考试状态迎高</a></li>
+						<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">3
+								正确学习初中英语的好方法英语的好方法</a></li>
+						<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">3
+								正确学习初中英语的好方法英语的好方法</a></li>
+						<li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">4
+								初中生学语文的好习惯培养4初中生学语文的</a></li>
+						<li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">4
+								初中生学语文的好习惯培养4初中生学语文的</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">5
+								如何巧记初中英语单词</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">5
+								如何巧记初中英语单词</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">6
+								高中英语阅读的方法与技巧阅读的方法与技巧</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">6
+								高中英语阅读的方法与技巧阅读的方法与技巧</a></li>
+					</ul>
+				</div>
+				<!--/最新搜索-->
+			</div>
+
+			<div class="warp-r" id="boxright">
+				<!--用户信息-->
+				<div class="layout">
+					<div class="user-box">
+						<a href=""><img class="user-img" src="images/avatar.png"></a>
+						<h2 class="user-name"><a class="link" href="">666666</a></h2>
+						<div class="user-info clearfix">
+							<p class="info-list"><span class="info-tit">属性：</span>Psd、 CMYK 、300dpi、2950×3920cm、256.15K
+							</p>
+							<p class="info-list">分类：设计-电商</p>
+							<p class="time">2016/01/04 13:33</p>
+						</div>
+					</div>
+				</div>
+				<!--管理文档-->
+				<div class="layout">
+					<div class="title-box clearfix">
+						<h3 class="tit-name">管理文档</h3>
+					</div>
+					<div class="related-search topic-class clearfix">
+						<a class="link select" href="#">营销策划</a>
+						<a class="link" href="#">管理综合</a>
+						<a class="link" href="#">互联网营销</a>
+						<a class="link" href="#">互联网创业</a>
+						<a class="link" href="#">平面设计</a>
+						<a class="link" href="#">设计欣赏</a>
+						<a class="link" href="#">互联网创业</a>
+						<a class="link" href="#">平面设计</a>
+						<a class="link" href="#">设计欣赏</a>
+					</div>
+				</div>
+				<!--企业管理-->
+				<div class="layout">
+					<div class="title-box clearfix">
+						<h3 class="tit-name">企业管理</h3>
+					</div>
+					<div class="related-search topic-class clearfix">
+						<a class="link select" href="#">MBA案例</a>
+						<a class="link" href="#">战略咨询</a>
+						<a class="link" href="#">管理咨询</a>
+						<a class="link" href="#">企业研究</a>
+						<a class="link" href="#">组织架构</a>
+						<a class="link" href="#">变革管理</a>
+						<a class="link" href="#">供应链管理</a>
+						<a class="link" href="#">公司管理</a>
+						<a class="link" href="#">信息化管理</a>
+						<a class="link" href="#">企业文化</a>
+						<a class="link" href="#">咨询培训</a>
+						<a class="link" href="#">集团管控</a>
+						<a class="link" href="#">统计分析</a>
+						<a class="link" href="#">综合管理</a>
+					</div>
+				</div>
+				<!--热点推荐-->
+				<div class="layout">
+					<div class="title-box clearfix">
+						<h3 class="tit-name">热点推荐</h3>
+						<a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+					</div>
+					<ul class="news-box">
+						<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" title="北大纵横—雅戈尔集团—服装企业解决方案.doc" href="https://www.bbcyw.com/p-986165.html">北大纵横—雅戈尔集团—服装企业<span class="c-red">解决方案</span>.doc</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+								href="">17中班语言教案:鸡毛鸭(故</a></li>
+						<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link"
+								href="">金阳街道中学学生春游活动方</a></li>
+						<li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link"
+								href="">人教版小学三年级语文下册《</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+								href="">新理念英语上机测试(华工版)</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">尔雅课堂
+								逻辑和批判性思逻辑</a></li>
+						<li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link"
+								href="">DISC性格测试及分析(Ex</a></li>
+						<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link"
+								href="">14.发生在肺内的气体交换的</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link"
+								href="">课前简短演讲稿71短演短演讲</a></li>
+						<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link"
+								href="">信用社助学贷款调查报告</a></li>
+					</ul>
+				</div>
+				<div class="adv-box">
+					<a href=""><img src="images/adv/adv_01.jpg"></a>
+				</div>
+				<div class="adv-box">
+					<a href=""><img src="images/adv/adv_02.jpg"></a>
+				</div>
+				<!--热门搜索-->
+				<div class="layout">
+					<div class="title-box clearfix">
+						<h3 class="tit-name">热门搜索</h3>
+						<a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+					</div>
+					<div class="related-search hot-search clearfix">
+						<a class="link" href="#">北京大学
+							<a class="link" href="#">简介中</a>
+							<a class="link select" href="#">伍恒利</a>
+							<a class="link" href="#">商业</a>
+							<a class="link" href="#">纵横</a>
+							<a class="link" href="#">北大</a>
+							<a class="link" href="#">商业</a>
+							<a class="link" href="#">商业计划书</a>
+							<a class="link" href="#">北京大学</a>
+							<a class="link" href="#">简介中</a>
+							<a class="link" href="#">伍恒利</a>
+							<a class="link" href="#">商业</a>
+							<a class="link" href="#">纵横</a>
+							<a class="link" href="#">北大</a>
+							<a class="link" href="#">商业</a>
+							<a class="link" href="#">商业计划书</a>
+					</div>
+				</div>
+				<!--/热门搜索-->
+			</div>
+		</div>
+	</div>
+	<!--右侧导航-->
+	<div class="toolbar" id="toolbar">
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe616;</i>
+				<span class="toolbar-text">咨询</span>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe62e;</i>
+				<span class="toolbar-text">关注</span>
+			</span>
+			<span class="toolbar-layer toolbar-layer-wx">
+				<img class="we-chat-img" src="images/cody.png">
+				<p class="we-chat-info">官方微信</p>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item feedback">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe672;</i>
+				<span class="toolbar-text">反馈</span>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe61b;</i>
+				<span class="toolbar-text">顶部</span>
+			</span>
+		</a>
+	</div>
+	<!--/右侧导航-->
+	<!-- modal -->
+	<div class="modal" id="modal">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<i class="modal-close-icon iconfont" id="modal-close">&#xe79a;</i>
+				<!-- <img class="modal-close" id="modal-close" src="images/payment/Close.png" alt=""> -->
+				<p class="modal-headerP">举报文档</p>
+			</div>
+			<div class="modal-body">
+				<p class="modal-bodyT"><span class="c-red">侵权：</span>若此文档侵犯了您的权益，请参照《<a class="link"
+						href="">网站版权声明</a>》，然后登录网站在线提交您的举报信息。</p>
+				<div class="checks-box">
+					<div class="checks-list"><label class="i-checks"><input type="radio" name="a">举报该文档为侵权文档</label>
+					</div>
+					<div class="checks-list"><label class="i-checks"><input type="radio"
+								name="a">举报该文档含有反动，色情，危害社会或不良信息</label></div>
+					<div class="checks-list"><label class="i-checks"><input type="radio" name="a">反馈该文档无法正常浏览</label>
+					</div>
+					<div class="checks-list"><label class="i-checks"><input type="radio" name="a">举报该文档为重复文档</label>
+					</div>
+					<div class="checks-list"><label class="i-checks"><input type="radio" name="a">广告内容或内容过于简单</label>
+					</div>
+				</div>
+				<!-- <p class="modal-error">填写错误</p> -->
+				<div><textarea class="modal-bodyInput" placeholder="请输入您的反馈和联系方式"></textarea></div>
+				<div><input class="input" type="text" placeholder="请留下联系方式（手机号、QQ、邮箱）"></div>
+			</div>
+			<div class="modal-footer">
+				<button class="modal-footerBtn">提交</button>
+			</div>
+		</div>
+	</div>
+	<!-- /modal -->
+	<script type="text/javascript">
+		$("#fixed-cont").fixedCont();
+		//弹框
+		$('#modal-show').on('click', function () {
+			$('#modal').show();
+		})
+		$('#modal-close').on('click', function () {
+			$('#modal').hide();
+		})
+		/**/
+		var page = -4;
+		var pageSize = 0;
+		var pageTotal = 30; //总条数
+		var pageNum = 30; //还剩未读条数
+		var changeNum = 5;
+		function showmorepage() {
+			page = page + changeNum;
+			pageSize = pageSize + changeNum;
+			pageNum = pageNum - changeNum;
+			if (pageNum < 0) { pageNum = 0; }
+			$("#spanpage").html(pageNum);
+			for (var i = page; i <= pageSize; i++) {
+				$("#outer_page_" + i + " .inner_page").show();
+			}
+			if (pageSize >= pageTotal) {
+				$("#outer_page_more11").hide();
+				$("#else_page_more").show();
+			}
+			// var num = 4
+			// $("#spanpage").html(num);
+			// $(".outer_page .inner_page").show();
+			// $("#outer_page_more11").hide();
+			// $("#else_page_more").show();
+		}
+		var imgStr = "<div class='outer_page new 'id='outer_page_2'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f02.gif'></div></div><div class='outer_page new 'id='outer_page_3'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f03.gif'></div></div><div class='outer_page new 'id='outer_page_4'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f04.gif'></div></div><div class='outer_page new 'id='outer_page_5'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f05.gif'></div></div><div class='outer_page new 'id='outer_page_6'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f06.gif'></div></div><div class='outer_page new 'id='outer_page_7'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f07.gif'></div></div><div class='outer_page new 'id='outer_page_8'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f08.gif'></div></div><div class='outer_page new 'id='outer_page_9'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f09.gif'></div></div><div class='outer_page new 'id='outer_page_10'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f010.gif'></div></div><div class='outer_page new 'id='outer_page_11'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f011.gif'></div></div><div class='outer_page new 'id='outer_page_12'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f012.gif'></div></div><div class='outer_page new 'id='outer_page_13'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f013.gif'></div></div><div class='outer_page new 'id='outer_page_14'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f014.gif'></div></div><div class='outer_page new 'id='outer_page_15'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f015.gif'></div></div><div class='outer_page new 'id='outer_page_16'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f016.gif'></div></div><div class='outer_page new 'id='outer_page_17'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f017.gif'></div></div><div class='outer_page new 'id='outer_page_18'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f018.gif'></div></div><div class='outer_page new 'id='outer_page_19'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f019.gif'></div></div><div class='outer_page new 'id='outer_page_20'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f020.gif'></div></div><div class='outer_page new 'id='outer_page_21'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f021.gif'></div></div><div class='outer_page new 'id='outer_page_22'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f022.gif'></div></div><div class='outer_page new 'id='outer_page_23'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f023.gif'></div></div><div class='outer_page new 'id='outer_page_24'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f024.gif'></div></div><div class='outer_page new 'id='outer_page_25'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f025.gif'></div></div><div class='outer_page new 'id='outer_page_26'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f026.gif'></div></div><div class='outer_page new 'id='outer_page_27'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f027.gif'></div></div><div class='outer_page new 'id='outer_page_28'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f028.gif'></div></div><div class='outer_page new 'id='outer_page_29'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f029.gif'></div></div><div class='outer_page new 'id='outer_page_30'><div class='inner_page '  style='display:none'><img src='https://img3.bbcyw.com/2018-4/29/eb36233b-0214-4996-b5bf-c6aa91eb22f0/eb36233b-0214-4996-b5bf-c6aa91eb22f030.gif'></div></div>";
+		$("#pageContainer").append(imgStr)
+	</script>
+
+	<!--footer-->
+	<div class="site-footer">
+		<div class="container">
+			<div class="footer-links clearfix">
+				<dl class="col-links">
+					<dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+					<dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+					<dd class="link-list"><a class="link" href="#">话题</a></dd>
+					<dd class="link-list"><a class="link" href="#">教程</a></dd>
+					<dd class="link-list"><a class="link" href="#">排行榜</a></dd>
+					<dd class="link-list"><a class="link" href="#">任务求助</a></dd>
+					<dd class="link-list"><a class="link" href="#">活动</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+					<dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+					<dd class="link-list"><a class="link" href="#">共享分与帮币</a></dd>
+					<dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+					<dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+					<dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+					<dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt class="link-list link-frist"><a class="link" href="#">关于帮帮创意</a></dt>
+					<dd class="link-list"><a class="link" href="#">帮帮创意简介</a></dd>
+					<dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+					<dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+					<dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+					<dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+				</dl>
+				<dl class="col-links links-last">
+					<dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+					<dd class="link-list">工作时间</dd>
+					<dd class="link-list">周一至周五</dd>
+					<dd class="link-list">9：00-17：30</dd>
+				</dl>
+				<div class="foots-logo">
+					<img class="logo-img" src="images/logo.png">
+					<p class="logo-info">专业文档和设计素材分享社区</p>
+				</div>
+				<div class="we-chat">
+					<img class="we-chat-img" src="images/cody.png">
+					<p class="we-chat-info">关注微信公众平台</p>
+				</div>
+			</div>
+			<div class="copyright-box">
+				<p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有<a class="site-map-link" href="">网站地图</a></p>
+				<p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+			</div>
+		</div>
+	</div>
+	<!--/footer-->

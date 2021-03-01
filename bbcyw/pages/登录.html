@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>登录-帮帮创意</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+</head>
+<body>
+
+<!--header-->
+<div class="site-topbar">
+	<div class="container clearfix">
+		<div class="top-info fl">专业文档和设计素材分享社区</div>
+		<div class="header-right fr">
+			<!-- 登录前 -->
+			<!--  --><div class="link-box fl">
+																<a class="link-list loginShow" href="javascript:;"><i class="site-icon iconfont">&#xe631;</i>登录</a>
+																<a class="link-list regist-list registShow" href="javascript:;"><i class="site-icon iconfont">&#xe64f;</i>注册</a>
+																<a class="link-list help" href="">帮助中心</a>
+				                    </div>
+			<!-- 登录前 end -->
+			<!-- 登录后
+			<a class="infor-box fl" href="">
+				<i class="site-icon iconfont">&#xe626;</i>
+				<span class="num">3</span>
+			</a>
+			<div id="userInfo" class="fl">
+				<div class="user-info-box nav-item">
+					<div class="avatar-box">
+						<img class="avatar-img" src="./images/avatar_02.png" alt="">
+						<span class="arrow"></span>
+						<img class="vip-icon" src="./images/vip_icon.png" alt="">
+					</div>
+					<ul class="user-info">
+						<li class="info-list"><a class="link" href="">个人中心</a></li>
+						<li class="info-list"><a class="link" href="">账户设置</a></li>
+						<li class="info-list"><a class="link" href="">收支记录</a></li>
+						<li class="info-list"><a class="link" href="">充值提现</a></li>
+						<li class="info-list"><a class="link" href="">上传文档</a></li>
+						<li class="info-list"><a class="link" href="">我的文档</a></li>
+						<li class="info-list"><a class="link" href="">我的收藏</a></li>
+						<li class="info-list"><a class="link" href="">我的下载</a></li>
+						<li class="info-list"><a class="link" href="">退出</a></li>
+					</ul>
+				</div>
+			</div> -->
+			<!-- 登录后 end -->
+		</div>
+		<!-- <div class="link-box fr">
+			<a class="link-list" href=""><i class="site-icon iconfont">&#xe78e;</i>登录</a>
+			<a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe672;</i>注册</a>
+			<a class="link-list help" href="">帮助中心</a>
+		</div> -->
+	</div>
+</div>
+<div class="site-header">
+	<div class="container header-center clearfix">
+		<div class="header-logo">
+			<a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意"></a>			
+		</div>
+		<a class="release-btn" href=""><i class="site-icon iconfont">&#xe636;</i>发布资源</a>		
+		<div class="header-search">
+			<input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+			<input class="search-btn iconfont" type="submit" value="&#xe601;" />			
+		</div>
+	</div>
+</div>
+
+	<!--登录&注册弹框-->
+	<div class="login-modal" id="login-modal">
+		<div class="modal-shade"></div>
+		<div class="modal-cont">
+			<a class="modal-close iconfont" href="javascript:;">&#xe79a;</a>
+			<!--会员登录-->
+			<div class="modal-01">
+				<div class="modal-title">会员登录</div>
+				<div class="modal-switch switch-01"></div>
+				<div class="input-main">
+					<ul class="input-line clearfix form-error">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<div class="input-box">
+								<input class="input" data-val="true" data-val-required="用户名必填" id="username" name="username"
+									placeholder="昵称、手机号、邮箱" type="text" value="">
+							</div>
+						</li>
+						<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span
+								class="error-text">请输入昵称、手机号、邮箱！</span></li>
+					</ul>
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<div class="input-box">
+								<input class="input" data-val="true" data-val-required="密码必填" id="password" name="password"
+									placeholder="请输入密码" type="password">
+								<span class="field-validation-valid" data-valmsg-for="password" data-valmsg-replace="true"></span>
+							</div>
+						</li>
+						<li class="input-error" name="pwdError"><i class="site-icon iconfont">&#xe623;</i><span
+								class="error-text"></span>
+						</li>
+					</ul>
+					<div class="auto-box clearfix">
+						<label class="auto-ckb">
+							<input checked="checked" class="auto-input" data-val="true" data-val-required="两周内自动登录? 字段是必需的。"
+								id="RememberMe" name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden"
+								value="false">
+							两周内自动登录
+						</label>
+						<a class="auto-link" href="/retrievepassword.html">忘记密码?</a>
+					</div>
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<button class="input-btn" id="login-btn" type="submit" name="">登录</button>
+							<input type="hidden" name="ReturnUrl" value="https://www.bbcyw.com/index.html">
+						</li>
+					</ul>
+					<div class="mast-login">使用快捷登录 或 <a class="link free-login" href="javascript:;">免费注册</a></div>
+					<div class="cooper-box clearfix">
+						<a class="link-list link-01" href="/LoginThird/AlipayLogin?ReturnUrl=/index.html"><i
+								class="site-icon"></i><span class="icon-name">微信</span></a>
+						<a class="link-list link-02" href="/LoginThird/WechatLogin?ReturnUrl=/index.html"><i
+								class="site-icon"></i><span class="icon-name">QQ</span></a>
+						<a class="link-list link-03" href="/LoginThird/QQLogin?ReturnUrl=/index.html"><i class="site-icon"></i><span
+								class="icon-name">支付宝</span></a>
+						<a class="link-list link-04" href="/LoginThird/WeiboLogin?ReturnUrl=/index.html"><i
+								class="site-icon"></i><span class="icon-name">微博</span></a>
+					</div>
+				</div>
+			</div>
+			<!--微信登录-->
+			<div class="modal-02">
+				<div class="modal-title">微信登录</div>
+				<div class="modal-switch switch-02"></div>
+				<div class="input-main">
+					<div class="cody-box"><img class="cody" src="./images/cody.png" /></div>
+					<div class="cody-info">请使用微信扫描二维码登录 “帮帮创意”</div>
+					<div class="mast-login">使用快捷登录 或 <a class="link free-login" href="javascript:;">免费注册</a></div>
+					<div class="cooper-box clearfix">
+						<a class="link-list link-01" href="/LoginThird/AlipayLogin?ReturnUrl=/index.html"><i
+								class="site-icon"></i><span class="icon-name">微信</span></a>
+						<a class="link-list link-02" href="/LoginThird/WechatLogin?ReturnUrl=/index.html"><i
+								class="site-icon"></i><span class="icon-name">QQ</span></a>
+						<a class="link-list link-03" href="/LoginThird/QQLogin?ReturnUrl=/index.html"><i class="site-icon"></i><span
+								class="icon-name">支付宝</span></a>
+						<a class="link-list link-04" href="/LoginThird/WeiboLogin?ReturnUrl=/index.html"><i
+								class="site-icon"></i><span class="icon-name">微博</span></a>
+					</div>
+				</div>
+			</div>
+			<!--注册账号-->
+			<div class="modal-03">
+				<div class="modal-title">注册账号</div>
+				<div class="modal-ljdl">已注册账号？<a class="link switch-01" href="javascript:;">立即登录</a></div>
+				<div class="input-main user-login">
+					<ul class="input-line clearfix form-error">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<input class="input" data-val="true" data-val-required="必填" id="userName" maxlength="50" name="userName"
+								type="text" value="" placeholder="请输入手机号或邮箱">
+						</li>
+						<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text">请输入手机号或邮箱</span>
+						</li>
+					</ul>
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<input class="input" data-val="true" data-val-length="密码 必须至少包含 6 个字符。" data-val-length-max="100"
+								data-val-length-min="6" data-val-required="必填" id="password2" maxlength="50" name="password"
+								type="password" placeholder="请设置密码，不少于6-18个字符">
+						</li>
+						<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+					</ul>
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<input class="input" data-val="true" data-val-equalto="密码和确认密码不匹配。" data-val-equalto-other="*.password"
+								id="confirmPassword" maxlength="50" name="confirmPassword" type="password" placeholder="请输入密码">
+						</li>
+						<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+					</ul>
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r clearfix">
+							<input class="input yzm-input" data-val="true" data-val-required="必填" id="validCode" maxlength="4"
+								name="validCode" type="text" value="" placeholder="请输入验证码" style="width: 160px">
+							<a id="alidImg" onclick="clickValidImg(this)"
+								style="overflow: hidden;display: block;float: left;margin: 0 15px;border: 1px solid gainsboro;">
+								<img class="yzm-img" src="./images/yzm.png">
+							</a>
+						</li>
+						<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+					</ul>
+					<div class="prot-box">
+						<label class="prot-ckb"><input class="ckb-input" type="checkbox" checked="checked">我已阅读并同意</label>
+						<a class="prot-link" target="_blank"
+							href="https://www.bbcyw.com/helpcenter/bangzhuzhongxin/25.html">《帮帮注册协议》</a>
+					</div>
+	
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<input class="input-btn" id="registered-btn" type="submit">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/登录&注册弹框-->
+<!--/header-->
+<!--会员登录-->
+<div class="container login-box member-login" id="member-login">
+	<h2 class="input-tit">会员登录</h2>
+	<div class="input-main clearfix">
+		<div class="input-main-l">
+			<ul class="input-line clearfix">
+				<li class="input-l"></li>
+				<li class="input-r">
+					<div class="input-box">
+						<i class="site-icon iconfont">&#xe78e;</i>
+						<input class="input" type="text" id="username" placeholder="昵称、手机号、邮箱" />
+					</div>
+				</li>
+				<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+			</ul>
+			<ul class="input-line clearfix">
+				<li class="input-l"></li>
+				<li class="input-r">
+					<div class="input-box">
+						<i class="site-icon psw-icon iconfont">&#xe736;</i>
+						<input class="input" type="password" id="password" placeholder="请输入密码" />
+					</div>
+				</li>
+				<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+			</ul>
+			<div class="auto-box clearfix">
+				<label class="auto-ckb"><input class="auto-input" type="checkbox" checked="checked" />两周内自动登录</label>
+				<a class="auto-link" href="">忘记密码?</a>		
+			</div>
+			<ul class="input-line clearfix">
+				<li class="input-l"></li>
+				<li class="input-r">
+					<input class="input-btn" id="login-btn" type="submit" name="">
+				</li>
+			</ul>			
+		</div>
+		<div class="input-main-r">
+			<p class="link-box">未注册账号？<a class="link-login" href="#">立即注册</a></p>
+			<h3 class="cooper-tit">使用合作网站账号一键登录</h3>
+			<div class="cooper-box clearfix">
+				<a class="link-list link-01" href="#"><i class="site-icon iconfont">&#xe63c;</i></a>
+				<a class="link-list link-02" href="#"><i class="site-icon iconfont">&#xe637;</i></a>
+				<a class="link-list link-03" href="#"><i class="site-icon iconfont">&#xe61a;</i></a>
+				<a class="link-list link-04" href="#"><i class="site-icon iconfont">&#xe6ac;</i></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/会员登录-->
+
+<script type="text/javascript">
+
+$.fn.loginMain = function(options){
+	var options = $.extend({
+		eventType: "click",
+		inputLine: ".input-line",
+		formError: "form-error",
+		errorText: ".error-text",
+		loginBtn: "#login-btn",
+		username: "#username",
+		password: "#password"
+	},options||{});
+	return this.each(function(){
+		var _this = $(this);
+		_this.find(options.loginBtn).bind(options.eventType, function(){
+			function errorFun(errorSite,errorname){
+				$(errorSite).parents(options.inputLine).find(options.errorText).text(errorname);
+				$(errorSite).parents(options.inputLine).addClass(options.formError);
+			}
+			function removeError(errorSite){
+				$(errorSite).parents(options.inputLine).find(options.errorText).text("");
+				$(errorSite).parents(options.inputLine).removeClass(options.formError);
+			}
+			//用户名
+			var username = $.trim($(options.username).val());
+			if(username == ''){
+				errorFun(options.username,"请输入用户名！");
+				return false;
+			}else{
+				removeError(options.username);
+			}
+			//密码
+			var password = $.trim($(options.password).val());
+			if(password == ''){
+				errorFun(options.password,"请输入密码！");
+				return false;
+			}else if(password.length < 6){
+				errorFun(options.password,"密码长度不能小于6位！");
+				return false;
+			}else{
+				removeError(options.password);
+			}
+
+			console.log("验证通过");
+		});
+	});
+}
+
+$("#member-login").loginMain();
+
+</script>
+
+<!--footer-->
+<div class="site-footer">
+	<div class="container">
+		<div class="footer-links clearfix">
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+				<dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+				<dd class="link-list"><a class="link" href="#">话题</a></dd>
+				<dd class="link-list"><a class="link" href="#">教程</a></dd>
+				<dd class="link-list"><a class="link" href="#">排行榜</a></dd>
+				<dd class="link-list"><a class="link" href="#">任务求助</a></dd>
+				<dd class="link-list"><a class="link" href="#">活动</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+				<dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+				<dd class="link-list"><a class="link" href="#">共享分与帮币</a></dd>
+				<dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+				<dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+				<dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+				<dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">关于帮帮创意</a></dt>
+				<dd class="link-list"><a class="link" href="#">帮帮创意简介</a></dd>
+				<dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+				<dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+				<dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+				<dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+			</dl>
+			<dl class="col-links links-last">
+				<dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+				<dd class="link-list">工作时间</dd>
+				<dd class="link-list">周一至周五</dd>
+				<dd class="link-list">9：00-17：30</dd>
+			</dl>
+			<div class="foots-logo">
+				<img class="logo-img" src="images/logo.png">
+				<p class="logo-info">专业文档和设计素材分享社区</p>
+			</div>			
+			<div class="we-chat">
+				<img class="we-chat-img" src="images/cody.png">
+				<p class="we-chat-info">关注微信公众平台</p>
+			</div>
+		</div>
+		<div class="copyright-box">
+			<p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有<a class="site-map-link" href="">网站地图</a></p>
+			<p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+		</div>
+	</div>
+</div>
+<!--/footer-->
+
+
+</body>
+</html>

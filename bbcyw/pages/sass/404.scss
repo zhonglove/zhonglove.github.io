@@ -1,0 +1,14 @@
+.gone_wapper{padding: 60px 0 24px 0;background:#f5f5f5;text-align: center;
+	.content_img{width: 590px;}
+	.content_title{color: #fdb92b;font-size: 26px;margin-top: 30px;}
+	.content_subTitle{color: #5b5b5b;font-size: 16px;margin-top: 10px;}
+	.content_btns{margin: 40px 0;}
+	.content_btns p{display: inline-block;width: 150px;height: 44px;line-height: 44px;}
+	.content_btns p a{color: #fff;font-size: 20px;}
+	.content_btns p:nth-child(1){background:#1581f4;margin-right: 23px;}
+	.content_btns p:nth-child(2){background:#fdb92b;}
+	.else_content{margin: 0 auto;background: #fff;padding: 20px 33px 33px 33px;text-align: left;width: 1134px;}
+	.else_content .text{color: #f7372c; font-size: 18px;}
+	.else_content .link{display: inline-block;color: #5b5b5b;font-size: 16px;width: 223px;margin-top: 16px;text-align: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+	.else_content .link:hover{color: #f7372c;}
+}

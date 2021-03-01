@@ -1,0 +1,1345 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>蜜蜂文库</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+</head>
+
+<body>
+	<!--header-->
+	<div class="site-topbar">
+		<div class="container clearfix">
+			<div class="top-info fl">公文文档分享平台</div>
+			<div class="header-right fr">
+				<!-- 登录前 -->
+				<div class="link-box fl">
+					<a class="link-list loginShow" href="javascript:;"><i class="site-icon iconfont">&#xe631;</i>登录</a>
+					<a class="link-list regist-list registShow" href="javascript:;"><i class="site-icon iconfont">&#xe64f;</i>注册</a>
+				</div>
+				<!-- 登录前 end -->
+				<!-- 登录后
+			<a class="infor-box fl" href="">
+				<i class="site-icon iconfont">&#xe626;</i>
+				<span class="num">3</span>
+			</a>
+			<div id="userInfo" class="fl">
+				<div class="user-info-box nav-item">
+					<div class="avatar-box">
+						<img class="avatar-img" src="./images/avatar_02.png" alt="">
+						<span class="arrow"></span>
+						<img class="vip-icon" src="./images/vip_icon.png" alt="">
+					</div>
+					<ul class="user-info">
+						<li class="info-list"><a class="link" href="">个人中心</a></li>
+						<li class="info-list"><a class="link" href="">账户设置</a></li>
+						<li class="info-list"><a class="link" href="">收支记录</a></li>
+						<li class="info-list"><a class="link" href="">充值提现</a></li>
+						<li class="info-list"><a class="link" href="">上传文档</a></li>
+						<li class="info-list"><a class="link" href="">我的文档</a></li>
+						<li class="info-list"><a class="link" href="">我的收藏</a></li>
+						<li class="info-list"><a class="link" href="">我的下载</a></li>
+						<li class="info-list"><a class="link" href="">退出</a></li>
+					</ul>
+				</div>
+			</div> -->
+				<!-- 登录后 end -->
+			</div>
+		</div>
+	</div>
+	<div class="site-header">
+		<div class="header-fixed-box" id="fixedHeaderBox">
+			<div class="header-fixed-cont">
+				<div class="container header-center clearfix">
+					<div class="header-logo">
+						<a href="/"><img class="logo" src="images/logo.png" alt="蜜蜂文库"></a>
+					</div>
+					<div>
+						<!-- 登录前 -->
+						<div class="login-link">
+							<a class="link loginShow" href="javascript:;"><i class="site-icon iconfont">&#xe631;</i>登录</a>
+							<a class="link registShow" href="javascript:;"><i class="site-icon iconfont" style="font-size: 18px;">&#xe64f;</i>注册</a>
+						</div>
+						<a class="open-vip fr" href=""><img class="vip-icon" src="./images/vip_icon.png" alt="">开通VIP</a>
+						<!-- 登录前 end -->
+						<!-- 登录后 -->
+						<!-- <div id="userInfo" class="fr">
+							<div class="user-info-box nav-item">
+								<div class="avatar-box">
+									<a href="https://www.mifengwenku.com/usermain.html">您好，1234567</a>
+									<span class="arrow"></span>
+								</div>
+								<ul class="user-info">
+									<li class="info-list"><a class="link" href="">个人中心</a></li>
+									<li class="info-list"><a class="link" href="">账户设置</a></li>
+									<li class="info-list"><a class="link" href="">收支记录</a></li>
+									<li class="info-list"><a class="link" href="">充值提现</a></li>
+									<li class="info-list"><a class="link" href="">上传文档</a></li>
+									<li class="info-list"><a class="link" href="">我的文档</a></li>
+									<li class="info-list"><a class="link" href="">我的收藏</a></li>
+									<li class="info-list"><a class="link" href="">我的下载</a></li>
+									<li class="info-list"><a class="link" href="">退出</a></li>
+								</ul>
+							</div>
+						</div> -->
+						<!-- 登录后 end -->
+					</div>
+					<a class="release-btn" href=""><i class="site-icon iconfont">&#xe636;</i>发布文档</a>
+					<div class="header-search">
+						<input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+						<input class="search-btn iconfont" type="submit" value="&#xe601;" />
+						<div class="hot-serch-box"><span class="hot-serch-name">热门搜索：</span><a class="link" href="">2020党建</a><a class="link" href="">从严治党</a><a class="link" href="">疫情防控</a><a class="link" href="">复工复产</a><a class="link" href="">脱贫攻坚</a><a class="link" href="">检视剖析</a><a class="link" href="">检视剖析</a><a class="link" href="">检视剖析</a><a class="link" href="">检视剖析</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-nav index-nav">
+			<div class="container clearfix">
+				<div class="sort-box" id="sort-box" data-type="true">
+					<h2 class="sort-title"><i class="site-icon iconfont">&#xe761;</i><a style="color:#fff">全部分类</a></h2>
+					<div class="menu-list-box">
+						<div class="sort-list-box">
+							<div class="sort-list clearfix">
+								<div class="link-lists"><a class="link ellipsis" href="">党课专栏党课专栏党课专栏</a></div>
+								<div class="link-lists"><a class="link ellipsis" href="">报告报告报告</a></div>
+							</div>
+							<div class="sort-list clearfix">
+								<div class="link-lists"><a class="link ellipsis" href="">演讲稿演讲</a></div>
+								<div class="link-lists"><a class="link ellipsis" href="">汇报材料</a></div>
+							</div>
+							<div class="sort-list clearfix">
+								<div class="link-lists"><a class="link ellipsis" href="">党课专栏</a></div>
+								<div class="link-lists"><a class="link ellipsis" href="">报告</a></div>
+							</div>
+							<div class="sort-list clearfix">
+								<div class="link-lists"><a class="link ellipsis" href="">演讲稿</a></div>
+								<div class="link-lists"><a class="link ellipsis" href="">汇报材料</a></div>
+							</div>
+							<div class="sort-list clearfix">
+								<div class="link-lists"><a class="link ellipsis" href="">党课专栏</a></div>
+								<div class="link-lists"><a class="link ellipsis" href="">报告</a></div>
+							</div>
+							<div class="sort-list clearfix">
+								<div class="link-lists"><a class="link ellipsis" href="">演讲稿</a></div>
+								<div class="link-lists"><a class="link ellipsis" href="">汇报材料</a></div>
+							</div>
+							<div class="sort-list clearfix">
+								<div class="link-lists"><a class="link ellipsis" href="">演讲稿</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="nav-list clearfix" id="nav-list">
+					<li class="nav-item"><a class="link" href="">首页</a></li>
+					<li class="nav-item"><a class="link" href="">专题</a></li>
+					<li class="nav-item"><a class="link" href="">资讯</a></li>
+					<li class="nav-item"><a class="link" href="">免费区</a></li>
+					<li class="nav-item">
+						<a class="link" href="">活动<i class="site-icon iconfont">&#xe634;</i></a>
+						<div class="more-cont">
+							<ul class="nav-more-box">
+								<!-- <li class="more-list"><a class="more-link" href="">上传比赛</a></li> -->
+								<li class="more-list"><a class="more-link" href="">赞助蜜蜂文库</a></li>
+								<!-- <li class="more-list"><a class="more-link" href="">通知</a></li> -->
+							</ul>
+						</div>
+					</li>
+					<li class="vip-item">
+						<a class="link" href="/Users/AccountRecharge?tabs=2" rel="external nofollow">
+							<img class="vip-icon" src="images/vip.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--登录&注册弹框-->
+	<div class="login-modal" id="login-modal">
+		<div class="modal-shade"></div>
+		<div class="modal-cont">
+			<a class="modal-close iconfont" href="javascript:;">&#xe79a;</a>
+			<!--会员登录-->
+			<div class="modal-01">
+				<div class="modal-title">会员登录</div>
+				<div class="modal-switch switch-01"></div>
+				<div class="input-main">
+					<ul class="input-line clearfix form-error">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<div class="input-box">
+								<input class="input" data-val="true" data-val-required="用户名必填" id="username" name="username"
+									placeholder="昵称、手机号、邮箱" type="text" value="">
+							</div>
+						</li>
+						<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text">请输入昵称、手机号、邮箱！</span></li>
+					</ul>
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<div class="input-box">
+								<input class="input" data-val="true" data-val-required="密码必填" id="password" name="password"
+									placeholder="请输入密码" type="password">
+								<span class="field-validation-valid" data-valmsg-for="password" data-valmsg-replace="true"></span>
+							</div>
+						</li>
+						<li class="input-error" name="pwdError"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span>
+						</li>
+					</ul>
+					<div class="auto-box clearfix">
+						<label class="auto-ckb">
+							<input checked="checked" class="auto-input" data-val="true" data-val-required="两周内自动登录? 字段是必需的。"
+								id="RememberMe" name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden"
+								value="false">
+							两周内自动登录
+						</label>
+						<a class="auto-link" href="/retrievepassword.html">忘记密码?</a>
+					</div>
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<button class="input-btn" id="login-btn" type="submit" name="">登录</button>
+							<input type="hidden" name="ReturnUrl" value="https://www.bbcyw.com/index.html">
+						</li>
+					</ul>
+					<div class="mast-login">使用快捷登录 或 <a class="link free-login" href="javascript:;">免费注册</a></div>
+					<div class="cooper-box clearfix">
+						<a class="link-list link-01" href="/LoginThird/AlipayLogin?ReturnUrl=/index.html"><i
+								class="site-icon"></i><span class="icon-name">微信</span></a>
+						<a class="link-list link-02" href="/LoginThird/WechatLogin?ReturnUrl=/index.html"><i
+								class="site-icon"></i><span class="icon-name">QQ</span></a>
+						<a class="link-list link-03" href="/LoginThird/QQLogin?ReturnUrl=/index.html"><i class="site-icon"></i><span
+								class="icon-name">支付宝</span></a>
+						<a class="link-list link-04" href="/LoginThird/WeiboLogin?ReturnUrl=/index.html"><i
+								class="site-icon"></i><span class="icon-name">微博</span></a>
+					</div>
+				</div>
+			</div>
+			<!--微信登录-->
+			<div class="modal-02">
+				<div class="modal-title">微信登录</div>
+				<div class="modal-switch switch-02"></div>
+				<div class="input-main">
+					<div class="cody-box"><img class="cody" src="./images/cody.png" /></div>
+					<div class="cody-info">请使用微信扫描二维码登录 “蜜蜂文库”</div>
+					<div class="mast-login">使用快捷登录 或 <a class="link free-login" href="javascript:;">免费注册</a></div>
+					<div class="cooper-box clearfix">
+						<a class="link-list link-01" href="/LoginThird/AlipayLogin?ReturnUrl=/index.html"><i class="site-icon"></i><span
+								class="icon-name">微信</span></a>
+						<a class="link-list link-02" href="/LoginThird/WechatLogin?ReturnUrl=/index.html"><i class="site-icon"></i><span
+								class="icon-name">QQ</span></a>
+						<a class="link-list link-03" href="/LoginThird/QQLogin?ReturnUrl=/index.html"><i class="site-icon"></i><span
+								class="icon-name">支付宝</span></a>
+						<a class="link-list link-04" href="/LoginThird/WeiboLogin?ReturnUrl=/index.html"><i class="site-icon"></i><span
+								class="icon-name">微博</span></a>
+					</div>
+				</div>
+			</div>
+			<!--注册账号-->
+			<div class="modal-03">
+				<div class="modal-title">注册账号</div>
+				<div class="modal-ljdl">已注册账号？<a class="link switch-01" href="javascript:;">立即登录</a></div>
+				<div class="input-main user-login">
+					<ul class="input-line clearfix form-error">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<input class="input" data-val="true" data-val-required="必填" id="userName" maxlength="50" name="userName"
+								type="text" value="" placeholder="请输入手机号或邮箱">
+						</li>
+						<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text">请输入手机号或邮箱</span></li>
+					</ul>
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<input class="input" data-val="true" data-val-length="密码 必须至少包含 6 个字符。" data-val-length-max="100"
+								data-val-length-min="6" data-val-required="必填" id="password2" maxlength="50" name="password"
+								type="password" placeholder="请设置密码，不少于6-18个字符">
+						</li>
+						<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+					</ul>
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<input class="input" data-val="true" data-val-equalto="密码和确认密码不匹配。" data-val-equalto-other="*.password"
+								id="confirmPassword" maxlength="50" name="confirmPassword" type="password"
+								placeholder="请输入密码">
+						</li>
+						<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+					</ul>
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r clearfix">
+							<input class="input yzm-input" data-val="true" data-val-required="必填" id="validCode" maxlength="4"
+								name="validCode" type="text" value="" placeholder="请输入验证码" style="width: 160px">
+							<a id="alidImg" onclick="clickValidImg(this)"
+								style="overflow: hidden;display: block;float: left;margin: 0 15px;border: 1px solid gainsboro;">
+								<img class="yzm-img" src="./images/yzm.png">
+							</a>
+						</li>
+						<li class="input-error"><i class="site-icon iconfont">&#xe623;</i><span class="error-text"></span></li>
+					</ul>
+					<div class="prot-box">
+						<label class="prot-ckb"><input class="ckb-input" type="checkbox" checked="checked">我已阅读并同意</label>
+						<a class="prot-link" target="_blank"
+							href="https://www.bbcyw.com/helpcenter/bangzhuzhongxin/25.html">《帮帮注册协议》</a>
+					</div>
+
+					<ul class="input-line clearfix">
+						<li class="input-l"></li>
+						<li class="input-r">
+							<input class="input-btn" id="registered-btn" type="submit">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/登录&注册弹框-->
+	<!--/header-->
+	<!--banner-->
+	<div class="home-slider" id="homeSlider">
+		<div class="img-list select" style="background: url(images/slide/slide_01.jpg) no-repeat center top;"><a
+				class="slider-link" href="#"></a></div>
+		<div class="img-list" style="background: url(images/slide/slide_02.jpg) no-repeat center top;"><a
+				class="slider-link" href="#"></a></div>
+		<ul class="slider-btn">
+			<li class="btn-list select"></li>
+			<li class="btn-list"></li>
+		</ul>
+		<div class="container">
+			<a class="slider-arrow slider-prev" href="javascript:;"><i class="site-icon iconfont">&#xe657;</i></a>
+			<a class="slider-arrow slider-next" href="javascript:;"><i class="site-icon iconfont">&#xe658;</i></a>
+		</div>
+	</div>
+	<!--/banner-->
+	<div class="container">
+		<!--交易动态-->
+		<div class="dongtai clearfix">
+			<div class="all-documents fl">
+				<i class="site-icon iconfont">&#xe620;</i>
+				<span class="name">全部文档</span>
+				<span class="num">530505 +</span>
+			</div>
+			<div class="text-l fl"><i class="site-icon iconfont" style="font-size:20px;">&#xe603;</i>站内通知</div>
+			<div class="text-r fl">
+				<ul class="dynamic-box" id="marqueebox1">
+					<li class="dynamic-list">
+						<p class="dynamic-name"><a class="link" href="">hujincheng</a>购买了<a class="link"
+								href="">banner图片2</a>付出<span class="t-color">￥5.00</span>帮币</p>
+					</li>
+					<li class="dynamic-list">
+						<p class="dynamic-name"><a class="link" href="">hujincheng</a>购买了<a class="link"
+								href="">banner图片2</a>付出<span class="t-color">￥5.00</span>帮币</p>
+					</li>
+				</ul>
+			</div>
+			<a class="dongtai-more fr" href="">MORE<span class="more-arrow">></span></a>
+		</div>
+		<!--/交易动态-->
+		<!--热门专题-->
+		<div class="title-box clearfix">
+			<h3 class="tit-name">热门专题</h3>
+			<div class="sub-info">为您快速找到优质文档内容的合辑</div>
+			<a class="tit-more" href="">MORE<span class="more-arrow">></span></a>
+		</div>
+		<ul class="hot-topic clearfix">
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/8/2/3ed2886ad84c4327b34e8ea646ad78e9.jpg" alt="">
+						<div class="img-cont"><div class="cont-info">一份完美商业企划书不能少的5大内容你知道吗？比套商业计划书模版还好用的写作方法</div></div>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link ellipsis" href="">商业计划书格式</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/8/2/f382fc4adb974ad5b80f939352e43e53.jpg" alt="">
+						<div class="img-cont"><div class="cont-info">一份完美商业企划书不能少的5大内容</div></div>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link ellipsis" href="">商业计划书格式商业计划书格式商业计划书格式商业计划书格式</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/8/2/3ed2886ad84c4327b34e8ea646ad78e9.jpg" alt="">
+						<div class="img-cont"><div class="cont-info">一份完美商业企划书不能少的5大内容你知道吗？比套商业计划书模版还好用的写作方法</div></div>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link ellipsis" href="">商业计划书格式商业计划书格式商业计划书格式</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/8/2/f382fc4adb974ad5b80f939352e43e53.jpg" alt="">
+						<div class="img-cont"><div class="cont-info">一份完美商业企划书不能少的5大内容你知道吗？比套商业计划书模版还好用的写作方法</div></div>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link ellipsis" href="">商业计划书格式商业计划书格式商业计划书格式</a></h4>
+				</div>
+			</li>
+		</ul>
+		<!--/热门专题-->
+		<!--帮帮优选-->
+		<div class="tabSwitch">
+			<div class="title-box clearfix">
+				<h3 class="tit-name">帮帮优选</h3>
+				<div class="link-box clearfix">
+					<a class="link switchNav active">商业计划书<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">论文<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">研究报告<div class="active-line"></div></a>
+				</div>
+				<div class="tit-more-box">
+					<a class="tit-more switchMore active-more" href="">MORE<span class="more-arrow">></span></a>
+					<a class="tit-more switchMore" href="">MORE2<span class="more-arrow">></span></a>
+					<a class="tit-more switchMore" href="">MORE3<span class="more-arrow">></span></a>
+				</div>
+			</div>
+			<div class="switchContBox">
+				<div class="switchCont active">
+					<ul class="news-box clearfix">
+						<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故17中班语言教案:鸡毛鸭(故</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故</a></li>
+						<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">金阳街道中学学生春游活动方</a></li>
+						<li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">人教版小学三年级语文下册《</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">新理念英语上机测试(华工版)</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">尔雅课堂 逻辑和批判性思逻辑</a></li>
+						<li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link" href="">DISC性格测试及分析(Ex</a></li>
+						<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">14.发生在肺内的气体交换的</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">课前简短演讲稿71短演短演讲</a></li>
+						<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">信用社助学贷款调查报告</a></li>
+					</ul>
+				</div>
+				<div class="switchCont">2</div>
+				<div class="switchCont">3</div>
+			</div>
+		</div>
+		<!--/帮帮优选-->
+		<!--最新精品推荐-->
+		<div class="tabSwitch">
+			<div class="title-box clearfix">
+				<h3 class="tit-name">最新精品推荐</h3>
+				<div class="link-box clearfix">
+					<a class="link switchNav active">演讲稿<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">党课<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">人教版<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">毕业论文<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">新课标<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">先进事迹材料<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">可研报告<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">毕业设计论文<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">施工组织<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">培训ppt<div class="active-line"></div><span class="link-line">|</span></a>
+					<a class="link switchNav">技术规范<div class="active-line"></div></a>
+				</div>
+				<div class="tit-more-box">
+					<a class="tit-more switchMore active-more" href="">MORE<span class="more-arrow">></span></a>
+					<a class="tit-more switchMore" href="">MORE2<span class="more-arrow">></span></a>
+					<a class="tit-more switchMore" href="">MORE3<span class="more-arrow">></span></a>
+				</div>
+			</div>
+			<div class="switchContBox">
+				<div class="switchCont active">
+					<ul class="news-box clearfix">
+						<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故17中班语言教案:鸡毛鸭(故</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故</a></li>
+						<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">金阳街道中学学生春游活动方</a></li>
+						<li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">人教版小学三年级语文下册《</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">新理念英语上机测试(华工版)</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">尔雅课堂 逻辑和批判性思逻辑</a></li>
+						<li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link" href="">DISC性格测试及分析(Ex</a></li>
+						<li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">14.发生在肺内的气体交换的</a></li>
+						<li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">课前简短演讲稿71短演短演讲</a></li>
+						<li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">信用社助学贷款调查报告</a></li>
+					</ul>
+				</div>
+				<div class="switchCont">2</div>
+				<div class="switchCont">3</div>
+			</div>
+		</div>
+		<!--/最新精品推荐-->
+		<!--最新上传文档-->
+		<div class="changeGroup">
+			<div class="title-box clearfix">
+				<h3 class="tit-name">最新上传文档</h3>
+				<a class="tit-more" href="">MORE<span class="more-arrow">></span></a>
+				<a class="change-group-btn changeGroupBtn" href="javascript:;">换一组<i class="site-icon iconfont">&#xe655;</i></a>
+			</div>
+			<div>
+				<ul class="show-pic clearfix changeGroupCont active">
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont xls">&#xe611;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">人工智能集成学习方法在入侵检测中的运用</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont pdf">&#xe60f;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont ppt">&#xe610;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont rtf">&#xe614;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif"
+									alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+				</ul>
+				<ul class="show-pic clearfix changeGroupCont">
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">人工智能集成学习方法在入侵检测中的运用</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont xls">&#xe611;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont pdf">&#xe60f;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont ppt">&#xe610;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont rtf">&#xe614;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+					<li class="list">
+						<div class="img-box">
+							<a class="link" href="">
+								<img class="img" src="https://img.bbcyw.com/Pic/2018/7/2/cea3a04009dd4cd3b57271fe89ea19f8.jpg" alt="">
+								<i class="site-icon iconfont doc">&#xe613;</i>
+							</a>
+						</div>
+						<div class="pic-info">
+							<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--/最新上传文档-->
+		<!--热门文档-->
+		<div class="title-box clearfix">
+			<h3 class="tit-name"><a class="link" href="">热门文档</a></h3>
+			<a class="tit-more" href="">MORE<span class="more-arrow">></span></a>
+		</div>
+		<ul class="show-pic clearfix">
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont doc">&#xe613;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">地铁轨道人工散铺法施工工艺流程</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont xls">&#xe611;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">网约车问题的解决途径探究——以南京网约车存在问题</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont pdf">&#xe60f;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont ppt">&#xe610;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont rtf">&#xe614;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont doc">&#xe613;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont doc">&#xe613;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont doc">&#xe613;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont doc">&#xe613;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont doc">&#xe613;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont doc">&#xe613;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont doc">&#xe613;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont doc">&#xe613;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" alt="">
+						<i class="site-icon iconfont doc">&#xe613;</i>
+					</a>
+				</div>
+				<div class="pic-info">
+					<h4 class="pic-name"><a class="link" href="">香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案香雪面包市场推广方案</a></h4>
+				</div>
+			</li>
+		</ul>
+		<!--/热门文档-->
+		<!--牛人榜-->
+		<div class="title-box clearfix">
+			<h3 class="tit-name"><a class="link" href="">牛人榜</a></h3>
+			<a class="tit-more" href="">MORE<span class="more-arrow">></span></a>
+		</div>
+		<ul class="show-pic clearfix">
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar.png" alt="">
+						<p class="user-name">公文文档秘书公文文档秘书公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar_02.png" alt="">
+						<p class="user-name">公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar.png" alt="">
+						<p class="user-name">公文文档秘书公文文档秘书公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar_02.png" alt="">
+						<p class="user-name">公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar.png" alt="">
+						<p class="user-name">公文文档秘书公文文档秘书公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar_02.png" alt="">
+						<p class="user-name">公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar.png" alt="">
+						<p class="user-name">公文文档秘书公文文档秘书公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar_02.png" alt="">
+						<p class="user-name">公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar.png" alt="">
+						<p class="user-name">公文文档秘书公文文档秘书公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar_02.png" alt="">
+						<p class="user-name">公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar.png" alt="">
+						<p class="user-name">公文文档秘书公文文档秘书公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar_02.png" alt="">
+						<p class="user-name">公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar.png" alt="">
+						<p class="user-name">公文文档秘书公文文档秘书公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+			<li class="list">
+				<div class="img-box">
+					<a class="link" href="">
+						<img class="avatar" src="./images/avatar_02.png" alt="">
+						<p class="user-name">公文文档秘书</p>
+						<p class="published">已发布：<span class="num">21355</span></p>
+					</a>
+				</div>
+			</li>
+		</ul>
+		<!--/牛人榜-->
+		<!--友情连接-->
+		<dl class="friends-link tabSwitch">
+			<dt class="main-link clearfix">
+				<span class="link-nav">
+					<a class="link switchNav active" href="">友情连接</a>
+					<a class="link switchNav" href="">最新搜索</a>
+					<a class="link switchNav" href="">最新下载文档</a>
+				</span>
+			</dt>
+			<dd class="other-link clearfix">
+				<p class="link-line switchCont active">
+					<a class="link" href="">千图样机</a>
+					<a class="link" href="">我图网</a>
+					<a class="link" href="">90设计</a>
+					<a class="link" href="">摄图网</a>
+					<a class="link" href="">微信公众平台</a>
+					<a class="link" href="">图片之家</a>
+					<a class="link" href="">UI图标库</a>
+					<a class="link" href="">背景图片</a>
+					<a class="link" href="">千画网</a>
+					<a class="link" href="">精品素材</a>
+					<a class="link" href="">千广网</a>
+					<a class="link" href="">折800官网</a>
+					<a class="link" href="">深圳地图</a>
+					<a class="link" href="">背景墙</a>
+					<a class="link" href="">PPT模板</a>
+					<a class="link" href="">视频素材</a>
+					<a class="link" href="">天气预报查询</a>
+					<a class="link" href="">123网址之家</a>
+					<a class="link" href="">QQ头像</a>
+					<a class="link" href="">电脑壁纸</a>
+					<a class="link" href="">淮安新闻网</a>
+					<a class="link" href="">山东门户</a>
+					<a class="link" href="">经典语录</a>
+					<a class="link" href="">qq个性签名</a>
+					<a class="link" href="">渲图网</a>
+					<a class="link" href="">PS教程网</a>
+					<a class="link" href="">我图素材下载</a>
+					<a class="link" href="">比克尔下载</a>
+					<a class="link" href="">图片大全</a>
+					<a class="link" href="">老男人</a>
+					<a class="link" href="">壁纸小清新图片</a>
+					<a class="link" href="">男士时尚</a>
+					<a class="link" href="">QQ个性签名</a>
+					<a class="link" href="">QQ分组</a>
+					<a class="link" href="">综艺巴士</a>
+					<a class="link" href="">壁纸</a>
+					<a class="link" href="">素材天下</a>
+					<a class="link" href="">我要自学网</a>
+					<a class="link" href="">酷友网</a>
+					<a class="link link-more" href="">更多>></a>
+					<span class="link-info">友情链接请联系 QQ：383006219</span>
+				</p>
+				<p class="link-line switchCont">
+					<a class="link" href="">渲图网</a>
+					<a class="link" href="">渲图网</a>
+					<a class="link" href="">渲图网</a>
+					<a class="link" href="">PS教程网</a>
+					<a class="link" href="">我图素材下载</a>
+					<a class="link" href="">比克尔下载</a>
+					<a class="link" href="">图片大全</a>
+					<a class="link" href="">老男人</a>
+					<a class="link" href="">壁纸小清新图片</a>
+					<a class="link" href="">男士时尚</a>
+					<a class="link" href="">QQ个性签名</a>
+					<a class="link" href="">QQ分组</a>
+					<a class="link" href="">综艺巴士</a>
+					<a class="link" href="">壁纸</a>
+					<a class="link" href="">素材天下</a>
+					<a class="link" href="">我要自学网</a>
+					<a class="link" href="">酷友网</a>
+				</p>
+				<p class="link-line switchCont">
+					<a class="link" href="">渲图网</a>
+					<a class="link" href="">PS教程网PS教程网PS教程网</a>
+					<a class="link" href="">PS教程网PS教程网PS教程网</a>
+					<a class="link" href="">PS教程网PS教程网PS教程网</a>
+					<a class="link" href="">我图素材下载</a>
+					<a class="link" href="">比克尔下载</a>
+					<a class="link" href="">图片大全</a>
+					<a class="link" href="">老男人</a>
+					<a class="link" href="">壁纸小清新图片</a>
+					<a class="link" href="">男士时尚</a>
+					<a class="link" href="">QQ个性签名</a>
+				</p>
+			</dd>
+		</dl>
+		<!--友情连接-->
+	</div>
+	<!--右侧导航-->
+	<!-- <div class="toolbar" id="toolbar">
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe616;</i>
+				<span class="toolbar-text">咨询</span>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe62e;</i>
+				<span class="toolbar-text">关注</span>
+			</span>
+			<span class="toolbar-layer toolbar-layer-wx">
+				<img class="we-chat-img" src="images/cody.png">
+				<p class="we-chat-info">官方微信</p>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item feedback">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe672;</i>
+				<span class="toolbar-text">反馈</span>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item footprint">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe656;</i>
+				<span class="toolbar-text">足迹</span>
+			</span>
+		</a>
+		<a href="javascript:;" class="toolbar-item">
+			<span class="toolbar-btn">
+				<i class="site-icon iconfont">&#xe61b;</i>
+				<span class="toolbar-text">顶部</span>
+			</span>
+		</a>
+	</div> -->
+	<!--/右侧导航-->
+	        <!--右侧返回-->
+			<div class="right-tools-box" id="rightToolsBox">
+				<div class="right-tools">
+					<a class="link" href="javascript:;">
+						<div class="online-service-top clearfix">
+							<div class="online-service fl">在线客服</div>
+							<i class="site-icon iconfont fr" id="iconfont">&#xe634;</i>
+						</div>
+					</a>
+					<div class="list-box">
+						<div class="list">
+							<a class="link" href="javascript:;"><i class="site-icon iconfont">&#xe62f;</i>在线客服</a>
+						</div>
+						<div class="list">
+							<a class="link" href="javascript:;"><i class="site-icon iconfont">&#xe62f;</i>代写定制</a>
+						</div>
+						<div class="list">
+							<a class="link" href="javascript:;"><i class="site-icon iconfont">&#xe62f;</i>战略合作</a>
+						</div>
+						<div class="list">
+							<a class="link" href="javascript:;"><i class="site-icon iconfont">&#xe652;</i>建议反馈</a>
+						</div>
+						<div class="list">
+							<a class="link" href="javascript:;"><i class="site-icon iconfont llzj">&#xe656;</i>浏览足迹</a>
+						</div>
+					</div>
+					<div class="back-to-top">
+						<a class="link" href="javascript:;"><i class="site-icon iconfont">&#xe61b;</i>返回顶部</a>
+					</div>
+				</div>
+				<div class="right-tools-small">
+					<div class="list list-1 online-service-top2">
+						<a class="link" href="javascript:;">
+							<i class="site-icon iconfont">&#xe62f;</i>
+							<div class="name">在<br />线<br />客<br />服</div>
+						</a>
+					</div>
+					<div class="list list-2 back-to-top">
+						<a class="link" href="javascript:;">
+							<i class="site-icon iconfont">&#xe61b;</i>
+							<div class="name">回顶部</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--/右侧返回-->
+	<!--footer-->
+	<div class="site-footer">
+		<div class="container">
+			<div class="footer-links clearfix">
+				<dl class="col-links">
+					<dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+					<dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+					<dd class="link-list"><a class="link" href="#">最新文档</a></dd>
+					<dd class="link-list"><a class="link" href="#">资讯</a></dd>
+					<dd class="link-list"><a class="link" href="#">教程</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+					<dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+					<dd class="link-list"><a class="link" href="#">共享分</a></dd>
+					<dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+					<dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+					<dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+					<dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt class="link-list link-frist"><a class="link" href="#">关于蜜蜂文库</a></dt>
+					<dd class="link-list"><a class="link" href="#">蜜蜂文库简介</a></dd>
+					<dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+					<dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+					<dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+					<dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+				</dl>
+				<dl class="col-links links-last">
+					<dt class="link-list link-frist">反馈建议：service@mifengwenku.com</dt>
+					<dd class="link-list">工作时间</dd>
+					<dd class="link-list">周一至周五</dd>
+					<dd class="link-list">9：00-18：00</dd>
+				</dl>
+				<div class="foots-logo">
+					<img class="logo-img" src="images/logo_gray.png">
+					<p class="logo-info">公文文档分享平台</p>
+				</div>
+				<div class="we-chat">
+					<img class="we-chat-img" src="./images/cody.png">
+					<p class="we-chat-info">扫描手机访问</p>
+				</div>
+			</div>
+			<div class="copyright-box">
+				<p class="copyright-info">COPYRIGHT@ 2020  重庆热链网络技术有限公司版权所有<a class="site-map-link" href="">热门标签</a><a
+						class="site-map-link" href="">网站地图</a></p>
+				<p class="copyright-info">工信部备案号:渝ICP备19017437号-4</p>
+			</div>
+		</div>
+	</div>
+	<!--/footer-->
+
+	<!--/右侧导航-->
+	<script type="text/javascript">
+		$("#homeSlider").slider();
+		$(".tabSwitch").tabSwitch();
+		liPlay(30, 15, 3000, "marqueebox1");
+		$(".changeGroup").changeGroup();
+	</script>
+
+
+</body>
+
+</html>

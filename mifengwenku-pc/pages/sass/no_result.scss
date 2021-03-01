@@ -1,0 +1,15 @@
+@import 'module/title';//title
+@import 'module/subnav';//列表页子导航
+@import 'module/subnav2';
+
+// .subnav-list .link-list{width: 1120px;}
+
+// .no-result-box{padding-bottom: 15px;}
+// .no-result-box .layout{background-color:#fff;margin-bottom:5px;}
+
+.no-result-main{padding: 136px 0 166px;}
+.no-result-main .text{text-align: center;color: #727272;font-size: 18px;line-height: 46px;}
+.no-result-main .font-s{font-size: 26px;}
+.no-result-main .c-red{color: #f60202;}
+.no-result-main .result-btn{width: 252px;height: 56px;line-height: 56px;text-align: center;display: block;margin: 20px auto 0;background-color: #f51d1d;color: #fff;font-size: 18px;border-radius: 3px;}
+.no-result-main .result-btn:hover{background-color: #dd0000}

@@ -1,0 +1,483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>模板-帮帮创意</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<link rel="stylesheet" type="text/css" href="css/resolist.css" />
+	<link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/search_enter.css" />
+</head>
+
+<body>
+    <!--header-->
+    <div class="so-header">
+        <div class="site-topbar">
+            <div class="container clearfix">
+                <ul class="top-nav fl clearfix">
+                    <li class="nav-list active"><a class="nav-link" href="">首页</a><span class="nav-line">|</span></li>
+                    <li class="nav-list"><a class="nav-link" href="">分类</a><span class="nav-line">|</span></li>
+                    <li class="nav-list"><a class="nav-link" href="">专题</a><span class="nav-line">|</span></li>
+                    <li class="nav-list"><a class="nav-link" href="">咨询</a><span class="nav-line">|</span></li>
+                    <li class="nav-list"><a class="nav-link" href="">教程</a><span class="nav-line">|</span></li>
+                    <li class="nav-list"><a class="nav-link" href="">活动</a></li>
+                </ul>
+                <div class="link-box fr">
+                    <a class="link-list recharge" href=""><i class="site-icon iconfont">&#xe625;</i>充值</a>
+                    <a class="link-list open-vip" href=""><img class="vip-icon" src="./images/vip_icon.png" alt="">开通VIP</a>
+                    <a class="link-list login" href=""><i class="site-icon iconfont">&#xe631;</i>登录</a>
+                    <a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe672;</i>注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="site-header">
+            <div class="container header-center clearfix">
+                <div class="header-logo">
+                    <a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意"></a>			
+                </div>
+                <a class="release-btn" href=""><i class="site-icon iconfont">&#xe636;</i>发布文档</a>		
+                <div class="header-search">
+                    <input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+                    <input class="search-btn iconfont" type="submit" value="&#xe601;" />			
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/header-->
+    <!--fixed-header-->
+    <div class="fixed-header" id="fixedHeader">
+        <div class="container header-center clearfix">
+            <div class="header-logo">
+                <a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意"></a>
+            </div>
+            <a class="release-btn" href=""><i class="site-icon iconfont">&#xe636;</i>发布文档</a>
+            <div class="header-search">
+                <input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+                <input class="search-btn iconfont" type="submit" value="&#xe601;" />
+            </div>
+        </div>
+    </div>
+    <!--/fixed-header-->
+
+    <div class="container search-list">
+            <div class="bbcy-list clearfix" style="margin-top: 10px">
+                <div class="warp-l">
+                    <div class="layout" id="subNav">
+                        <div class="title-box clearfix">
+                            <h3 class="tit-name selectedColor"><span class="font-c">相关</span>市场营销<span class="small-text">(共126530 份)</span></h3>
+                        </div>
+                        <div class="subnav-box">
+                            <dl class="subnav-list clearfix">
+                                <dt class="subnav-name">分类：</dt>
+                                <dd class="link-list clearfix">
+                                    <a class="link select" href="">全部</a>
+                                    <a class="link" href="">文档</a>
+                                    <a class="link" href="">话题</a>
+                                    <a class="link" href="">教程</a>
+                                </dd>
+                            </dl>
+                            <dl class="subnav-list clearfix">
+                                <dt class="subnav-name">类型：</dt>
+                                <dd class="link-list clearfix">
+                                    <a class="link select" href="">全部</a>
+                                    <a class="link" href="">VIP共享分</a>
+                                    <a class="link" href="">售卖</a>
+                                    <a class="link" href="">免费</a>
+                                </dd>
+                            </dl>
+                            <dl class="subnav-list clearfix">
+                                <dt class="subnav-name">页数：</dt>
+                                <dd class="link-list clearfix">
+                                    <a class="link select" href="">0-10</a>
+                                    <a class="link" href="">10-20</a>
+                                    <a class="link" href="">30+</a>
+                                </dd>
+                            </dl>
+                            <dl class="subnav-list clearfix">
+                                <dt class="subnav-name">时间：</dt>
+                                <dd class="link-list clearfix">
+                                    <a class="link select" href="">不限</a>
+                                    <a class="link" href="">三天内</a>
+                                    <a class="link" href="">一周内</a>
+                                    <a class="link" href="">一个月内</a>
+                                    <a class="link" href="">一年内</a>
+                                </dd>
+                            </dl>
+                        </div>
+        
+                    </div>
+                    <div class="layout">
+                        <!--主导航-->
+                        <div class="main-nav-box">
+                            <ul class="main-nav clearfix">
+                                <li class="link-list select"><a class="link" href="">PPT</a></li>
+                                <li class="link-list"><a class="link" href="">DOC</a></li>
+                                <li class="link-list"><a class="link" href="">PDF</a></li>
+                                <li class="link-list"><a class="link" href="">XLS</a></li>
+                                <li class="link-list"><a class="link" href="">PSD</a></li>
+                                <li class="link-list"><a class="link" href="">AI</a></li>
+                                <li class="link-list"><a class="link" href="">CDR</a></li>
+                                <li class="link-list"><a class="link" href="">EPS</a></li>
+                                <li class="link-list"><a class="link" href="">JPG</a></li>
+                                <li class="link-list"><a class="link" href="">其它</a></li>
+                            </ul>
+                        </div>
+                        <!--/主导航-->
+                    </div>
+                    <div class="layout">
+                        <!--聚合展开收起-->
+                        <div class="title-box clearfix">
+                            <h3 class="tit-name selectedColor"><span class="font-c">市场调研报告资料非常多，小编这里为您筛选了一些可以优先参考的资料</span></h3>
+                        </div>
+                        <div class="group-box toggleCont">
+                            <div class="group-main clamp">
+                                <div class="group-list">
+                                    <div class="group-tit"><a href="" class="link">智能停车场建设项目可行性研究报告</a></div>
+                                    <div class="group-cont">在现代市场经济活动中，信息已经是智能停车场行业的重要的经济资源，信息资源的优先占有者胜，反之则处于劣势。中国每年有近100万家企业倒闭，对于企业经营而言，因为失误而出局，极有可能意味着从此退出历史舞台。他们的失败、他们的经验教训，可能再也没有机会转化为他们下一次的成功了！智能停车场企业成功的关键就在于，是否能够在需求尚未形成之时就牢牢的锁定并捕捉到它。那些成功的公司往往都会倾尽毕生的精力及资源搜寻产业的当前需求、潜在需求以及新的需求。中国处于工业化中后期，工业化的任务并没有完成，且远未到达后工业化时期。中国是制造业大国，但并不是强国。一些发达国家制造业在整个经济中的比重不高，2008年后提出再工业化或振兴制造业，并不是这些国家的制造业不如我们，其实它们依旧是制造业强国。在前两次工业革命中，中国都严重落伍的状态，第三次工业革命是中国的制造业离得最近、最有可能迎头赶上的一次，如果说前两次工业革命分别造成了英国的兴起、德国的领先和美国的崛起，那么，在第三次工业革命中，有无可能成就中国的领先呢？我们拭目以待！新兴产业因其产业链较长，具有牵一发而动全身的特点，可以说每一项重大技术的突破都会带动整个行业的转型升级，但要注意的是，新兴产业由于其自身的特殊性，决定了它在发展过程中对于科研投入，人才培养，人才引进，重大科研技术转化等方面的高标准与高要求，因此对于我国战略性新兴产业中的部分短板，尤其是高尖端。，尤其是高尖端，尤其是高尖端</div>
+                                </div>
+                                <div class="group-list">
+                                    <div class="group-tit"><a href="" class="link">停车场开发可行性研究报告（xx年）</a></div>
+                                    <div class="group-cont">天堂寨风景区1987年经省政府批准为第一批省级风景名胜区，1992年经林业部批准为国家森林公园，1998年经国务院批准为国家级自然保护区，xx年被省政府批准为省级旅游扶贫实验区，xx年8月，被国土资源部批准为国家地质公园，xx年10月，天堂寨景区被六安市政府批准为安徽国家地质公园主园区。xx年成功晋级国家AAAA级旅游景区。xx年4月1日，合武高速铁路动车组正式通车，大大缩短了上海、南京、合肥和武汉等大中城市市民进入天堂寨的时间，为发展天堂寨旅游创造了良好的机遇。随着制约天堂寨发展的瓶颈——外部交通这一问题的解决，可以真正实现“快进慢游”，但同时天堂寨风景区的接待压力也将大增，急需增加停车泊位，改善景区内部道路交通条件，为行人游览创造良好、安全。安徽天堂寨景区生态停车场建设项目可行性研究报告 的游览条件。为加强景区建设，提高景区服务质量需要按照天堂寨各项规划建设本项目，在这样的背景下，我院承担了安徽天堂寨风景区生态停车场建设工程可行性研究报告的编制工作。安徽天堂寨景区生态停车场建设项目可行性研究报告 传促销，天堂寨以合肥、南京为主的客源市场逐渐扩大到河南、江苏、湖北等长江三角洲以及上海、北京、广东至东北三省。近几年春节后，即使大雪封山，景区也从未间断过游客，春节还未过完，游客就蜂涌而至，天堂寨的旅游旺季大大提前。旅游经济红红火火。随着景区的对外宣传的力度加大，景区旅游基础设施日臻完善，旅游服务体系不断成熟，天堂寨的知名度。</div>
+                                </div>
+                                <div class="group-list">
+                                    <div class="group-tit"><a href="" class="link">某生态农业示范园建设项目可行性研究报告</a></div>
+                                    <div class="group-cont">建设生态农业示范园是现代农业科技与农业生产的有机结合，在追求经济效益、社会效益与生态效益并举的基础上达到农业经济可持续发展的目的，走农业产业化道路；向高产、优质、高效的现代农业方向发展，增加农民收入，为市场提供无公害农副产品，是符合当前国家和我省农业产业政策的。项目区环境条件好、气候适宜、雨量充沛、土地资源丰富，可充分发展多种农业项目。本项目从现代农业生态示范考虑各子项目的综合开发利用，使项目总体上产生良性循环，变废为宝，并产生良好的经济效益，保护了环境，有显著的生态效益。项目建成后，保证了南昌市近郊土地资源的高效利用，生态农业是一种新型的农业生产经营模式，示范园的建设可带动南昌市区域农业科学技术推广和应用，使南昌市的环境质量得以改善，真正做到对资源与生态环境的保护。本项目各子项均引进良种栽培和饲养，采用先进的耕作技术和饲养方法，依托科研院校不断更新，做到高投入、高效益，在调整生态生产模式的同时，发展深加工，形成产业化生产，进一步提高经济效益。项目拟生产优质农副产品为主，全面开发无公害、有机食品及畜牧良种，供应南昌市市场及辐射周边区域，起到示范推广作用，市场前景十分看好。项目的经济效益、社会效益明显，财务评价指标均高于一般农业项目，项目是可行的。建议：项目必须有规划，按规划组织较强的班子负责实施，技术上一定要依托高水平的科研单位和技术人员指导，在实施中根据本地实际情况和市场需求。</div>
+                                </div>
+                            </div>
+                            <div class="group-arrow">
+                                <i class="site-icon iconfont toggleBtn" data-num="1">&#xe634;</i>
+                            </div>
+                        </div>
+                        <!--/聚合展开收起-->
+                    </div>
+                    <div class="layout">
+                        <div class="title-box clearfix">
+                            <h3 class="tit-name selectedColor"><span class="font-c">市场调研报告关于其他参考资料</span></h3>
+                        </div>
+                        <div class="reso-list-box" style="padding-top: 0">
+                            <!--文档列表页-->
+                            <dl class="topic-list clearfix">
+                                <dt class="topic-l" style="position:relative">
+                                    <a href="">
+                                        <img class="topic-img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif" />
+                                        
+                                    </a>
+                                    <span class="label">25 P</span>
+                                </dt>
+                                <dd class="topic-r">
+                                    <h3 class="list-name"><i class="site-icon iconfont doc">&#xe613;</i><a class="link" href=""><span class="c-red">网约车</span>问题的解决途径探究以满井<span class="c-red">网约车</span>存在问题为例</a></h3>
+                                    <p class="topic-summary twoText">网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意</p>
+                                    <div class="reso-time">上传时间：<span class="font-c">2018-12-15</span> / <span class="font-c">8</span>帮币 / 页数<span class="font-c">54</span>页 / 相关性<span class="font-c">7.92</span></div>
+                                </dd>
+                            </dl>
+                            <dl class="topic-list clearfix">
+                                <dt class="topic-l" style="position:relative">
+                                    <a href="">
+                                        <img class="topic-img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" />
+                                        
+                                    </a>
+                                    <span class="label">25 P</span>
+                                </dt>
+                                <dd class="topic-r">
+                                    <h3 class="list-name"><i class="site-icon iconfont doc">&#xe613;</i><a class="link" href=""><span class="c-red">网约车</span>问题的解决途径探究以满井<span class="c-red">网约车</span>存在问题为例</a></h3>
+                                    <p class="topic-summary twoText">网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+                                    <div class="reso-time">上传时间：<span class="font-c">2018-12-15</span> / <span class="font-c">8</span>帮币 / 页数<span class="font-c">54</span>页 / 相关性<span class="font-c">7.92</span></div>
+                                </dd>
+                            </dl>
+                            <dl class="topic-list clearfix">
+                                <dt class="topic-l" style="position:relative">
+                                    <a href="">
+                                        <img class="topic-img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif" />
+                                        
+                                    </a>
+                                    <span class="label">25 P</span>
+                                </dt>
+                                <dd class="topic-r">
+                                    <h3 class="list-name"><i class="site-icon iconfont doc">&#xe613;</i><a class="link" href=""><span class="c-red">网约车</span>问题的解决途径探究以满井<span class="c-red">网约车</span>存在问题为例</a></h3>
+                                    <p class="topic-summary twoText">网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+                                    <div class="reso-time">上传时间：<span class="font-c">2018-12-15</span> / <span class="font-c">8</span>帮币 / 页数<span class="font-c">54</span>页 / 相关性<span class="font-c">7.92</span></div>
+                                </dd>
+                            </dl>
+                            <dl class="topic-list clearfix">
+                                <dt class="topic-l" style="position:relative">
+                                    <a href="">
+                                        <img class="topic-img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif" />
+                                        
+                                    </a>
+                                    <span class="label">25 P</span>
+                                </dt>
+                                <dd class="topic-r">
+                                    <h3 class="list-name"><i class="site-icon iconfont doc">&#xe613;</i><a class="link" href="">网约车问题的解决途径探究以满井网约车存在问题为例</a></h3>
+                                    <p class="topic-summary twoText">网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+                                    <div class="reso-time">上传时间：<span class="font-c">2018-12-15</span> / <span class="font-c">8</span>帮币 / 页数<span class="font-c">54</span>页 / 相关性<span class="font-c">7.92</span></div>
+                                </dd>
+                            </dl>
+                            <dl class="topic-list clearfix">
+                                <dt class="topic-l" style="position:relative">
+                                    <a href="">
+                                        <img class="topic-img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif" />
+                                        
+                                    </a>
+                                    <span class="label">25 P</span>
+                                </dt>
+                                <dd class="topic-r">
+                                    <h3 class="list-name"><i class="site-icon iconfont doc">&#xe613;</i><a class="link" href="">网约车问题的解决途径探究以满井网约车存在问题为例</a></h3>
+                                    <p class="topic-summary twoText">网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意</p>
+                                    <div class="reso-time">上传时间：<span class="font-c">2018-12-15</span> / <span class="font-c">8</span>帮币 / 页数<span class="font-c">54</span>页 / 相关性<span class="font-c">7.92</span></div>
+                                </dd>
+                            </dl>
+                            <dl class="topic-list clearfix">
+                                <dt class="topic-l" style="position:relative">
+                                    <a href="">
+                                        <img class="topic-img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" />
+                                        
+                                    </a>
+                                    <span class="label">25 P</span>
+                                </dt>
+                                <dd class="topic-r">
+                                    <h3 class="list-name"><i class="site-icon iconfont doc">&#xe613;</i><a class="link" href="">网约车问题的解决途径探究以满井网约车存在问题为例</a></h3>
+                                    <p class="topic-summary twoText">网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+                                    <div class="reso-time">上传时间：<span class="font-c">2018-12-15</span> / <span class="font-c">8</span>帮币 / 页数<span class="font-c">54</span>页 / 相关性<span class="font-c">7.92</span></div>
+                                </dd>
+                            </dl>
+                            <dl class="topic-list clearfix">
+                                <dt class="topic-l" style="position:relative">
+                                    <a href="">
+                                        <img class="topic-img" src="https://img4.bbcyw.com/2018-12/9/424ce214-c7b9-4893-8626-b0b11fb47f09/pic1.gif" />
+                                        
+                                    </a>
+                                    <span class="label">25 P</span>
+                                </dt>
+                                <dd class="topic-r">
+                                    <h3 class="list-name"><i class="site-icon iconfont doc">&#xe613;</i><a class="link" href="">网约车问题的解决途径探究以满井网约车存在问题为例</a></h3>
+                                    <p class="topic-summary twoText">网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意</p>
+                                    <div class="reso-time">上传时间：<span class="font-c">2018-12-15</span> / <span class="font-c">8</span>帮币 / 页数<span class="font-c">54</span>页 / 相关性<span class="font-c">7.92</span></div>
+                                </dd>
+                            </dl>
+                            <dl class="topic-list clearfix">
+                                <dt class="topic-l" style="position:relative">
+                                    <a href="">
+                                        <img class="topic-img" src="https://img.bbcyw.com/Pic/2018/7/3/d88045db7c9d40328e6728ecb90526c8.jpg" />
+                                        
+                                    </a>
+                                    <span class="label">25 P</span>
+                                </dt>
+                                <dd class="topic-r">
+                                    <h3 class="list-name"><i class="site-icon iconfont doc">&#xe613;</i><a class="link" href="">网约车问题的解决途径探究以满井网约车存在问题为例</a></h3>
+                                    <p class="topic-summary twoText">网约车产生是由特殊的社会背景决定的，首先国家规定11对我们建设社会主义生态文明有借鉴作用。原始宗教的物质文化，包含原始宗教的神山、灵洞、庙宇、天然象征男根女阴石柱、洞穴、幽泉、图腾雕塑、神灵意...</p>
+                                    <div class="reso-time">上传时间：<span class="font-c">2018-12-15</span> / <span class="font-c">8</span>帮币 / 页数<span class="font-c">54</span>页 / 相关性<span class="font-c">7.92</span></div>
+                                </dd>
+                            </dl>
+                            <!--/文档列表页-->
+                            <!--分页-->
+                            <div class="page-main">
+                                    <p class="allPage">共<span class="selectedColor">13698</span>条 / 前<span class="selectedColor">100</span>页</p>
+                                <a class="home-page">首页</a>
+                                <a class="prev-page">上一页</a>
+                                <span class="select-page">1</span>
+                                <a class="page-num" href="">2</a>
+                                <a class="page-num" href="">3</a>
+                                <a class="page-num" href="">4</a>
+                                <span class="omitted">...</span>
+                                <a class="next-page" href="">下一页</a>
+                                <a class="last-page" href="">尾页</a>
+                            </div>
+                            <!--/分页-->					
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="warp-r">
+                    <!--用户热搜词-->
+                    <div class="layout">
+                        <div class="title-box clearfix">
+                            <h3 class="tit-name">用户热搜词</h3>
+                        </div>
+                        <div class="related-search clearfix">
+                            <a class="link" href="#">市场调查</a>
+                            <a class="link" href="#">建材市场调研报告</a>
+                            <a class="link" href="#">市场调研</a>
+                            <a class="link" href="#">市场调查表</a>
+                            <a class="link" href="#">市场调查ppt</a>
+                            <a class="link" href="#">ppt市场调查</a>
+                            <a class="link select" href="#">市场调研报告格式</a>
+                            <a class="link" href="#">医药市场调研报告</a>
+                            <a class="link" href="#">市场调研报告怎么写</a>
+                            <a class="link" href="#">项目可行性分析报告</a>
+                            <a class="link" href="#">市场调研报告</a>
+                            <a class="link" href="#">市场调研PPT</a>
+                            <a class="link" href="#">模板下载</a>
+                            <a class="link" href="#">市场调研报告格式</a>
+                            <a class="link" href="#">医药市场调研报告</a>
+                            <a class="link" href="#">市场调研报告怎么写</a>
+                            <a class="link" href="#">项目可行性分析报告</a>
+                            <a class="link" href="#">市场调研报告</a>
+                            <a class="link" href="#">市场调研PPT</a>
+                            <a class="link" href="#">模板下载</a>
+                        </div>
+                    </div>
+                    <!--相关文档-->
+                    <div class="layout">
+                        <div class="title-box clearfix">
+                            <h3 class="tit-name selectedColor">相关文档</h3>
+                            <a href="" class="tit-more">MORE<span class="tit-arrow">></span></a>
+                        </div>
+                        <ul class="news-box">
+                            <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">Good evening3</a></li>
+                            <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故</a></li>
+                            <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">金阳街道中学学生春游活动方</a></li>
+                            <li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">人教版小学三年级语文下册《</a></li>
+                            <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">新理念英语上机测试(华工版)</a></li>
+                            <li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link" href="">DISC性格测试及分析(Ex</a></li>
+                            <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">14.发生在肺内的气体交换的</a></li>
+                            <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">课前简短演讲稿71短演短演讲</a></li>
+                            <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">信用社助学贷款调查报告</a></li>
+                        </ul>
+                    </div>
+                    <!--推荐内容-->
+                    <div class="layout">
+                        <div class="title-box clearfix">
+                            <h3 class="tit-name selectedColor">推荐内容</h3>
+                        </div>
+                        <ul class="news-box">
+                            <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">Good evening3</a></li>
+                            <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故</a></li>
+                            <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">金阳街道中学学生春游活动方</a></li>
+                            <li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">人教版小学三年级语文下册《</a></li>
+                            <li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link" href="">DISC性格测试及分析(Ex</a></li>
+                        </ul>
+                    </div>
+                    <!--最新下载-->
+                    <div class="layout">
+                        <div class="title-box clearfix">
+                            <h3 class="tit-name selectedColor">最新下载</h3>
+                        </div>
+                        <ul class="news-box">
+                            <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">Good evening3</a></li>
+                            <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故</a></li>
+                            <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">金阳街道中学学生春游活动方</a></li>
+                            <li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">人教版小学三年级语文下册《</a></li>
+                            <li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link" href="">DISC性格测试及分析(Ex</a></li>
+                        </ul>
+                    </div>
+                    <!--最新上传-->
+                    <div class="layout">
+                        <div class="title-box clearfix">
+                            <h3 class="tit-name selectedColor">最新上传</h3>
+                        </div>
+                        <ul class="news-box">
+                            <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">Good evening3</a></li>
+                            <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">17中班语言教案:鸡毛鸭(故</a></li>
+                            <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">金阳街道中学学生春游活动方</a></li>
+                            <li class="link-list"><i class="site-icon ppt iconfont">&#xe610;</i><a class="link" href="">人教版小学三年级语文下册《</a></li>
+                            <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">新理念英语上机测试(华工版)</a></li>
+                            <li class="link-list"><i class="site-icon rtf iconfont">&#xe614;</i><a class="link" href="">DISC性格测试及分析(Ex</a></li>
+                            <li class="link-list"><i class="site-icon doc iconfont">&#xe613;</i><a class="link" href="">14.发生在肺内的气体交换的</a></li>
+                            <li class="link-list"><i class="site-icon xls iconfont">&#xe611;</i><a class="link" href="">课前简短演讲稿71短演短演讲</a></li>
+                            <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">信用社助学贷款调查报告</a></li>
+                            <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">信用社助学贷款调查报告</a></li>
+                            <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">信用社助学贷款调查报告</a></li>
+                            <li class="link-list"><i class="site-icon pdf iconfont">&#xe60f;</i><a class="link" href="">信用社助学贷款调查报告</a></li>
+                        </ul>
+                    </div>
+                </div>		
+            </div>
+        
+        </div>
+
+    <!--右侧导航-->
+    <div class="toolbar" id="toolbar">
+        <a href="javascript:;" class="toolbar-item">
+            <span class="toolbar-btn">
+                <i class="site-icon iconfont">&#xe616;</i>
+                <span class="toolbar-text">咨询</span>
+            </span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <span class="toolbar-btn">
+                <i class="site-icon iconfont">&#xe62e;</i>
+                <span class="toolbar-text">关注</span>
+            </span>
+            <span class="toolbar-layer toolbar-layer-wx">
+                <img class="we-chat-img" src="images/cody.png">
+                <p class="we-chat-info">官方微信</p>
+            </span>
+        </a>
+        <a href="javascript:;" class="toolbar-item feedback">
+            <span class="toolbar-btn">
+                <i class="site-icon iconfont">&#xe672;</i>
+                <span class="toolbar-text">反馈</span>
+            </span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <span class="toolbar-btn">
+                <i class="site-icon iconfont">&#xe61b;</i>
+                <span class="toolbar-text">顶部</span>
+            </span>
+        </a>
+    </div>
+    <!--/右侧导航-->
+    <script>
+    $(".toggleCont").toggleCont();
+    </script>
+    <!--footer-->
+<div class="site-footer">
+    <div class="container">
+        <div class="footer-links clearfix">
+            <dl class="col-links">
+                <dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+                <dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+                <dd class="link-list"><a class="link" href="#">最新文档</a></dd>
+                <dd class="link-list"><a class="link" href="#">资讯</a></dd>
+                <dd class="link-list"><a class="link" href="#">教程</a></dd>
+            </dl>
+            <dl class="col-links">
+                <dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+                <dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+                <dd class="link-list"><a class="link" href="#">共享分与帮币</a></dd>
+                <dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+                <dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+                <dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+                <dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+            </dl>
+            <dl class="col-links">
+                <dt class="link-list link-frist"><a class="link" href="#">关于帮帮创意</a></dt>
+                <dd class="link-list"><a class="link" href="#">帮帮创意简介</a></dd>
+                <dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+                <dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+                <dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+                <dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+            </dl>
+            <dl class="col-links links-last">
+                <dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+                <dd class="link-list">工作时间</dd>
+                <dd class="link-list">周一至周五</dd>
+                <dd class="link-list">9：00-18：00</dd>
+            </dl>
+            <div class="foots-logo">
+                <img class="logo-img" src="images/logo.png">
+                <p class="logo-info">专业文档分享平台</p>
+            </div>
+            <div class="we-chat">
+                <img class="we-chat-img" src="https://static.bbcyw.com/pc/Content/bbcwy/images/cody.png">
+                <p class="we-chat-info">扫描手机访问</p>
+            </div>
+        </div>
+        <div class="copyright-box">
+            <p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有<a class="site-map-link" href="">热门标签</a><a class="site-map-link"
+                    href="">网站地图</a></p>
+            <p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+        </div>
+    </div>
+</div>
+    <!--/footer-->
+
+</body>
+
+</html>

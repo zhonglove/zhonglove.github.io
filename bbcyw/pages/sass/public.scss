@@ -1,0 +1,9 @@
+@import 'module/reset';//清除默认
+@import 'module/public';//公共样式
+@import 'module/font';//字体图标
+@import 'module/header';//头部
+@import 'module/footer';//尾部
+@import 'module/toolbar';//右侧导航
+
+.page_640{width:1200px;}
+.selectedColor{color: #f7372c!important;}

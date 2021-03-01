@@ -1,0 +1,10 @@
+/*相关搜索*/
+.related-search{padding:0 0 20px 13px;}
+.related-search .link{display:block;color:#727272;font-size:14px;border:1px solid #dcdcdc;height:24px;line-height:24px;float:left;border-radius:2px;padding:0 3px;margin-bottom:8px;margin-right:6px;}
+.related-search .link:hover,.related-search .select{background-color:#f7372c;color:#fff;border-color:#f7372c;}
+/*相关搜索 end*/
+
+/*热门搜索*/
+.hot-search .link{margin-right:8px;padding:0 8px;margin-bottom:14px;}
+/*话题分类*/
+.topic-class .link{width:73px;margin-right:14px;text-align:center;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}

@@ -1,0 +1,82 @@
+@import 'module/toast';//toast
+
+$bbcywColor: #f7372c;
+body{overflow-x:hidden;}
+.header-02 .head-menu{color:$bbcywColor}
+.login-logo{padding-top:2rem}
+.login-logo .logo-link{}
+.login-logo .logo-img{width:130px;margin: 0 auto;display: block;}
+
+.login-input-box{padding-top:4rem;}
+
+.weui-cells{font-size:1.4rem;padding:0 1rem;}
+.weui-cell{padding: 1rem 0px;position: relative;display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-webkit-align-items: center;align-items: center;border:1px solid #bfbfbf;margin-top: 1rem;}
+.weui-cell .weui-cell-hd{}
+.weui-cell .weui-label{display: block;width: 6.6rem;word-wrap: break-word;word-break: break-all;text-indent: 10px;}
+.weui-cell .weui-cell-bd{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;}
+.weui-cell .weui-input{width: 100%;border: 0;outline: 0;font-size:1.4rem;background:none;text-indent: 10px;}
+.weui-cell .weui-cell-ft{}
+.weui-cell .weui-icon{font-size:1.6rem;padding-right: .6rem;color:#bbbbbb;}
+.weui-cell .weui-vcode-img{height:3rem;display:block;}
+// .weui-cell.weui-cell-vcode{padding:.6rem 0}
+
+.weui-btn-box{padding:1rem 1rem 2rem;}
+.weui-btn{background-color:$bbcywColor;color:#fff;display:block;height:4rem;line-height:4rem;text-align:center;font-size:1.5rem;border-radius:.3rem;}
+
+.input-info-box{padding:0rem 1rem 0;font-size:1.4rem;display: -webkit-box;display: -webkit-flex;display: flex;-webkit-box-align: center;-webkit-align-items: center;align-items: center;}
+.input-info-box .weui-cell-bd{-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;text-align: center;color: #727272;}
+.input-info-box .forget-pwd{color:#e71f19}
+.input-info-box .xieyi{text-align:center;-webkit-box-flex: 1;-webkit-flex: 1;flex: 1;padding-bottom:2rem;}
+.input-info-box .xieyi .info-link{color:#2c9ff7;}
+.input-info-box .link{color:#2c9ff7;}
+.other-login{padding:2rem 0 3rem}
+.other-login .login-list{}
+.other-login .link-list{background-color:#039ae3;color:#fff;display:block;width:5rem;height:5rem;border-radius:5rem;line-height:5rem;text-align:center;margin:0 auto;overflow:hidden;}
+.other-login .link-icon{font-size:3.6rem;}
+.other-login .link-list.zfb{background-color:#039ae3;}
+.other-login .link-list.zfb .link-icon{font-size:4.4rem;}
+.other-login .link-list.wx{background-color:#20c428;}
+.other-login .link-list.qq{background-color:#5cbbdb;}
+.other-login .link-list.wb{background-color:#e93030;}
+.other-login .list-name{text-align: center;color: #999999;padding-top: 4px;}
+
+.input-error{color: #f7372c;font-size: 1.3rem;padding-top: 4px;display: none;}
+.input-error .error-icon{width: 16px;vertical-align: -2px;margin-right: 4px;}
+.ipterror .weui-cell{border-color: #f7372c;}
+.ipterror .input-error{display: block;}
+.iptfocus .weui-cell{border-color: #2c9ff7;}
+
+/*注册*/
+.login-tit{color:#000;font-size:3rem;text-align:center;}
+/*注册 end*/
+
+/*找回密码*/
+.find-box{padding-bottom:15rem}
+
+.find-cont{background-color:#fff;text-align:center;padding:2rem 0}
+.find-cont .info-line{color:#727272;font-size:1.4rem;}
+.find-cont .c-block{color:#000}
+.find-cont .mailbox{color:#000;font-size:1.8rem;padding-top:.4rem;}
+
+.yzm-input-box{}
+.yzm-input-box .yzm-input{text-align:center;padding-top:3rem;}
+.yzm-input-box .input{border:none;border-bottom:1px solid #a0a0a0;width:4rem;background:none;text-align:center;font-size:1.6rem;}
+.yzm-input-box .yzm-active{}
+.yzm-input-box .yzm-active .input{border-color:$bbcywColor;}
+
+.countdown{color:#000;text-align:center;font-size:1.4rem;padding-top:3rem;}
+
+.weui-cell-btn{
+padding: 1rem 0px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border: 1px solid #bfbfbf;
+    margin-top: 1rem;
+width: 30%;text-align: center;display:block;color:#777;
+}
+/*找回密码 end*/

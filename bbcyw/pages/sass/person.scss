@@ -1,0 +1,98 @@
+@import 'module/subnav2';//子导航
+@import 'module/title';//title
+@import 'module/resobox';//资源平铺
+@import 'module/subnav';//列表页子导航
+@import 'module/page';//分页
+@import 'module/topic';//列表内容
+
+.person-header{}
+
+.person-header .header-nav{border-bottom:0 none;}
+.person-header .header-logo{padding-top:36px;}
+.person-header .header-logo .logo{width: 130px;}
+.person-header .nav-list{padding-top:30px;padding-left:50px;}
+.person-header .more-cont{top:50px;}
+
+.person-banner{height:416px;background:url(../images/person.jpg) no-repeat center top;}
+
+.user-info-box{position:relative;}
+.user-info-box .avatar{width:166px;height:166px;border-radius:50%;display:block;border:6px solid #fff;position:absolute;left:0;top:-50px;background-color:#fff;}
+
+.user-info{padding:20px 0 10px 200px;}
+.user-info .user-info-list{color:#5b5b5b;font-size:14px;line-height:30px;}
+.user-info .user-name{color:#5b5b5b;font-size:18px;}
+.user-info .user-grade{color:#fff;font-size:14px;background-color:#eabb00;border-radius:3px;padding:2px 5px;margin:0 8px 0 10px;}
+.user-info .site-icon{color:#ffcc00;font-size:14px;padding-left:2px;}
+.user-info .c-red{color:#fe0000;padding-right:6px;}
+.user-info .signature{color:#727272}
+
+.user-other-link{position:absolute;left:666px;top:70px;}
+.user-other-link .link-list{color:#727272;font-size:14px;margin-right:16px;}
+.user-other-link .site-icon{color:#00b4ff;font-size:20px;vertical-align:-4px;margin-right:4px;}
+
+.bbcy-list{padding-bottom:40px;}
+.bbcy-list .layout{background-color:#fff;margin-bottom:5px;}
+/*左侧*/
+.bbcy-list .warp-l{width:895px;float:left;}
+.reso-list-box{padding:30px 25px;}
+
+.reso-tit{padding-bottom:14px;}
+.reso-tit .tit-name{float:left;color:#5b5b5b;font-size:18px;}
+.reso-tit .switch{float:right;padding-top:6px;}
+.reso-tit .switch-btn{display:block;width:15px;height:15px;border:1px solid #d2d2d2;float:left;color:#5b5b5b;font-size:16px;line-height:15px;text-align:center;font-family:"宋体";font-weight:bold;margin-right:10px;}
+.reso-tit .prev{}
+.reso-tit .next{}
+
+.more-box{text-align:center;}
+.more-box .more-btn{color:#ff0000;font-size:18px;}
+.more-box .site-icon{font-size:24px;vertical-align:-3px;margin-left:4px;}
+
+/*左侧 end*/
+.bbcy-list .warp-r{width: 300px;float:right;}
+
+.dynamic-box{padding:0 20px 20px;}
+.dynamic-box .dyna-list{line-height:26px;margin-bottom:6px;}
+.dynamic-box .dyna-cont{color:#5b5b5b;font-size:14px;float:left;width:76%}
+.dynamic-box .dyna-point{color:#2bbffd;padding-right:4px;}
+.dynamic-box .dyna-link{}
+.dynamic-box .c-blue{color:#21bdfe;}
+.dynamic-box .dyna-time{color:#787878;font-size:14px;float:right;}
+
+.user-box{padding:0 16px 26px;}
+.user-box .user-list{float:left;width:89px;margin-top:20px;}
+.user-box .user-img{display:block;width:53px;height:53px;border-radius:50%;margin:0 auto;}
+.user-box .user-name{color:#727272;font-size:14px;padding-top:10px;text-align:center;}
+
+
+/*话题*/
+.published-box{}
+.published-box .published-btn{color:#fff;font-size:16px;display:block;width:120px;height:34px;line-height:34px;text-align:center;background-color:#f7372c;float:right;border-radius: 3px;}
+.published-box .published-btn:hover{opacity: .85;}
+/*话题 end*/
+
+/*关注/粉丝*/
+
+.fans-box{}
+.fans-box .fans-nav{border-bottom:1px solid #f1f1f1;height:50px;line-height:50px;}
+.fans-box .fans-nav .fans-list{float:left;color:#727272;font-size:14px;margin-left:36px;}
+.fans-box .fans-nav .c-blue{color:#50a9e8}
+.fans-box .fans-nav .active .c-red{color:#ff0000;}
+.fans-box .module-cont .cont-list{display:none;}
+.fans-box .module-cont .active{display:block;}
+
+.fans-cont{padding:36px 20px 36px 40px;}
+
+.fans-user-box{}
+.fans-user-box .user-l{float:left;}
+.fans-user-box .user-img{display:block;width:70px;height:70px;border-radius:50%;margin-top:10px;}
+.fans-user-box .user-r{float:left;padding-left:30px;}
+.fans-user-box .user-name{color:#727272;font-size:18px;}
+.fans-user-box .info-list{color:#727272;font-size:14px;line-height:24px;}
+.fans-user-box .c-blue{color:#50a9e8;padding-right:20px;}
+
+.pic-box{padding-top:10px}
+.pic-box .reso-list{float:left;margin-right:12px;}
+.pic-box .reso-img{display:block;width:110px;height:82px;}
+.pic-box .reso-more,.pic-box .reso-more a{color:#727272;font-size:24px;line-height:70px;}
+
+/*关注/粉丝 end*/

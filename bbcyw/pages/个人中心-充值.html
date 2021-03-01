@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>个人中心（主页）-帮帮创意</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="css/public.css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<!--私有文件-->
+	<link rel="stylesheet" type="text/css" href="css/personal.css" />
+</head>
+<body>
+<!--header-->
+<div class="site-topbar">
+	<div class="container clearfix">
+		<div class="top-info fl">专业文档和设计素材分享社区</div>
+		<div class="link-box fr">
+			<a class="link-list" href=""><i class="site-icon iconfont">&#xe78e;</i>登录</a>
+			<a class="link-list regist-list" href=""><i class="site-icon iconfont">&#xe672;</i>注册</a>
+			<a class="link-list help" href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<div class="site-header">
+	<div class="container header-center clearfix">
+		<div class="header-logo">
+			<a href="/"><img class="logo" src="images/logo.png" alt="帮帮创意"></a>			
+		</div>
+		<a class="release-btn" href=""><i class="site-icon iconfont">&#xe636;</i>发布资源</a>		
+		<div class="header-search">
+			<input class="search-text" type="text" value="" placeholder="请输入标题、关键词、编号搜索" />
+			<input class="search-btn iconfont" type="submit" value="&#xe601;" />			
+		</div>
+	</div>
+	<div class="header-nav">
+		<div class="container clearfix">
+			<div class="sort-box" id="sort-box" data-type="false">
+				<h2 class="sort-title"><i class="site-icon iconfont">&#xe761;</i>全部分类</h2>
+				<div class="menu-list-box">
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">市场营销</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">营销策划</a>
+							<a class="link" href="">产品规划</a>
+							<a class="link" href="">渠道管理</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">分析报告</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">管理咨询工具</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">战略咨询工具</a>
+							<a class="link" href="">营销咨询工具</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">设计素材</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">标志</a>
+							<a class="link" href="">VI模板</a>
+							<a class="link" href="">海报</a>
+							<a class="link" href="">海报</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">高清图片</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">人物图片</a>
+							<a class="link" href="">风景图片</a>
+							<a class="link" href="">世界风光</a>
+						</dd>
+					</dl>
+					<dl class="menu-list">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">管理文档</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">企业管理</a>
+							<a class="link" href="">财务管理</a>
+							<a class="link" href="">人力资源</a>
+						</dd>
+					</dl>
+					<dl class="menu-list list-last">
+						<dt class="tit-name-box clearfix">
+							<h3 class="title-name"><a class="link" href="">更多资源</a></h3>
+							<i class="right-arrow">></i>
+						</dt>
+						<dd class="link-line clearfix">
+							<a class="link" href="">行业资料</a>
+							<a class="link" href="">PPT模板</a>
+							<a class="link" href="">办公文档</a>
+						</dd>
+					</dl>
+				</div>
+				<ul class="menu-cont">
+					<li class="cont-list">
+						<h3 class="tit-name"><a class="link" href="">市场营销全部</a></h3>
+						<div class="cont-link clearfix">
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+						</div>
+					</li>
+					<li class="cont-list">
+						<h3 class="tit-name"><a class="link" href="">分析报告全部</a></h3>
+						<div class="cont-link clearfix">
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+							<a class="link" href="">行业分析报告</a>
+							<a class="link" href="">调查问卷分析报告</a>
+							<a class="link" href="">数据分析报告</a>
+							<a class="link" href="">项目分析报告</a>
+							<a class="link" href="">经营分析报告</a>
+							<a class="link" href="">产业分析报告</a>
+							<a class="link" href="">医药行业分析报告</a>
+							<a class="link" href="">研究报告</a>
+							<a class="link" href="">行业报告</a>
+							<a class="link" href="">可行性报告</a>
+							<a class="link" href="">市场分析报告</a>
+							<a class="link" href="">财务分析报告</a>
+							<a class="link" href="">统计分析报告</a>
+						</div>
+					</li>
+					<li class="cont-list">3</li>
+					<li class="cont-list">4</li>
+					<li class="cont-list">5</li>
+					<li class="cont-list">6</li>
+					<li class="cont-list">7</li>
+				</ul>
+			</div>
+			<ul class="nav-list clearfix" id="nav-list">
+				<li class="nav-item"><a class="link" href="">首页</a></li>
+				<li class="nav-item"><a class="link" href="">专题</a></li>
+				<li class="nav-item"><a class="link" href="">话题</a></li>
+				<li class="nav-item"><a class="link" href="">教程</a></li>
+				<li class="nav-item"><a class="link" href="">排行榜</a></li>
+				<li class="nav-item"><a class="link" href="">任务求助</a></li>
+				<li class="nav-item">
+					<a class="link" href="">活动<i class="site-icon iconfont">&#xe634;</i></a>
+					<div class="more-cont">
+						<ul class="nav-more-box">
+							<li class="more-list"><a class="more-link" href="">上传比赛</a></li>
+							<li class="more-list"><a class="more-link" href="">赞助帮帮创意</a></li>
+							<li class="more-list"><a class="more-link" href="">通知</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--/header-->
+
+<div class="container">
+	<div class="personal-box clearfix">
+		<!--personal-left-->
+		<div class="personal-l fl">
+			<ul class="personal-nav">
+				<li class="nav-list active">
+					<div class="nav-line"></div>
+					<a href="个人中心-主页.html" class="nav-link"><i class="site-icon iconfont">&#xe627;</i>个人中心</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-账户设置.html" class="nav-link"><i class="site-icon iconfont">&#xe631;</i>账户设置</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-收支记录.html" class="nav-link"><i class="site-icon iconfont">&#xe63d;</i>收支记录</a>
+				</li>
+				<li class="nav-list select">
+					<div class="nav-line"></div>
+					<a href="个人中心-充值.html" class="nav-link"><i class="site-icon iconfont">&#xe625;</i>充值</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-上传资源.html" class="nav-link"><i class="site-icon iconfont">&#xe62b;</i>上传资源</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-资源管理.html" class="nav-link"><i class="site-icon iconfont">&#xe644;</i>资源管理</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-专题管理.html" class="nav-link"><i class="site-icon iconfont">&#xe6c9;</i>专题管理</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-我的话题.html" class="nav-link"><i class="site-icon iconfont">&#xe628;</i>我的话题</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-我的教程.html" class="nav-link"><i class="site-icon iconfont">&#xe629;</i>我的教程</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-我的任务求助.html" class="nav-link"><i class="site-icon iconfont">&#xe62a;</i>我的任务求助</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-私信.html" class="nav-link"><i class="site-icon iconfont">&#xe626;</i>私信</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-我的收藏.html" class="nav-link"><i class="site-icon iconfont">&#xe633;</i>我的收藏</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-我的书签.html" class="nav-link"><i class="site-icon iconfont">&#xe63e;</i>我的书签</a>
+				</li>
+				<li class="nav-list">
+					<div class="nav-line"></div>
+					<a href="个人中心-我的下载.html" class="nav-link"><i class="site-icon iconfont">&#xe630;</i>我的下载</a>
+				</li>
+			</ul>
+			<div class="qq-num-box">
+				<a class="qq-num" href=""><i class="site-icon iconfont">&#xe62f;</i>383006219</a>
+				<p class="online-time">在线：08:00-23:30</p>	
+			</div>
+			
+
+		</div>
+		<!--/personal-left-->
+		<!--personal-right-->
+		<div class="personal-r fr recharge-box">
+			<div class="module">
+				<div class="content-box tabSwitch">
+					<ul class="module-nav clearfix">
+						<li class="link-list switchNav active">
+							<a class="link" href="javascript:;">充值RMB</a>
+						</li>
+						<li class="link-list switchNav">
+							<a class="link" href="javascript:;">开通VIP</a>
+						</li>
+						<li class="link-list switchNav">
+							<a class="link" href="javascript:;">提现</a>
+						</li>
+					</ul>
+					<div class="module-cont">
+						<div class="cont-list switchCont active">
+							<div class="recharge-cont">
+								<div class="money-box clearfix">
+									<a href="javascript:;" class="money-list selected">充值<span class="c-red">10</span>元</a>
+									<a href="javascript:;" class="money-list">充值<span class="c-red">20</span>元</a>
+									<a href="javascript:;" class="money-list">充值<span class="c-red">30</span>元</a>
+									<a href="javascript:;" class="money-list">充值<span class="c-red">50</span>元</a>
+									<a href="javascript:;" class="money-list">充值<span class="c-red">100</span>元</a>
+									<a href="javascript:;" class="money-list">充值<span class="c-red">200</span>元</a>
+									<a href="javascript:;" class="money-list">充值<span class="c-red">300</span>元</a>
+									<a href="javascript:;" class="money-list">充值<span class="c-red">500</span>元</a>
+									<a href="javascript:;" class="money-list">充值<span class="c-red">1000</span>元</a>
+									<a href="javascript:;" class="money-list">充值<span class="c-red">2000</span>元</a>
+									<div class="other-money">其他金额<input class="input" type="text">元</div>
+								</div>
+								<h3 class="module-tit">选择付款方式</h3>
+								<div class="payment-box">
+									<label class="payment-list checked">
+										<input type="radio" name="payment" checked="checked">
+										<img class="payment-img" src="images/payment/payment_01.jpg">
+									</label>
+									<label class="payment-list">
+										<input type="radio" name="payment">
+										<img class="payment-img" src="images/payment/payment_02.jpg">
+									</label>
+									<label class="payment-list">
+										<input type="radio" name="payment">
+										<img class="payment-img" src="images/payment/payment_03.jpg">
+									</label>
+									<label class="payment-list">
+										<input type="radio" name="payment">
+										<img class="payment-img" src="images/payment/payment_04.jpg">
+									</label>
+								</div>
+								<button class="btn-submit" type="submit" style="margin-left: 20px">确认支付</button>	
+							</div>
+							<div class="prompt-box">
+								<h3 class="module-tit">温馨提示</h3>
+								<p class="prompt-info">在线支付成功后将会立即充值到您的账户中；网站程序自动处理，立刻生效； 若有期间有问题可联系客服人员。</p>								
+							</div>
+						</div>
+						<div class="cont-list switchCont">
+							<div class="recharge-cont">
+								<div class="vip-banner">
+									<h3 class="banner-info">
+										<span class="font-s">开通<span class="font-c">VIP特权</span></span>
+										<span class="info-list">1000万共享文档海量下载<br />3000万付费文档低至<span class="c-red">6折</span>起</span>
+									</h3>
+								</div>
+								<ul class="vip-box clearfix">
+									<li class="vip-list selected">
+										<h3 class="vip-money"><span class="price-num c-red">99</span>元<s>(199元)</s></h3>
+										<p class="info-line">开通普通VIP</p>
+										<p class="info-line">送<span class="c-red">10000</span> 共享分</p>
+										<p class="info-line">付费文档<span class="c-red">8.8折</span>起/<span class="c-red">6个月</span></p>
+										<div class="hook"><i class="site-icon iconfont">&#xe65c;</i></div>
+										<div class="limited">限量</div>
+									</li>
+									<li class="vip-list">
+										<h3 class="vip-money"><span class="price-num c-red">49</span>元</h3>
+										<p class="info-line">开通黄金VIP</p>
+										<p class="info-line">送<span class="c-red">120000</span> 共享分</p>
+										<p class="info-line">付费文档<span class="c-red">8.8折</span>起/<span class="c-red">6个月</span></p>
+										<div class="hook"><i class="site-icon iconfont">&#xe65c;</i></div>
+									</li>
+									<li class="vip-list">
+										<h3 class="vip-money"><span class="price-num c-red">49</span>元</h3>
+										<p class="info-line">开通白金VIP</p>
+										<p class="info-line">送<span class="c-red">300000</span> 共享分</p>
+										<p class="info-line">付费文档<span class="c-red">8.8折</span>起/<span class="c-red">6个月</span></p>
+										<div class="hook"><i class="site-icon iconfont">&#xe65c;</i></div>
+									</li>
+									<li class="vip-list">
+										<h3 class="vip-money"><span class="price-num c-red">49</span>元</h3>
+										<p class="info-line">开通钻石VIP</p>
+										<p class="info-line">送<span class="c-red">1000000</span> 共享分</p>
+										<p class="info-line">付费文档<span class="c-red">8.8折</span>起/<span class="c-red">6个月</span></p>
+										<div class="hook"><i class="site-icon iconfont">&#xe65c;</i></div>
+									</li>
+								</ul>
+								<div class="remaining">白银VIP限量1000名，<span class="c-red">只剩35名</span></div>
+								<h3 class="module-tit">选择付款方式</h3>
+								<div class="payment-box">
+									<label class="payment-list checked">
+										<input type="radio" name="payment" checked="checked">
+										<img class="payment-img" src="images/payment/payment_01.jpg">
+									</label>
+									<label class="payment-list">
+										<input type="radio" name="payment">
+										<img class="payment-img" src="images/payment/payment_02.jpg">
+									</label>
+									<label class="payment-list">
+										<input type="radio" name="payment">
+										<img class="payment-img" src="images/payment/payment_03.jpg">
+									</label>
+									<label class="payment-list">
+										<input type="radio" name="payment">
+										<img class="payment-img" src="images/payment/payment_04.jpg">
+									</label>
+								</div>
+								<button class="btn-submit" type="submit" style="margin-left: 20px">确认支付</button>	
+							</div>
+							<div class="prompt-box">
+								<h3 class="module-tit">温馨提示</h3>
+								<p class="prompt-info">在线支付成功后将会立即充值到您的账户中；网站程序自动处理，立刻生效； 若有期间有问题可联系客服人员。</p>
+							</div>
+						</div>
+						<div class="cont-list switchCont">
+							<div class="recharge-cont">
+								<div class="available">您当前可用于提现余额：000.00元，账户余额总计：000.00</div>
+								<div class="form-group clearfix">
+									<div class="control-label">用户密码：</div>
+									<div class="control-input">
+										<input class="form-control form-big" type="password">
+										<span class="star">*</span>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="control-label">提现金额：</div>
+									<div class="control-input">
+										<input class="form-control form-big" type="text">
+										<span class="unit">元</span>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="control-label">提现银行：</div>
+									<div class="control-input">
+										<select class="select" size="1" name="demo1">
+										    <option value="" selected>中国工商银行</option>
+										    <option value="1">中国建设银行</option>
+										    <option value="2">中国农业银行</option>
+										    <option value="3">支付宝</option>
+										    <option value="4">微信支付</option>
+										    <option value="5">易宝支付</option>
+										</select>
+										<span class="star">*</span>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="control-label">提现账号：</div>
+									<div class="control-input">
+										<input class="form-control form-big" type="text">
+										<span class="star">*</span>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="control-label">账号姓名：</div>
+									<div class="control-input">
+										<input class="form-control" type="text">
+										<span class="star">*</span>
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="control-label">手机号码：</div>
+									<div class="control-input">
+										<input class="form-control" type="text">
+									</div>
+								</div>
+								<div class="form-group clearfix">
+									<div class="control-label">验 证 码：</div>
+									<div class="control-input">
+										<input class="form-control" type="text">
+										<img src="images/yzm.png" height="30" style="display: inline-block;vertical-align: -9px">
+										<a href="" class="yzm-change">看不清 换一个</a>
+									</div>
+								</div>
+
+								<div class="form-group clearfix p-t">
+									<div class="control-label"></div>
+									<div class="control-input">
+										<button class="btn-submit" type="submit">确认提现</button>
+									</div>
+								</div>								
+							</div>
+							<div class="prompt-box">
+								<h3 class="module-tit">可提现积分范围：目前仅“资源被下载所获得的积分”可以提现。</h3>
+								<p class="prompt-info">单次提现金额范围：50元 - 1000元 </p>
+								<p class="prompt-info">提现申请提交后，我们会尽快处理。提现时请尽量填写手机号码，提现处理完成后，会发短信至您的手机上。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/personal-right-->		
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	
+$(".tabSwitch").tabSwitch({eventType: "click"});
+$(".money-box").tabSwitch({eventType: "click",switchNav:".money-list",active: "selected"});
+$(".payment-box").tabSwitch({eventType: "click",switchNav:".payment-list",active: "checked"});
+$(".vip-box").tabSwitch({eventType: "click",switchNav:".vip-list",active: "selected"});
+
+</script>
+
+<!--footer-->
+<div class="site-footer">
+	<div class="container">
+		<div class="footer-links clearfix">
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">网站导航</a></dt>
+				<dd class="link-list"><a class="link" href="#">全部分类</a></dd>
+				<dd class="link-list"><a class="link" href="#">话题</a></dd>
+				<dd class="link-list"><a class="link" href="#">教程</a></dd>
+				<dd class="link-list"><a class="link" href="#">排行榜</a></dd>
+				<dd class="link-list"><a class="link" href="#">任务求助</a></dd>
+				<dd class="link-list"><a class="link" href="#">活动</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">帮助中心</a></dt>
+				<dd class="link-list"><a class="link" href="#">使用入门</a></dd>
+				<dd class="link-list"><a class="link" href="#">共享分与帮币</a></dd>
+				<dd class="link-list"><a class="link" href="#">关于会员星级</a></dd>
+				<dd class="link-list"><a class="link" href="#">VIP特权</a></dd>
+				<dd class="link-list"><a class="link" href="#">收益细则</a></dd>
+				<dd class="link-list"><a class="link" href="#">网站协议</a></dd>
+			</dl>
+			<dl class="col-links">
+				<dt class="link-list link-frist"><a class="link" href="#">关于帮帮创意</a></dt>
+				<dd class="link-list"><a class="link" href="#">帮帮创意简介</a></dd>
+				<dd class="link-list"><a class="link" href="#">站内通知</a></dd>
+				<dd class="link-list"><a class="link" href="#">联系我们</a></dd>
+				<dd class="link-list"><a class="link" href="#">人才招聘</a></dd>
+				<dd class="link-list"><a class="link" href="#">提交建议</a></dd>
+			</dl>
+			<dl class="col-links links-last">
+				<dt class="link-list link-frist">反馈建议：service@bbcyw.com</dt>
+				<dd class="link-list">工作时间</dd>
+				<dd class="link-list">周一至周五</dd>
+				<dd class="link-list">9：00-17：30</dd>
+			</dl>
+			<div class="foots-logo">
+				<img class="logo-img" src="images/logo.png">
+				<p class="logo-info">专业文档和设计素材分享社区</p>
+			</div>			
+			<div class="we-chat">
+				<img class="we-chat-img" src="images/cody.png">
+				<p class="we-chat-info">关注微信公众平台</p>
+			</div>
+		</div>
+		<div class="copyright-box">
+			<p class="copyright-info">copyright@ 2011-2016 帮帮创意网站版权所有<a class="site-map-link" href="">网站地图</a></p>
+			<p class="copyright-info">经营许可证编号:京ICP备14007087号-3</p>
+		</div>
+	</div>
+</div>
+<!--/footer-->

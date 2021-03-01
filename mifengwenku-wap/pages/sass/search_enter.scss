@@ -1,0 +1,33 @@
+@import 'module/page';//分页
+/*search-bar*/
+.search-bar{padding: 20px 4%;}
+.search-bar .search-input{color: #aaa;letter-spacing: 1px;font-size: 17px;border: 1px solid red;outline: none;height: 45px;width: 66%;float: left;text-indent: 1rem;border-radius: 4px 0 0 4px;}
+.search-bar .search-btn{display: inline-block;color: #fff;font-size: 16px;background: red;height:47px;line-height: 46px;vertical-align: sub;position: relative;float: left;width: 33%;text-align: center;border-radius: 0 4px 4px 0;}
+/*search-bar end*/
+
+
+.hot-content{margin-bottom: 2rem;padding:0 1rem}
+.hot-content .hot-item{padding: .5rem .8rem;display: inline-block;background: #f5f5f5;border-radius: 2rem;margin-top: 1rem;font-size: 1.4rem;margin-right: .6rem;}
+
+
+/*小标题*/
+.title-box{padding:1rem 0}
+.title-box .tit-name{color:#727272;float:left;font-size:1.6rem;padding-left:1rem;}
+.title-box .tit-name .link{font-size:1.6rem;}
+.title-box .title-link{float:right;width:74%;line-height:2.2rem;}
+.title-box .link-box{width:100%}
+.title-box .link{color:#727272;}
+.title-box .link-box .link{width:auto;font-size:1.3rem;margin-left:1rem;margin-right:1rem;}
+.title-box .link-box .c-red{color:#f7372c}
+.title-box .more{float: right;color: #727272;padding-right: 1rem;padding-top: .4rem;font-size: 1.4rem;}
+
+.about-news-box{padding:0 1rem 2rem;}
+.about-news-box .news-list{height: 2.4rem;line-height: 2.4rem;}
+.about-news-box .site-icon{font-size: 1.4rem;margin-right: .3rem;vertical-align: middle;}
+.about-news-box .site-icon.doc{color: #2951b3;}
+.about-news-box .site-icon.xls{color: #327051;}
+.about-news-box .site-icon.pdf{color: #bc4040;}
+.about-news-box .site-icon.ppt{color: #973a33;}
+.about-news-box .site-icon.rtf{color: #6289bc;}
+/**/
+.reso-list-box .about-news-box{padding-bottom: 0;}

@@ -1,0 +1,24 @@
+@import 'module/toolbar';//右侧导航
+@import 'module/crumbs';//面包屑
+@import 'module/title';//title
+@import 'module/page';//page
+.title-box{background-color: #fff;}
+.title-box .tit-name{color: #5b5b5b;font-weight: normal;}
+.title-box .time-cost{float: right;color: #bababa;margin-right: 30px;}
+.wdnews-cont{background-color: #fff;margin-top:10px;margin-bottom:20px;padding:20px 5px 40px;}
+
+.wdnews-list-box{}
+.wdnews-list-box .news-list{font-size: 14px;height: 30px;line-height: 30px;padding: 0 30px;overflow: hidden;}
+.wdnews-list-box .news-list:hover{background-color: #e5e5e5;}
+.wdnews-list-box .news-left{float: left;}
+.wdnews-list-box .news-center{float: left;padding-left: 36px;width: 850px;}
+.wdnews-list-box .news-time{float: right;color: #a0a0a0;}
+.wdnews-list-box .new-clas{color: #009fe0;}
+.wdnews-list-box .news-title{color: #5b5b5b;font-size: 16px;}
+.wdnews-list-box .news-title:hover{color: #f7372c;text-decoration: underline;}
+.wdnews-list-box .news-left .site-icon{font-size: 16px;margin-right: 4px;}
+
+.page-box{padding: 30px 30px 0}
+// .page-box .page{display: block;color: #5b5b5b;border:1px solid #cccccc;height: 22px;line-height: 22px;padding: 0 10px;float: left;margin-right:6px;margin-top: 6px;}
+// .page-box .page:hover{border:1px solid #f7372c;}
+// .page-box .page-select{background-color: #f7372c;border-color: #f7372c;color: #fff;}

@@ -1,0 +1,20 @@
+.feedback-box{background-color: #fff;margin-bottom: 20px;margin-top: 20px;}
+.feedback-box .feedback-main{padding: 40px 215px 60px;}
+.feedback-box .feedback-name{color: #4a4a4a;font-size: 30px;text-align: center;padding-bottom: 40px;}
+.feedback-box .feedback-type{padding: 20px 0;}
+.feedback-box .feedback-info{color: #727272;font-size: 14px;}
+.feedback-box .feedback-info .link{color: #1581f4;}
+.feedback-box .type-left{color:#4a4a4a;font-size: 18px;float: left;line-height: 40px;}
+.feedback-box .switchNav .link{display: block;height: 38px;line-height: 38px;padding: 0 23px;border:1px solid #eaeaea;border-radius: 2px;color: #4a4a4a;font-size: 16px;float: left;margin-right: 7px;}
+.feedback-box .switchNav.active .link{border-color: #f7372c;color: #f7372c;}
+.feedback-box .switchNav{float: left;}
+.feedback-box .type-right{float: left;}
+.feedback-box .input-error{float: left;color: #f7372c;font-size: 14px;line-height: 40px;padding-left: 10px}
+.feedback-box .textarea{width: 100%;height: 180px;border: 1px solid #eaeaea;color: #c8c8c8;font-size: 14px;outline: none;text-indent: 10px;padding-top: 10px}
+.feedback-box .input-box{padding-top: 30px;}
+.feedback-box .input{width: 100%;height: 40px;border: 1px solid #eaeaea;color: #c8c8c8;font-size: 14px;outline: none;text-indent: 10px;}
+.feedback-box .feedback-btn-box{text-align: center;margin-top: 44px;}
+.feedback-box .feedback-btn{display: inline-block;width: 198px;height: 58px;line-height: 58px;text-align: center;font-size: 24px;margin: 0 5px;border-radius: 4px;}
+.feedback-box .feedback-btn:hover{opacity: .85;}
+.feedback-box .feedback-submit{border:1px solid #f51d1d;color: #fff;background-color: #f51d1d;}
+.feedback-box .feedback-cancel{border:1px solid #e6e6e6;color: #777777;background-color: #f7f7f7;}
