@@ -34,12 +34,16 @@
             }
         }
         .list-box{
-            padding-left: 16px;
             border-top:1px solid rgba(241,241,241,1);
             .list{
+                padding-left: 16px;
                 color: #666666;
                 font-size: 16px;
                 line-height: 40px;
+                position: relative;
+            }
+            .list:hover .toolbar-layer{
+                display: block;
             }
             .site-icon{
                 color: #0F98FF;
@@ -48,6 +52,9 @@
             }
             .llzj{
                 font-size: 22px;
+                margin-right: 12px;
+            }
+            .code{
                 margin-right: 12px;
             }
         }
@@ -66,6 +73,25 @@
         }
         .link:hover, .link:hover .online-service{
             color: #F7372C;
+        }
+        .toolbar-layer{
+            position: absolute;
+            right: 140px;
+            top: 0;
+            border: 1px solid #EEEEEE;
+            background-color: #fff;
+            padding:10px 10px 0;
+            display: none;
+            .we-chat-img{
+                width: 138px;
+                height: 138px;
+            }
+            .we-chat-info{
+                font-size: 12px;
+                font-family: Microsoft YaHei;
+                color: #666666;
+                text-align: center;
+            }
         }
     }
     .right-tools-small{

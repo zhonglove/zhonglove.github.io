@@ -1,0 +1,130 @@
+.header-box{height:4.3rem;}
+.header{background-color:#f7372c;position:relative;padding:.6rem 0 0;z-index:3;height:3.7rem}
+.header .heder-logo{float: left;display: block;margin:0 1rem;width:22%;padding-top:.4rem;}
+.header .logo{width:100%;}
+.header .head-search{background-color:#fff;margin-right:4rem;overflow:hidden;border-radius:.4rem}
+.header .search-text{border:0 none;float:left;width:100%;margin-right: -4rem;text-indent:1rem;font-size:1.4rem;height:3.1rem;line-height:3rem;}
+.header .search-btn{float:right;width:3.4rem;text-align:center;line-height:3rem;}
+.header .search-btn .iconfont{color:#f7372c;font-size:2rem;}
+.header .head-menu{position:absolute;top:.6rem;right:1rem;line-height:3rem;}
+.header .head-menu .iconfont{color:#fff;font-size:1.6rem;}
+
+.header .head-back{float:left;color:#fff;line-height:3rem;padding:0 1.6rem 0 .6rem}
+.header .head-back .iconfont{font-size:2rem;}
+
+.nav-box{padding:.4rem 0 1rem;display:none;background-color:#fff;position:relative;z-index:3;}
+.nav-box .nav-list{float:left;width:25%;text-align:center;padding-top:1rem;}
+.nav-box .nav-link{}
+.nav-box .iconfont{color:#b1b1b1;font-size:3.2rem;line-height:3.2rem;}
+.nav-box .nav-name{color:#4a4a4a;font-size:1.4rem;}
+
+.header-main{width:100%}
+.header-mark{background-color:rgba(0,0,0,.6);width:100%;height:100%;position:fixed;left:0;top:0;z-index:3;display:none;}
+.header-fixed{position:fixed;left:0;top:0;z-index:3;}
+.header-fixed .header-mark{display:block;}
+/*header-02*/
+.header-02{position:relative;height:4.3rem;}
+.header-02 .head-back{position:absolute;left:.6rem;top:0;line-height:4.3rem;}
+.header-02 .head-back .iconfont{font-size:2rem;}
+.header-02 .iconfont{}
+.header-02 .head-name{color:#727272;font-size:1.6rem;text-align:center;line-height:4.3rem;overflow:hidden;padding:0 4rem;white-space: nowrap;text-overflow: ellipsis;}
+.header-02 .head-menu{position:absolute;right:1rem;top:0;text-align:right;line-height:4.3rem;color:#727272;font-size:1.4rem}
+.header-02 .iconfont{color:#f7372c;}
+.header-02 .head-menu .iconfont{font-size:1.6rem;padding-right:.6rem}
+
+.header-02 .menu-link-box{position:absolute;right:.4rem;top:4rem;display:none;z-index:20;}
+.header-02 .menu-link-box .menu-link{display:block;background-color:#303030;color:#fff;padding:0 2rem;font-size:1.4rem;line-height:3rem;min-width: 5.4rem;border-top:1px solid #8e8e8e;}
+.header-02 .menu-link-box .menu-arrow{border-bottom:.6rem solid #303030;border-left:.6rem solid transparent;border-right:.6rem solid transparent;position:absolute;top:-.4rem;left:60%;}
+.header-02 .menu-link-box .menu-link:last-child{border-radius: 0 0 .3rem .3rem}
+.header-02 .menu-link-box .menu-link:first-child,
+.header-02 .menu-link-box .first-menu{border-radius:.3rem .3rem 0 0;border-top: 0 none; }
+.header-02 .menu-link-box .menu-link.select,.header-02 .menu-link-box .menu-link:hover{background-color: #3b3b3b}
+/*分享*/
+.share-s1{position:fixed;width:100%;left:0;bottom:0;background:#f3f3f3;z-index:9999;display: none;}
+.share-s1 .shareCon{}
+.bdsharebuttonbox{padding:1rem 5%;}
+.share-s1 .share-list{float:left;width:33.33%;text-align:center;height:100px;}
+.share-s1 .i p{font-size:13px;color:#83868f;line-height:26px;width: 100%;text-align: center;position:relative;top:70px;}
+.share-s1 .i{display:block;width:68px;height:68px;margin:0 auto;background:url(../images/share_icons.png) no-repeat;background-size:320px auto;}
+.share-s1 .i.pyq{background-position:0 0;}
+.share-s1 .i.wx{background-position:-116px 0;}
+.share-s1 .i.qq{background-position:-230px 0;}
+.share-s1 .i.zoom{background-position:0 -77px;}
+.share-s1 .i.wb{background-position:-116px -77px;}
+.share-s1 .btn{width:100%;height:3.5rem;border-top:1px solid #dcdcdc;}
+.share-s1 .btn a{display:block;width:100%;line-height:3.5rem;font-size:1.6rem;color:#919191;text-align:center;}
+.bdshare-button-style0-16 a, .bdshare-button-style0-16 .bds_more {margin: 6px 0% 3rem 16%!important;padding-left:0px!important;}
+
+.share-s2{position:fixed;width:100%;height:100%;left:0;bottom:0;background:rgba(0,0,0,.7);z-index:9999;display: none;}
+.share-s2 .share-btn{display:block;width:36%;margin:0 auto;-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.share-s2 .share-btn img{width:100%;}
+.share-s2 .pic1{padding-top:3%;margin-bottom:12%;}
+.share-s2 .pic2{width:64%;margin:0 auto;margin-top:10%;}
+.share-s2 .share-b{position:absolute;width:100%;bottom:4%;}
+.share-s2.bg2{background:rgba(0,0,0,.9)}
+.share-s2 .pic3{margin:5% 0 5%;}
+.share-s1 img{ pointer-events:none;}
+@media screen and (max-height: 480px){
+.share-s2 .pic3{width:94%;margin:5% auto;}
+}
+
+.share-s3{position:fixed;width:100%;height:100%;left:0;bottom:0;background:rgba(0,0,0,.7);z-index:9999;display: none;}
+.share-s3 .pic2{position: absolute;bottom: 10%;}
+.share-s3 .pic2 .share-btn2{display:block;width:36%;-webkit-tap-highlight-color: rgba(0,0,0,0);position: absolute;left: 50%;bottom: 35%;height: 3rem;}
+
+.float-mask {position: fixed;width: 100%;height: 100%;top: 0;left: 0;background: rgba(0, 0, 0, 0.5);z-index: 9998;opacity: 0;-webkit-transition-duration: .3s;transition-duration: .3s;visibility: hidden;display: none;}
+.mask-visible {visibility: visible;opacity: 1;}
+/*header-02 end*/
+
+.header-03{background-color: #f7372c;}
+.header-03 .iconfont,.header-03 .head-name{color: #fff;}
+.header-03 .header-search-icon{position: absolute;right: 4rem;top: 0;text-align: right;line-height: 4.3rem;color: #727272;font-size: 1.4rem;}
+.header-03 .header-search-icon .iconfont{font-size: 1.8rem;padding: 0 .8rem;}
+.header-03 .head-name{padding:0 7rem;}
+.header-03 .home-icon{height: 26px;vertical-align: middle;margin-left: .4rem;}
+
+.nav_wapper{
+    display: none;
+    background-color: #f7f7f7;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+}
+.nav_wapper .login-status{
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    height: 7rem;
+    line-height: 7rem;
+    // position: relative;
+    font-size: 0;
+}
+.login-status .btn-login,.login-status .btn-register{color: #4a4a4a;font-size: 1.4rem;}
+.login-status .border-about{margin: 0 1rem;font-size: 1.6rem;color: #4a4a4a;}
+.login-status .status-left,.login-status .status-right{height: 100%;display: inline-block;width: 50%;box-sizing: border-box}
+.login-status .status-left{padding-left: 1.8rem;width: 100%;}
+.login-status .status-left img{width: 4.3rem;height: 4.3rem;border-radius: 50%;vertical-align: middle;margin-bottom: 1.2rem;}
+.login-status .status-left p{display: inline-block;margin-left: 1rem;font-size: 1.5rem;}
+.login-status .status-right{text-align: right;padding-right: 1.6rem;}
+.login-status .select{color: #f7372c;}
+
+.nav_wapper .nav-box{display: block;background-color: #f7f7f7}
+.nav_wapper .nav-box .nav-list{display: inline-block;width: 100%;float:left;text-align:left;padding-left: 30px;height: 40px;line-height: 40px;box-sizing: border-box;}
+// .nav_wapper .nav-box li:hover{background: #fff;border-left: 0.4rem solid red;}
+.nav_wapper .nav-box .iconfont{color:#b1b1b1;font-size:3.2rem;line-height:3.2rem;}
+.nav_wapper .nav-box .nav-name{color:#4a4a4a;font-size:1.4rem;}
+.header-03 .header{padding-top: 0;height: 4.3rem;}
+.header-03 .nav-box .nav-list.select{background: #fff;border-left: 4px solid red;padding-left: 26px;}
+.header-03 .nav-box .nav-list{padding-top: 0;}
+
+.login-out-btn{
+    position: absolute;
+    left: 1.8rem;
+    bottom: 1.6rem;
+    color: #4a4a4a;
+    font-size: 1.4rem;
+    height: 3rem;
+    line-height: 3rem;
+}

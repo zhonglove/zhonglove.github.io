@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "577348",
+      "name": "留言",
+      "font_class": "liuyan",
+      "unicode": "e744",
+      "unicode_decimal": 59204
+    },
+    {
+      "icon_id": "683009",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "1004714",
+      "name": "微信",
+      "font_class": "weixin1",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "7340028",
+      "name": "电话",
+      "font_class": "dianhua1",
+      "unicode": "e71f",
+      "unicode_decimal": 59167
+    },
+    {
+      "icon_id": "680985",
+      "name": "企业",
+      "font_class": "qiye",
+      "unicode": "e724",
+      "unicode_decimal": 59172
+    },
+    {
+      "icon_id": "1071025",
+      "name": "用户1",
+      "font_class": "yonghu1",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
       "icon_id": "15323572",
       "name": "代写定制",
       "font_class": "daixiedingzhi",
