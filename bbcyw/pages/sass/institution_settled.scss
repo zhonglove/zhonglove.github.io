@@ -1,0 +1,245 @@
+@import 'module/page';//分页
+
+.institution-settled{
+    background: #F5F5F5;
+}
+.agency-banner{
+    background: url("../images/agency/agency-banner.jpg") no-repeat center top;
+    height: 505px;
+}
+.agency-banner .banner-text-box{
+    padding-top: 90px;
+    padding-bottom: 6px;
+}
+.agency-banner .banner-text{
+    margin:  auto;
+    display: block;
+}
+.agency-banner .banner-info{
+    text-align: center;
+    color: #fff;
+    font-size: 31px;
+}
+.agency-banner .settle-in-btn{
+    display: block;
+    margin: 0 auto;
+    background-color: #F7372C;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 4px;
+    margin-top: 50px;
+    transition: all .3s;
+}
+.agency-banner .settle-in-btn:hover{
+    letter-spacing: 4px;
+}
+.agency-title{
+    text-align: center;
+    padding: 51px 0 29px;
+}
+.agency-title .title-name{
+    font-size: 36px;
+    line-height: 36px;
+    color: #4A4A4A;
+}
+.agency-title .title-border{
+    width: 30px;
+    height: 0px;
+    border: 2px solid #F7372C;
+    margin: 12px auto 8px;
+}
+.agency-title .title-english{
+    font-size: 16px;
+    line-height: 16px;
+    color: #9C9C9C;
+    text-transform: uppercase;
+}
+//
+.box1{
+    padding-bottom: 47px;
+}
+.advantage-box{
+    margin-left: -32px;
+}
+.advantage-box .advantage-list{
+    background: #FFFFFF;
+    float: left;
+    width: 276px;
+    margin-left: 32px;
+    text-align: center;
+    padding: 37px 0 34px;
+    transition: all .3s;
+}
+.advantage-box .advantage-list:hover{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    transform: scale(1.02);
+}
+.advantage-box .advantage-img{}
+.advantage-box .advantage-name{
+    font-size: 26px;
+    line-height: 57px;
+    color: #4A4A4A;
+}
+.advantage-box .advantage-info{
+    font-size: 16px;
+    line-height: 26px;
+    color: #858585;
+    padding: 0 21px;
+}
+.advantage-box .advantage-btn{
+    width: 159px;
+    height: 43px;
+    background: #FA4F4F;
+    border-radius: 5px;
+    display: block;
+    margin:22px auto 0;
+    font-size: 16px;
+    line-height: 43px;
+    color: #FFFFFF;
+    transition: all .3s;
+}
+.advantage-box .advantage-btn:hover{
+    letter-spacing: 4px;
+    opacity: .85;
+}
+//
+.box2{
+    background-color: #fff;
+    padding-bottom: 78px;
+}
+.agency-btn{
+    width: 180px;
+    height: 51px;
+    background: #F7372C;
+    border-radius: 4px;
+    display: block;
+    line-height: 51px;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    transition: all .3s;
+}
+.agency-btn:hover{
+    letter-spacing: 4px;
+    opacity: .85;
+}
+.box2 .agency-btn{
+    margin-top: 76px;
+}
+.agency-logo{
+    margin-left: -12px;
+    margin-top: -12px;
+}
+.agency-logo .logo-list{
+    width: 188px;
+    height: 103px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 3px;
+    float: left;
+    margin-left: 12px;
+    margin-top: 12px;
+    transition: all .3s;
+}
+.agency-logo .logo-list:hover{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    transform: scale(1.02);
+}
+.agency-logo .logo-link{
+    width: 188px;
+    height: 103px;
+    display: table-cell;
+    text-align: center;
+    line-height: 103px;
+    vertical-align: middle;
+}
+.agency-logo .logo-icon{
+    vertical-align: middle;
+    margin: auto 0;
+    max-width: 188px;
+    max-height: 103px;
+    z-index: 1;
+    overflow: hidden;
+}
+//
+.box3{
+    background: url("../images/agency/red-bg.jpg") no-repeat center top;
+    height: 398px;
+}
+.box3-info{
+    text-align: center;
+    padding-top: 113px;
+}
+.box3-info .info-name{
+    font-size: 84px;
+    font-family: FZLanTingHeiS-DB1-GB;
+    line-height: 84px;
+    color: #FFFFFF;
+}
+.box3-info .info-cont{
+    font-size: 40px;
+    line-height: 57px;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+//
+.box4{
+    padding-bottom: 81px;
+}
+.box4 .agency-btn{
+    margin-top: 44px;
+}
+.agency-process{}
+.agency-process .process-list{
+    float: left;
+    text-align: center;
+    width: 240px;
+    position: relative;
+    z-index: 1;
+}
+.agency-process .process-number{
+    width: 54px;
+    height: 54px;
+    background: #F91C1C;
+    border-radius: 50%;
+    font-size: 27px;
+    line-height: 54px;
+    color: #FFFFFF;
+    text-align: center;
+    margin:0 auto;
+}
+.agency-process .process-name{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #333333;
+}
+.agency-process .process-info{
+    font-size: 14px;
+    line-height: 22px;
+    color: #717071;
+}
+.agency-process .process-border{
+    width: 1000px;
+    height: 0px;
+    border: 1px solid #F91C1C;
+    position: relative;
+    top: 26px;
+    left: 50%;
+    margin-left: -500px;
+    z-index: 0;
+}
+
+/*入驻更多页 s*/
+.institution-settled-more{
+    background-color: #fff;
+}
+.institution-settled-more .page_box{
+    margin-top: 50px;
+}
+/*入驻更多页 e*/
