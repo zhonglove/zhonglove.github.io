@@ -21,7 +21,7 @@ export default defineUserConfig({
           children: [
             '/frontend/',
           ],
-          sidebarDepth: 6,
+          sidebarDepth: 0,
         },
       ],
       '/backend/': [
@@ -31,7 +31,7 @@ export default defineUserConfig({
             '/backend/nestjs',
             '/backend/fastapi',
           ],
-          sidebarDepth: 6,
+          sidebarDepth: 0,
         },
       ],
       '/ai-framework/': [
@@ -41,7 +41,7 @@ export default defineUserConfig({
             '/ai-framework/',
             '/ai-framework/langchain',
           ],
-          sidebarDepth: 6,
+          sidebarDepth: 0,
         },
       ],
       '/vector-db/': [
@@ -50,7 +50,7 @@ export default defineUserConfig({
           children: [
             '/vector-db/',
           ],
-          sidebarDepth: 6,
+          sidebarDepth: 0,
         },
       ],
       '/model-access/': [
@@ -59,7 +59,7 @@ export default defineUserConfig({
           children: [
             '/model-access/',
           ],
-          sidebarDepth: 6,
+          sidebarDepth: 0,
         },
       ],
     },
