@@ -5,3 +5,4 @@
 ## 教程
 
 - [零基础教程](./zero-basics) — 完全小白入门，从注册到调通第一个 API
+- [本地部署教程](./local-deploy) — Ollama 部署 Qwen / DeepSeek / Llama 等模型

@@ -46,6 +46,7 @@ export default defineUserConfig({
       ],
       '/model-access/': [
         '/model-access/zero-basics',
+        '/model-access/local-deploy',
       ],
       '/interview/': [
         '/interview/',
