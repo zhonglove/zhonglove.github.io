@@ -20,10 +20,10 @@ jobs:
           node-version: 22
 
       - name: Install pnpm
-        run: npm install -g pnpm
+        run: npm install -g pnpm@11
 
       - name: Install deps
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --ignore-scripts --frozen-lockfile
 
       - name: Build VuePress site
         run: pnpm docs:build
