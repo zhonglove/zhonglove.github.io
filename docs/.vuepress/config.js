@@ -40,6 +40,7 @@ export default defineUserConfig({
           children: [
             '/ai-framework/',
             '/ai-framework/langchain',
+            '/ai-framework/langgraph',
           ],
           sidebarDepth: 6,
         },
