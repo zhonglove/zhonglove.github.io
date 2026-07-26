@@ -40,10 +40,12 @@ export default defineUserConfig({
         '/ai-framework/deepagents',
       ],
       '/vector-db/': [
-        '/vector-db/',
+        '/vector-db/pgvector',
+        '/vector-db/chroma',
+        '/vector-db/milvus',
       ],
       '/model-access/': [
-        '/model-access/',
+        '/model-access/zero-basics',
       ],
       '/interview/': [
         '/interview/',
