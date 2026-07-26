@@ -16,52 +16,22 @@ export default defineUserConfig({
     ],
     sidebar: {
       '/frontend/': [
-        {
-          text: '前端',
-          children: [
-            '/frontend/',
-          ],
-          sidebarDepth: 6,
-        },
+        '/frontend/',
       ],
       '/backend/': [
-        {
-          text: '后端',
-          children: [
-            '/backend/nestjs',
-            '/backend/fastapi',
-          ],
-          sidebarDepth: 6,
-        },
+        '/backend/nestjs',
+        '/backend/fastapi',
       ],
       '/ai-framework/': [
-        {
-          text: 'AI框架',
-          children: [
-            '/ai-framework/',
-            '/ai-framework/langchain',
-            '/ai-framework/langgraph',
-          ],
-          sidebarDepth: 6,
-        },
+        '/ai-framework/langchain',
+        '/ai-framework/langgraph',
+        '/ai-framework/deepagents',
       ],
       '/vector-db/': [
-        {
-          text: '向量数据库',
-          children: [
-            '/vector-db/',
-          ],
-          sidebarDepth: 6,
-        },
+        '/vector-db/',
       ],
       '/model-access/': [
-        {
-          text: '模型接入',
-          children: [
-            '/model-access/',
-          ],
-          sidebarDepth: 6,
-        },
+        '/model-access/',
       ],
     },
   }),
