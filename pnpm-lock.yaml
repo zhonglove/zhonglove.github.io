@@ -206,6 +206,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@vuepress/plugin-search':
+        specifier: 2.0.0-rc.131
+        version: 2.0.0-rc.131(@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.1.1)(@vue/compiler-sfc@3.5.40)(sass@1.102.0)(yaml@2.9.0))(vuepress@2.0.0-rc.31(@vue/compiler-sfc@3.5.40)(@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.1.1)(@vue/compiler-sfc@3.5.40)(sass@1.102.0)(yaml@2.9.0))(rolldown@1.2.0)(vite@8.1.5(@types/node@26.1.1)(sass@1.102.0)(yaml@2.9.0))(vue@3.5.40))
     devDependencies:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.31
@@ -854,6 +858,11 @@ packages:
 
   '@vuepress/plugin-prismjs@2.0.0-rc.132':
     resolution: {integrity: sha512-DZDt1hoWCdRegzlKG3BB+wWbu4z+cIC/t40fpgHiIVhfTVDZIg9bqOlZylPnLEbSin45V4gAI/20x9RevtU0cg==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.30
+
+  '@vuepress/plugin-search@2.0.0-rc.131':
+    resolution: {integrity: sha512-IfhvhfW17035WTTGcji1jnUdej4A346YABpjMwsMU0vNLmoeXluakWeIk7CujtI/RCTF0PaWjCBru6J3gW5R6Q==}
     peerDependencies:
       vuepress: 2.0.0-rc.30
 
@@ -2537,6 +2546,17 @@ snapshots:
       - '@vuepress/bundler-vite'
       - '@vuepress/bundler-webpack'
       - '@vueuse/core'
+      - typescript
+
+  '@vuepress/plugin-search@2.0.0-rc.131(@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.1.1)(@vue/compiler-sfc@3.5.40)(sass@1.102.0)(yaml@2.9.0))(vuepress@2.0.0-rc.31(@vue/compiler-sfc@3.5.40)(@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.1.1)(@vue/compiler-sfc@3.5.40)(sass@1.102.0)(yaml@2.9.0))(rolldown@1.2.0)(vite@8.1.5(@types/node@26.1.1)(sass@1.102.0)(yaml@2.9.0))(vue@3.5.40))':
+    dependencies:
+      '@vuepress/helper': 2.0.0-rc.131(@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.1.1)(@vue/compiler-sfc@3.5.40)(sass@1.102.0)(yaml@2.9.0))(vuepress@2.0.0-rc.31(@vue/compiler-sfc@3.5.40)(@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.1.1)(@vue/compiler-sfc@3.5.40)(sass@1.102.0)(yaml@2.9.0))(rolldown@1.2.0)(vite@8.1.5(@types/node@26.1.1)(sass@1.102.0)(yaml@2.9.0))(vue@3.5.40))
+      chokidar: 5.0.0
+      vue: 3.5.40
+      vuepress: 2.0.0-rc.31(@vue/compiler-sfc@3.5.40)(@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.1.1)(@vue/compiler-sfc@3.5.40)(sass@1.102.0)(yaml@2.9.0))(rolldown@1.2.0)(vite@8.1.5(@types/node@26.1.1)(sass@1.102.0)(yaml@2.9.0))(vue@3.5.40)
+    transitivePeerDependencies:
+      - '@vuepress/bundler-vite'
+      - '@vuepress/bundler-webpack'
       - typescript
 
   '@vuepress/plugin-seo@2.0.0-rc.132(@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.1.1)(@vue/compiler-sfc@3.5.40)(sass@1.102.0)(yaml@2.9.0))(vuepress@2.0.0-rc.31(@vue/compiler-sfc@3.5.40)(@vuepress/bundler-vite@2.0.0-rc.31(@types/node@26.1.1)(@vue/compiler-sfc@3.5.40)(sass@1.102.0)(yaml@2.9.0))(rolldown@1.2.0)(vite@8.1.5(@types/node@26.1.1)(sass@1.102.0)(yaml@2.9.0))(vue@3.5.40))':

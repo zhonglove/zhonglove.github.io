@@ -21,5 +21,7 @@ features:
     details: Milvus、Pinecone、Chroma、Qdrant 等向量数据库的原理与应用，实现语义检索。
   - title: 模型接入
     details: OpenAI、Claude、开源模型的 API 调用、微调与部署，打通模型能力落地最后一公里。
+  - title: 面试突击
+    details: 大模型 Agent 开发常见面试题、高频考点与实战经验，助力求职通关。
 footer: MIT Licensed
 ---
