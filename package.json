@@ -1,0 +1,28 @@
+{
+  "name": "zhonglove.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.15.1",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.31",
+    "@vuepress/theme-default": "2.0.0-rc.132",
+    "sass": "^1.102.0",
+    "vue": "^3.5.40",
+    "vuepress": "2.0.0-rc.31"
+  }
+}
