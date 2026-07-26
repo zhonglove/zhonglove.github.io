@@ -1,4 +1,20 @@
 node_modules
+
+# VuePress
 docs/.vuepress/.temp
 docs/.vuepress/.cache
 docs/.vuepress/dist
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local

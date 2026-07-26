@@ -3,6 +3,16 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
+  title: 'LLM大模型Agent应用开发',
   bundler: viteBundler(),
-  theme: defaultTheme(),
+  theme: defaultTheme({
+    navbar: [
+      { text: '首页', link: '/' },
+      { text: '前端', link: '/frontend/' },
+      { text: '后端', link: '/backend/' },
+      { text: 'AI框架', link: '/ai-framework/' },
+      { text: '向量数据库', link: '/vector-db/' },
+      { text: '模型接入', link: '/model-access/' },
+    ],
+  }),
 })
