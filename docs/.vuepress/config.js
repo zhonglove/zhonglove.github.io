@@ -14,5 +14,17 @@ export default defineUserConfig({
       { text: '向量数据库', link: '/vector-db/' },
       { text: '模型接入', link: '/model-access/' },
     ],
+    sidebar: {
+      '/backend/': [
+        {
+          text: '后端',
+          children: [
+            '/backend/nestjs',
+            '/backend/fastapi',
+          ],
+          sidebarDepth: 6,
+        },
+      ],
+    },
   }),
 })
