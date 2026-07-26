@@ -39,6 +39,7 @@ export default defineUserConfig({
           text: 'AI框架',
           children: [
             '/ai-framework/',
+            '/ai-framework/langchain',
           ],
           sidebarDepth: 6,
         },
