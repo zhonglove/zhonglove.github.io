@@ -15,6 +15,13 @@ export default defineUserConfig({
       { text: '模型接入', link: '/model-access/' },
     ],
     sidebar: {
+      '/frontend/': [
+        {
+          text: '前端',
+          link: '/frontend/',
+          sidebarDepth: 6,
+        },
+      ],
       '/backend/': [
         {
           text: '后端',
@@ -22,6 +29,27 @@ export default defineUserConfig({
             '/backend/nestjs',
             '/backend/fastapi',
           ],
+          sidebarDepth: 6,
+        },
+      ],
+      '/ai-framework/': [
+        {
+          text: 'AI框架',
+          link: '/ai-framework/',
+          sidebarDepth: 6,
+        },
+      ],
+      '/vector-db/': [
+        {
+          text: '向量数据库',
+          link: '/vector-db/',
+          sidebarDepth: 6,
+        },
+      ],
+      '/model-access/': [
+        {
+          text: '模型接入',
+          link: '/model-access/',
           sidebarDepth: 6,
         },
       ],
