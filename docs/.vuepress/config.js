@@ -32,6 +32,8 @@ export default defineUserConfig({
       ],
       '/backend/': [
         '/backend/nestjs',
+        '/backend/express',
+        '/backend/mysql',
         '/backend/fastapi',
       ],
       '/ai-framework/': [
