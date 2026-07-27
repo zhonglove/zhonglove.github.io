@@ -49,6 +49,7 @@ export default defineUserConfig({
         '/model-access/local-deploy',
       ],
       '/interview/': [
+        '/interview/hr-behavioral',
         '/interview/ai-agent',
         '/interview/ai-agent-system-design',
         '/interview/senior-fullstack',
