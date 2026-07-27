@@ -50,6 +50,7 @@ export default defineUserConfig({
       ],
       '/interview/': [
         '/interview/hr-behavioral',
+        '/interview/mock-interview-hr',
         '/interview/ai-agent',
         '/interview/ai-agent-system-design',
         '/interview/senior-fullstack',
