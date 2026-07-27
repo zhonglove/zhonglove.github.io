@@ -49,7 +49,9 @@ export default defineUserConfig({
         '/model-access/local-deploy',
       ],
       '/interview/': [
-        '/interview/',
+        '/interview/ai-agent',
+        '/interview/ai-agent-system-design',
+        '/interview/senior-fullstack',
       ],
     },
   }),
