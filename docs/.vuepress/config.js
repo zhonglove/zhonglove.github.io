@@ -21,6 +21,7 @@ export default defineUserConfig({
       { text: '前端', link: '/frontend/' },
       { text: '后端', link: '/backend/' },
       { text: 'AI框架', link: '/ai-framework/' },
+      { text: 'AIGC', link: '/aigc/' },
       { text: '向量数据库', link: '/vector-db/' },
       { text: '模型接入', link: '/model-access/' },
       { text: '面试突击', link: '/interview/' },
@@ -45,6 +46,9 @@ export default defineUserConfig({
         '/vector-db/pgvector',
         '/vector-db/chroma',
         '/vector-db/milvus',
+      ],
+      '/aigc/': [
+        '/aigc/comfyui',
       ],
       '/model-access/': [
         '/model-access/zero-basics',
