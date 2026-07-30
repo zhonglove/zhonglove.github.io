@@ -53,6 +53,7 @@ export default defineUserConfig({
       '/model-access/': [
         '/model-access/zero-basics',
         '/model-access/local-deploy',
+        '/model-access/ai-tech-stack',
       ],
       '/interview/': [
         '/interview/hr-behavioral',
