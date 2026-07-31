@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="383" viewBox="0 0 900 383">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1120"/>
+      <stop offset="0.55" stop-color="#141a33"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.7" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="subGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glowBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="383" fill="url(#bg)"/>
+
+  <!-- 光晕 -->
+  <circle cx="700" cy="60" r="180" fill="url(#glowPurple)"/>
+  <circle cx="120" cy="360" r="200" fill="url(#glowBlue)"/>
+
+  <!-- 点阵网格 -->
+  <g fill="#ffffff" opacity="0.07">
+    <g>
+      <circle cx="40" cy="40" r="1.5"/><circle cx="90" cy="40" r="1.5"/><circle cx="140" cy="40" r="1.5"/><circle cx="190" cy="40" r="1.5"/><circle cx="240" cy="40" r="1.5"/><circle cx="290" cy="40" r="1.5"/><circle cx="340" cy="40" r="1.5"/><circle cx="390" cy="40" r="1.5"/><circle cx="440" cy="40" r="1.5"/><circle cx="490" cy="40" r="1.5"/><circle cx="540" cy="40" r="1.5"/><circle cx="590" cy="40" r="1.5"/><circle cx="640" cy="40" r="1.5"/><circle cx="690" cy="40" r="1.5"/><circle cx="740" cy="40" r="1.5"/><circle cx="790" cy="40" r="1.5"/><circle cx="840" cy="40" r="1.5"/><circle cx="890" cy="40" r="1.5"/>
+      <circle cx="40" cy="90" r="1.5"/><circle cx="90" cy="90" r="1.5"/><circle cx="140" cy="90" r="1.5"/><circle cx="190" cy="90" r="1.5"/><circle cx="240" cy="90" r="1.5"/><circle cx="290" cy="90" r="1.5"/><circle cx="340" cy="90" r="1.5"/><circle cx="390" cy="90" r="1.5"/><circle cx="440" cy="90" r="1.5"/><circle cx="490" cy="90" r="1.5"/><circle cx="540" cy="90" r="1.5"/><circle cx="590" cy="90" r="1.5"/><circle cx="640" cy="90" r="1.5"/><circle cx="690" cy="90" r="1.5"/><circle cx="740" cy="90" r="1.5"/><circle cx="790" cy="90" r="1.5"/><circle cx="840" cy="90" r="1.5"/><circle cx="890" cy="90" r="1.5"/>
+      <circle cx="40" cy="140" r="1.5"/><circle cx="90" cy="140" r="1.5"/><circle cx="140" cy="140" r="1.5"/><circle cx="190" cy="140" r="1.5"/><circle cx="240" cy="140" r="1.5"/><circle cx="290" cy="140" r="1.5"/><circle cx="340" cy="140" r="1.5"/><circle cx="390" cy="140" r="1.5"/><circle cx="440" cy="140" r="1.5"/><circle cx="490" cy="140" r="1.5"/><circle cx="540" cy="140" r="1.5"/><circle cx="590" cy="140" r="1.5"/><circle cx="640" cy="140" r="1.5"/><circle cx="690" cy="140" r="1.5"/><circle cx="740" cy="140" r="1.5"/><circle cx="790" cy="140" r="1.5"/><circle cx="840" cy="140" r="1.5"/><circle cx="890" cy="140" r="1.5"/>
+      <circle cx="40" cy="190" r="1.5"/><circle cx="90" cy="190" r="1.5"/><circle cx="140" cy="190" r="1.5"/><circle cx="190" cy="190" r="1.5"/><circle cx="240" cy="190" r="1.5"/><circle cx="290" cy="190" r="1.5"/><circle cx="340" cy="190" r="1.5"/><circle cx="390" cy="190" r="1.5"/><circle cx="440" cy="190" r="1.5"/><circle cx="490" cy="190" r="1.5"/><circle cx="540" cy="190" r="1.5"/><circle cx="590" cy="190" r="1.5"/><circle cx="640" cy="190" r="1.5"/><circle cx="690" cy="190" r="1.5"/><circle cx="740" cy="190" r="1.5"/><circle cx="790" cy="190" r="1.5"/><circle cx="840" cy="190" r="1.5"/><circle cx="890" cy="190" r="1.5"/>
+      <circle cx="40" cy="240" r="1.5"/><circle cx="90" cy="240" r="1.5"/><circle cx="140" cy="240" r="1.5"/><circle cx="190" cy="240" r="1.5"/><circle cx="240" cy="240" r="1.5"/><circle cx="290" cy="240" r="1.5"/><circle cx="340" cy="240" r="1.5"/><circle cx="390" cy="240" r="1.5"/><circle cx="440" cy="240" r="1.5"/><circle cx="490" cy="240" r="1.5"/><circle cx="540" cy="240" r="1.5"/><circle cx="590" cy="240" r="1.5"/><circle cx="640" cy="240" r="1.5"/><circle cx="690" cy="240" r="1.5"/><circle cx="740" cy="240" r="1.5"/><circle cx="790" cy="240" r="1.5"/><circle cx="840" cy="240" r="1.5"/><circle cx="890" cy="240" r="1.5"/>
+      <circle cx="40" cy="290" r="1.5"/><circle cx="90" cy="290" r="1.5"/><circle cx="140" cy="290" r="1.5"/><circle cx="190" cy="290" r="1.5"/><circle cx="240" cy="290" r="1.5"/><circle cx="290" cy="290" r="1.5"/><circle cx="340" cy="290" r="1.5"/><circle cx="390" cy="290" r="1.5"/><circle cx="440" cy="290" r="1.5"/><circle cx="490" cy="290" r="1.5"/><circle cx="540" cy="290" r="1.5"/><circle cx="590" cy="290" r="1.5"/><circle cx="640" cy="290" r="1.5"/><circle cx="690" cy="290" r="1.5"/><circle cx="740" cy="290" r="1.5"/><circle cx="790" cy="290" r="1.5"/><circle cx="840" cy="290" r="1.5"/><circle cx="890" cy="290" r="1.5"/>
+      <circle cx="40" cy="340" r="1.5"/><circle cx="90" cy="340" r="1.5"/><circle cx="140" cy="340" r="1.5"/><circle cx="190" cy="340" r="1.5"/><circle cx="240" cy="340" r="1.5"/><circle cx="290" cy="340" r="1.5"/><circle cx="340" cy="340" r="1.5"/><circle cx="390" cy="340" r="1.5"/><circle cx="440" cy="340" r="1.5"/><circle cx="490" cy="340" r="1.5"/><circle cx="540" cy="340" r="1.5"/><circle cx="590" cy="340" r="1.5"/><circle cx="640" cy="340" r="1.5"/><circle cx="690" cy="340" r="1.5"/><circle cx="740" cy="340" r="1.5"/><circle cx="790" cy="340" r="1.5"/><circle cx="840" cy="340" r="1.5"/><circle cx="890" cy="340" r="1.5"/>
+    </g>
+  </g>
+
+  <!-- 神经网络连线 -->
+  <g stroke="#818cf8" stroke-width="1" opacity="0.25">
+    <line x1="600" y1="70" x2="660" y2="130"/>
+    <line x1="600" y1="70" x2="720" y2="60"/>
+    <line x1="600" y1="70" x2="700" y2="180"/>
+    <line x1="660" y1="130" x2="720" y2="60"/>
+    <line x1="660" y1="130" x2="700" y2="180"/>
+    <line x1="660" y1="130" x2="800" y2="120"/>
+    <line x1="720" y1="60" x2="800" y2="120"/>
+    <line x1="720" y1="60" x2="840" y2="70"/>
+    <line x1="700" y1="180" x2="800" y2="120"/>
+    <line x1="700" y1="180" x2="780" y2="230"/>
+    <line x1="800" y1="120" x2="840" y2="70"/>
+    <line x1="800" y1="120" x2="780" y2="230"/>
+    <line x1="840" y1="70" x2="850" y2="180"/>
+    <line x1="780" y1="230" x2="850" y2="180"/>
+  </g>
+
+  <!-- 神经网络节点 -->
+  <g>
+    <circle cx="600" cy="70" r="5" fill="#a5b4fc"/>
+    <circle cx="660" cy="130" r="4" fill="#818cf8"/>
+    <circle cx="720" cy="60" r="6" fill="#93c5fd"/>
+    <circle cx="700" cy="180" r="4" fill="#a78bfa"/>
+    <circle cx="800" cy="120" r="5" fill="#818cf8"/>
+    <circle cx="840" cy="70" r="4" fill="#93c5fd"/>
+    <circle cx="780" cy="230" r="5" fill="#a78bfa"/>
+    <circle cx="850" cy="180" r="4" fill="#c4b5fd"/>
+  </g>
+
+  <!-- 右下角 CPU 芯片装饰 -->
+  <g transform="translate(790,300)">
+    <rect width="70" height="70" rx="8" fill="none" stroke="#6366f1" stroke-width="1.5" opacity="0.7"/>
+    <rect x="14" y="14" width="42" height="42" rx="4" fill="none" stroke="#818cf8" stroke-width="1" opacity="0.9"/>
+    <rect x="30" y="30" width="10" height="10" fill="#a5b4fc"/>
+    <g stroke="#818cf8" stroke-width="1.5" opacity="0.8">
+      <line x1="35" y1="0" x2="35" y2="14"/><line x1="35" y1="56" x2="35" y2="70"/>
+      <line x1="0" y1="35" x2="14" y2="35"/><line x1="56" y1="35" x2="70" y2="35"/>
+      <line x1="14" y1="0" x2="14" y2="8"/><line x1="56" y1="0" x2="56" y2="8"/>
+      <line x1="0" y1="14" x2="8" y2="14"/><line x1="62" y1="14" x2="70" y2="14"/>
+      <line x1="14" y1="62" x2="14" y2="70"/><line x1="56" y1="62" x2="56" y2="70"/>
+      <line x1="0" y1="56" x2="8" y2="56"/><line x1="62" y1="56" x2="70" y2="56"/>
+    </g>
+  </g>
+
+  <!-- 顶部标签 -->
+  <g>
+    <rect x="64" y="52" width="168" height="40" rx="20" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <circle cx="86" cy="72" r="5" fill="#22d3ee"/>
+    <text x="102" y="78" font-family="PingFang SC" font-size="21" font-weight="bold" fill="#7dd3fc">AI 全栈技能</text>
+  </g>
+
+  <!-- 主标题 -->
+  <text x="64" y="175" font-family="PingFang SC" font-size="62" font-weight="bold" fill="url(#titleGrad)">大模型技术栈解析</text>
+
+  <!-- 标题下装饰线 -->
+  <rect x="66" y="196" width="72" height="5" rx="2.5" fill="url(#subGrad)"/>
+
+  <!-- 副标题 -->
+  <text x="64" y="240" font-family="PingFang SC" font-size="26" fill="url(#subGrad)">模型部署 · 参数调优 · RAG 原理</text>
+
+  <!-- 底部代码括号装饰 -->
+  <text x="64" y="320" font-family="Menlo, monospace" font-size="22" fill="#7c8a9e" font-weight="bold">&lt;前端 + AI /&gt;</text>
+  <text x="238" y="320" font-family="PingFang SC" font-size="18" fill="#7c8a9e">Ollama · LangChain · Chroma</text>
+</svg>
