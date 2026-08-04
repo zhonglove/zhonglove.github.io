@@ -5,5 +5,7 @@ AI 开发框架相关教程，涵盖 LangChain、LangGraph、LlamaIndex、AutoGe
 ## 内容
 
 - [LangChain 入门教程](./langchain)
+- [LangChain.js 入门教程（TypeScript 版）](./langchain-typescript)
+- [NestJS 中使用 LangChain.js](./langchain-nestjs)
 - [LangGraph 入门教程](./langgraph)
 - [DeepAgents 入门教程](./deepagents)

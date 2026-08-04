@@ -39,6 +39,8 @@ export default defineUserConfig({
       ],
       '/ai-framework/': [
         '/ai-framework/langchain',
+        '/ai-framework/langchain-typescript',
+        '/ai-framework/langchain-nestjs',
         '/ai-framework/langgraph',
         '/ai-framework/deepagents',
       ],
