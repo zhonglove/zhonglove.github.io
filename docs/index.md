@@ -13,6 +13,9 @@ hero:
       text: 大模型技术栈全解析
       link: /articles/ai-fullstack-tech-stack
     - theme: alt
+      text: NestJS 从零到实战
+      link: /articles/nestjs-from-zero
+    - theme: alt
       text: 使用指南
       link: /guide
 ---
