@@ -1,11 +1,11 @@
 {
   "name": "zhonglove.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "ZhongLove Blog",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "publish:wechat": "node scripts/publish-wechat.mjs"
   },
   "keywords": [],
@@ -20,13 +20,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.31",
-    "@vuepress/theme-default": "2.0.0-rc.132",
-    "sass": "^1.102.0",
-    "vue": "^3.5.40",
-    "vuepress": "2.0.0-rc.31"
-  },
-  "dependencies": {
-    "@vuepress/plugin-search": "2.0.0-rc.131"
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.40"
   }
 }

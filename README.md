@@ -1,6 +1,6 @@
 # ZhongLove Blog
 
-个人博客站点，基于 VuePress 构建。
+个人博客站点，基于 VitePress 构建。
 
 ## 开发
 
