@@ -16,6 +16,9 @@ hero:
       text: NestJS 从零到实战
       link: /articles/nestjs-from-zero
     - theme: alt
+      text: NestJS + LangChain 大模型开发
+      link: /articles/nestjs-langchain-ai-app
+    - theme: alt
       text: 使用指南
       link: /guide
 ---

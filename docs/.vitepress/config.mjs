@@ -13,6 +13,7 @@ export default withMermaid({
       { text: "AI 学习", link: "/articles/ai-learning-mindset" },
       { text: "技术栈", link: "/articles/ai-fullstack-tech-stack" },
       { text: "NestJS", link: "/articles/nestjs-from-zero" },
+      { text: "LangChain", link: "/articles/nestjs-langchain-ai-app" },
       { text: "指南", link: "/guide" }
     ],
     sidebar: {
@@ -22,7 +23,8 @@ export default withMermaid({
           items: [
             { text: "AI 时代的学习观", link: "/articles/ai-learning-mindset" },
             { text: "大模型技术栈全解析", link: "/articles/ai-fullstack-tech-stack" },
-            { text: "NestJS 从零到实战", link: "/articles/nestjs-from-zero" }
+            { text: "NestJS 从零到实战", link: "/articles/nestjs-from-zero" },
+            { text: "NestJS + LangChain 大模型开发", link: "/articles/nestjs-langchain-ai-app" }
           ]
         }
       ]
