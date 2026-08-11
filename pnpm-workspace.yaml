@@ -1,4 +1,10 @@
 allowBuilds:
+  '@parcel/watcher': true
   esbuild: true
 onlyBuiltDependencies:
   - esbuild
+publicHoistPattern:
+  - '@braintree/*'
+  - 'cytoscape*'
+  - 'debug'
+  - 'dayjs'

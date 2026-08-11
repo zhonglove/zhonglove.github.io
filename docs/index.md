@@ -4,10 +4,13 @@ layout: home
 hero:
   name: ZhongLove Blog
   text: 个人博客站点
-  tagline: 基于 VitePress 构建
+  tagline: 记录技术学习与成长
   actions:
     - theme: brand
-      text: 开始阅读
+      text: AI 时代的学习观
+      link: /articles/ai-learning-mindset
+    - theme: alt
+      text: 使用指南
       link: /guide
 ---
 
