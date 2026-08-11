@@ -10,6 +10,9 @@ hero:
       text: AI 时代的学习观
       link: /articles/ai-learning-mindset
     - theme: alt
+      text: 大模型技术栈全解析
+      link: /articles/ai-fullstack-tech-stack
+    - theme: alt
       text: 使用指南
       link: /guide
 ---
