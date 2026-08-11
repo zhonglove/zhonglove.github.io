@@ -66,7 +66,7 @@ code .
 
 项目默认结构：
 
-![项目结构](/images/nestjs/nest-project-structure.png)
+![项目结构](/images/nestjs-from-zero/nest-project-structure.png)
 
 里面有 controller（控制器）、module（模块），可以通过 HTTP 接口调用它，会调用 `getHello` 方法返回字符串，再调 service 层。
 
@@ -82,7 +82,7 @@ npm run start:dev
 http://localhost:3000
 ```
 
-![运行效果](/images/nestjs/nest-hello.png)
+![运行效果](/images/nestjs-from-zero/nest-hello.png)
 
 如果端口被占用，看 `src/main.ts`，把端口改一下即可。接口测试可以装 [Apifox](https://app.apifox.com/) 或 Postman。
 
@@ -178,7 +178,7 @@ export class AppController {
 }
 ```
 
-![新接口返回](/images/nestjs/nest-test-api.png)
+![新接口返回](/images/nestjs-from-zero/nest-test-api.png)
 
 ### 4. app.service.ts —— 服务（业务逻辑）
 
@@ -254,7 +254,7 @@ export class UserService {
 export class AppModule {}
 ```
 
-![用户模块运行](/images/nestjs/nest-user-module.png)
+![用户模块运行](/images/nestjs-from-zero/nest-user-module.png)
 
 ### 方式二：用 UserModule 封装（推荐）
 
@@ -331,7 +331,7 @@ createUser(user: User) {
 }
 ```
 
-![POST 请求效果](/images/nestjs/nest-post-add.png)
+![POST 请求效果](/images/nestjs-from-zero/nest-post-add.png)
 
 ::: tip 为什么业务逻辑放 Service，不放 Controller？
 因为 service 可以被多个 Controller 调用，而且 service 里还可以调用其他 service。保持 Controller 整洁，一眼就能看出系统有哪些接口；service 专注处理业务逻辑。这是分层架构的核心思想。
@@ -367,7 +367,7 @@ getUserById(id: string) {
 }
 ```
 
-![路径参数效果](/images/nestjs/nest-param-id.png)
+![路径参数效果](/images/nestjs-from-zero/nest-param-id.png)
 
 ### 方式二：查询参数 `?page=1&size=10`
 
@@ -396,7 +396,7 @@ getList(page: string, size: string) {
 }
 ```
 
-![查询参数效果](/images/nestjs/nest-query-params.png)
+![查询参数效果](/images/nestjs-from-zero/nest-query-params.png)
 
 ## 七、PUT 和 DELETE 接口
 
@@ -516,39 +516,39 @@ psql --version
 
 ### 使用安装包安装
 
-![选择安装程序](/images/nestjs/pg-install-select.png)
+![选择安装程序](/images/nestjs-from-zero/pg-install-select.png)
 
-![选择版本](/images/nestjs/pg-install-version.png)
+![选择版本](/images/nestjs-from-zero/pg-install-version.png)
 
 macOS 下载完后双击安装，一路下一步：
 
-![安装步骤](/images/nestjs/pg-step1.png)
+![安装步骤](/images/nestjs-from-zero/pg-step1.png)
 
-![安装步骤](/images/nestjs/pg-step2.png)
+![安装步骤](/images/nestjs-from-zero/pg-step2.png)
 
-![数据目录](/images/nestjs/pg-step3.png)
+![数据目录](/images/nestjs-from-zero/pg-step3.png)
 
-![安装组件](/images/nestjs/pg-step4.png)
+![安装组件](/images/nestjs-from-zero/pg-step4.png)
 
 **设置密码（一定要记住）**：
 
-![设置密码](/images/nestjs/pg-password.png)
+![设置密码](/images/nestjs-from-zero/pg-password.png)
 
 **端口默认 5432**：
 
-![端口](/images/nestjs/pg-port.png)
+![端口](/images/nestjs-from-zero/pg-port.png)
 
 继续下一步直到完成：
 
-![下一步](/images/nestjs/pg-next1.png)
+![下一步](/images/nestjs-from-zero/pg-next1.png)
 
-![下一步](/images/nestjs/pg-next2.png)
+![下一步](/images/nestjs-from-zero/pg-next2.png)
 
-![下一步](/images/nestjs/pg-next3.png)
+![下一步](/images/nestjs-from-zero/pg-next3.png)
 
-![下一步](/images/nestjs/pg-next4.png)
+![下一步](/images/nestjs-from-zero/pg-next4.png)
 
-![安装完成](/images/nestjs/pg-done.png)
+![安装完成](/images/nestjs-from-zero/pg-done.png)
 
 ### 验证安装
 
@@ -911,7 +911,7 @@ export class PostService {
 }
 ```
 
-![文章创建成功](/images/nestjs/prisma-post-create.png)
+![文章创建成功](/images/nestjs-from-zero/prisma-post-create.png)
 
 ## 十五、用户模块 + 数据库存储
 
@@ -969,7 +969,7 @@ import { PrismaModule } from 'src/prisma/prisma.module';
 export class UserModule {}
 ```
 
-![用户创建成功](/images/nestjs/prisma-user-create.png)
+![用户创建成功](/images/nestjs-from-zero/prisma-user-create.png)
 
 ## 十六、查询和删除用户
 
@@ -1003,7 +1003,7 @@ async findAll() {
 }
 ```
 
-![用户列表](/images/nestjs/prisma-user-list.png)
+![用户列表](/images/nestjs-from-zero/prisma-user-list.png)
 
 ### 2. 根据 ID 查询（含关联查询）
 
@@ -1038,7 +1038,7 @@ async findOne(id: string) {
 }
 ```
 
-![根据 ID 查询](/images/nestjs/prisma-user-findone.png)
+![根据 ID 查询](/images/nestjs-from-zero/prisma-user-findone.png)
 
 ### 3. 删除用户
 
@@ -1065,7 +1065,7 @@ removeUser(id: string) {
 }
 ```
 
-![删除用户](/images/nestjs/prisma-user-delete.png)
+![删除用户](/images/nestjs-from-zero/prisma-user-delete.png)
 
 因为 Schema 里配置了 `onDelete: Cascade`（级联删除），删除用户时对应的文章也一起删除了。如果不想级联删除，改一下 `schema.prisma` 里的 `onDelete` 配置即可。
 
@@ -1111,7 +1111,7 @@ updateUser(id: string, user: UpdateUserDto) {
 }
 ```
 
-![更新用户](/images/nestjs/prisma-user-update.png)
+![更新用户](/images/nestjs-from-zero/prisma-user-update.png)
 
 ## 十八、分页查询（企业级完整版）
 
@@ -1167,7 +1167,7 @@ searchUsers(query: QueryUserDto) {
 }
 ```
 
-![分页查询](/images/nestjs/prisma-user-search.png)
+![分页查询](/images/nestjs-from-zero/prisma-user-search.png)
 
 ### 4. Service（企业级完整版）
 
@@ -1225,7 +1225,7 @@ async searchUsers(query: QueryUserDto) {
 }
 ```
 
-![分页查询完整版](/images/nestjs/prisma-user-search-page.png)
+![分页查询完整版](/images/nestjs-from-zero/prisma-user-search-page.png)
 
 ::: tip 为什么用事务（$transaction）？
 这里会执行 2 个查询。如果别的用户在你查询时添加了一条数据，可能导致"总记录数是 10 条，但查出来 11 条"的不一致。把两个查询放进同一个事务，保证数据一致。

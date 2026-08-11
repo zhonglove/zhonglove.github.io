@@ -99,7 +99,7 @@ flowchart LR
 
 看 [LangChain](https://www.langchain.com/) 官网——大模型框架基本只有两类语言：**Python 和 TypeScript**。
 
-![LangChain 支持的语言](/images/langchain-langs.png)
+![LangChain 支持的语言](/images/ai-fullstack-tech-stack/langchain-langs.png)
 
 没有 Java、没有 Go。对前端来说，TypeScript 无缝衔接，**不需要额外学 Python** 就能做大模型应用开发。这是前端转 AI 的巨大优势。
 
@@ -115,7 +115,7 @@ flowchart LR
 
 [Ollama](https://ollama.com/) 是目前业界最流行的本地模型运行工具。
 
-![Ollama 官网](/images/ollama-install-1.png)
+![Ollama 官网](/images/ai-fullstack-tech-stack/ollama-install-1.png)
 
 直接下载对应系统的安装包即可，也可以用命令行安装：
 
@@ -123,9 +123,9 @@ flowchart LR
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-![安装过程](/images/ollama-install-2.png)
+![安装过程](/images/ai-fullstack-tech-stack/ollama-install-2.png)
 
-![安装完成](/images/ollama-install-3.png)
+![安装完成](/images/ai-fullstack-tech-stack/ollama-install-3.png)
 
 验证是否安装成功：
 
@@ -139,7 +139,7 @@ ollama --version
 
 根据电脑配置选择模型。小内存电脑可以选占用小的模型：
 
-![Ollama 模型库](/images/qwen-library.png)
+![Ollama 模型库](/images/ai-fullstack-tech-stack/qwen-library.png)
 
 拉取模型（以 qwen3.5:0.8b 为例）：
 
@@ -147,7 +147,7 @@ ollama --version
 ollama pull qwen3.5:0.8b
 ```
 
-![拉取模型](/images/ollama-pull.png)
+![拉取模型](/images/ai-fullstack-tech-stack/ollama-pull.png)
 
 ### 3. 运行模型
 
@@ -353,7 +353,7 @@ flowchart LR
 
 写入阶段是**离线批量处理**，提前把文档准备好，不影响用户体验。
 
-![写入阶段](/images/rag-write-phase.png)
+![写入阶段](/images/ai-fullstack-tech-stack/rag-write-phase.png)
 
 流程：
 
@@ -362,7 +362,7 @@ flowchart LR
 3. **向量化（Embedding）**：每块文本转成向量数字
 4. **存入向量数据库**：分几块就存几条记录
 
-![文档入库](/images/rag-docs.png)
+![文档入库](/images/ai-fullstack-tech-stack/rag-docs.png)
 
 分块细节会影响检索质量：
 
@@ -374,7 +374,7 @@ flowchart LR
 
 查询阶段是**用户实时触发**的，每次提问都走一遍。
 
-![查询阶段](/images/rag-query-phase.png)
+![查询阶段](/images/ai-fullstack-tech-stack/rag-query-phase.png)
 
 流程：
 
@@ -384,9 +384,9 @@ flowchart LR
 4. **拼装提示词**：系统提示词 + 检索到的上下文 + 用户问题
 5. **交给大模型**：模型基于文档内容回答
 
-![上传文档提问](/images/rag-upload.png)
+![上传文档提问](/images/ai-fullstack-tech-stack/rag-upload.png)
 
-![系统提示词](/images/rag-system-prompt.png)
+![系统提示词](/images/ai-fullstack-tech-stack/rag-system-prompt.png)
 
 在代码中，就是把检索到的内容拼进消息里，再调用模型：
 
@@ -429,9 +429,9 @@ export const prompt = async (promptText?: string) => {
 | Collection | Chroma 里的"表"，对应一个知识库 |
 | Context Window | 大模型一次能接受的最大文本长度，RAG 要控制不超限 |
 
-![Embedding 概念](/images/embedding-nums.png)
+![Embedding 概念](/images/ai-fullstack-tech-stack/embedding-nums.png)
 
-![上下文窗口](/images/rag-context-window.png)
+![上下文窗口](/images/ai-fullstack-tech-stack/rag-context-window.png)
 
 ::: tip 最后的话
 RAG 的概念不用死记硬背，理解"**先检索文档，再让模型照着回答**"这个核心就够了。向量数据库的安装和使用都是现用现查的。

@@ -30,7 +30,7 @@ description: 从被动系统学习，转向按需索取的字典思维。AI 应�
 
 ### 学习路线图
 
-![AI 学习路线图](/images/learning-roadmap.png)
+![AI 学习路线图](/images/ai-learning-mindset/learning-roadmap.png)
 
 这张图给出了一个从入门到进阶的完整路线，跟着走即可，不用自己摸索。
 
