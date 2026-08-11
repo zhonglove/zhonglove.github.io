@@ -727,7 +727,7 @@ flowchart TD
 
 测试 `POST /agents/run`，输入 `{ "message": "我叫张三，帮我买一台 MacBook Pro" }`，返回的 `steps` 数组里能看到 Agent 完整的决策过程：**先自己判断要查库存 → 调 check_product → 看到有货 → 再调 create_order → 输出最终答复**，整个顺序代码里没有写死，全是模型自主决定的。
 
-## 七、写在最后
+## 七、系列导航：下半场还有四篇
 
 回顾整条主线，你已经掌握了：
 
@@ -738,10 +738,15 @@ flowchart TD
 | Chains | 固定流程串联 | `pipe()` / `RunnableSequence` / `RunnablePassthrough` |
 | Agents | 模型自主决策调用工具 | `tool()` + `zod` / `bindTools()` / `ToolMessage` |
 
-**后续还有三块内容**，是整套课程的下半场：
-- **Memory**：多轮对话记忆，让模型记住上文
-- **RAG**：检索增强生成，基于私有知识库回答，解决幻觉问题（配合前面装好的 `mxbai-embed-large` 向量模型）
-- **Function Calling**：把自然语言转成结构化的函数调用参数
+::: tip 本系列完整目录
+| 篇目 | 链接 | 一句话内容 |
+| --- | --- | --- |
+| 基础篇（本篇） | [NestJS + LangChain 集成与基础](/articles/nestjs-langchain-ai-app) | 安装、Models、Prompts、Chains、Agents |
+| 记忆篇 | [Memory 多轮对话记忆](/articles/nestjs-langchain-memory) | 让模型"记住上文"，真实业务如何持久化 |
+| 检索篇 | [RAG 检索增强](/articles/nestjs-langchain-rag) | 先翻书再回答，解决幻觉，核心组件详解 |
+| 存储篇 | [三种向量存储方案与 pgvector](/articles/nestjs-langchain-vectorstore) | Memory/PGVector/Chroma + 建表检索 + 维度 |
+| 工具篇 | [Function Calling 与测试汇总](/articles/nestjs-langchain-function-calling) | 自然语言转结构化函数参数 + 全接口测试表 |
+:::
 
 ::: tip 学习思路
 看懂视频和亲手实操完全是两回事——实操会碰到各种问题，问题都有解，可以丢给 AI 帮忙。核心是**坚持学下去、把项目跑起来**。在 AI 时代，要有全流程的软件开发思维，不要只聚焦业务功能，**项目的部署和上线才是最核心的能力**。

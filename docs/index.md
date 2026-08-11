@@ -19,6 +19,9 @@ hero:
       text: NestJS + LangChain 大模型开发
       link: /articles/nestjs-langchain-ai-app
     - theme: alt
+      text: RAG 与 pgvector 向量存储
+      link: /articles/nestjs-langchain-vectorstore
+    - theme: alt
       text: 使用指南
       link: /guide
 ---
