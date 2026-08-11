@@ -5,13 +5,6 @@ export default withMermaid({
   title: "ZhongLove Blog",
   description: "个人博客站点",
   base: "/",
-  vite: {
-    resolve: {
-      alias: {
-        dayjs: "dayjs/esm"
-      }
-    }
-  },
   themeConfig: {
     outline: [2, 6],
     outlineTitle: "页面导航",
