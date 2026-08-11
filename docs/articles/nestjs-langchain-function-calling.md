@@ -6,7 +6,9 @@ description: Function Calling 让大模型输出结构化函数调用参数，�
 # Function Calling — 让大模型"会调用你的函数"
 
 > **前置**：已完成 [Agents 智能代理](/articles/nestjs-langchain-ai-app#六-agents--智能代理课程重点)
+>
 > **目标**：理解 Function Calling 与 Agent 的区别，实现"自然语言 → 结构化函数调用参数 → 执行真实代码"的完整链路
+>
 > **技术栈**：NestJS + @langchain/ollama + zod
 
 ## 一、先行概念：Function Calling 是什么？

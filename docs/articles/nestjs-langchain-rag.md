@@ -6,7 +6,9 @@ description: 用 RAG 解决大模型幻觉。从文本文档分块、向量化�
 # RAG — 让大模型"翻书"再回答
 
 > **前置**：已完成 [NestJS + LangChain 集成与 Models 基础](/articles/nestjs-langchain-ai-app)
+>
 > **目标**：把私有知识（文档、公司手册、FAQ）喂给大模型，让它**查资料后回答**，解决幻觉
+>
 > **技术栈**：NestJS + @langchain/ollama（qwen3.5:0.8b）+ mxbai-embed-large（向量模型）+ MemoryVectorStore
 
 ## 一、问题：大模型很聪明，但它会"瞎编"

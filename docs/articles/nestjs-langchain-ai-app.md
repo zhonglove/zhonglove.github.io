@@ -6,7 +6,9 @@ description: 前端开发者转大模型开发的完整入门课。从安装 Lan
 # NestJS + LangChain 大模型应用开发实战
 
 > **适合人群**：熟悉 JS / TS / Vue / React，想转大模型应用开发的前端开发者
+>
 > **目标**：在 NestJS 项目里接入 LangChain，从"调用大模型"到"智能体 Agent"一步步写出真实的 AI 业务接口
+>
 > **技术栈**：NestJS + @langchain/ollama + Ollama（本地部署 qwen3.5:0.8b，免费）
 
 ## 一、为什么前端转大模型开发有优势
@@ -562,25 +564,65 @@ flowchart LR
 
 ## 六、Agents — 智能代理（课程重点）
 
-### 1. Agent 是什么
+### 1. Agent 是什么：Chain 是流水线，Agent 是聪明员工
 
-之前讲的 Chain 步骤都是写死的。Agent 不一样：**流程不写死，模型根据用户的意图，自己决定调用哪个工具、调用几次**。
+| | Chain（固定流程） | Agent（自主决策） |
+| --- | --- | --- |
+| 流程 | 提前写死，步骤固定 | 模型自己决定 |
+| 比喻 | 工厂流水线（固定工序） | 聪明的员工（自己决定做什么） |
+| 数据流 | 用户 → 步骤1 → 步骤2 → 步骤3 → 结束 | 用户说什么 → 模型思考 → 决定调工具 → 看结果 → 再决定 → 最终回答 |
+
+```mermaid
+flowchart LR
+    subgraph Chain["Chain 工厂流水线（固定工序）"]
+        A1[用户] --> A2[步骤1 写死] --> A3[步骤2 写死] --> A4[步骤3 写死] --> A5[结束]
+    end
+    subgraph Agent["Agent 聪明员工（自主决策）"]
+        B1[用户说什么] --> B2[模型思考] --> B3{决定调哪个工具}
+        B3 --> B4[调工具A] --> B2
+        B3 --> B5[最终回答]
+    end
+```
+
+**录视频时的核心对比话术**（记住这三连问，给别人讲也能直接用）：
+
+> **问**：用 Chain 实现"先查库存再下单"怎么写？
+> **答**：要提前写死流程——step1 查库存、step2 下单，步骤固定。
+>
+> **再问**：如果用户说"查一下我的订单"，这条 Chain 能处理吗？
+> **答**：不能，Chain 是固定流程，换一个意图整条链就跑不通。
+>
+> **Agent 的价值**：不需要提前写死流程，模型自己看用户说什么，决定调用哪个工具、调用几次。**同一套代码，灵活处理查库存、下单、查订单、退款等多种意图**。
+
+### 2. 本节示例：极速购电商 AI 智能客服
+
+以"极速购"电商平台的 AI 智能客服为例：
 
 ```plain
-用户：「我叫张三，帮我买一台 MacBook Pro」
+用户：「我叫小李，帮我买一台 MacBook Pro」
 
 Agent 自主决策流程：
   思考：用户想购买，但我需要先确认商品是否有货
-  行动：调用 check_product → 「MacBook Pro 有货，¥10000」
+  行动：调用 check_product → 「MacBook Pro 有货，¥15999」
   思考：有货，用户已报名字，可以直接下单
   行动：调用 create_order → 「订单 ORD-960000 创建成功」
   思考：任务完成，给用户完整答复
-  输出：「张三您好！MacBook Pro 有货已下单，订单号 ORD-960000」
+  输出：「小李您好！MacBook Pro 有货已下单，订单号 ORD-960000，总价 ¥15999」
 ```
 
-同样是"查库存再下单"，用 Chain 必须把两步写死；换成"查订单状态"，Chain 就跑不通了。而 Agent 同一套代码，可以灵活处理查库存、下单、查订单、退款等多种意图。
+```mermaid
+flowchart TD
+    U["我叫小李，帮我买一台 MacBook Pro"] --> S1[思考: 先确认有货]
+    S1 --> T1[check_product]
+    T1 -->|有货 ¥15999| S2[思考: 有货, 可直接下单]
+    S2 --> T2[create_order]
+    T2 -->|订单 ORD-960000| S3[思考: 任务完成]
+    S3 --> F[输出完整答复]
+```
 
-### 2. 定义工具：tool() + zod
+**注意**：Agent 自主串联了 `check_product → create_order` 两个工具，但代码里**没有写死这个顺序**——全是模型看用户说了什么之后自己决定的。
+
+### 3. 定义工具：tool() + zod（4 个工具）
 
 工具就是**把普通的 JS 函数包装成模型能识别的格式**。`tool()` 的每个参数都有讲究：
 
@@ -594,138 +636,390 @@ import { z } from 'zod'
 
 // 工具1：查询商品库存和价格
 private checkProductTool = tool(
-  ({ productName }: { productName: string }) => {
-    const products: Record<string, { stock: number; price: number; category: string }> = {
-      'iPhone 18': { stock: 10, price: 7999, category: '手机' },
-      'MacBook Pro': { stock: 5, price: 10000, category: '电脑' },
-      'AirPods Pro': { stock: 20, price: 2000, category: '耳机' },
+  async ({ productName }: { productName: string }) => {
+    // 模拟商品数据库（实际项目注入 PrismaService 查真实数据库）
+    const products: Record<string, { price: number; stock: number; category: string }> = {
+      'iPhone 16':     { price: 7999,  stock: 50,  category: '手机' },
+      'iPhone 16 Pro': { price: 9999,  stock: 20,  category: '手机' },
+      'MacBook Pro':   { price: 15999, stock: 8,   category: '电脑' },
+      'AirPods Pro':   { price: 1799,  stock: 200, category: '耳机' },
+      'iPad Air':      { price: 4799,  stock: 30,  category: '平板' },
     }
     const product = products[productName]
-    if (!product) return `商品${productName}不存在`
-    return `商品${productName}的库存是${product.stock}，价格是${product.price}，属于${product.category}`
+    if (!product) return `商品「${productName}」不存在，请检查商品名称是否正确。`
+    if (product.stock === 0) return `商品「${productName}」当前缺货，预计下周补货。`
+    return `商品「${productName}」有货，单价 ¥${product.price}，库存 ${product.stock} 件，分类：${product.category}。`
   },
   {
     name: 'check_product',
-    description: '查询商品库存和价格工具，输入参数的商品名字，输出是一个字符串，包含商品的库存和价格信息',
+    // description 非常关键：模型根据这段描述决定何时调用这个工具
+    description: '查询商品是否有货、商品价格和库存数量。用户问"有没有XX"、"XX多少钱"、"XX有货吗"时调用。',
     schema: z.object({
-      productName: z.string().describe('商品的名字，例如：iPhone 18、AirPods Pro等。'),
+      productName: z.string().describe('商品名称，例如 iPhone 16、MacBook Pro'),
     }),
   },
 )
 
 // 工具2：创建订单
 private createOrderTool = tool(
-  ({ productName, quantity, customerName }: { productName: string; quantity: number; customerName: string }) => {
+  async ({ productName, quantity, customerName }: {
+    productName: string
+    quantity: number
+    customerName: string
+  }) => {
     const prices: Record<string, number> = {
-      'iPhone 18': 7999,
-      'MacBook Pro': 10000,
-      'AirPods Pro': 2000,
+      'iPhone 16': 7999, 'iPhone 16 Pro': 9999,
+      'MacBook Pro': 15999, 'AirPods Pro': 1799, 'iPad Air': 4799,
     }
     const unitPrice = prices[productName] ?? 0
-    const totalPrice = quantity * unitPrice
-    if (!unitPrice) return `商品${productName}不存在`
-    const orderId = `ORDER-${Date.now().toString().slice(-6)}`
-    return `订单${orderId}创建成功，商品${productName}，数量${quantity}，客户${customerName}，总价${totalPrice}`
+    const totalPrice = unitPrice * quantity
+    const orderId = `ORD-${Date.now().toString().slice(-6)}`
+    return `订单创建成功！订单号：${orderId}，客户：${customerName}，商品：${productName} x${quantity}，单价 ¥${unitPrice}，总价 ¥${totalPrice}。请在 30 分钟内完成支付。`
   },
   {
     name: 'create_order',
-    description: '创建订单工具，输入参数的商品名字、数量和客户姓名，输出是一个字符串，包含订单的信息',
+    description: '为客户创建购买订单。需要知道商品名称、购买数量、客户姓名才能下单。用户说"我要买XX"、"帮我下单"时调用。',
     schema: z.object({
-      productName: z.string().describe('要创建订单的商品名字'),
-      quantity: z.number().describe('要创建订单的商品数量'),
-      customerName: z.string().describe('要创建订单的客户姓名'),
+      productName:  z.string().describe('商品名称'),
+      quantity:     z.number().describe('购买数量，默认为 1'),
+      customerName: z.string().describe('客户姓名'),
     }),
   },
 )
 
 // 工具3：查询订单状态
 private checkOrderTool = tool(
-  ({ orderId }: { orderId: string }) => {
-    const statuses = ['已支付', '已发货', '已收货', '已完成', '已取消']
+  async ({ orderId }: { orderId: string }) => {
+    const statuses = ['待支付', '已支付待发货', '已发货运输中', '已签收']
     const status = statuses[Math.floor(Math.random() * statuses.length)]
-    return `查询${orderId}的状态，订单状态是：${status}`
+    const extra = status === '已发货运输中' ? '，预计明天送达' : ''
+    return `订单 ${orderId} 当前状态：${status}${extra}。`
   },
   {
-    name: 'check_order_status',
-    description: '查询订单状态工具，输入参数的订单id，输出是一个字符串，包含订单的状态',
+    name: 'check_order',
+    description: '查询订单的当前状态。用户说"我的订单"、"订单到哪了"、"查一下订单 ORD-XXX"时调用。',
     schema: z.object({
-      orderId: z.string().describe('要查询订单状态的订单id，例如：ORDER-123456。'),
+      orderId: z.string().describe('订单号，格式为 ORD-XXXXXX'),
+    }),
+  },
+)
+
+// 工具4：申请退款
+private applyRefundTool = tool(
+  async ({ orderId, reason }: { orderId: string; reason: string }) => {
+    const refundId = `REF-${Date.now().toString().slice(-6)}`
+    return `退款申请已提交！退款单号：${refundId}，订单：${orderId}，退款原因：${reason}。预计 1-3 个工作日内退回原支付渠道，请注意查收。`
+  },
+  {
+    name: 'apply_refund',
+    description: '为客户申请订单退款。用户说"我要退款"、"申请退货"、"不想要了"时调用。需要订单号和退款原因。',
+    schema: z.object({
+      orderId: z.string().describe('需要退款的订单号'),
+      reason:  z.string().describe('退款原因，例如：质量问题、不喜欢、买错了'),
     }),
   },
 )
 ```
 
-### 3. Agent 核心执行逻辑
+### 4. Agent 核心执行逻辑
 
 ```typescript
-async runAgent(userMessage: string) {
-  const tools = [this.checkProductTool, this.createOrderTool, this.checkOrderTool]
+import { ChatOllama } from '@langchain/ollama'
+import { tool } from '@langchain/core/tools'
+import { z } from 'zod'
+import { HumanMessage, AIMessage, ToolMessage, SystemMessage } from '@langchain/core/messages'
+import { config } from '../config'
 
-  // 工具名 → 工具实例 的映射表
-  const toolMap: Record<string, any> = {
-    check_product: this.checkProductTool,
-    create_order: this.createOrderTool,
-    check_order_status: this.checkOrderTool,
-  }
+@Injectable()
+export class AgentsService {
+  // Agent 使用的模型：temperature 低一点，让工具调用决策更稳定
+  private llm = new ChatOllama({
+    model: config.ollama.chatModel,
+    baseUrl: config.ollama.baseUrl,
+    temperature: 0.1,  // 低温度，让工具调用决策更稳定
+    think: false,
+    numPredict: 1024,
+  })
 
-  // bindTools：把工具列表注册到模型
-  // 注册后，模型回复里会带 tool_calls 字段（当它决定调用工具时）
-  const llmWithTools = this.llm.bindTools(tools)
+  // …… 4 个工具定义（见上文 3.）……
 
-  // 消息历史：Agent 每一轮都能看到完整的对话 + 工具结果
-  const messages: any[] = [new HumanMessage(userMessage)]
+  async runAgent(userMessage: string) {
+    const tools = [
+      this.checkProductTool,
+      this.createOrderTool,
+      this.checkOrderTool,
+      this.applyRefundTool,
+    ]
 
-  // 记录每步执行过程（用于前端展示 / 演示）
-  const steps: string[] = []
-
-  // Agent 循环：最多 6 轮，防止死循环
-  let roundCount = 0
-  while (roundCount < 6) {
-    roundCount++
-    const response = await llmWithTools.invoke(messages)
-    messages.push(response) // 模型回复加入历史
-
-    // tool_calls 为空 → 模型有了最终答案，退出循环
-    if (!response.tool_calls || response.tool_calls.length === 0) {
-      steps.push(`💬 [最终回答] ${response.content}`)
-      break
+    // 工具名 → 工具实例 的映射表
+    const toolMap: Record<string, any> = {
+      check_product: this.checkProductTool,
+      create_order:  this.createOrderTool,
+      check_order:   this.checkOrderTool,
+      apply_refund:  this.applyRefundTool,
     }
 
-    // 模型决定调用工具，逐个执行
-    for (const toolCall of response.tool_calls) {
-      steps.push(`🔧 [调用工具] ${toolCall.name}(${JSON.stringify(toolCall.args)})`)
-      const toolFn = toolMap[toolCall.name]
-      const toolResult = await toolFn.invoke(toolCall.args)
-      steps.push(`✅ [工具结果] ${toolResult}`)
+    // bindTools：把工具列表注册到模型
+    // 注册后，模型回复里会带 tool_calls 字段（当它决定调用工具时）
+    const llmWithTools = this.llm.bindTools(tools)
 
-      // 把工具结果加入消息历史，模型下一轮看到后再决定下一步
-      messages.push(
-        new ToolMessage({ content: String(toolResult), tool_call_id: toolCall.id }),
-      )
+    // 消息历史：Agent 每一轮都能看到完整的对话 + 工具结果
+    const messages: any[] = [
+      // System 消息：设定客服角色和行为规范
+      new SystemMessage(
+        `你是「极速购」电商平台的 AI 智能客服助手。
+你可以使用以下工具帮助客户：
+- check_product：查询商品库存和价格
+- create_order：为客户创建订单
+- check_order：查询订单状态
+- apply_refund：申请退款
+
+工作原则：
+1. 先用工具获取真实信息，再给客户答复
+2. 下单前必须先查询库存确认有货
+3. 下单需要知道客户姓名，如果用户没说，主动询问
+4. 回答简洁友好，使用中文`,
+      ),
+      new HumanMessage(userMessage),
+    ]
+
+    // 记录每步执行过程（用于前端展示 / 课程演示）
+    const steps: string[] = []
+    let roundCount = 0
+
+    // Agent 循环：每一轮模型看消息历史 → 决定调用工具还是直接回答
+    // 直到模型不再调用工具为止（最多 6 轮，防止死循环）
+    while (roundCount < 6) {
+      roundCount++
+      const response = await llmWithTools.invoke(messages)
+      messages.push(response) // 把模型回复加入历史
+
+      // tool_calls 为空 → 模型有了最终答案，退出循环
+      if (!response.tool_calls || response.tool_calls.length === 0) {
+        steps.push(`💬 [最终回答] ${response.content}`)
+        break
+      }
+
+      // 模型决定调用工具，依次执行所有工具调用
+      for (const toolCall of response.tool_calls) {
+        steps.push(`🔧 [调用工具] ${toolCall.name}(${JSON.stringify(toolCall.args)})`)
+
+        const toolFn = toolMap[toolCall.name]
+        if (!toolFn) {
+          // 容错：工具不存在时也要把错误回给模型，让它换个说法
+          const errMsg = `工具「${toolCall.name}」不存在`
+          steps.push(`❌ [错误] ${errMsg}`)
+          messages.push(new ToolMessage({ content: errMsg, tool_call_id: toolCall.id }))
+          continue
+        }
+
+        // 执行工具，获取结果
+        const toolResult = await toolFn.invoke(toolCall.args)
+        steps.push(`✅ [工具结果] ${toolResult}`)
+
+        // 把工具结果加入消息历史
+        // 模型下一轮看到结果后，再决定继续调工具还是直接回答
+        messages.push(
+          new ToolMessage({ content: String(toolResult), tool_call_id: toolCall.id }),
+        )
+      }
     }
-  }
 
-  // 取最后一条 AI 消息作为最终回答
-  const lastAI = [...messages].reverse().find(m => m instanceof AIMessage)
-  return {
-    userMessage,
-    steps,             // 完整的"思考-行动"过程
-    totalRounds: roundCount,
-    answer: lastAI?.content ?? '抱歉，暂时无法处理您的请求',
+    // 取最后一条 AI 消息作为最终回答
+    const lastAI = [...messages].reverse().find(m => m instanceof AIMessage)
+    return {
+      userMessage,
+      steps,        // 完整的"思考-行动"过程
+      totalRounds: roundCount,
+      answer: lastAI?.content ?? '抱歉，暂时无法处理您的请求',
+    }
   }
 }
 ```
 
 ```mermaid
 flowchart TD
-    U[用户提问] --> L1[模型思考]
+    U[用户提问] --> S[SystemMessage 设定客服角色]
+    S --> L1[模型看消息历史]
     L1 -->|决定调用工具| T[执行工具并拿结果]
-    T --> L2[模型再看结果]
-    L2 -->|还需要工具| T
-    L2 -->|有答案了| F[输出最终回答]
+    T -->|ToolMessage 写回历史| L1
+    L1 -->|有答案了| F[输出最终回答]
 ```
 
-测试 `POST /agents/run`，输入 `{ "message": "我叫张三，帮我买一台 MacBook Pro" }`，返回的 `steps` 数组里能看到 Agent 完整的决策过程：**先自己判断要查库存 → 调 check_product → 看到有货 → 再调 create_order → 输出最终答复**，整个顺序代码里没有写死，全是模型自主决定的。
+### 5. 路由：`agents.controller.ts`
+
+```typescript
+import { Controller, Post, Body } from '@nestjs/common'
+import { AgentsService } from './agents.service'
+
+@Controller('agents')
+export class AgentsController {
+  constructor(private readonly agentsService: AgentsService) {}
+
+  // POST /agents/run
+  @Post('run')
+  runAgent(@Body() body: { message: string }) {
+    return this.agentsService.runAgent(body.message)
+  }
+}
+```
+
+### 6. 测试用例（Apifox）
+
+在 Apifox 里打 `POST http://localhost:3000/agents/run`，一条条测：
+
+| 用例 | 请求体 | 预期：Agent 会怎么决策 |
+| --- | --- | --- |
+| 查库存 | `{"message":"MacBook Pro 有货吗？多少钱？"}` | 调 `check_product` → 有货 ¥15999 |
+| 下单 | `{"message":"我叫小李，帮我买一台 MacBook Pro"}` | 先 `check_product` 确认有货 → 再 `create_order`（**自主串联两个工具**） |
+| 查订单 | `{"message":"我的订单 ORD-960000 到哪了？"}` | 调 `check_order` → 返回当前状态 |
+| 退款 | `{"message":"我要给订单 ORD-960000 申请退款，原因是质量问题"}` | 调 `apply_refund` → 返回退款单号 |
+
+返回的 `steps` 数组里能看到 Agent 完整的决策过程：**先自己判断要查库存 → 调 check_product → 看到有货 → 再调 create_order → 输出最终答复**，整个顺序代码里没有写死，全是模型自主决定的。
+
+::: tip System 消息为什么要写"工作原则"
+大模型本身"没有纪律"。System 里写清楚"下单前必须先查库存""没说姓名就主动询问"，模型就按规矩来——**Agent 的靠谱程度，一半靠工具写得好，一半靠 System 立规矩**。
+::: 
+
+### 7. 加餐：换个场景，Agent 同一套代码直接复用
+
+上面的电商客服是业务版。Agent 的价值是**场景和工具解耦**——换一组工具，同一套 `runAgent` 循环逻辑几乎不用改。下面换一批"通用小工具"：计算器、当前时间、单位换算，体验一下 Agent 可以**一次决定调用多个工具**。
+
+```typescript
+// 工具A：计算器
+private calculatorTool = tool(
+  async ({ expression }: { expression: string }) => {
+    try {
+      // 用 Function 执行数学表达式（生产环境请用安全的计算库）
+      const result = new Function(`return ${expression}`)()
+      return `计算结果：${expression} = ${result}`
+    } catch {
+      return `计算出错：无法计算 ${expression}`
+    }
+  },
+  {
+    name: 'calculator',
+    description: '数学计算器，用于计算数学表达式，例如 2+3*4、sqrt(16)、100/5',
+    schema: z.object({
+      expression: z.string().describe('数学表达式，例如 2+3*4'),
+    }),
+  },
+)
+
+// 工具B：获取当前时间
+private timeTool = tool(
+  async () => {
+    const now = new Date()
+    return `当前时间：${now.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}`
+  },
+  {
+    name: 'get_current_time',
+    description: '获取当前的日期和时间',
+    schema: z.object({}),
+  },
+)
+
+// 工具C：单位换算（长度 / 温度）
+private unitConverterTool = tool(
+  async ({ value, fromUnit, toUnit }: { value: number; fromUnit: string; toUnit: string }) => {
+    // 温度特殊处理
+    if (fromUnit === 'celsius' && toUnit === 'fahrenheit') {
+      return `${value}°C = ${((value * 9) / 5 + 32).toFixed(2)}°F`
+    }
+    if (fromUnit === 'fahrenheit' && toUnit === 'celsius') {
+      return `${value}°F = ${(((value - 32) * 5) / 9).toFixed(2)}°C`
+    }
+    // 长度换算（基准：米）
+    const conversions: Record<string, Record<string, number>> = {
+      km: { m: 1000, cm: 100000, mm: 1000000 },
+      m:  { km: 0.001, cm: 100, mm: 1000 },
+    }
+    const rate = conversions[fromUnit]?.[toUnit]
+    if (!rate) return `不支持 ${fromUnit} 到 ${toUnit} 的换算`
+    return `${value} ${fromUnit} = ${value * rate} ${toUnit}`
+  },
+  {
+    name: 'unit_converter',
+    description: '单位换算工具，支持长度（km/m/cm/mm）和温度（celsius/fahrenheit）换算',
+    schema: z.object({
+      value: z.number().describe('要换算的数值'),
+      fromUnit: z.string().describe('原单位，例如 km、celsius'),
+      toUnit: z.string().describe('目标单位，例如 m、fahrenheit'),
+    }),
+  },
+)
+```
+
+换一组工具的 `runAgent` 核心循环，和第 4 节一模一样，只改 `tools` / `toolMap`：
+
+```typescript
+async runAgent(userMessage: string) {
+  const tools = [this.calculatorTool, this.timeTool, this.unitConverterTool]
+  const llmWithTools = this.llm.bindTools(tools)
+
+  const toolMap = {
+    calculator: this.calculatorTool,
+    get_current_time: this.timeTool,
+    unit_converter: this.unitConverterTool,
+  }
+
+  const messages: any[] = [new HumanMessage(userMessage)]
+  const steps: string[] = []
+
+  for (let i = 0; i < 5; i++) {
+    const response = await llmWithTools.invoke(messages)
+    messages.push(response)
+
+    if (!response.tool_calls || response.tool_calls.length === 0) {
+      steps.push(`[最终回答] ${response.content}`)
+      break
+    }
+
+    for (const toolCall of response.tool_calls) {
+      const toolFn = toolMap[toolCall.name]
+      if (!toolFn) {
+        steps.push(`[工具不存在] ${toolCall.name}`)
+        continue
+      }
+      steps.push(`[调用工具] ${toolCall.name}(${JSON.stringify(toolCall.args)})`)
+      const toolResult = await toolFn.invoke(toolCall.args)
+      steps.push(`[工具结果] ${toolResult}`)
+      messages.push(
+        new ToolMessage({ content: String(toolResult), tool_call_id: toolCall.id }),
+      )
+    }
+  }
+
+  const lastAIMessage = [...messages].reverse().find(m => m instanceof AIMessage)
+  return {
+    question: userMessage,
+    steps,
+    answer: lastAIMessage?.content || '无法得出答案',
+  }
+}
+```
+
+测试用例（重点看最后一个"组合调用"）：
+
+| 用例 | 请求体 | 预期：Agent 会怎么决策 |
+| --- | --- | --- |
+| 时间 | `{"message":"现在几点了？"}` | 调 `get_current_time` |
+| 换算 | `{"message":"100 摄氏度等于多少华氏度？"}` | 调 `unit_converter` |
+| 计算 | `{"message":"1024 * 768 等于多少？再加上 1920 * 1080 是多少？"}` | **调两次** `calculator` |
+| 组合 | `{"message":"现在几点，再算一下 (99 + 1) * 2"}` | **同时调** `get_current_time` 和 `calculator` |
+
+```mermaid
+flowchart LR
+    Q["现在几点，再算一下 (99+1)*2"] --> L[模型决策]
+    L --> T1[get_current_time]
+    L --> T2[calculator]
+    T1 --> R1[当前时间: ...]
+    T2 --> R2[计算结果: 200]
+    R1 --> F[汇总最终回答]
+    R2 --> F
+```
+
+注意"调两次"和"同时调两个"这两条：`tool_calls` 本身就是**数组**，模型一次回复可以带多个工具调用，循环里逐个执行即可——**多工具并发决策**是 Agent 相对 Chain 的又一大优势。
 
 ## 七、系列导航：下半场还有四篇
 

@@ -6,7 +6,9 @@ description: RAG 生产落地。对比 MemoryVectorStore、PGVector、Chroma 三
 # 向量存储三种方案与 pgvector 实操
 
 > **前置**：已完成 [RAG 检索增强](/articles/nestjs-langchain-rag)
+>
 > **目标**：把 RAG 的知识库从"内存"升级到"数据库"，讲透三种向量存储方案 + pgvector 建表/检索 + 向量维度
+>
 > **技术栈**：NestJS + @langchain/community + @langchain/pgvector + PostgreSQL 16 + pgvector / Chroma
 
 ## 一、为什么不能一直用内存向量库？

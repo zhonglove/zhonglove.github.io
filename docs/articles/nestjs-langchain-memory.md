@@ -6,7 +6,9 @@ description: 为什么大模型不记事？如何给 ChatOllama 加上多轮对�
 # Memory — 让大模型记起"刚才说了啥"
 
 > **前置**：已完成 [NestJS + LangChain 集成与 Models 基础](/articles/nestjs-langchain-ai-app)
+>
 > **目标**：给大模型接上"记忆"，实现真正的多轮对话
+>
 > **技术栈**：NestJS + @langchain/ollama + ChatOllama（本地 qwen3.5:0.8b）
 
 ## 一、问题：大模型为什么不记事？

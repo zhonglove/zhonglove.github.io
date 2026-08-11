@@ -6,6 +6,7 @@ description: 适合熟悉 JS/Vue/React 但没接触过 NestJS 的前端开发者
 # NestJS 从零到实战：前端开发者的后端入门指南
 
 > **适合人群**：熟悉 JavaScript / Vue / React，但从未接触过 NestJS 的前端开发者
+>
 > **目标**：从零安装，理解核心概念，独立写出可调用的接口，最后接入 PostgreSQL 数据库完成 CRUD
 
 ## 一、搭建环境与技术选型
